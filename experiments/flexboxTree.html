@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tree example</title>
+    <style>
+        div{
+            border: 1px solid lightgrey;
+            padding: 2px;
+            margin: 2px;
+        }
+        .winner{
+            border-color: green;
+        }
+        .vertical, .horizontal, .leaf{
+            display: flex;
+            flex-grow: 1;
+        }
+        .vertical{
+            flex-direction: column;
+        }
+        .horizontal{
+            flex-direction: row;
+        }
+        .quarter{
+            flex-wrap: wrap;
+        }
+        input{
+            width:8px;
+            height:8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="vertical">
+        <div class="horizontal final">
+            <div class="vertical winner">
+                <div class="horizontal semi">
+                    <div class="winner vertical">
+                        <div class="horizontal wrap quarter">
+                            <div class="leaf winner">
+                                quarterist : Yannick <input value="3">
+                            </div>
+                            <div class="leaf">
+                                quarterist : Valentin <input value="1">
+                            </div>
+                        </div>
+                        <div class="player">
+                            Semi-finalist : Yannick <input value="2">
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <div class="quarter horizontal wrap">
+                            <div class="leaf winner">
+                                quarterist : Romy <input value="3">
+                            </div>
+                            <div class="leaf">
+                                quarterist : Joaquim <input value="0">
+                            </div>
+                        </div>
+                        <div class="player">
+                            Semi-finalist : Romy <input value="1">
+                        </div>
+                    </div>
+                </div>
+                <div class="player">
+                    Finalist : Yannick <input value="4">
+                </div>
+            </div>
+            <div class=" vertical">
+                <div class="semi horizontal">
+                    <div class=" vertical">
+                        <div class="quarter horizontal">
+                            <div class="leaf winner">
+                                quarterist : Cedrick <input value="3">
+                            </div>
+                            <div class="leaf">
+                                quarterist : Romain <input value="0">
+                            </div>
+                        </div>
+                        <div class="player">
+                            Semi-finalist : Cedrick <input value="1">
+                        </div>
+                    </div>
+                    <div class=" winner vertical">
+                        <div class="quarter horizontal">
+                            <div class="leaf">
+                                quarterist : Steve <input value="1">
+                            </div>
+                            <div class="leaf winner">
+                                quarterist : Naël <input value="3">
+                            </div>
+                        </div>
+                        <div class="player">
+                            Semi-finalist : Naël <input value="2">
+                        </div>
+                    </div>
+                </div>
+                <div class="player">
+                    Finalist : Naël <input value="2">
+                </div>
+            </div>
+        </div>
+        <div class="player">
+            Winner : Yannick
+        </div>
+    </div>
+</body>
+</html>
