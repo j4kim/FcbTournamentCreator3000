@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tree example</title>
+    <style>
+        td,tr,table,th{
+            margin:0;
+            padding: 0;
+        }
+        table{
+            /*width: 100%;*/
+        }
+        td{
+            border: 1px solid gray;
+        }
+        input{
+            width: 12px;
+            height: 10px;
+        }
+        td{
+            text-align: center;
+        }
+        .final > td {
+            width:100%;
+        }
+        .semi > td {
+            width:50%;
+        }
+        .quarter > td {
+            width:25%;
+        }
+        .eight > td {
+            width:12.5%;
+            font-size: 0.8em;
+        }
+        .sixteenth > td {
+            width:6.25%;
+            /*display: none;*/
+            font-size: 0.6em;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr class="sixteenth">
+            <th>16th</th>
+            <td>Funufun 0 : 4 Un ananas</td>
+            <td>Tomas Estevez 9 : 3 faqfinoucha</td>
+            <td>Domingos  0 : 5 Romy</td>
+            <td>Yolo 1 : 0 Mdr</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="eight">
+            <th>Eight</th>
+            <td colspan="2">Un ananas 0 : 3 Tomas Estevez</td>
+            <td colspan="2">Romy 12 : 1 Yolo</td>
+            <td colspan="2">René La Taupe 5 : 8 Naël</td>
+            <td colspan="2">Valentin 3 : 4 Blaireau</td>
+            <td colspan="2">Bichon 5 : 3 Stéphane Bern</td>
+            <td colspan="2">Cedrick 4 : 1 Michael Jackson</td>
+            <td colspan="2">Du yaourt 0 : 3 Yannick</td>
+            <td colspan="2">Rafael 4 : 0 Bob l'éponge</td>
+        </tr>
+        <tr class="quarter">
+            <th>Quarter</th>
+            <td colspan="4">Tomas Estevez 0 : 4 Romy</td>
+            <td colspan="4">Blaireau 1 : 3 Naël</td>
+            <td colspan="4">Cedrick 1 : 0 Bichon</td>
+            <td colspan="4">Yannick 5 : 0 Rafael</td>
+        </tr>
+        <tr class="semi">
+            <th>Semi</th>
+            <td colspan="8">Naël 5 : 1 Romy</td>
+            <td colspan="8">Yannick 4 : 2 Cedrick</td>
+        </tr>
+        <tr class="final">
+            <th>Final</th>
+            <td colspan="16">Yannick 3 : 2 Naël</td>
+        </tr>
+    </table>
+</body>
+</html>
