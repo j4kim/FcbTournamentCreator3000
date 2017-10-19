@@ -47,8 +47,9 @@
           "qualified":8,
           "type": "elimination",
           "match duration":15,
-          "final duration":20,
+          "final duration":30,
           "rounds":1,
+          "pause before final":15,
           "alone final":true,
           "alone semifinal":true
         }
