@@ -1,0 +1,344 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FCB Tournament Creator 3000</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="src/bootstrap.min.css">
+<script src="src/jquery.min.js"></script>
+<script src="src/bootstrap.min.js"></script>
+<script src="src/jquery.table2excel.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div id="configuration">
+			<h2>Configuration du tournoi</h2>
+			<hr>
+			<a href="#" onclick="go();return false;">test</a>
+			<form class="form-horizontal" role="form">
+				<div class="form-group">
+					<label class="control-label col-sm-3" for="debut">Heure de début :</label>
+					<div class="col-sm-9">
+						<input type="time" class="form-control" id="debut" value="08:00">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="control-label col-sm-3" for="duree">Durée d'un match :</label>
+					<div class="col-sm-9">
+						<input type="time" class="form-control" id="duree" value="00:12" min="00:01" max="00:45">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="control-label col-sm-3" for="tempsEntre">Temps entre les matchs :</label>
+					<div class="col-sm-9">
+						<input type="time" class="form-control" id="tempsEntre" value="00:03"  min="00:00" max="00:30">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="control-label col-sm-3" for="debutPause">Pause de :</label>
+					<div class="col-sm-2">
+						<input type="time" class="form-control" id="debutPause" value="12:00">
+					</div>
+					<label class="control-label col-sm-1" for="finPause"> à :</label>
+					<div class="col-sm-6">
+						<input type="time" class="form-control" id="finPause" value="13:00">
+					</div>
+				</div>
+				
+				<hr>
+				<p class="col-sm-offset-3 col-sm-9"><small>Pour les entrées texte, séparez les éléments par des virgules</small></p>
+				
+				<div class="form-group">
+					<label class="control-label col-sm-3" for="terrains">Terrains :</label>
+					<div class="col-sm-9">
+						<input type="text" class="form-control" id="terrains" value="A, B, C">
+					</div>
+				</div>
+				
+				<hr>
+				
+				<div class="form-group">
+					<label class="control-label col-sm-3" for="listeGroupes">Groupes :</label>
+					<div class="col-sm-9">
+						<input type="text" class="form-control" id="listeGroupes" placeholder="Sportif 1, Sportif 2, Féminin, Junior, Vétérans">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<div class="col-sm-offset-3 col-sm-9">
+						<button type="button" class="btn btn-default" id="btnValiderGroupes" onclick="validerGroupes()">Valider les groupes</button>
+					</div>
+				</div>
+				
+				<hr>
+				
+				<div id="groupes">
+				
+				</div>
+				
+				<hr>
+				
+				<button type="button" class="btn btn-default btn-block" onclick="creerProgramme()">Créer le programme des matchs</button>
+				
+			</form>
+		
+		</div>
+		<hr>
+		<div id="programme">
+		</div>
+		
+		<!-- Modal -->
+		<div id="myModal" class="modal" role="dialog">
+		  <div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <div class="modal-body">
+				<p id="texteModal"></p>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+	</div>
+<script src="src/tournoi.js"></script>
+<script src="src/tools.js"></script>
+
+<script>
+
+$(document).ready(function(){
+	$("#listeGroupes").keydown(function(event){ 
+		if(event.which==13){
+			validerGroupes();
+		}
+	});
+});
+
+	function validerGroupes(){
+		var str = document.getElementById("listeGroupes").value;
+		document.getElementById("groupes").innerHTML="";
+		/*
+		var listeGroupes = str.split(",");
+		for(var i=0; i<listeGroupes.length; i++){
+			var nom = listeGroupes[i].trim();
+			if(nom.length)
+				ajouterGroupe(nom);
+		}
+		*/
+		var listeGroupes = getList(str, ajouterGroupe);
+	}
+	
+	function ajouterGroupe(nom){
+		var strNouveauGroupe = 
+			'<div class="form-group groupe" name="'+nom+'">'
+			+'		<label class="control-label col-sm-3" for="équipes'+nom+'">Équipes '+nom+' :</label>'
+			+'		<div class="col-sm-6">'
+			+'			<textarea class="form-control equipes" rows="4" id="équipes'+nom+'" placeholder="Équipe 1, Équipe 2, Équipe 3"></textarea>'
+			+'		</div>'
+			+'		<label class="control-label col-sm-2" for="nbTours'+nom+'">Nombre de tours : </label>'
+			+'		<div class="col-sm-1">'
+			+'			<input type="number" class="form-control nbTours" id="nbTours'+nom+'" value="1" min="1" max="9">'
+			+'		</div>'
+			+'</div>';
+		//document.getElementById("groupes").innerHTML += strNouveauGroupe;
+			
+		$("#groupes").append(strNouveauGroupe);
+	}
+	
+	function creerProgramme(){
+		var nbGroupes = $('.groupe').length;
+		var erreur="";
+		
+		if(nbGroupes < 1){
+			erreur += "D'abord, créez des groupes<br>";
+		}
+		
+		var groupes = {};
+		
+		// récupérer chaque équipe de chaque groupe
+		$('.groupe').each(function(){
+			var nom = $(this).attr("name");
+			var strEquipes = $(this).find(".equipes").val();
+			var nbTours = parseInt($(this).find(".nbTours").val());
+			groupes[nom] = {};
+			groupes[nom]["nbTours"] = nbTours;
+			groupes[nom]["equipes"] = getList(strEquipes);
+			var nbEquipes = groupes[nom]["equipes"].length;
+			if(nbEquipes < 3){
+				erreur += "le groupe "+nom+" ne contient que "+nbEquipes+" équipes. Minimum : 3<br>";
+			}
+		});
+		
+		var tournoi = {};
+		
+		tournoi["groupes"] = groupes;
+		/*
+		tournoi["terrains"] = $("#terrains").val().split(",");
+		for(var i=0; i<tournoi["terrains"].length; i++){
+			tournoi["terrains"][i] = tournoi["terrains"][i].trim();
+		}
+		*/
+		tournoi.terrains = getList($("#terrains").val());
+		
+		tournoi["config"] = {};
+		tournoi["config"]["debut"] = $("#debut").val();
+		tournoi["config"].duree = $("#duree").val();
+		tournoi["config"]["tempsEntre"] = $("#tempsEntre").val();
+		tournoi["config"]["debutPause"] = $("#debutPause").val();
+		tournoi["config"]["finPause"] = $("#finPause").val();
+
+
+		
+		if(erreur.length){
+			$("#texteModal").html(erreur);
+			$("#myModal").modal();
+			return;
+		}
+		
+		//console.log(tournoi);
+		
+		var programmeMatchs = genererProgramme(tournoi);
+		//console.log(programmeMatchs);
+		
+		var tableProgramme = makeTable(programmeMatchs);
+		$("#programme").html(tableProgramme);
+		$('#configuration').hide();
+		$('#programme').show();
+		
+	}
+	
+	function getList(str, f){
+		var list = str.split(",");
+		for(var i=0; i<list.length; i++){
+			list[i] = list[i].trim();
+		}
+		var uniques =[];
+		$.each(list, function(i, value){
+			if(uniques.indexOf(value)==-1 && value.length){
+				uniques.push(value);
+				if(f != undefined)
+					f(value);
+			}
+		});
+		return uniques;
+	}
+
+
+
+
+
+
+	
+	
+
+	
+	function remplirFormulaire(tournoi){
+		$.each(tournoi.config, function(id, str){
+			$("#"+id).val(str);
+		});
+		document.getElementById("terrains").value="";
+		$.each(tournoi.terrains, function(i, nomTerrain){
+			document.getElementById("terrains").value += nomTerrain + ", ";
+		});
+		
+		document.getElementById("listeGroupes").value="";
+		document.getElementById("groupes").innerHTML="";
+		$.each(tournoi.groupes, function(nomGroupe, groupe) {
+			document.getElementById("listeGroupes").value += nomGroupe + ", ";
+			ajouterGroupe(nomGroupe);
+			var strEquipes="";
+			$.each(groupe.equipes, function(i, equipe){
+				strEquipes += equipe + ", ";
+			});
+			$("#équipes"+nomGroupe).val(strEquipes);
+			$("#nbTours"+nomGroupe).val(groupe.nbTours);
+		});
+	}
+	
+	function go(){
+		var tournoi = {
+			config:{
+				debut:"08:45",
+				debutPause:"12:00",
+				duree:"00:10",
+				finPause:"13:00",
+				tempsEntre:"00:05"
+			},
+			groupes:{
+				"Sportif1":{
+					equipes:[
+						"FC Beaugenoux",
+						"FC New Look",
+						"Gâteau à côté de l'océan",
+						"Hackle",
+						"HBC Neuchâtel",
+						"Ketchup-Mayo"
+						],
+					nbTours:1
+				},
+				"Sportif2":{
+					equipes:[
+						"Lamienneestplusgrossequelavotre",
+						"Le Bois de Quat'Sous",
+						"Les Couillasses",
+						"Les Dauphins",
+						"On joue à quelle heure",
+						"Team Desperados"
+					],
+					nbTours:1
+				},
+				"Sportif3":{
+					equipes:[
+						"The Warriors",
+						"Mmmmh mmmmmh",
+						"Les Puceaux",
+						"Les Trumps",
+						"KBLL",
+						"Les Guapas"
+					],
+					nbTours:1
+				},
+				"Vetes1":{
+					equipes:[
+						"Chapeau de paille",
+						"Comeback Didier",
+						"Commune Les Brenetes",
+						"FKG Dentaire",
+						"Jimpy's"
+					],
+					nbTours:1
+				},
+				"Vetes2":{
+					equipes:[
+						"Les Bleus",
+						"Les Cobras Pourpres",
+						"Touche pas à mon pote",
+						"US Girls C",
+						"Les Fiottes"
+					],
+					nbTours:1
+				},
+				"Juniors":{
+					equipes:[
+						"Arrow",
+						"NRJ",
+						"The Green Diamonds",
+						"Touche pas à mon pote-juniors"
+					],
+					nbTours:2
+				}		
+			},
+			terrains:["A","B","C"]
+		}
+		remplirFormulaire(tournoi);
+	}
+
+</script>
+<body>
+</html>
