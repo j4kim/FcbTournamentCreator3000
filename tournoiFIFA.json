@@ -1,0 +1,103 @@
+{
+  "name":"Tournoi FIFA 25 novembre",
+  "password":"",
+  "config":{
+    "start time":"19:00",
+    "pauses":[
+      {
+        "start":"21:00",
+        "duration":"01:00"
+      }
+    ],
+    "fields":[
+      "Terrain A",
+      "Terrain B",
+      "Terrain C"
+    ],
+    "categories":[
+      {
+        "name":"Simple",
+        "teams":[
+          "Yannick",
+          "Naël",
+          "Guich",
+          "Rafael",
+          "Guigui",
+          "Andony",
+          "Monnin",
+          "Zach",
+          "Max",
+          "Léo",
+          "Padi",
+          "Steve",
+          "Valentin",
+          "Joaquim",
+          "Romain",
+          "Romy",
+          "Mat",
+          "Théo"
+        ],
+        "qualif": {
+          "groups":4,
+          "rounds":1,
+          "match duration":10,
+        },
+        "knockout":{
+          "pause before":30,
+          "qualified":8,
+          "type": "elimination",
+          "match duration":15,
+          "final duration":20,
+          "rounds":1
+        }
+      },{
+        "name":"Double",
+        "teams":[
+          "Boutons d'or",
+          "Ciboulette",
+          "Géranium",
+          "Jonquille",
+          "Lavande",
+          "Nenuphar",
+          "Orchidée",
+          "Petunia",
+          "Tournesol",
+          "Tulipe"
+        ],
+        "qualif":{
+          "groups":2,
+          "rounds":1,
+          "match duration":10
+        },
+        "knockout":{
+          "pause before":0,
+          "qualified":2,
+          "type": "ranking",
+          "match duration":20,
+          "rounds":1
+        }
+      }
+    ]
+  },
+  "generated":{
+    "qualif":[
+      {
+        "id":1,
+        "start time":"19:00",
+        "field":"Terrain A",
+        "group":"Simple 1",
+        "teams":["Yannick","Naël"],
+        "score":[2,3]
+      },{},{},{}
+    ],
+    "knockout":[
+      {
+        "id":33,
+        "start time":"23:00",
+        "field":"Terrain A",
+        "group":"Simple Quarterfinals",
+        "teams":["1st Simple 1","2nd Simple 4"]
+      },{},{},{}
+    ]
+  }
+}
