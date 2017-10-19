@@ -48,7 +48,9 @@
           "type": "elimination",
           "match duration":15,
           "final duration":20,
-          "rounds":1
+          "rounds":1,
+          "alone final":true,
+          "alone semifinal":true
         }
       },{
         "name":"Double",
@@ -74,7 +76,9 @@
           "qualified":2,
           "type": "ranking",
           "match duration":20,
-          "rounds":1
+          "rounds":1,
+          "alone final":true,
+          "alone semifinal":false
         }
       }
     ]
