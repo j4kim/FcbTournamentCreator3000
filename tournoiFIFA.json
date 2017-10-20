@@ -40,18 +40,18 @@
         "qualif": {
           "groups":4,
           "rounds":1,
-          "match duration":10,
+          "matchDuration":10,
         },
         "knockout":{
-          "pause before":30,
+          "pauseBetween":30,
           "qualified":8,
           "type": "elimination",
-          "match duration":15,
-          "final duration":30,
+          "matchDuration":15,
+          "finalDuration":30,
           "rounds":1,
-          "pause before final":15,
-          "alone final":true,
-          "alone semifinal":true
+          "pauseBeforeFinal":15,
+          "aloneFinal":true,
+          "aloneSemifinal":true
         }
       },{
         "name":"Double",
