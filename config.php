@@ -49,14 +49,17 @@
                     <label class="col-md-3 col-form-label" >Pauses</label>
 
 
-                    <div class="pauses-container col d-none">
-                        <!--Pauses here-->
-                    </div>
+                    <div class="col-md-9 row pr-0">
+                        <div class="pauses-container col-md-12 d-none pr-0">
+                            <!--Pauses here-->
+                        </div>
 
-                    <div class="col-md-9 col ">
-                        <button type="button"  class="btn btn-light btn-block" id="addPause">
-                            <i class="fa fa-plus-circle"></i> Ajouter pause
-                        </button>
+                        <div class="col-md-12 pr-0">
+                            <button type="button"  class="btn btn-light btn-block" id="addPause">
+                                <i class="fa fa-plus-circle"></i> Ajouter pause
+                            </button>
+                        </div>
+
                     </div>
                 </div>
 				
@@ -109,21 +112,21 @@
 		  </div>
 		</div>
 
-
 	</div>
+
 
     <!--Templates handlebars-->
     <!--Pause template-->
     <script id="pause-template" type="text/x-handlebars-template">
         <div class="row pause mb-2">
             <div class="col col-form-label">
-                Début :
+                Début&nbsp;:
             </div>
             <div class="col">
                 <input type="time" class="form-control" value="{{ start }}">
             </div>
             <div class="col col-form-label">
-                Durée :
+                Durée&nbsp;:
             </div>
             <div class="col">
                 <input type="time" class="form-control" value="{{ duration }}">
