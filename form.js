@@ -37,6 +37,28 @@ $(function(){
 
     // OPEN JSON FILE
 
-    console.log($("#configuration").data("config"))
+    let json = $("#configuration").data("config");
+
+    if(json) fillFormFromJson(json);
+
+    // FILL FORM
+    function fillFormFromJson(j){
+        $("#name").val(j.name);
+        $("#start").val(j.config.start);
+        j.config.pauses.forEach(p => addPause(p));
+        j.config.fields.forEach(f => {
+            $("#fields").append(f + '\r\n');
+        });
+        j.config.categories.forEach(c => {
+            c.teams = c.teams.reduce((t1,t2) => {
+                return t1 + '\r\n' + t2;
+            });
+            addCategory(c);
+        });
+    }
+
+    // FILL JSON
+
+    function fillJsonFromForm(){}
 
 });

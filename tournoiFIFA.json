@@ -2,11 +2,15 @@
   "name":"Tournoi FIFA 25 novembre",
   "password":"",
   "config":{
-    "start time":"19:00",
+    "start":"19:00",
     "pauses":[
       {
         "start":"21:00",
         "duration":"01:00"
+      },
+      {
+        "start":"23:30",
+        "duration":"00:30"
       }
     ],
     "fields":[
@@ -40,16 +44,16 @@
         "qualif": {
           "groups":4,
           "rounds":1,
-          "matchDuration":10
+          "matchDuration":"00:10"
         },
         "knockout":{
-          "pauseBetween":30,
+          "pauseBetween":"00:30",
           "qualified":8,
           "type": "elimination",
-          "matchDuration":15,
-          "finalDuration":30,
+          "matchDuration":"00:15",
+          "finalDuration":"00:30",
           "rounds":1,
-          "pauseBeforeFinal":15,
+          "pauseBeforeFinal":"00:15",
           "aloneFinal":true,
           "aloneSemifinal":true
         }
@@ -70,16 +74,17 @@
         "qualif":{
           "groups":2,
           "rounds":1,
-          "match duration":10
+          "matchDuration":"00:10"
         },
         "knockout":{
-          "pause before":0,
+          "pauseBetween":"00:00",
           "qualified":2,
           "type": "ranking",
-          "match duration":20,
+          "matchDuration":"00:20",
+          "finalDuration":"00:20",
           "rounds":1,
-          "alone final":true,
-          "alone semifinal":false
+          "aloneFinal":true,
+          "aloneSemifinal":false
         }
       }
     ]
