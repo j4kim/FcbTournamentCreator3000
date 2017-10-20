@@ -1,7 +1,19 @@
 ﻿<?php
-    $file = $_FILES["file"];
-    if($file){
-        $config = file_get_contents($file['tmp_name']);
+    if(isset($_FILES["file"])){
+        $target_file =  time() . "_" . basename($_FILES["file"]["name"]);
+        if (move_uploaded_file($_FILES["file"]["tmp_name"], "uploads/$target_file")) {
+            header("Location: ?file=$target_file");
+            exit("C'est bon");
+        }
+        else{
+            exit("Erreur lors de la mise en ligne du fichier");
+        }
+    }
+
+    $filename = $_GET['file'] ?? false;
+
+    if($filename){
+        $config = file_get_contents("uploads/$filename");
     }
 ?>
 <!DOCTYPE html>
