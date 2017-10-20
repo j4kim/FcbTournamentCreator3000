@@ -40,7 +40,7 @@
         "qualif": {
           "groups":4,
           "rounds":1,
-          "matchDuration":10,
+          "matchDuration":10
         },
         "knockout":{
           "pauseBetween":30,

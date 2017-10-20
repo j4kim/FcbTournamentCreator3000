@@ -37,6 +37,6 @@ $(function(){
 
     // OPEN JSON FILE
 
-
+    console.log($("#configuration").data("config"))
 
 });

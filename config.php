@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿<?php
+    $file = $_FILES["file"];
+    if($file){
+        $config = file_get_contents($file['tmp_name']);
+    }
+?>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -24,7 +30,20 @@
 <body>
 	<div class="container">
         <h1>FCB Tournament Creator 3000</h1>
-		<div id="configuration">
+
+        <form method="POST" id="uploadForm" enctype="multipart/form-data">
+            <input accept=".json" type="file" name="file"
+                   id="file" class="d-none"
+                   onchange="document.querySelector('#uploadForm').submit()"/>
+        </form>
+        <label for="file" class="btn float-right">
+            <i class="fa fa-upload"></i> Charger tournoi
+        </label>
+
+		<div id="configuration"
+             data-config="<?= isset($config) ? htmlentities($config) : "" ?>"
+        >
+
 			<h2>Configuration du tournoi</h2>
 			<form>
                 <hr>
