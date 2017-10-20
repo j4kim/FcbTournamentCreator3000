@@ -25,7 +25,7 @@
                 <div class="form-group row">
                     <label for="name" class="col-md-3 col-form-label">Nom</label>
                     <div class="col">
-                        <input type="text" class="form-control" id="name" name="name">
+                        <input type="text" class="form-control" id="name">
                     </div>
                 </div>
 
@@ -34,7 +34,7 @@
                 <div class="form-group row">
                     <label for="start" class="col-md-3 col-form-label">Heure de début </label>
                     <div class="col">
-                        <input type="time" class="form-control" id="start" name="start" value="08:00">
+                        <input type="time" class="form-control" id="start" value="08:00">
                     </div>
                 </div>
 
@@ -45,13 +45,13 @@
                         Début :
                     </div>
                     <div class="col">
-                        <input type="time" class="form-control" name="pausesStart[]" >
+                        <input type="time" class="form-control">
                     </div>
                     <div class="col col-form-label">
                         Durée :
                     </div>
                     <div class="col">
-                        <input type="time" class="form-control" name="pausesDuration[]" value="00:30">
+                        <input type="time" class="form-control" value="00:30">
                     </div>
                     <div class="col">
                         <button type="button" class="form-control btn-light col-form-label removePause">
@@ -71,7 +71,7 @@
 				<div class="form-group row">
 					<label class="control-label col-sm-3" for="fields">Terrains</label>
 					<div class="col-sm-9">
-                        <textarea rows="4" class="form-control" id="fields" name="fields"></textarea>
+                        <textarea rows="4" class="form-control" id="fields"></textarea>
 					</div>
                     <small class="form-text text-muted col-md-9 offset-md-3">
                         Pour les entrées texte, séparez les éléments par des sauts de ligne.
@@ -87,13 +87,13 @@
                     <div class="form-group row">
                         <label class="col-md-3 col-form-label">Nom</label>
                         <div class="col-md-9">
-                            <input type="text" class="form-control" name="name">
+                            <input type="text" class="form-control">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-3 col-form-label">Équipes</label>
                         <div class="col-sm">
-                            <textarea rows="4" class="form-control" name="teams"></textarea>
+                            <textarea rows="4" class="form-control"></textarea>
                         </div>
                         <small class="form-text text-muted col-md-9 offset-md-3">
                             Pour les entrées texte, séparez les éléments par des sauts de ligne.
@@ -109,15 +109,15 @@
                         <div class="form-row col">
                             <div class="form-group col">
                                 <label>Nombre de groupes</label>
-                                <input type="number" name="groups[]" class="form-control" value="1">
+                                <input type="number" class="form-control" value="1">
                             </div>
                             <div class="form-group col">
                                 <label>Nombre de tours</label>
-                                <input type="number" name="rounds[]" class="form-control" value="1">
+                                <input type="number" class="form-control" value="1">
                             </div>
                             <div class="form-group col">
                                 <label>Durée d'un match</label>
-                                <input type="time" name="matchDuration[]" class="form-control" value="00:15" min="00:05">
+                                <input type="time" class="form-control" value="00:15" min="00:05">
                             </div>
                         </div>
                     </div>
@@ -128,7 +128,7 @@
                         <label class="col-md-3 col-form-label">Pause entre phases</label>
 
                         <div class="col">
-                            <input type="time" name="pauseBetween[]" class="form-control" value="00:00">
+                            <input type="time" class="form-control" value="00:00">
                         </div>
                     </div>
 
@@ -142,11 +142,11 @@
                         <div class="form-row col">
                             <div class="form-group col">
                                 <label>Équipes qualifiées</label>
-                                <input type="number" name="qualified[]" class="form-control" value="8">
+                                <input type="number" class="form-control" value="8">
                             </div>
                             <div class="form-group col">
                                 <label>Durée de la finale</label>
-                                <input type="time" name="finalDuration[]" class="form-control" value="00:30" min="00:05">
+                                <input type="time" class="form-control" value="00:30" min="00:05">
                             </div>
                         </div>
                     </div>
