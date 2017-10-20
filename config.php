@@ -57,7 +57,7 @@
         >
 
 			<h2>Configuration du tournoi</h2>
-			<form>
+			<form id="configForm">
                 <hr>
 
                 <div class="form-group row">
@@ -154,13 +154,13 @@
                 Début&nbsp;:
             </div>
             <div class="col">
-                <input type="time" class="form-control" value="{{ start }}">
+                <input type="time" class="form-control pauseStart" value="{{ start }}">
             </div>
             <div class="col col-form-label">
                 Durée&nbsp;:
             </div>
             <div class="col">
-                <input type="time" class="form-control" value="{{ duration }}">
+                <input type="time" class="form-control pauseDuration" value="{{ duration }}">
             </div>
             <div class="col">
                 <button type="button" class="form-control btn-light col-form-label removePause">
@@ -176,13 +176,13 @@
             <div class="form-group row">
                 <label class="col-md-3 col-form-label">Nom</label>
                 <div class="col-md-9">
-                    <input type="text" class="form-control" value="{{ name }}">
+                    <input type="text" class="form-control categoryName" value="{{ name }}">
                 </div>
             </div>
             <div class="form-group row">
                 <label class="col-md-3 col-form-label">Équipes</label>
                 <div class="col-sm">
-                    <textarea rows="4" class="form-control">{{ teams }}</textarea>
+                    <textarea rows="4" class="form-control categoryTeams">{{ teams }}</textarea>
                 </div>
                 <small class="form-text text-muted col-md-9 offset-md-3">
                     Pour les entrées texte, séparez les éléments par des sauts de ligne.
@@ -198,15 +198,15 @@
                 <div class="form-row col">
                     <div class="form-group col">
                         <label>Nombre de groupes</label>
-                        <input type="number" class="form-control" value="{{ qualif.groups }}">
+                        <input type="number" class="form-control qualifGroups" value="{{ qualif.groups }}">
                     </div>
                     <div class="form-group col">
                         <label>Nombre de tours</label>
-                        <input type="number" class="form-control" value="{{ qualif.rounds }}">
+                        <input type="number" class="form-control qualifRounds" value="{{ qualif.rounds }}">
                     </div>
                     <div class="form-group col">
                         <label>Durée d'un match</label>
-                        <input type="time" class="form-control" value="{{ qualif.matchDuration }}" min="00:05">
+                        <input type="time" class="form-control qualifMatchDuration" value="{{ qualif.matchDuration }}" min="00:05">
                     </div>
                 </div>
             </div>
@@ -217,7 +217,7 @@
                 <label class="col-md-3 col-form-label">Pause entre phases</label>
 
                 <div class="col">
-                    <input type="time" class="form-control" value="{{ knockout.pauseBetween }}">
+                    <input type="time" class="form-control pauseBetween" value="{{ knockout.pauseBetween }}">
                 </div>
             </div>
 
@@ -230,11 +230,11 @@
                 <div class="form-row col">
                     <div class="form-group col">
                         <label>Équipes qualifiées</label>
-                        <input type="number" class="form-control" value="{{ knockout.qualified }}">
+                        <input type="number" class="form-control qualified" value="{{ knockout.qualified }}">
                     </div>
                     <div class="form-group col">
                         <label>Durée de la finale</label>
-                        <input type="time" class="form-control" value="{{ knockout.finalDuration }}" min="00:05">
+                        <input type="time" class="form-control finalDuration" value="{{ knockout.finalDuration }}" min="00:05">
                     </div>
                 </div>
             </div>
