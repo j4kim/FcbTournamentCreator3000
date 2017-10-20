@@ -88,10 +88,10 @@
     "qualif":[
       {
         "id":1,
-        "start time":"19:00",
-        "field":"Terrain A",
-        "group":"Simple 1",
-        "teams":["Yannick","Naël"],
+        "start time":0,
+        "fieldIndex":1,
+        "groupIndex":0,
+        "teamIndexes":[0,1],
         "score":[2,3]
       },{},{},{}
     ],
