@@ -111,13 +111,20 @@
                 <h3>Catégories</h3>
 
                 <button type="button" class="btn btn-light btn-block" id="addCategory">
-                    <i class="fa  fa-plus-circle"></i> Ajouter catégorie
+                    <i class="fa fa-plus-circle"></i> Ajouter catégorie
                 </button>
 
 
                 <hr>
-				
-				<button type="button" class="btn btn-primary btn-block">Créer le programme des matchs</button>
+
+                <a href="#" download="config.json" id="saveConfig" class="btn btn-secondary btn-block">
+                    <i class="fa  fa-download"></i> Enregistrer la configuration
+                </a>
+
+                <button type="button" id="generateProgram" class="btn btn-primary btn-block">
+                    <i class="fa fa-check"></i> Générer le programme des matchs
+                </button>
+
 				
 			</form>
 		

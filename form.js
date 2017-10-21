@@ -87,7 +87,15 @@ $(function(){
                 }
             });
         });
-        return j;
+
+        // fill the download button
+        let data = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(j));
+        $('#saveConfig').attr({
+            href: 'data:' + data,
+            download: j.name + '.json'
+        });
     }
+
+    fillJsonFromForm();
 
 });
