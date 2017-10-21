@@ -58,7 +58,14 @@ $(function(){
 
     // FILL JSON
 
-    $("#configForm").on("change", "input, textarea", fillJsonFromForm);
+    // Tidy a textarea content and fill a list separating elements with linebreaks
+    function getListFromTextarea(textarea){
+        return $(textarea).val().split("\n").map(str => {
+            return str.trim();
+        }).filter(str => {
+            return str.length > 0;
+        });
+    }
 
     function fillJsonFromForm(){
         let j = {config:{pauses:[],categories:[]}};
@@ -70,11 +77,11 @@ $(function(){
                 duration: $(elem).find(".pauseDuration").val(),
             });
         });
-        j.config.fields = $('#fields').val().split("\n");
+        j.config.fields = getListFromTextarea('#fields');
         $(".category").each((i,elem) => {
             j.config.categories.push({
                 name: $(elem).find(".categoryName").val(),
-                teams: $(elem).find(".categoryTeams").val().split("\n"),
+                teams: getListFromTextarea($(elem).find(".categoryTeams")),
                 qualif:{
                     groups: $(elem).find(".qualifGroups").val(),
                     rounds: $(elem).find(".qualifRounds").val(),
@@ -87,15 +94,17 @@ $(function(){
                 }
             });
         });
-
-        // fill the download button
-        let data = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(j));
-        $('#saveConfig').attr({
-            href: 'data:' + data,
-            download: j.name + '.json'
-        });
+        return j;
     }
 
-    fillJsonFromForm();
+    $("#saveConfig").click(e => {
+        let json = fillJsonFromForm();
+        // fill and click the hidden download link
+        $('#hiddenDownloadLink').attr({
+            href: 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(json,0,2)),
+            download: json.name + '.json'
+        })[0].click();
+        // this [0] is necessary because the onclick event is not registered, we click the element, not the jQuery selection
+    });
 
 });

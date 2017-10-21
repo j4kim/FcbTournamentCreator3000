@@ -48,7 +48,7 @@
                    id="file" class="d-none"
                    onchange="document.querySelector('#uploadForm').submit()"/>
         </form>
-        <label for="file" class="btn float-right">
+        <label for="file" class="btn float-right btn-secondary">
             <i class="fa fa-upload"></i> Charger tournoi
         </label>
 
@@ -117,39 +117,23 @@
 
                 <hr>
 
-                <a href="#" download="config.json" id="saveConfig" class="btn btn-secondary btn-block">
+                <a id="hiddenDownloadLink" class="d-none">Télécharger</a>
+                <button type="button" id="saveConfig" class="btn btn-secondary btn-block">
                     <i class="fa  fa-download"></i> Enregistrer la configuration
-                </a>
+                </button>
 
                 <button type="button" id="generateProgram" class="btn btn-primary btn-block">
                     <i class="fa fa-check"></i> Générer le programme des matchs
                 </button>
 
-				
 			</form>
 		
 		</div>
 		<hr>
+
 		<div id="programme">
-		</div>
-		
-		<!-- Modal -->
-		<div id="myModal" class="modal" role="dialog">
-		  <div class="modal-dialog">
 
-			<!-- Modal content-->
-			<div class="modal-content">
-			  <div class="modal-body">
-				<p id="texteModal"></p>
-			  </div>
-			  <div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-			  </div>
-			</div>
-
-		  </div>
-		</div>
-
+        </div>
 	</div>
 
 
