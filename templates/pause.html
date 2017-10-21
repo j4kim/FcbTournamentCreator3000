@@ -1,0 +1,21 @@
+<script id="pause-template" type="text/x-handlebars-template">
+    <div class="row pause mb-2">
+        <div class="col col-form-label">
+            Début&nbsp;:
+        </div>
+        <div class="col">
+            <input type="time" class="form-control pauseStart" value="{{ start }}">
+        </div>
+        <div class="col col-form-label">
+            Durée&nbsp;:
+        </div>
+        <div class="col">
+            <input type="time" class="form-control pauseDuration" value="{{ duration }}">
+        </div>
+        <div class="col">
+            <button type="button" class="form-control btn-light col-form-label removePause">
+                <i class="fa fa-trash-o"></i>
+            </button>
+        </div>
+    </div>
+</script>
