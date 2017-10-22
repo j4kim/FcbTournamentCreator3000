@@ -1,4 +1,5 @@
 ﻿<?php
+/*
     if(isset($_FILES["file"])){
         $target_file =  time() . "_" . basename($_FILES["file"]["name"]);
         if (move_uploaded_file($_FILES["file"]["tmp_name"], "uploads/$target_file")) {
@@ -9,6 +10,7 @@
             exit("Erreur lors de la mise en ligne du fichier");
         }
     }
+*/
 
     $filename = $_GET['file'] ?? false;
 
@@ -43,12 +45,10 @@
 	<div class="container">
         <h1>FCB Tournament Creator 3000</h1>
 
-        <form method="POST" id="uploadForm" enctype="multipart/form-data">
-            <input accept=".json" type="file" name="file"
-                   id="file" class="d-none"
-                   onchange="document.querySelector('#uploadForm').submit()"/>
-        </form>
-        <label for="file" class="btn float-right btn-secondary">
+        <input accept=".json" type="file" name="file"
+               id="file" class="d-none" />
+
+        <label for="file" class="btn float-right btn-secondary ml-3">
             <i class="fa fa-upload"></i> Charger tournoi
         </label>
 
@@ -102,7 +102,7 @@
                         <textarea rows="4" class="form-control" id="fields"></textarea>
 					</div>
                     <small class="form-text text-muted col-md-9 offset-md-3">
-                        Pour les entrées texte, séparez les éléments par des sauts de ligne.
+                        Séparez les éléments par des sauts de ligne.
                     </small>
 				</div>
 				
@@ -138,8 +138,8 @@
 
 
     <!--Templates handlebars-->
-    <?php include('templates/pause.html') ?>
-    <?php include('templates/category.html') ?>
+    <?php include('templates/pause.handlebars') ?>
+    <?php include('templates/category.handlebars') ?>
 
     <!-- Application -->
     <script src="form.js"></script>

@@ -1,6 +1,6 @@
 $(function(){
 
-    // PAUSES
+    // TEMPLATES
 
     let pauseTemplate = Handlebars.compile(
         $("#pause-template").html()
@@ -12,14 +12,14 @@ $(function(){
             .append(pauseTemplate(data));
     }
 
-    $("#addPause").click(addPause);
+    $("#addPause").click(e => {
+        addPause({start:"12:00",duration:"00:30"});
+        $(".pauseStart").focus();
+    });
 
     $(".pauses-container").on("click", ".removePause", e => {
         $(e.target).closest(".pause").remove();
     });
-
-
-    // CATEGORIES
 
     let categoryTemplate = Handlebars.compile(
         $("#category-template").html()
@@ -29,7 +29,21 @@ $(function(){
         $("#addCategory").before(categoryTemplate(data));
     }
 
-    $("#addCategory").click(addCategory);
+    $("#addCategory").click(e => {
+        addCategory({
+            qualif: {
+                groups:1,
+                rounds:1,
+                matchDuration:"00:15"
+            },
+            knockout: {
+                pauseBetween: "00:00",
+                qualified: 4,
+                finalDuration: "00:30"
+            }
+        });
+        $(".categoryName").focus();
+    });
 
     $("#configForm").on("click", ".removeCategory", e => {
         $(e.target).closest(".category").remove();
@@ -37,21 +51,43 @@ $(function(){
 
     // FILL FORM
 
+    $("#file").change(e => {
+        // thanks to https://stackoverflow.com/a/27523255/8345160
+        let file = e.target.files[0];
+        if (file.type === "application/json") {
+            let reader = new FileReader();
+            reader.onload = function(e) {
+                fillFormFromJson(JSON.parse(reader.result));
+            };
+            reader.readAsText(file);
+        } else {
+            alert("Fichier non valide");
+        }
+    });
+
     let json = $("#configuration").data("config");
 
     if(json) fillFormFromJson(json);
 
+    function listToString(list){
+        return list.reduce((t1,t2) => {
+            return t1 + '\n' + t2;
+        }, "");
+    }
+
     function fillFormFromJson(j){
+        // empty form
+        $("#name, #start, #fields").val("");
+        $(".pause, .category").remove();
+
+        // fill form
         $("#name").val(j.name);
         $("#start").val(j.config.start);
         j.config.pauses.forEach(p => addPause(p));
-        j.config.fields.forEach(f => {
-            $("#fields").append(f + '\n');
-        });
+        j.config.fields = listToString(j.config.fields);
+        $("#fields").val(j.config.fields);
         j.config.categories.forEach(c => {
-            c.teams = c.teams.reduce((t1,t2) => {
-                return t1 + '\n' + t2;
-            });
+            c.teams = listToString(c.teams);
             addCategory(c);
         });
     }
@@ -99,6 +135,7 @@ $(function(){
 
     $("#saveConfig").click(e => {
         let json = fillJsonFromForm();
+        json.name = json.name ? json.name : "tournoi";
         // fill and click the hidden download link
         $('#hiddenDownloadLink').attr({
             href: 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(json,0,2)),
