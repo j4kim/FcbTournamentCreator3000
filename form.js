@@ -2,9 +2,23 @@ $(function(){
 
     // TEMPLATES
 
-    let pauseTemplate = Handlebars.compile(
-        $("#pause-template").html()
-    );
+    // thanks to https://stackoverflow.com/a/31775595/8345160
+    let templates = {};
+    function getTemplate(name) {
+        $.ajax({
+            url : 'templates/' + name + '.handlebars',
+            success : function(data) {
+                templates[name] = Handlebars.compile(data);
+            },
+            async : false // this is deprecated but simpler here
+        });
+        return templates[name];
+    }
+
+    let pauseTemplate = getTemplate("pause");
+    let categoryTemplate = getTemplate("category");
+
+    // ADD/REMOVE PAUSES
 
     function addPause(data){
         $(".pauses-container")
@@ -21,9 +35,7 @@ $(function(){
         $(e.target).closest(".pause").remove();
     });
 
-    let categoryTemplate = Handlebars.compile(
-        $("#category-template").html()
-    );
+    // ADD/REMOVE CATEGORY
 
     function addCategory(data){
         $("#addCategory").before(categoryTemplate(data));
@@ -65,14 +77,11 @@ $(function(){
         }
     });
 
-    let json = $("#configuration").data("config");
-
-    if(json) fillFormFromJson(json);
-
     function listToString(list){
+        if (list.length === 0) return "";
         return list.reduce((t1,t2) => {
             return t1 + '\n' + t2;
-        }, "");
+        });
     }
 
     function fillFormFromJson(j){
