@@ -2,17 +2,8 @@ $(function(){
 
     // TEMPLATES
 
-    // thanks to https://stackoverflow.com/a/31775595/8345160
-    let templates = {};
-    function getTemplate(name) {
-        $.ajax({
-            url : 'templates/' + name + '.handlebars',
-            success : function(data) {
-                templates[name] = Handlebars.compile(data);
-            },
-            async : false // this is deprecated but simpler here
-        });
-        return templates[name];
+    function getTemplate(name){
+        return Handlebars.compile($("#" + name + "-template").html());
     }
 
     let pauseTemplate = getTemplate("pause");
