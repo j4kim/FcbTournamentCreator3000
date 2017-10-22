@@ -77,6 +77,17 @@ $(function(){
         }
     });
 
+    // Parse url to download a config file
+    let params = window.location.search;
+    let file = new URLSearchParams(params).get("file");
+    if(file){
+        $.get("get.php" + params).done(data => {
+            fillFormFromJson(JSON.parse(data));
+        }).fail(error => {
+            alert(error.responseText);
+        });
+    }
+
     function listToString(list){
         if (list.length === 0) return "";
         return list.reduce((t1,t2) => {
@@ -142,7 +153,7 @@ $(function(){
         return j;
     }
 
-    $("#saveConfig").click(e => {
+    $("#download").click(e => {
         let json = fillJsonFromForm();
         json.name = json.name ? json.name : "tournoi";
         // fill and click the hidden download link
@@ -151,6 +162,18 @@ $(function(){
             download: json.name + '.json'
         })[0].click();
         // this [0] is necessary because the onclick event is not registered, we click the element, not the jQuery selection
+    });
+
+    // SAVE ONLINE
+
+    $("#save").click(e => {
+        $.post("save.php", {
+            tournament:fillJsonFromForm()
+        }).done(filename => {
+            window.location.search = "?file=" + filename;
+        }).fail(error => {
+            alert(error.responseText);
+        });
     });
 
 });
