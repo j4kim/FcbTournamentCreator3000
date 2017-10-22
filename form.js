@@ -61,6 +61,7 @@ $(function(){
             let reader = new FileReader();
             reader.onload = function(e) {
                 fillFormFromJson(JSON.parse(reader.result));
+                window.location = "#"
             };
             reader.readAsText(file);
         } else {
@@ -68,28 +69,49 @@ $(function(){
         }
     }).click(e => e.target.value = null); // force change event if same file is reopen
 
-    // Parse url to download a config file
-    let params = window.location.search;
-    let file = new URLSearchParams(params).get("file");
-    if(file){
-        $.get("get.php" + params).done(data => {
-            fillFormFromJson(JSON.parse(data));
-        }).fail(error => {
-            alert(error.responseText);
-        });
+    function loadFileFromUrl(){
+        // Make the hash string a query string
+        let params = location.hash.replace(/#/, "?");
+        // parse the query string and get the 'file' parameter
+        let file = new URLSearchParams(params).get("file");
+        // if there is one, download the file and fill the form
+        if(file){
+            $.get("get.php" + params).done(data => {
+                fillFormFromJson(JSON.parse(data));
+            }).fail(error => {
+                alert(error.responseText);
+                fillFormFromJson();
+            });
+        }else{
+            fillFormFromJson();
+        }
     }
 
+    loadFileFromUrl();
+
+    $(window).on("hashchange", loadFileFromUrl);
+
     function listToString(list){
-        if (list.length === 0) return "";
-        return list.reduce((t1,t2) => {
-            return t1 + '\n' + t2;
-        });
+        return list.join('\n');
+    }
+
+    function initArray(object, arrayName){
+        if(object[arrayName] === undefined)
+            object[arrayName] = [];
+    }
+
+    function initArrays(object, arrayNamesArray){
+        arrayNamesArray.forEach(arrayName => initArray(object, arrayName));
     }
 
     function fillFormFromJson(j){
         // empty form
         $("#name, #start, #fields").val("");
         $(".pause, .category").remove();
+
+        if(j === undefined) return;
+
+        initArrays(j.config, ["pauses","fields","categories"]);
 
         // fill form
         $("#name").val(j.name);
@@ -159,10 +181,11 @@ $(function(){
     // SAVE ONLINE
 
     $("#save").click(e => {
+        let json = fillJsonFromForm();
         $.post("save.php", {
             tournament:fillJsonFromForm()
         }).done(filename => {
-            window.location.search = "?file=" + filename;
+            window.location = "#file=" + filename;
         }).fail(error => {
             alert(error.responseText);
         });
