@@ -176,4 +176,9 @@ $(function(){
         });
     });
 
+    // disable if server is not reachable
+    $.get("test.php").fail(error => {
+        $("#save").prop("disabled", true).append("(serveur inaccessible)")
+    });
+
 });
