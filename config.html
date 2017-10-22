@@ -2,8 +2,8 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>FCB Tournament Creator 3000</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--CSS-->
     <!--Font Awesome-->
@@ -65,7 +65,6 @@
 
                 <div class="form-group row">
                     <label class="col-md-3 col-form-label" >Pauses</label>
-
 
                     <div class="col-md-9 row pr-0">
                         <div class="pauses-container col-md-12 d-none pr-0">
@@ -196,32 +195,32 @@
                 <button type="button" class="btn btn-light btn-block" id="addCategory">
                     <i class="fa fa-plus-circle"></i> Ajouter catégorie
                 </button>
-
-                <hr>
-
-                <button type="button" id="generateProgram" class="btn btn-primary btn-block">
-                    <i class="fa fa-check"></i> Générer le programme des matchs
-                </button>
-
-                <hr>
-
-                <a id="hiddenDownloadLink" class="d-none">Télécharger</a>
-                <button type="button" id="download" class="btn btn-dark btn-block">
-                    <i class="fa  fa-download"></i> Télécharger le fichier du tournoi
-                </button>
-
-                <button type="button" id="save" class="btn btn-dark btn-block">
-                    <i class="fa fa-cloud-upload"></i> Sauvegarder le tournoi en ligne
-                </button>
-
 			</form>
-		
+
+            <hr>
+
+            <button type="button" id="generateProgram" class="btn btn-primary btn-block">
+                <i class="fa fa-check"></i> Générer le programme des matchs
+            </button>
 		</div>
+
+        <div id="programme" class="d-none">
+        </div>
+
+        <hr>
+
+        <a id="hiddenDownloadLink" class="d-none">Télécharger</a>
+
+        <button type="button" id="download" class="btn btn-dark btn-block">
+            <i class="fa  fa-download"></i> Télécharger le fichier du tournoi
+        </button>
+
+        <button type="button" id="save" class="btn btn-dark btn-block">
+            <i class="fa fa-cloud-upload"></i> Sauvegarder le tournoi en ligne
+        </button>
+
 		<hr>
 
-		<div id="programme">
-
-        </div>
 	</div>
 
     <!-- Application -->

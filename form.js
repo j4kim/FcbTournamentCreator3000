@@ -152,7 +152,8 @@ $(function(){
             href: 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(json,0,2)),
             download: json.name + '.json'
         })[0].click();
-        // this [0] is necessary because the onclick event is not registered, we click the element, not the jQuery selection
+        // this [0] is necessary because the onclick event is not registered,
+        // we click the element, not the jQuery selection
     });
 
     // SAVE ONLINE
