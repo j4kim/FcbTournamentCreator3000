@@ -66,7 +66,7 @@ $(function(){
         } else {
             alert("Fichier non valide");
         }
-    });
+    }).click(e => e.target.value = null); // force change event if same file is reopen
 
     // Parse url to download a config file
     let params = window.location.search;
