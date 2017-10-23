@@ -11,7 +11,17 @@ function showSchedule() {
     return false;
 }
 
+var schedule;
+
+function generateSchedule(){
+    schedule = new Schedule(getConfig());
+
+    showSchedule();
+}
+
 $(function () {
     $("#showSchedule").click(showSchedule);
     $("#showConfig").click(showConfig);
+
+    $("#generateSchedule").click(generateSchedule);
 });

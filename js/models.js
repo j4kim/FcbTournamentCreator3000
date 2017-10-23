@@ -5,7 +5,7 @@ class Team{
     }
 
     get priority(){
-        return this.played + this.waiting;
+        return this.waiting - this.played;
     }
 }
 
@@ -30,5 +30,11 @@ class Group{
 class Category{
     constructor(config){
         this.config = config;
+    }
+}
+
+class Schedule{
+    constructor(){
+        this.yolo = 12;
     }
 }

@@ -28,19 +28,18 @@ function initArrays(object, arrayNamesArray){
 
 // JSON <-> DOM CONVERSIONS
 
-function fillJsonFromForm(){
-    let j = {config:{pauses:[],categories:[]}};
-    j.name = $("#name").val();
-    j.config.start = $("#start").val();
+function getConfig(){
+    let config = {pauses:[],categories:[]};
+    config.start = $("#start").val();
     $(".pause").each((i,elem) => {
-        j.config.pauses.push({
+        config.pauses.push({
             start: $(elem).find(".pauseStart").val(),
             duration: $(elem).find(".pauseDuration").val(),
         });
     });
-    j.config.fields = stringToList($('#fields').val());
+    config.fields = stringToList($('#fields').val());
     $(".category").each((i,elem) => {
-        j.config.categories.push({
+        config.categories.push({
             name: $(elem).find(".categoryName").val(),
             teams: stringToList($(elem).find(".categoryTeams").val()),
             qualif:{
@@ -55,10 +54,19 @@ function fillJsonFromForm(){
             }
         });
     });
+    return config;
+}
+
+function getJson(){
+    let j = {};
+    j.name = $("#name").val();
+    j.config = getConfig();
+    if(schedule)
+        j.schedule = schedule;
     return j;
 }
 
-function fillFormFromJson(j){
+function loadJson(j){
     // empty form
     $("#name, #start, #fields").val("");
     $(".pause, .category").remove();

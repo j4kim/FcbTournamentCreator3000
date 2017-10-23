@@ -6,22 +6,18 @@ $(function(){
     $("#file").change(e => {
         // thanks to https://stackoverflow.com/a/27523255/8345160
         let file = e.target.files[0];
-        if (file.type === "application/json") {
-            let reader = new FileReader();
-            reader.onload = function(e) {
-                fillFormFromJson(JSON.parse(reader.result));
-                window.location = "#file=new"
-            };
-            reader.readAsText(file);
-        } else {
-            alert("Fichier non valide");
-        }
+        let reader = new FileReader();
+        reader.onload = function(e) {
+            loadJson(JSON.parse(reader.result));
+            window.location = "#file=new"
+        };
+        reader.readAsText(file);
     }).click(e => e.target.value = null); // force change event if same file is reopen
 
     // Download file
 
     $("#download").click(e => {
-        let json = fillJsonFromForm();
+        let json = getJson();
         json.name = json.name ? json.name : "tournoi";
         // fill and click the hidden download link
         $('#hiddenDownloadLink').attr({
@@ -43,13 +39,14 @@ $(function(){
         if(file){
             if(file === "new") return;
             $.get("get.php" + params).done(data => {
-                fillFormFromJson(JSON.parse(data));
+                loadJson(JSON.parse(data));
             }).fail(error => {
                 alert(error.responseText);
-                fillFormFromJson();
+                window.location.hash = "";
+                loadJson();
             });
         }else{
-            fillFormFromJson();
+            loadJson();
         }
     }
 
@@ -57,12 +54,12 @@ $(function(){
 
     $(window).on("hashchange", loadFileFromUrl);
 
-    // Store data to the server
+    // Store data on the server
 
     $("#save").click(e => {
-        let json = fillJsonFromForm();
+        let json = getJson();
         $.post("save.php", {
-            tournament:fillJsonFromForm()
+            tournament:getJson()
         }).done(filename => {
             window.location = "#file=" + filename;
         }).fail(error => {
