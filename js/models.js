@@ -16,18 +16,14 @@ class Match{
     }
 
     get priority(){
-        return this.teamA.priority() + this.teamB.priority();
+        return this.teamA.priority + this.teamB.priority;
     }
 }
 
 class Group{
     constructor(teams){
         this.teams = teams;
-        this.queue = new PriorityQueue({
-            comparator: function(matchA, matchB) {
-                return matchA.priority - matchB.priority;
-            }
-        });
+        this.matchs = [];
     }
 }
 
