@@ -25,16 +25,29 @@ class Round{
 }
 
 class Group{
-    constructor(teams){
-        this.teams = teams;
-        this.matchs = [];
+    constructor(teams, name){
+        console.log("new group", name, teams);
     }
 }
 
 class Category{
     constructor(obj){
+        this.name = obj.name;
         // group formation
-
+        let teams = shuffle(obj.teams, { 'copy': true });
+        let slices = new Array(obj.qualif.groups);
+        let i = 0;
+        while(teams.length){
+            if(!Array.isArray(slices[i]))
+                slices[i] = [];
+            slices[i].push(teams.pop());
+            i++;
+            i %= obj.qualif.groups;
+        }
+        this.groups = [];
+        slices.forEach(function(slice, index){
+            this.groups.push(new Group(slice, this.name +" "+ (index+1)));
+        }, this);
     }
 }
 

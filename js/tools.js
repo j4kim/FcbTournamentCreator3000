@@ -43,13 +43,13 @@ function getConfig(){
             name: $(elem).find(".categoryName").val(),
             teams: stringToList($(elem).find(".categoryTeams").val()),
             qualif:{
-                groups: $(elem).find(".qualifGroups").val(),
-                rounds: $(elem).find(".qualifRounds").val(),
+                groups: parseInt($(elem).find(".qualifGroups").val()),
+                rounds: parseInt($(elem).find(".qualifRounds").val()),
                 matchDuration: $(elem).find(".qualifMatchDuration").val(),
             },
             knockout:{
                 pauseBetween: $(elem).find(".pauseBetween").val(),
-                qualified: $(elem).find(".qualified").val(),
+                qualified: parseInt($(elem).find(".qualified").val()),
                 finalDuration: $(elem).find(".finalDuration").val(),
             }
         });
