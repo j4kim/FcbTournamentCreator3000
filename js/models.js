@@ -20,6 +20,10 @@ class Match{
     }
 }
 
+class Round{
+
+}
+
 class Group{
     constructor(teams){
         this.teams = teams;
@@ -28,13 +32,18 @@ class Group{
 }
 
 class Category{
-    constructor(config){
-        this.config = config;
+    constructor(obj){
+        // group formation
+
     }
 }
 
 class Schedule{
-    constructor(){
-        this.yolo = 12;
+    constructor(config){
+        let categories = [];
+        for(let cat of config.categories){
+            categories.push(new Category(cat));
+        }
+
     }
 }
