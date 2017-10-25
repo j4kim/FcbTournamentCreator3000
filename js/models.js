@@ -69,6 +69,12 @@ class Match{
     toString(){
         return this.teamA + " - " + this.teamB + " (" + this.priority + ")";
     }
+
+    toJSON(){
+        return {
+            teams: [this.teamA.name, this.teamB.name]
+        };
+    }
 }
 
 class Group{
