@@ -7,6 +7,10 @@ class Team{
     get priority(){
         return this.waiting - this.played;
     }
+
+    toString(){
+        return this.name;
+    }
 }
 
 class Match{
@@ -19,6 +23,32 @@ class Match{
 
     get priority(){
         return this.teamA.priority + this.teamB.priority;
+    }
+
+    static compare(m1, m2){
+        return m2.priority - m1.priority;
+    }
+
+    static testComparison(){
+        let t1 = new Team("t1");
+        let t2 = new Team("t2");
+        let t3 = new Team("t3");
+        let matchs = Round.makeMatchList([t1,t2,t3]);
+        t1.played = 12;
+        t2.waiting = 42;
+        console.log("before sort");
+        console.log(matchs[0].toString());
+        console.log(matchs[1].toString());
+        console.log(matchs[2].toString());
+        matchs.sort(Match.compare);
+        console.log("after");
+        console.log(matchs[0].toString()); // should be t2-t3 (42)
+        console.log(matchs[1].toString()); // t2-t1 (30)
+        console.log(matchs[2].toString()); // t3-t1 (-13)
+    }
+
+    toString(){
+        return this.teamA + " - " + this.teamB + " (" + this.priority + ")";
     }
 }
 
@@ -69,7 +99,7 @@ class Category{
         while(teams.length){
             if(!Array.isArray(slices[i]))
                 slices[i] = [];
-            slices[i].push(teams.pop());
+            slices[i].push(new Team(teams.pop()));
             i++;
             i %= groups;
         }
@@ -89,6 +119,5 @@ class Schedule{
         for(let cat of config.categories){
             categories.push(new Category(cat));
         }
-
     }
 }
