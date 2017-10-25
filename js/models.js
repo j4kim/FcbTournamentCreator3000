@@ -21,9 +21,11 @@ class Team{
 class Match{
     constructor(teams, group){
         // randomize first/second
-        let r = Math.random() > .5 ? 0 : 1;
-        this.teamA = teams[r];
-        this.teamB = teams[1-r];
+        if(teams && teams.length === 2){
+            let r = Math.random() > .5 ? 0 : 1;
+            this.teamA = teams[r];
+            this.teamB = teams[1-r];
+        }
         this.group = group;
     }
 
@@ -75,10 +77,19 @@ class Group{
         console.log("New Group", name, teams);
 
         let matchs = this.makeMatchList(teams);
-        this.firstRound = this.makeFirstRound(matchs);
-        console.log("firstRound", this.firstRound);
+        let firstRound = this.makeFirstRound(matchs);
+        rounds--;
+        this.schedule = [].concat(firstRound);
 
-        // let firstRound = new Round(teams);
+        let lastRound = firstRound;
+        while(rounds > 0){
+            let nextRound = this.makeNextRound(lastRound);
+            this.schedule = this.schedule.concat(nextRound);
+            lastRound = nextRound;
+            rounds--;
+        }
+
+        console.log("schedule", this.schedule);
     }
 
     wait(){
@@ -105,6 +116,19 @@ class Group{
             schedule.push(chosenMatch);
         }
         return schedule;
+    }
+
+    makeNextRound(lastRound){
+        let nextRound = [];
+        lastRound.forEach(pastMatch => {
+            // copy match inverting team order
+            let newMatch = new Match();
+            newMatch.teamB = pastMatch.teamA;
+            newMatch.teamA = pastMatch.teamB;
+            newMatch.group = pastMatch.group;
+            nextRound.push(newMatch);
+        });
+        return nextRound;
     }
 }
 
