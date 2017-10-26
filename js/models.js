@@ -1,7 +1,10 @@
+// let teamId = 0;
+
 class Team{
-    constructor(name){
+    constructor(name, id){
         this.name = name;
         this.played = this.waiting = 0;
+        // this.id = teamId++;
     }
 
     get priority(){
@@ -13,15 +16,44 @@ class Team{
         this.waiting=0;
     }
 
+    reinit(){
+        this.played = this.difference = this.won = this.drawn = this.lost = 0;
+    }
+
+    playMatch(goalsFor, goalsAgainst){
+        this.played++;
+        this.difference += (goalsFor - goalsAgainst);
+        if(goalsFor < goalsAgainst)
+            this.lost++;
+        else if(goalsFor === goalsAgainst)
+            this.drawn++;
+        else
+            this.won++;
+
+    }
+
+    get points(){
+        return this.won*3 + this.drawn;
+    }
+
     toString(){
         // return this.name + " (" + this.waiting + " - " + this.played + ")";
         return this.name;
     }
 
     toJSON(){
-        return {name: this.name};
+        return {name: this.name, index: this.index};
+    }
+
+    static compare(t1, t2){
+        let pointDifference = t2.points - t1.points;
+        if(pointDifference === 0)
+            return t2.difference - t1.difference;
+        return pointDifference;
     }
 }
+
+// let matchId = 0;
 
 class Match{
     constructor(teams, group){
@@ -32,6 +64,7 @@ class Match{
             this.teamB = teams[1-r];
         }
         this.group = group;
+        // this.id = matchId++;
     }
 
     get priority(){
@@ -77,18 +110,24 @@ class Match{
 
     toJSON(){
         return {
-            // teams: [this.teamA.name, this.teamB.name],
+            id: this.id,
             teamA: this.teamA,
             teamB: this.teamB,
             field: this.field,
+            scoreA: this.scoreA,
+            scoreB: this.scoreB,
+            group: {index: this.group.index}
         };
     }
 }
+
+// let groupId = 0;
 
 class Group{
     constructor(teams, rounds, name){
         this.teams = teams;
         this.name = name;
+        // this.id = groupId++;
         console.log("New Group", name, teams);
 
         let matches = this.makeMatchList(teams);
@@ -103,6 +142,11 @@ class Group{
             lastRound = nextRound;
             rounds--;
         }
+
+        this.teams.forEach(team => {
+            delete team.waiting;
+            delete team.played;
+        });
 
         console.log("schedule", this.schedule);
     }
@@ -147,7 +191,11 @@ class Group{
     }
 
     toJSON(){
-        return {name: this.name, teams: this.teams};
+        return {
+            name: this.name,
+            teams: this.teams,
+            index: this.index
+        };
     }
 }
 
@@ -174,6 +222,10 @@ class Category{
         // create Groups from the team slices
         this.groups = [];
         slices.forEach(function(slice, index){
+            let teamIndex = 0;
+            slice.forEach(team => {
+                team.index = teamIndex++;
+            });
             this.groups.push(
                 new Group(slice, rounds, this.name +" "+ (index+1))
             );
@@ -183,15 +235,15 @@ class Category{
 
 class Schedule{
     constructor(config){
-        // let categories = [];
         let groupSchedules = [];
         this.groups = [];
         let numMatches = 0;
+        let groupIndex = 0;
         for(let cat of config.categories){
             let category = new Category(cat);
-            this.groups = this.groups.concat(category.groups);
-            // categories.push(category);
             category.groups.forEach(group => {
+                group.index = groupIndex++;
+                this.groups.push(group);
                 groupSchedules.push(group.schedule);
                 numMatches += group.schedule.length;
             })
@@ -229,6 +281,7 @@ class Schedule{
         });
         let fields = config.fields;
         let slots = [];
+        let matchId = 0;
 
         // loop over time and matches to put them in time slots
         let currentTime = start;
@@ -243,6 +296,7 @@ class Schedule{
                     break;
                 teams.push(match.teamA, match.teamB);
                 match.field = field;
+                match.id = matchId++;
                 slot.matches.push(match);
                 matches.shift();
             }

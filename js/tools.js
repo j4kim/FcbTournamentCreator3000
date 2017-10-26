@@ -132,7 +132,7 @@ class Time{
         pauses.forEach(pause => {
             let end = pause.start.add(pause.duration);
             if(nextTime.between(pause.start, end)){
-                slots.push({time: nextTime.toString(),pause:true});
+                slots.push({time: nextTime.toString(),pause:true,matches:[]});
                 nextTime = end;
             }
         });

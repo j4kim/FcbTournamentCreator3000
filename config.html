@@ -14,6 +14,14 @@
           integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
           crossorigin="anonymous">
 
+    <style>
+        td input[type=number] {
+            width: 35px;
+            height: 20px;
+            font-size: 0.7em;
+        }
+    </style>
+
     <!--JS-->
     <!--jQuery-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -161,10 +169,6 @@
                                     <label>Nombre de tours</label>
                                     <input type="number" class="form-control qualifRounds" value="{{ qualif.rounds }}">
                                 </div>
-                                <!--<div class="form-group col">-->
-                                    <!--<label>Durée d'un match</label>-->
-                                    <!--<input type="time" class="form-control qualifMatchDuration" value="{{ qualif.matchDuration }}" min="00:05">-->
-                                <!--</div>-->
                             </div>
                         </div>
 
@@ -246,24 +250,34 @@
                             <th>Terrain</th>
                             <th>Équipe 1</th>
                             <th>Équipe 2</th>
+                            <th>Score</th>
                         </tr>
                     </thead>
                     <tbody>
                         <!--Match template-->
                         <script id="match-template" type="text/x-handlebars-template">
                             {{#if pause}}
-                                <tr class="table-light match">
+                                <tr class="table-light pauseSlot">
                                     <td>{{ time }}</td>
-                                    <td colspan="3">Pause</td>
+                                    <td colspan="5">Pause</td>
                                 </tr>
                             {{else}}
-                                <tr class="match">
+                                <tr class="match g{{group.index}} t{{teamA.index}} t{{teamB.index}}"
+                                    data-group-index="{{ group.index }}"
+                                    data-match-id="{{ id }}"
+                                >
                                     {{#if first}}
                                         <td rowspan="{{ numMatches }}">{{ time }}</td>
                                     {{/if}}
                                     <td>{{ field }}</td>
                                     <td>{{ teamA.name }}</td>
                                     <td>{{ teamB.name }}</td>
+                                    <td class="score">
+                                        <input type="number" class="scoreA" value="{{ scoreA }}"
+                                               data-team-index="{{ teamA.index }}" min="0"> :
+                                        <input type="number" class="scoreB" value="{{ scoreB}}"
+                                               data-team-index="{{ teamB.index }}" min="0">
+                                    </td>
                                 </tr>
                             {{/if}}
                         </script>
@@ -275,6 +289,39 @@
 
             <div id="rankings">
                 <h3>Classements</h3>
+                <!--Ranking table template-->
+                <script id="ranking-table-template" type="text/x-handlebars-template">
+                    <div class="ranking-table">
+                        <h4>{{ group }}</h4>
+                        <table class="table table-sm">
+                            <thead>
+                            <tr class="table-light">
+                                <th>Équipe</th>
+                                <th>Joués</th>
+                                <th>Gagnés</th>
+                                <th>Nuls</th>
+                                <th>Perdus</th>
+                                <th>Diff</th>
+                                <th>Points</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {{#each teams}}
+                            <tr>
+                                <td>{{ this.name }}</td>
+                                <td>{{ this.played }}</td>
+                                <td>{{ this.won }}</td>
+                                <td>{{ this.drawn }}</td>
+                                <td>{{ this.lost }}</td>
+                                <td>{{ this.difference }}</td>
+                                <th>{{ this.points }}</th>
+                            </tr>
+                            {{/each}}
+                            </tbody>
+                        </table>
+                    </div>
+                </script>
+
             </div>
 
             <hr>
@@ -306,6 +353,7 @@
     <script src="js/config.js"></script>
     <script src="js/schedule.js"></script>
     <script src="js/models.js"></script>
+    <script src="js/rankings.js"></script>
 
 </body>
 </html>

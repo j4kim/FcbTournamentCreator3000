@@ -53,12 +53,13 @@ function generateSchedule(){
 
 function loadSchedule(newSchedule){
     schedule = newSchedule;
-
+    console.log("Loaded schedule",schedule);
     // empty schedule
-    $(".group, .match").empty();
+    $(".group, .match, .pauseSlot").remove();
 
     fillGroups(schedule.groups);
     fillSchedule(schedule.qualif);
+    updateRanking();
 
     showSchedule();
 }
@@ -68,4 +69,8 @@ $(function () {
     $("#showConfig").click(showConfig);
 
     $("#generateSchedule").click(generateSchedule);
+
+    $("#qualif").on("change", ".score > input", e => {
+        updateRanking();
+    });
 });
