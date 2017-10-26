@@ -222,6 +222,36 @@
 
             <div id="qualif">
                 <h3>Qualifications</h3>
+                <table id="qualifTable" class="table table-sm">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Heure</th>
+                            <th>Terrain</th>
+                            <th>Équipe 1</th>
+                            <th>Équipe 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--Match template-->
+                        <script id="match-template" type="text/x-handlebars-template">
+                            {{#if pause}}
+                                <tr class="table-light">
+                                    <td>{{ time }}</td>
+                                    <td colspan="3">Pause</td>
+                                </tr>
+                            {{else}}
+                                <tr>
+                                    {{#if first}}
+                                        <td rowspan="{{ numMatches }}">{{ time }}</td>
+                                    {{/if}}
+                                    <td>{{ field }}</td>
+                                    <td>{{ teamA.name }}</td>
+                                    <td>{{ teamB.name }}</td>
+                                </tr>
+                            {{/if}}
+                        </script>
+                    </tbody>
+                </table>
             </div>
 
             <hr>

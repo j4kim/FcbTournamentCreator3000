@@ -184,8 +184,7 @@ class Schedule{
         }
         let qualifMatches = this.distributeMatches(groupSchedules, numMatches);
         console.log(qualifMatches);
-        let slots = this.makeTimeSlots(qualifMatches, config);
-        console.log(slots);
+        this.qualif = this.makeTimeSlots(qualifMatches, config);
     }
 
     distributeMatches(matchGroups, numMatches){
