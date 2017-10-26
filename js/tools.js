@@ -119,4 +119,22 @@ class Time{
         return new Time(this.minutes + t2.minutes);
     }
 
+    between(tStart, tEnd){
+        let afterStart = this.minutes >= tStart.minutes;
+        let beforeEnd = this.minutes < tEnd.minutes;
+        return afterStart && beforeEnd;
+
+    }
+
+    addOrPause(t2, pauses){
+        let nextTime = this.add(t2);
+        pauses.forEach(pause => {
+            let end = pause.start.add(pause.duration);
+            if(nextTime.between(pause.start, end)){
+                nextTime = end;
+            }
+        });
+        return nextTime;
+    }
+
 }

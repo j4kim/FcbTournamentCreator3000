@@ -50,19 +50,19 @@ class Match{
         let m1 = new Match([t1,t2]);
         let m2 = new Match([t1,t3]);
         let m3 = new Match([t2,t3]);
-        let matchs = [m1,m2,m3];
+        let matches = [m1,m2,m3];
         t1.played = 12;
         t2.waiting = 42;
         console.log("before sort");
-        console.log(matchs[0].toString());
-        console.log(matchs[1].toString());
-        console.log(matchs[2].toString());
-        matchs.sort(Match.compare);
+        console.log(matches[0].toString());
+        console.log(matches[1].toString());
+        console.log(matches[2].toString());
+        matches.sort(Match.compare);
         console.log("after");
-        console.log(matchs[0].toString()); // should be t2-t3 (42)
-        console.log(matchs[1].toString()); // t2-t1 (30)
-        console.log(matchs[2].toString()); // t3-t1 (-12)
-        let chosen = matchs.shift();
+        console.log(matches[0].toString()); // should be t2-t3 (42)
+        console.log(matches[1].toString()); // t2-t1 (30)
+        console.log(matches[2].toString()); // t3-t1 (-12)
+        let chosen = matches.shift();
         return chosen === m3;
     }
 
@@ -83,8 +83,8 @@ class Group{
         this.name = name;
         console.log("New Group", name, teams);
 
-        let matchs = this.makeMatchList(teams);
-        let firstRound = this.makeFirstRound(matchs);
+        let matches = this.makeMatchList(teams);
+        let firstRound = this.makeFirstRound(matches);
         rounds--;
         this.schedule = [].concat(firstRound);
 
@@ -104,21 +104,21 @@ class Group{
     }
 
     makeMatchList(teams) {
-        let matchs = [];
+        let matches = [];
         for (let i = 0; i < teams.length; i++) {
             for (let j = i + 1; j < teams.length; j++) {
-                matchs.push(new Match([teams[i], teams[j]], this));
+                matches.push(new Match([teams[i], teams[j]], this));
             }
         }
-        return shuffle(matchs);
+        return shuffle(matches);
     }
 
-    makeFirstRound(matchs) {
+    makeFirstRound(matches) {
         let schedule = [];
         // empty the match list by popping the most important
-        while(matchs.length){
-            matchs.sort(Match.compare);
-            let chosenMatch = matchs.shift();
+        while(matches.length){
+            matches.sort(Match.compare);
+            let chosenMatch = matches.shift();
             chosenMatch.playVirtually();
             schedule.push(chosenMatch);
         }
@@ -173,33 +173,69 @@ class Schedule{
     constructor(config){
         // let categories = [];
         let groupSchedules = [];
-        let numMatchs = 0;
+        let numMatches = 0;
         for(let cat of config.categories){
             let category = new Category(cat);
             // categories.push(category);
             category.groups.forEach(group => {
                 groupSchedules.push(group.schedule);
-                numMatchs += group.schedule.length;
+                numMatches += group.schedule.length;
             })
         }
-        console.log("number of matchs", numMatchs);
-        this.qualif = this.distributeMatchs(groupSchedules, numMatchs);
-        console.log(this.qualif);
+        let qualifMatches = this.distributeMatches(groupSchedules, numMatches);
+        console.log(qualifMatches);
+        let slots = this.makeTimeSlots(qualifMatches, config);
+        console.log(slots);
     }
 
-    distributeMatchs(matchGroups, numMatchs){
-        let schedule = new Array(numMatchs);
+    distributeMatches(matchGroups, numMatches){
+        let schedule = new Array(numMatches);
         matchGroups.forEach(matchGroup => {
-            let ratio = numMatchs / matchGroup.length;
+            let ratio = numMatches / matchGroup.length;
             matchGroup.forEach((match, index) => {
                 let newIndex = parseInt(index * ratio);
                 // find the first empty slot after this index
                 while(schedule[newIndex] !== undefined){
-                    newIndex = (newIndex+1)%numMatchs;
+                    newIndex = (newIndex+1)%numMatches;
                 }
                 schedule[newIndex] = match;
             })
         });
         return schedule;
+    }
+
+    makeTimeSlots(matches, config){
+        // convert from string to Time objects
+        let start = new Time(config.start);
+        let duration = new Time(config.matchDuration);
+        let pauses = config.pauses.map(p => {
+            return {
+                start: new Time(p.start),
+                duration: new Time(p.duration)
+            };
+        });
+        let fields = config.fields;
+        let slots = [];
+
+        // loop over time and matches to put them in time slots
+        let currentTime = start;
+        while(matches.length){
+            let slot = {time:currentTime.toString(), matches:[]};
+            let teams = [];
+            for(let field of fields){
+                if(matches.length === 0) break;
+                let match = matches[0];
+                // prevent a team from playing two games at the same time
+                if(teams.includes(match.teamA) || teams.includes(match.teamB))
+                    break;
+                teams.push(match.teamA, match.teamB);
+                match.field = field;
+                slot.matches.push(match);
+                matches.shift();
+            }
+            slots.push(slot);
+            currentTime = currentTime.addOrPause(duration, pauses);
+        }
+        return slots;
     }
 }
