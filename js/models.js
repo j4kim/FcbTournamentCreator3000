@@ -14,7 +14,12 @@ class Team{
     }
 
     toString(){
-        return this.name + " (" + this.waiting + " - " + this.played + ")";
+        // return this.name + " (" + this.waiting + " - " + this.played + ")";
+        return this.name;
+    }
+
+    toJSON(){
+        return {name: this.name};
     }
 }
 
@@ -72,7 +77,10 @@ class Match{
 
     toJSON(){
         return {
-            teams: [this.teamA.name, this.teamB.name]
+            // teams: [this.teamA.name, this.teamB.name],
+            teamA: this.teamA,
+            teamB: this.teamB,
+            field: this.field,
         };
     }
 }
@@ -137,6 +145,10 @@ class Group{
         });
         return nextRound;
     }
+
+    toJSON(){
+        return {name: this.name, teams: this.teams};
+    }
 }
 
 class Category{
@@ -173,9 +185,11 @@ class Schedule{
     constructor(config){
         // let categories = [];
         let groupSchedules = [];
+        this.groups = [];
         let numMatches = 0;
         for(let cat of config.categories){
             let category = new Category(cat);
+            this.groups = this.groups.concat(category.groups);
             // categories.push(category);
             category.groups.forEach(group => {
                 groupSchedules.push(group.schedule);

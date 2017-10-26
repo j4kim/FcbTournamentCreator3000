@@ -88,8 +88,9 @@ function loadJson(j){
         addCategory(c);
     });
 
-    if(j.schedule)
-        showSchedule();
+    if(j.schedule){
+        loadSchedule(j.schedule);
+    }
 }
 
 

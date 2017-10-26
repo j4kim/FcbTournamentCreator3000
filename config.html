@@ -220,6 +220,23 @@
 
             <hr>
 
+            <div id="groups" class="clearfix">
+                <h3>Groupes</h3>
+                <!--Group template-->
+                <script id="group-template" type="text/x-handlebars-template">
+                    <div class="float-left mr-4 group">
+                        <h4>{{ name }}</h4>
+                        <ul>
+                            {{#each teams}}
+                            <li>{{ this.name }}</li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </script>
+            </div>
+
+            <hr>
+
             <div id="qualif">
                 <h3>Qualifications</h3>
                 <table id="qualifTable" class="table table-sm">
@@ -235,12 +252,12 @@
                         <!--Match template-->
                         <script id="match-template" type="text/x-handlebars-template">
                             {{#if pause}}
-                                <tr class="table-light">
+                                <tr class="table-light match">
                                     <td>{{ time }}</td>
                                     <td colspan="3">Pause</td>
                                 </tr>
                             {{else}}
-                                <tr>
+                                <tr class="match">
                                     {{#if first}}
                                         <td rowspan="{{ numMatches }}">{{ time }}</td>
                                     {{/if}}

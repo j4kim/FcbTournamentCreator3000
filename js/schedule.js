@@ -1,5 +1,6 @@
 
 let matchTemplate = getTemplate("match");
+let groupTemplate = getTemplate("group");
 
 function addMatch(data){
     $("#qualifTable").append(matchTemplate(data));
@@ -31,9 +32,14 @@ function showSchedule() {
     return false;
 }
 
-function fillSchedule(schedule){
-    console.log(schedule);
-    schedule.qualif.forEach(slot => {
+function fillGroups(groups){
+    groups.forEach(group => {
+        $("#groups").append(groupTemplate(group));
+    })
+}
+
+function fillSchedule(qualif){
+    qualif.forEach(slot => {
         addSlot(slot);
     })
 }
@@ -42,7 +48,18 @@ let schedule;
 
 function generateSchedule(){
     schedule = new Schedule(getConfig());
-    fillSchedule(schedule);
+    loadSchedule(schedule);
+}
+
+function loadSchedule(newSchedule){
+    schedule = newSchedule;
+
+    // empty schedule
+    $(".group, .match").empty();
+
+    fillGroups(schedule.groups);
+    fillSchedule(schedule.qualif);
+
     showSchedule();
 }
 
