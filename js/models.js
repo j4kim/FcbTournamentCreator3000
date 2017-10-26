@@ -234,7 +234,7 @@ class Schedule{
                 matches.shift();
             }
             slots.push(slot);
-            currentTime = currentTime.addOrPause(duration, pauses);
+            currentTime = currentTime.addOrPause(duration, pauses, slots);
         }
         return slots;
     }

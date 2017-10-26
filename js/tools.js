@@ -126,11 +126,12 @@ class Time{
 
     }
 
-    addOrPause(t2, pauses){
+    addOrPause(t2, pauses, slots){
         let nextTime = this.add(t2);
         pauses.forEach(pause => {
             let end = pause.start.add(pause.duration);
             if(nextTime.between(pause.start, end)){
+                slots.push({time: nextTime.toString(),pause:true});
                 nextTime = end;
             }
         });
