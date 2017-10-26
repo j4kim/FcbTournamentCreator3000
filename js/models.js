@@ -80,6 +80,7 @@ class Match{
 class Group{
     constructor(teams, rounds, name){
         this.teams = teams;
+        this.name = name;
         console.log("New Group", name, teams);
 
         let matchs = this.makeMatchList(teams);
@@ -170,9 +171,35 @@ class Category{
 
 class Schedule{
     constructor(config){
-        let categories = [];
+        // let categories = [];
+        let groupSchedules = [];
+        let numMatchs = 0;
         for(let cat of config.categories){
-            categories.push(new Category(cat));
+            let category = new Category(cat);
+            // categories.push(category);
+            category.groups.forEach(group => {
+                groupSchedules.push(group.schedule);
+                numMatchs += group.schedule.length;
+            })
         }
+        console.log("number of matchs", numMatchs);
+        this.qualif = this.distributeMatchs(groupSchedules, numMatchs);
+        console.log(this.qualif);
+    }
+
+    distributeMatchs(matchGroups, numMatchs){
+        let schedule = new Array(numMatchs);
+        matchGroups.forEach(matchGroup => {
+            let ratio = numMatchs / matchGroup.length;
+            matchGroup.forEach((match, index) => {
+                let newIndex = parseInt(index * ratio);
+                // find the first empty slot after this index
+                while(schedule[newIndex] !== undefined){
+                    newIndex = (newIndex+1)%numMatchs;
+                }
+                schedule[newIndex] = match;
+            })
+        });
+        return schedule;
     }
 }
