@@ -44,21 +44,22 @@ function fillSchedule(qualif){
     })
 }
 
-let schedule;
+let SCHEDULE;
 
 function generateSchedule(){
-    schedule = new Schedule(getConfig());
-    loadSchedule(schedule);
+    CONFIG = getConfig();
+    SCHEDULE = new Schedule(CONFIG);
+    loadSchedule(SCHEDULE);
 }
 
 function loadSchedule(newSchedule){
-    schedule = newSchedule;
-    console.log("Loaded schedule",schedule);
+    SCHEDULE = newSchedule;
+    console.log("Loaded schedule", SCHEDULE);
     // empty schedule
     $(".group, .match, .pauseSlot").remove();
 
-    fillGroups(schedule.groups);
-    fillSchedule(schedule.qualif);
+    fillGroups(SCHEDULE.groups);
+    fillSchedule(SCHEDULE.qualif);
     updateRanking();
 
     showSchedule();

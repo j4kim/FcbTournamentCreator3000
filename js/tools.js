@@ -62,10 +62,12 @@ function getJson(){
     let j = {};
     j.name = $("#name").val();
     j.config = getConfig();
-    if(schedule)
-        j.schedule = schedule;
+    if(SCHEDULE)
+        j.schedule = SCHEDULE;
     return j;
 }
+
+let CONFIG;
 
 function loadJson(j){
     // empty form
@@ -88,11 +90,12 @@ function loadJson(j){
         addCategory(c);
     });
 
+    CONFIG = j.config;
+
     if(j.schedule){
         loadSchedule(j.schedule);
     }
 }
-
 
 class Time{
 

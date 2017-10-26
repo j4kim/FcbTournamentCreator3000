@@ -257,7 +257,7 @@
                         <!--Match template-->
                         <script id="match-template" type="text/x-handlebars-template">
                             {{#if pause}}
-                                <tr class="table-light pauseSlot">
+                                <tr class="pauseSlot">
                                     <td>{{ time }}</td>
                                     <td colspan="5">Pause</td>
                                 </tr>
@@ -291,8 +291,8 @@
                 <h3>Classements</h3>
                 <!--Ranking table template-->
                 <script id="ranking-table-template" type="text/x-handlebars-template">
-                    <div class="ranking-table">
-                        <h4>{{ group }}</h4>
+                    <div class="ranking-table g{{ group.index }}">
+                        <h4>{{ group.name }}</h4>
                         <table class="table table-sm">
                             <thead>
                             <tr class="table-light">
@@ -307,7 +307,7 @@
                             </thead>
                             <tbody>
                             {{#each teams}}
-                            <tr>
+                            <tr class="t{{ this.index }}">
                                 <td>{{ this.name }}</td>
                                 <td>{{ this.played }}</td>
                                 <td>{{ this.won }}</td>

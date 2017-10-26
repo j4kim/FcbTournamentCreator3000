@@ -7,12 +7,13 @@ function addRankingTable(rankedTeams){
 
 function updateRanking(){
     // reinit team rankings
-    schedule.groups.forEach(group => {
+    SCHEDULE.groups.forEach(group => {
         group.teams = group.teams.map(team => {
             // cast generic json object to class Team instance
             let newTeam = Object.create(Team.prototype);
             newTeam.name = team.name;
             newTeam.index = team.index;
+            newTeam.groupIndex = team.groupIndex;
             newTeam.reinit();
             return newTeam;
         })
@@ -30,14 +31,14 @@ function updateRanking(){
 
         // find teams from group and team indexes
         let groupIndex = $(elem).data("group-index");
-        let group = schedule.groups[groupIndex];
+        let group = SCHEDULE.groups[groupIndex];
         let teamA = group.teams[A.data("team-index")];
         let teamB = group.teams[B.data("team-index")];
 
         // find match from id
         let matchId = $(elem).data("match-id");
         let match;
-        for(let slot of schedule.qualif){
+        for(let slot of SCHEDULE.qualif){
             let tmp = slot.matches.find(match => match.id === matchId);
             if(tmp){
                 match = tmp;
@@ -52,11 +53,42 @@ function updateRanking(){
         teamB.playMatch(scoreB, scoreA);
     });
 
-    schedule.groups.forEach(group => {
+    SCHEDULE.groups.forEach(group => {
         // clone teams array
-        let rankedTeams = group.teams.slice(0);
-        rankedTeams.sort(Team.compare);
-        addRankingTable({teams:rankedTeams,group:group.name});
+        group.rankedTeams = group.teams.slice(0);
+        group.rankedTeams.sort(Team.compare);
+        addRankingTable({teams:group.rankedTeams, group:group});
     });
 
+    qualify()
+}
+
+function qualify(){
+    CONFIG.categories.forEach((category, index) => {
+        // retrieve groups of this category
+        let groups = SCHEDULE.groups.filter(group => {
+            return group.categoryIndex === index;
+        });
+        let qualifiedByGroup = parseInt(category.knockout.qualified / groups.length);
+        let rest = category.knockout.qualified % groups.length;
+        let qualified = [];
+        groups.forEach(group => {
+            let bests = group.rankedTeams.slice(0, qualifiedByGroup)
+            qualified = qualified.concat(bests)
+        });
+        let nextBests = groups.map(group => group.rankedTeams[qualifiedByGroup]);
+        nextBests.sort(Team.compare);
+        qualified = qualified.concat(nextBests.slice(0, rest));
+        qualified.forEach(team => {
+            markQualified(team)
+        })
+    })
+}
+
+function markQualified(team){
+    let g = team.groupIndex;
+    let t = team.index;
+    let selector = ".g"+g+" .t"+t;
+    console.log("mark qualified",selector);
+    $(selector).addClass("table-success");
 }

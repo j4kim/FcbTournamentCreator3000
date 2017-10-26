@@ -1,10 +1,9 @@
 // let teamId = 0;
 
 class Team{
-    constructor(name, id){
+    constructor(name){
         this.name = name;
         this.played = this.waiting = 0;
-        // this.id = teamId++;
     }
 
     get priority(){
@@ -42,7 +41,10 @@ class Team{
     }
 
     toJSON(){
-        return {name: this.name, index: this.index};
+        return {
+            name: this.name,
+            index: this.index,
+            groupIndex: this.groupIndex};
     }
 
     static compare(t1, t2){
@@ -124,9 +126,10 @@ class Match{
 // let groupId = 0;
 
 class Group{
-    constructor(teams, rounds, name){
+    constructor(teams, rounds, name, category){
         this.teams = teams;
         this.name = name;
+        this.categoryIndex = category.index;
         // this.id = groupId++;
         console.log("New Group", name, teams);
 
@@ -194,14 +197,16 @@ class Group{
         return {
             name: this.name,
             teams: this.teams,
-            index: this.index
+            index: this.index,
+            categoryIndex: this.categoryIndex
         };
     }
 }
 
 class Category{
-    constructor(obj){
+    constructor(obj, index){
         this.name = obj.name;
+        this.index = index;
         this.formGroups(obj.teams, obj.qualif.groups, obj.qualif.rounds);
     }
 
@@ -227,7 +232,7 @@ class Category{
                 team.index = teamIndex++;
             });
             this.groups.push(
-                new Group(slice, rounds, this.name +" "+ (index+1))
+                new Group(slice, rounds, this.name +" "+ (index+1), this)
             );
         }, this);
     }
@@ -239,10 +244,12 @@ class Schedule{
         this.groups = [];
         let numMatches = 0;
         let groupIndex = 0;
+        let categoryIndex = 0;
         for(let cat of config.categories){
-            let category = new Category(cat);
+            let category = new Category(cat, categoryIndex++);
             category.groups.forEach(group => {
                 group.index = groupIndex++;
+                group.teams.forEach(team => team.groupIndex = group.index);
                 this.groups.push(group);
                 groupSchedules.push(group.schedule);
                 numMatches += group.schedule.length;
