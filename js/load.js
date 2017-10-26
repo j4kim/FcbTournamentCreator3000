@@ -57,9 +57,8 @@ $(function(){
     // Store data on the server
 
     $("#save").click(e => {
-        let json = getJson();
         $.post("save.php", {
-            tournament:getJson()
+            tournament:JSON.stringify(getJson())
         }).done(filename => {
             window.location = "#file=" + filename;
         }).fail(error => {

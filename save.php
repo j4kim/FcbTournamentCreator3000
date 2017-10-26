@@ -1,9 +1,9 @@
 <?php
 
-$tournament = $_POST["tournament"];
+$tournament = json_decode($_POST["tournament"]);
 
 if($tournament){
-    $name = $tournament["name"];
+    $name = $tournament->name;
     $filename = "$name.json";
     $counter = 0;
     while(file_exists("uploads/$filename")){
