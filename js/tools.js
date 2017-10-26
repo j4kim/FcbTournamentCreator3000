@@ -89,3 +89,32 @@ function loadJson(j){
     if(j.schedule)
         showSchedule();
 }
+
+
+class Time{
+
+    constructor(arg){
+        if(typeof arg === "undefined")
+            this.minutes = 0;
+        else if(typeof arg === "number")
+            this.minutes = arg;
+        else if(typeof arg === "string"){
+            let [h,m] = arg.split(":");
+            this.minutes = parseInt(m) + 60 * parseInt(h);
+        }
+    }
+
+    toString(){
+        let h = parseInt(this.minutes/60);
+        let m = this.minutes%60;
+        let date = new Date(0, 0, 0, h, m, 0, 0);
+
+        let options = {hour: "numeric", minute: "numeric"};
+        return new Intl.DateTimeFormat("fr-Fr", options).format(date);
+    }
+
+    add(t2){
+        return new Time(this.minutes + t2.minutes);
+    }
+
+}
