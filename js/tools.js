@@ -31,6 +31,7 @@ function initArrays(object, arrayNamesArray){
 function getConfig(){
     let config = {pauses:[],categories:[]};
     config.start = $("#start").val();
+    config.matchDuration = $("#matchDuration").val();
     $(".pause").each((i,elem) => {
         config.pauses.push({
             start: $(elem).find(".pauseStart").val(),
@@ -45,7 +46,7 @@ function getConfig(){
             qualif:{
                 groups: parseInt($(elem).find(".qualifGroups").val()),
                 rounds: parseInt($(elem).find(".qualifRounds").val()),
-                matchDuration: $(elem).find(".qualifMatchDuration").val(),
+                // matchDuration: $(elem).find(".qualifMatchDuration").val(),
             },
             knockout:{
                 pauseBetween: $(elem).find(".pauseBetween").val(),
@@ -78,6 +79,7 @@ function loadJson(j){
     // fill form
     $("#name").val(j.name);
     $("#start").val(j.config.start);
+    $("#matchDuration").val(j.config.matchDuration);
     j.config.pauses.forEach(p => addPause(p));
     j.config.fields = listToString(j.config.fields);
     $("#fields").val(j.config.fields);

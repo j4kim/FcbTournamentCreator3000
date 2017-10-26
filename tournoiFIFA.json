@@ -3,6 +3,7 @@
   "password":"",
   "config":{
     "start":"19:00",
+    "matchDurtion":"00:15",
     "pauses":[
       {
         "start":"21:00",
