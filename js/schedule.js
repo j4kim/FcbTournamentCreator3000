@@ -61,7 +61,7 @@ function loadSchedule(newSchedule){
     fillGroups(SCHEDULE.groups);
     fillSchedule(SCHEDULE.qualif);
     updateRanking();
-    preScheduleKnockout();
+    prescheduleKnockout();
 
     showSchedule();
 }

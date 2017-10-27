@@ -51,9 +51,7 @@ $(function() {
     $("#configForm").on("input", ".qualified", e => {
         let warning = $(e.target).next(".warning");
         warning.removeClass("d-none");
-        let n = e.target.value;
-        // test if n is a power of 2
-        if(n && (n & (n - 1)) === 0)
+        if(isPowerOfTwo(e.target.value))
             warning.addClass("d-none");
     });
 });

@@ -83,29 +83,6 @@ class Match{
         return m2.priority - m1.priority;
     }
 
-    static testComparison(){
-        let t1 = new Team("t1");
-        let t2 = new Team("t2");
-        let t3 = new Team("t3");
-        let m1 = new Match([t1,t2]);
-        let m2 = new Match([t1,t3]);
-        let m3 = new Match([t2,t3]);
-        let matches = [m1,m2,m3];
-        t1.played = 12;
-        t2.waiting = 42;
-        console.log("before sort");
-        console.log(matches[0].toString());
-        console.log(matches[1].toString());
-        console.log(matches[2].toString());
-        matches.sort(Match.compare);
-        console.log("after");
-        console.log(matches[0].toString()); // should be t2-t3 (42)
-        console.log(matches[1].toString()); // t2-t1 (30)
-        console.log(matches[2].toString()); // t3-t1 (-12)
-        let chosen = matches.shift();
-        return chosen === m3;
-    }
-
     toString(){
         return this.teamA + " - " + this.teamB + " (" + this.priority + ")";
     }
