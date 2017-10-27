@@ -64,6 +64,7 @@ function updateRanking(){
 }
 
 function qualify(){
+    let qualified = [];
     CONFIG.categories.forEach((category, index) => {
         // retrieve groups of this category
         let groups = SCHEDULE.groups.filter(group => {
@@ -71,24 +72,30 @@ function qualify(){
         });
         let qualifiedByGroup = parseInt(category.knockout.qualified / groups.length);
         let rest = category.knockout.qualified % groups.length;
-        let qualified = [];
-        groups.forEach(group => {
-            let bests = group.rankedTeams.slice(0, qualifiedByGroup)
-            qualified = qualified.concat(bests)
-        });
+        for(let i=0; i<qualifiedByGroup; i++){
+            groups.forEach(group => {
+                qualified.push(group.rankedTeams[i]);
+            });
+        }
         let nextBests = groups.map(group => group.rankedTeams[qualifiedByGroup]);
         nextBests.sort(Team.compare);
         qualified = qualified.concat(nextBests.slice(0, rest));
         qualified.forEach(team => {
             markQualified(team)
-        })
-    })
+        });
+    });
+    return qualified;
 }
 
 function markQualified(team){
     let g = team.groupIndex;
     let t = team.index;
-    let selector = ".g"+g+" .t"+t;
-    console.log("mark qualified",selector);
-    $(selector).addClass("table-success");
+    $(".g"+g+" .t"+t).addClass("table-success");
+}
+
+function randomScores(){
+    $("td input").each((index, elem) => {
+        $(elem).val(parseInt(Math.random()*5));
+    });
+    updateRanking();
 }
