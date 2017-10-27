@@ -1,11 +1,16 @@
 
-function createRoundMatches(teams){
+let labels = ["finished", "final", "semifinals", "quarterfinals", "eighth-finals", "16th-finals", "32nd-finals"];
+
+function createRoundMatches(teams, categoryName, level){
     if(teams.length%2 !== 0) throw Error("teams must be even");
-    let schedule = [];
+    let matches = [];
+    let number = 1;
     while(teams.length){
-        schedule.push(new Match([teams.shift(), teams.pop()]));
+        let match = new Match([teams.shift(), teams.pop()]);
+        match.label = categoryName + " " + labels[level] + " #" + (number++);
+        matches.push(match);
     }
-    return schedule;
+    return matches;
 }
 
 function prescheduleKnockout(){
@@ -15,7 +20,7 @@ function prescheduleKnockout(){
     let lastMatchStart = new Time(SCHEDULE.qualif.slice(-1)[0].time);
     let knockoutStart = lastMatchStart.addOrPause(pauseBetween, pauses);
 
-    let schedule = [];
+    let matches = [];
 
     CONFIG.categories.forEach(category => {
         let qualified = category.knockout.qualified;
@@ -29,7 +34,6 @@ function prescheduleKnockout(){
         }
 
         let level = parseInt(Math.log2(qualified));
-        let labels = ["finished", "final", "semifinals", "quarterfinals", "eighth-finals", "16th-finals", "32nd-finals"];
         let label = labels[level];
         // the number of teams qualified for the 'level' fraction of final
         let seats = Math.pow(2, level);
@@ -39,9 +43,9 @@ function prescheduleKnockout(){
             // Schedule playoffs for the 2*rest last qualified teams
             console.log(rest*2 + "/" + qualified + " teams participate to the " + labels[level+1]);
             let playoffParticipants = fakeTeams.slice(-rest*2);
-            schedule = schedule.concat(createRoundMatches(playoffParticipants));
+            matches = matches.concat(createRoundMatches(playoffParticipants, category.name, level+1));
         }
     });
 
-    console.log(schedule);
+    console.log(matches);
 }
