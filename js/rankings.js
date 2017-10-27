@@ -60,12 +60,13 @@ function updateRanking(){
         addRankingTable({teams:group.rankedTeams, group:group});
     });
 
-    qualify()
+    let qualified = getQualified();
 }
 
-function qualify(){
-    let qualified = [];
+function getQualified(){
+    let qualifiedByCategories = [];
     CONFIG.categories.forEach((category, index) => {
+        let qualified = [];
         // retrieve groups of this category
         let groups = SCHEDULE.groups.filter(group => {
             return group.categoryIndex === index;
@@ -83,8 +84,9 @@ function qualify(){
         qualified.forEach(team => {
             markQualified(team)
         });
+        qualifiedByCategories.push({teams:qualified, category:category.name});
     });
-    return qualified;
+    return qualifiedByCategories;
 }
 
 function markQualified(team){
