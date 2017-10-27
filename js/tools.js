@@ -38,6 +38,7 @@ function getConfig(){
             duration: $(elem).find(".pauseDuration").val(),
         });
     });
+    config.pauseBetween = $("#pauseBetween").val();
     config.fields = stringToList($('#fields').val());
     $(".category").each((i,elem) => {
         config.categories.push({
@@ -46,10 +47,8 @@ function getConfig(){
             qualif:{
                 groups: parseInt($(elem).find(".qualifGroups").val()),
                 rounds: parseInt($(elem).find(".qualifRounds").val()),
-                // matchDuration: $(elem).find(".qualifMatchDuration").val(),
             },
             knockout:{
-                pauseBetween: $(elem).find(".pauseBetween").val(),
                 qualified: parseInt($(elem).find(".qualified").val()),
                 finalDuration: $(elem).find(".finalDuration").val(),
             }
@@ -83,6 +82,7 @@ function loadJson(j){
     $("#start").val(j.config.start);
     $("#matchDuration").val(j.config.matchDuration);
     j.config.pauses.forEach(p => addPause(p));
+    $("#pauseBetween").val(j.config.pauseBetween);
     j.config.fields = listToString(j.config.fields);
     $("#fields").val(j.config.fields);
     j.config.categories.forEach(c => {
@@ -135,11 +135,21 @@ class Time{
         pauses.forEach(pause => {
             let end = pause.start.add(pause.duration);
             if(nextTime.between(pause.start, end)){
-                slots.push({time: nextTime.toString(),pause:true,matches:[]});
+                if(slots)
+                    slots.push({time: nextTime.toString(),pause:true,matches:[]});
                 nextTime = end;
             }
         });
         return nextTime;
+    }
+
+    static convertPauses(pauses){
+        return pauses.map(p => {
+            return {
+                start: new Time(p.start),
+                duration: new Time(p.duration)
+            };
+        });
     }
 
 }

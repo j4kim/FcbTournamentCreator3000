@@ -280,12 +280,7 @@ class Schedule{
         // convert from string to Time objects
         let start = new Time(config.start);
         let duration = new Time(config.matchDuration);
-        let pauses = config.pauses.map(p => {
-            return {
-                start: new Time(p.start),
-                duration: new Time(p.duration)
-            };
-        });
+        let pauses = Time.convertPauses(config.pauses);
         let fields = config.fields;
         let slots = [];
         let matchId = 0;

@@ -118,6 +118,15 @@
 
                     </div>
                 </div>
+
+
+                <div class="form-group row">
+                    <label class="col-md-3 col-form-label">Pause entre phases</label>
+
+                    <div class="col">
+                        <input type="time" class="form-control" id="pauseBetween" value="00:00">
+                    </div>
+                </div>
 				
 				<hr>
 				
@@ -173,16 +182,6 @@
                         </div>
 
                         <hr>
-
-                        <div class="form-group row">
-                            <label class="col-md-3 col-form-label">Pause entre phases</label>
-
-                            <div class="col">
-                                <input type="time" class="form-control pauseBetween" value="{{ knockout.pauseBetween }}">
-                            </div>
-                        </div>
-
-                        <hr>
                         <!--<h4>Phase finale</h4>-->
 
                         <div class="form-group row">
@@ -191,7 +190,13 @@
                             <div class="form-row col">
                                 <div class="form-group col">
                                     <label>Équipes qualifiées</label>
-                                    <input type="number" class="form-control qualified" value="{{ knockout.qualified }}">
+                                    <input type="number" class="form-control qualified" value="{{ knockout.qualified }}" list="defaultNumbers">
+                                    <datalist id="defaultNumbers">
+                                        <option value="2">
+                                        <option value="4">
+                                        <option value="8">
+                                        <option value="16">
+                                    </datalist>
                                 </div>
                                 <div class="form-group col">
                                     <label>Durée de la finale</label>
@@ -357,6 +362,7 @@
     <script src="js/schedule.js"></script>
     <script src="js/models.js"></script>
     <script src="js/rankings.js"></script>
+    <script src="js/knockout.js"></script>
 
 </body>
 </html>
