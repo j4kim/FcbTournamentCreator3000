@@ -172,11 +172,11 @@
                             <div class="form-row col">
                                 <div class="form-group col">
                                     <label>Nombre de groupes</label>
-                                    <input type="number" class="form-control qualifGroups" value="{{ qualif.groups }}">
+                                    <input type="number" class="form-control qualifGroups" value="{{ qualif.groups }}" min="1">
                                 </div>
                                 <div class="form-group col">
                                     <label>Nombre de tours</label>
-                                    <input type="number" class="form-control qualifRounds" value="{{ qualif.rounds }}">
+                                    <input type="number" class="form-control qualifRounds" value="{{ qualif.rounds }}" min="1">
                                 </div>
                             </div>
                         </div>
@@ -190,18 +190,25 @@
                             <div class="form-row col">
                                 <div class="form-group col">
                                     <label>Équipes qualifiées</label>
-                                    <input type="number" class="form-control qualified" value="{{ knockout.qualified }}" list="defaultNumbers">
-                                    <datalist id="defaultNumbers">
-                                        <option value="2">
-                                        <option value="4">
-                                        <option value="8">
-                                        <option value="16">
-                                    </datalist>
+                                    <input type="number" class="form-control qualified" value="{{ knockout.qualified }}" min="2" max="64">
+                                    <small class="form-text text-muted d-none warning">
+                                        <i class="fa fa-warning"></i>
+                                        Attention, ce nombre nécessite l'organisation de matchs de barrages.
+                                        Préférez une puissance de 2, comme 4, 8 ou 16.
+                                    </small>
                                 </div>
                                 <div class="form-group col">
                                     <label>Durée de la finale</label>
                                     <input type="time" class="form-control finalDuration" value="{{ knockout.finalDuration }}" min="00:05">
                                 </div>
+                            </div>
+
+                            <div class="form-check col-sm-9 offset-sm-3">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" value="{{ knockout.thirdPlace }}" disabled>
+                                    <span class="custom-control-indicator"></span>
+                                    Petite finale
+                                </label>
                             </div>
                         </div>
 

@@ -47,4 +47,13 @@ $(function() {
     $("#configForm").on("click", ".removeCategory", e => {
         $(e.target).closest(".category").remove();
     });
+
+    $("#configForm").on("input", ".qualified", e => {
+        let warning = $(e.target).next(".warning");
+        warning.removeClass("d-none");
+        let n = e.target.value;
+        // test if n is a power of 2
+        if(n && (n & (n - 1)) === 0)
+            warning.addClass("d-none");
+    });
 });

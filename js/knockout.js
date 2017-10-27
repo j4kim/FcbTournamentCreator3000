@@ -9,7 +9,7 @@ function preScheduleKnockout(){
     CONFIG.categories.forEach(category => {
         let qualified = category.knockout.qualified;
         let level = parseInt(Math.log2(qualified));
-        let labels = ["finished", "final", "semifinals", "quarterfinals", "eighth-finals", "16th-finals", "32nd-finals", "64th-finals"];
+        let labels = ["finished", "final", "semifinals", "quarterfinals", "eighth-finals", "16th-finals", "32nd-finals"];
         let label = labels[level];
         // the number of teams qualified for the knockout
         let seats = Math.pow(2, level);
