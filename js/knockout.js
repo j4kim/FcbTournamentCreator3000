@@ -21,9 +21,11 @@ function oppposeNodes(nodes, level, categoryIndex){
         throw Error("nodes must be even");
     let parents = [];
     let n = 0;
+    SCHEDULE.knockout.phases[level] = [];
     while(nodes.length){
         let children = [nodes.shift(), nodes.pop()];
         let node = new Node(level, children, categoryIndex, n++);
+        SCHEDULE.knockout.phases[level].push(node);
         parents.push(node);
     }
     return parents;
@@ -46,6 +48,7 @@ function prescheduleKnockout(){
 
     CONFIG.categories.forEach((category, index) => {
         let qualified = category.knockout.qualified;
+        SCHEDULE.knockout = {phases: []};
 
         let nodes = [];
         for(let i = 0; i < qualified; i++){
@@ -72,9 +75,8 @@ function prescheduleKnockout(){
             nodes.splice(seats-rest, rest*2, ...playoffNodes);
         }
 
-        let tree = createTree(nodes, level, index);
-        console.log(tree);
-
+        SCHEDULE.knockout.tree = createTree(nodes, level, index);
+        console.log(SCHEDULE.knockout);
     });
 
 }
