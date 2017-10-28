@@ -49,14 +49,18 @@ $(function() {
         $(e.target).closest(".category").remove();
     });
 
+    function setMax(elem, max){
+        if(+elem.val() > max) elem.val(max);
+        elem.attr("max", max);
+    }
+
     $("#configForm").on("change", ".category textarea", e => {
         // clean textarea and get list
         let list = stringToList(e.target.value);
         let categoryElem = $(e.target).closest(".category");
         categoryElem.find(".numElements").text(list.length);
-        let qualified = categoryElem.find(".qualified");
-        if(+qualified.val() > list.length) qualified.val(list.length);
-        qualified.attr("max", list.length);
+        setMax(categoryElem.find(".qualified"), list.length);
+        setMax(categoryElem.find(".qualifGroups"), parseInt(list.length/3));
         e.target.value = listToString(list);
     });
 });
