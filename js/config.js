@@ -11,6 +11,7 @@ function addPause(data){
 
 function addCategory(data){
     $("#addCategory").before(categoryTemplate(data));
+    $(".category textarea").trigger("change")
 }
 
 $(function() {
@@ -48,10 +49,14 @@ $(function() {
         $(e.target).closest(".category").remove();
     });
 
-    $("#configForm").on("input", ".qualified", e => {
-        let warning = $(e.target).next(".warning");
-        warning.removeClass("d-none");
-        if(isPowerOfTwo(e.target.value))
-            warning.addClass("d-none");
+    $("#configForm").on("change", ".category textarea", e => {
+        // clean textarea and get list
+        let list = stringToList(e.target.value);
+        let categoryElem = $(e.target).closest(".category");
+        categoryElem.find(".numElements").text(list.length);
+        let qualified = categoryElem.find(".qualified");
+        if(+qualified.val() > list.length) qualified.val(list.length);
+        qualified.attr("max", list.length);
+        e.target.value = listToString(list);
     });
 });

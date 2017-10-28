@@ -1,9 +1,12 @@
 
 let labels = ["finished", "final", "semifinals", "quarterfinals", "eighth-finals", "16th-finals", "32nd-finals"];
 
+let prescheduledKnockout = {phases: [], categories: []};
+
 class Node{
     constructor(level, children, categoryIndex, n){
         this.level = level;
+        children.forEach(child => child.parent = this, this);
         this.children = children;
         this.categoryIndex = categoryIndex;
         this.n = n;
@@ -21,11 +24,11 @@ function oppposeNodes(nodes, level, categoryIndex){
         throw Error("nodes must be even");
     let parents = [];
     let n = 0;
-    SCHEDULE.knockout.phases[level] = [];
+    prescheduledKnockout.phases[level] = [];
     while(nodes.length){
         let children = [nodes.shift(), nodes.pop()];
         let node = new Node(level, children, categoryIndex, n++);
-        SCHEDULE.knockout.phases[level].push(node);
+        prescheduledKnockout.phases[level].push(node);
         parents.push(node);
     }
     return parents;
@@ -48,7 +51,6 @@ function prescheduleKnockout(){
 
     CONFIG.categories.forEach((category, index) => {
         let qualified = category.knockout.qualified;
-        SCHEDULE.knockout = {phases: []};
 
         let nodes = [];
         for(let i = 0; i < qualified; i++){
@@ -59,7 +61,7 @@ function prescheduleKnockout(){
         }
 
         let level = parseInt(Math.log2(qualified));
-        console.log("level",level);
+
         if(!isPowerOfTwo(qualified)){
             // the number of teams qualified for the 'level' fraction of final
             let seats = Math.pow(2, level);
@@ -75,8 +77,8 @@ function prescheduleKnockout(){
             nodes.splice(seats-rest, rest*2, ...playoffNodes);
         }
 
-        SCHEDULE.knockout.tree = createTree(nodes, level, index);
-        console.log(SCHEDULE.knockout);
+        prescheduledKnockout.categories[index] = createTree(nodes, level, index);
+        console.log(prescheduledKnockout);
     });
 
 }
