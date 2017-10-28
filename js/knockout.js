@@ -2,45 +2,39 @@
 let labels = ["finished", "final", "semifinals", "quarterfinals", "eighth-finals", "16th-finals", "32nd-finals"];
 
 class Node{
-    constructor(level, categoryIndex, label, n){
+    constructor(level, children, categoryIndex, n){
         this.level = level;
+        this.children = children;
         this.categoryIndex = categoryIndex;
-        this.label = label;
         this.n = n;
+        this.label = CONFIG.categories[categoryIndex].name + " " + labels[level];
+        if(level>1)
+            this.label += " #"+(n+1); // write semifinals #1 / semifinals #2
     }
+}
+
+// make parents nodes from children nodes, by opposing them
+// first node vs last, second vs penultimate etc...
+// returns a list of nodes half the size of the entry list
+function oppposeNodes(nodes, level, categoryIndex){
+    if(nodes.length%2 !== 0)
+        throw Error("nodes must be even");
+    let parents = [];
+    let n = 0;
+    while(nodes.length){
+        let children = [nodes.shift(), nodes.pop()];
+        let node = new Node(level, children, categoryIndex, n++);
+        parents.push(node);
+    }
+    return parents;
 }
 
 function createTree(nodes, level, categoryIndex){
     if(level == 0)
         // node is final
-        return nodes;
-    let parents = [];
-    let n = 0;
-    while(nodes.length){
-        let label = CONFIG.categories[categoryIndex].name + " " + labels[level];
-        if(level>1)
-            label += " #"+(n+1); // write semifinals #1 / semifinals #2
-        let node = new Node(level-1, categoryIndex, label, n++);
-        node.children = [nodes.shift(), nodes.pop()];
-        parents.push(node);
-    }
+        return nodes[0];
+    let parents = oppposeNodes(nodes, level, categoryIndex);
     return createTree(parents, level-1, categoryIndex)
-}
-
-// make matches from teams -> last team vs first, second vs penultimate etc...
-function createRoundMatches(teams, categoryIndex, level){
-    if(teams.length%2 !== 0) throw Error("teams must be even");
-    let matches = [];
-    let i = 0;
-    while(teams.length){
-        let match = new Match([teams.shift(), teams.pop()]);
-        match.level = level;
-        match.index = i;
-        match.categoryIndex = categoryIndex;
-        match.label = CONFIG.categories[categoryIndex].name + " " + labels[level] + " #" + (++i);
-        matches.push(match);
-    }
-    return matches;
 }
 
 function prescheduleKnockout(){
@@ -50,36 +44,37 @@ function prescheduleKnockout(){
     let lastMatchStart = new Time(SCHEDULE.qualif.slice(-1)[0].time);
     let knockoutStart = lastMatchStart.addOrPause(pauseBetween, pauses);
 
-    let matches = [];
-
     CONFIG.categories.forEach((category, index) => {
         let qualified = category.knockout.qualified;
 
-        let fakeTeams = [];
+        let nodes = [];
         for(let i = 0; i < qualified; i++){
-            fakeTeams.push({
+            nodes.push({
                 qualifiedIndex: i,
                 name: category.name + "#" + (i+1)
             });
         }
 
         let level = parseInt(Math.log2(qualified));
-
+        console.log("level",level);
         if(!isPowerOfTwo(qualified)){
             // the number of teams qualified for the 'level' fraction of final
             let seats = Math.pow(2, level);
             // the number of overflowing teams
             let rest = qualified - seats;
-            // Schedule playoffs for the 2*rest last qualified teams
-            console.log(rest*2 + "/" + qualified + " teams participate to the " + labels[level+1]);
-            let playoffParticipants = fakeTeams.slice(-rest*2);
-            matches = matches.concat(createRoundMatches(playoffParticipants, index, level+1));
+            let playoffParticipants = rest*2;
+            console.log(playoffParticipants + "/" + qualified + " teams participate to the " + labels[level+1]);
+            let playoffTeams = nodes.slice(-playoffParticipants);
+            // associate playoff teams into nodes
+            let playoffNodes = oppposeNodes(playoffTeams, level+1, index);
+
+            // remove the playoff teams and replace them by the nodes
+            nodes.splice(seats-rest, rest*2, ...playoffNodes);
         }
 
-        let tree = createTree(fakeTeams, level, index);
+        let tree = createTree(nodes, level, index);
         console.log(tree);
 
     });
 
-    console.log(matches);
 }
