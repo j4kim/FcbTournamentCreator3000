@@ -1,5 +1,5 @@
 
-let labels = ["finished", "final", "semifinals", "quarterfinals", "eighth-finals", "16th-finals", "32nd-finals"];
+let labels = ["Fini", "Finale", "Demi-finale", "Quart de finale", "8e de finale", "16e", "32e"];
 
 let prescheduledKnockout = {phases: [], categories: []};
 
@@ -10,9 +10,7 @@ class Node{
         this.children = children;
         this.categoryIndex = categoryIndex;
         this.n = n;
-        this.label = CONFIG.categories[categoryIndex].name + " " + labels[level];
-        if(level>1)
-            this.label += " #"+(n+1); // write semifinals #1 / semifinals #2
+        this.label = labels[level];
     }
 }
 
@@ -42,43 +40,97 @@ function createTree(nodes, level, categoryIndex){
     return createTree(parents, level-1, categoryIndex)
 }
 
-function prescheduleKnockout(){
+function prescheduleKnockout() {
     console.log("prescheduling knockout", CONFIG);
     let pauseBetween = new Time(CONFIG.pauseBetween);
     let pauses = Time.convertPauses(CONFIG.pauses);
     let lastMatchStart = new Time(SCHEDULE.qualif.slice(-1)[0].time);
     let knockoutStart = lastMatchStart.addOrPause(pauseBetween, pauses);
 
+    $("#knockout-table").empty();
+
     CONFIG.categories.forEach((category, index) => {
         let qualified = category.knockout.qualified;
 
         let nodes = [];
-        for(let i = 0; i < qualified; i++){
+        for (let i = 0; i < qualified; i++) {
             nodes.push({
                 qualifiedIndex: i,
-                name: category.name + "#" + (i+1)
+                label: category.name + "#" + (i + 1)
             });
         }
 
         let level = parseInt(Math.log2(qualified));
+        let depth = level;
 
-        if(!isPowerOfTwo(qualified)){
+        if (!isPowerOfTwo(qualified)) {
+            depth++;
             // the number of teams qualified for the 'level' fraction of final
             let seats = Math.pow(2, level);
             // the number of overflowing teams
             let rest = qualified - seats;
-            let playoffParticipants = rest*2;
-            console.log(playoffParticipants + "/" + qualified + " teams participate to the " + labels[level+1]);
+            let playoffParticipants = rest * 2;
+            console.log(playoffParticipants + "/" + qualified + " teams participate to the " + labels[level + 1]);
             let playoffTeams = nodes.slice(-playoffParticipants);
             // associate playoff teams into nodes
-            let playoffNodes = oppposeNodes(playoffTeams, level+1, index);
+            let playoffNodes = oppposeNodes(playoffTeams, level + 1, index);
 
             // remove the playoff teams and replace them by the nodes
-            nodes.splice(seats-rest, rest*2, ...playoffNodes);
+            nodes.splice(seats - rest, rest * 2, ...playoffNodes);
         }
 
-        prescheduledKnockout.categories[index] = createTree(nodes, level, index);
+        let tree = createTree(nodes, level, index);
+        tree.depth = depth;
+        prescheduledKnockout.categories[index] = tree;
+
+        addTree(tree, category);
         console.log(prescheduledKnockout);
     });
 
+}
+
+function addCell(table, node){
+    let td = $("<td></td>")
+        .attr("colspan", node.colspan)
+        .addClass("level"+node.level)
+        .addClass("text-muted")
+        .data("node", node)
+        .text(node.label);
+    if(node.label === undefined)
+        td.addClass("seed");
+    table.prepend(td);
+}
+
+// make the tree a complete tree till the last level
+function completeTree(node, depth, level){
+    node.colspan = Math.pow(2, depth-level);
+    node.level = level;
+    if(level === depth)
+        return;
+    if(node.children === undefined)
+        node.children = [{},{}];
+    for(let child of node.children)
+        completeTree(child, depth, level+1);
+}
+
+function addTree(tree, category){
+    let table = $("<table class='table table-sm table-bordered'></table>");
+    $("#knockout-table").append(table);
+    $("<h4>"+category.name+"</h4>").insertBefore(table);
+    completeTree(tree, tree.depth, 0);
+    // Breadth-first traversing to add <td>s in order
+    let heap = [tree];
+    while(heap.length){
+        let node = heap.shift();
+        addCell(table, node);
+        if(node.children)
+            heap = heap.concat(node.children)
+    }
+    // regroup td in tr by their level class
+    let depth = tree.depth;
+    do{
+        let cells = table.find("td.level"+depth);
+        let row = $("<tr></tr>").append(cells);
+        table.append(row);
+    }while(depth--)
 }

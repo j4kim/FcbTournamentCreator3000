@@ -1,0 +1,31 @@
+
+td input[type=number] {
+    width: 35px;
+    height: 20px;
+    font-size: 0.7em;
+}
+#knockout-table td{
+    text-align: center;
+    font-size: 0.9em;
+}
+#knockout-table td.level0{
+    width:100%;
+}
+#knockout-table td.level1{
+    width:50%;
+}
+#knockout-table td.level2{
+    width:25%;
+}
+#knockout-table td.level3{
+    width:12.5%;
+    font-size: 0.8em;
+}
+#knockout-table td.level4{
+    width:6.25%;
+    font-size: 0.6em;
+}
+#knockout-table td.seed{
+    border: none;
+    background-color: #eee;
+}

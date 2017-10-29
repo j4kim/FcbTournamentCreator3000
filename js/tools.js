@@ -1,3 +1,6 @@
+function registerPartial(name){
+    Handlebars.registerPartial(name, $("#" + name + "-partial").html());
+}
 
 function getTemplate(name){
     return Handlebars.compile($("#" + name + "-template").html());

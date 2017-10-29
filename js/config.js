@@ -33,11 +33,9 @@ $(function() {
         addCategory({
             qualif: {
                 groups:1,
-                rounds:1,
-                matchDuration:"00:15"
+                rounds:1
             },
             knockout: {
-                pauseBetween: "00:00",
                 qualified: 4,
                 finalDuration: "00:30"
             }
@@ -57,6 +55,7 @@ $(function() {
     $("#configForm").on("change", ".category textarea", e => {
         // clean textarea and get list
         let list = stringToList(e.target.value);
+        if(list.length < 3) return;
         let categoryElem = $(e.target).closest(".category");
         categoryElem.find(".numElements").text(list.length);
         setMax(categoryElem.find(".qualified"), list.length);
