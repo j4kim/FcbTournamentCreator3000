@@ -1,7 +1,7 @@
 
 let labels = ["Fini", "Finale", "Demi-finale", "Quart de finale", "8e de finale", "16e", "32e"];
 
-let prescheduledKnockout = {phases: [], categories: []};
+let prescheduledKnockout = {phases: [], trees: []};
 
 class Node{
     constructor(level, children, categoryIndex, n){
@@ -21,12 +21,13 @@ function oppposeNodes(nodes, level, categoryIndex){
     if(nodes.length%2 !== 0)
         throw Error("nodes must be even");
     let parents = [];
+    if(prescheduledKnockout.phases[level-1] === undefined)
+        prescheduledKnockout.phases[level-1] = [];
     let n = 0;
-    prescheduledKnockout.phases[level] = [];
     while(nodes.length){
         let children = [nodes.shift(), nodes.pop()];
         let node = new Node(level, children, categoryIndex, n++);
-        prescheduledKnockout.phases[level].push(node);
+        prescheduledKnockout.phases[level-1].push(node);
         parents.push(node);
     }
     return parents;
@@ -40,14 +41,45 @@ function createTree(nodes, level, categoryIndex){
     return createTree(parents, level-1, categoryIndex)
 }
 
+function addKnockoutMatch(data){
+    $("#knockout-schedule-table tbody").append(matchTemplate(data));
+}
+
+function addKnockoutSlot(slot){
+    if(slot.pause){
+        addKnockoutMatch(slot);
+    }else if(typeof slot === "string"){
+        let tr = $("<tr></tr>").addClass("slot table-info");
+        let td = $("<td></td>").attr("colspan",6).text(slot);
+        $("#knockout-schedule-table tbody").append(tr.append(td));
+    }else{
+        slot.matches[0].first = true;
+        slot.matches[0].numMatches = slot.matches.length;
+        slot.matches.forEach(match => {
+            match.time = slot.time;
+            addKnockoutMatch(match);
+        })
+    }
+}
+
+function fillKnockoutSchedule(slots){
+    slots.forEach(slot => {
+        addKnockoutSlot(slot);
+    })
+}
+
 function prescheduleKnockout() {
-    console.log("prescheduling knockout", CONFIG);
     let pauseBetween = new Time(CONFIG.pauseBetween);
     let pauses = Time.convertPauses(CONFIG.pauses);
-    let lastMatchStart = new Time(SCHEDULE.qualif.slice(-1)[0].time);
+    let lastSlice = SCHEDULE.qualif.slice(-1)[0];
+    let lastMatchStart = new Time(lastSlice.time);
     let knockoutStart = lastMatchStart.addOrPause(pauseBetween, pauses);
+    let duration = new Time(CONFIG.matchDuration);
 
+    // reinit
     $("#knockout-table").empty();
+    $("#knockout-schedule-table .slot").remove();
+    prescheduledKnockout.phases = [];
 
     CONFIG.categories.forEach((category, index) => {
         let qualified = category.knockout.qualified;
@@ -70,7 +102,6 @@ function prescheduleKnockout() {
             // the number of overflowing teams
             let rest = qualified - seats;
             let playoffParticipants = rest * 2;
-            console.log(playoffParticipants + "/" + qualified + " teams participate to the " + labels[level + 1]);
             let playoffTeams = nodes.slice(-playoffParticipants);
             // associate playoff teams into nodes
             let playoffNodes = oppposeNodes(playoffTeams, level + 1, index);
@@ -81,11 +112,41 @@ function prescheduleKnockout() {
 
         let tree = createTree(nodes, level, index);
         tree.depth = depth;
-        prescheduledKnockout.categories[index] = tree;
+        prescheduledKnockout.trees[index] = tree;
 
         addTree(tree, category);
-        console.log(prescheduledKnockout);
     });
+
+    let phases = prescheduledKnockout.phases;
+    let slots = [];
+    let currentTime = knockoutStart;
+    for(let i = phases.length-1; i >= 0; i--){
+        slots.push(labels[i+1]);
+        let matches = phases[i].slice(0);
+        while(matches.length){
+            let slot = {time:currentTime.toString(), matches:[]};
+            // finale solo
+            if(i === 0){
+                let match = matches.shift();
+                match.field = CONFIG.fields[0];
+                slot.matches.push(match);
+            }else {
+                for (let field of CONFIG.fields) {
+                    if (matches.length === 0)
+                        break;
+                    let match = matches.shift();
+                    match.field = field;
+                    slot.matches.push(match);
+                }
+            }
+            slots.push(slot);
+            currentTime = currentTime.addOrPause(duration, pauses, slots);
+        }
+    }
+    fillKnockoutSchedule(slots);
+
+    console.log(prescheduledKnockout);
+
 
 }
 

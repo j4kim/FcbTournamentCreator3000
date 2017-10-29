@@ -258,12 +258,12 @@
                         <!--Match template-->
                         <script id="match-template" type="text/x-handlebars-template">
                             {{#if pause}}
-                                <tr class="pauseSlot">
+                                <tr class="pauseSlot table-secondary slot">
                                     <td>{{ time }}</td>
                                     <td colspan="5">Pause</td>
                                 </tr>
                             {{else}}
-                                <tr class="match g{{group.index}} t{{teamA.index}} t{{teamB.index}}"
+                                <tr class="match g{{group.index}} t{{teamA.index}} t{{teamB.index}} slot"
                                     data-group-index="{{ group.index }}"
                                     data-match-id="{{ id }}"
                                 >
@@ -333,11 +333,24 @@
             <div id="knockout">
                 <h3>Phase Finale</h3>
                 <div id="knockout-schedule">
+                    <table id="knockout-schedule-table" class="table table-sm">
+                        <thead>
+                        <tr>
+                            <th>Heure</th>
+                            <th>Terrain</th>
+                            <th>Équipe 1</th>
+                            <th>Équipe 2</th>
+                            <th>Score</th>
+                        </tr>
+                        </thead>
+                        <tbody>
 
+                        </tbody>
+                    </table>
                 </div>
 
                 <div id="knockout-table">
-
+                    <!--Filled in knockout.js-->
                 </div>
             </div>
         </div>

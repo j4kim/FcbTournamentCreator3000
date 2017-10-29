@@ -3,7 +3,7 @@ let matchTemplate = getTemplate("match");
 let groupTemplate = getTemplate("group");
 
 function addMatch(data){
-    $("#qualifTable").append(matchTemplate(data));
+    $("#qualifTable tbody").append(matchTemplate(data));
 }
 
 function addSlot(slot){

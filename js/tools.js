@@ -82,14 +82,14 @@ function loadJson(j){
 
     // fill form
     $("#name").val(j.name);
+    document.title = j.name;
     $("#start").val(j.config.start);
     $("#matchDuration").val(j.config.matchDuration);
     j.config.pauses.forEach(p => addPause(p));
     $("#pauseBetween").val(j.config.pauseBetween);
-    j.config.fields = listToString(j.config.fields);
-    $("#fields").val(j.config.fields);
+    let fields = listToString(j.config.fields);
+    $("#fields").val(fields);
     j.config.categories.forEach(c => {
-        c.teams = listToString(c.teams);
         addCategory(c);
     });
 
@@ -111,6 +111,8 @@ class Time{
             let [h,m] = arg.split(":");
             this.minutes = parseInt(m) + 60 * parseInt(h);
         }
+        // 1440 minutes = one day
+        this.minutes %= 1440;
     }
 
     toString(){

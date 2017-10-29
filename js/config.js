@@ -10,7 +10,10 @@ function addPause(data){
 }
 
 function addCategory(data){
-    $("#addCategory").before(categoryTemplate(data));
+    let teams = listToString(data.teams);
+    let cat = $.extend({}, data);
+    cat.teams = teams;
+    $("#addCategory").before(categoryTemplate(cat));
     $(".category textarea").trigger("change")
 }
 
