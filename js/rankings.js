@@ -21,19 +21,10 @@ function updateRanking(){
     // remove ranking tables
     $(".ranking-table").remove();
 
-    $(".match").each((index, elem) => {
+    $("#qualifTable .match").each((index, elem) => {
         // get scores, return if score is missing
         let A = $(elem).find(".scoreA");
         let B = $(elem).find(".scoreB");
-        if(A.val() === "" || B.val() === "")
-            return;
-        [scoreA,scoreB] = [+A.val(), +B.val()]; // '+' to get int value
-
-        // find teams from group and team indexes
-        let groupIndex = $(elem).data("group-index");
-        let group = SCHEDULE.groups[groupIndex];
-        let teamA = group.teams[A.data("team-index")];
-        let teamB = group.teams[B.data("team-index")];
 
         // find match from id
         let matchId = $(elem).data("match-id");
@@ -45,6 +36,21 @@ function updateRanking(){
                 break;
             }
         }
+
+        if(A.val() === "" || B.val() === ""){
+            delete match.scoreA;
+            delete match.scoreB;
+            return;
+        }
+
+        [scoreA,scoreB] = [+A.val(), +B.val()]; // '+' to get int value
+
+        // find teams from group and team indexes
+        let groupIndex = $(elem).data("group-index");
+        let group = SCHEDULE.groups[groupIndex];
+        let teamA = group.teams[A.data("team-index")];
+        let teamB = group.teams[B.data("team-index")];
+
         // write score
         match.scoreA = scoreA;
         match.scoreB = scoreB;
@@ -96,7 +102,7 @@ function markQualified(team){
 }
 
 function randomScores(){
-    $("td input").each((index, elem) => {
+    $("#qualifTable td input").each((index, elem) => {
         $(elem).val(parseInt(Math.random()*5));
     });
     updateRanking();
