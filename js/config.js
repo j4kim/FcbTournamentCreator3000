@@ -41,7 +41,7 @@ $(function() {
             knockout: {
                 qualified: 4,
                 finalDuration: "00:30"
-            }
+            },teams:[]
         });
         $(".categoryName").focus();
     });
