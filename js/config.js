@@ -50,6 +50,10 @@ $(function() {
         $(e.target).closest(".category").remove();
     });
 
+    $("#name").on("input", e => {
+        document.title = document.getElementById("title").innerHTML  = e.target.value;
+    });
+
     function setMax(elem, max){
         if(+elem.val() > max) elem.val(max);
         elem.attr("max", max);

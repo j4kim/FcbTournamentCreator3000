@@ -36,18 +36,25 @@
 </head>
 <body>
 	<div class="container">
-        <h1><a href="">FCB Tournament Creator 3000</a></h1>
+        <div class="clearfix">
+            <h1 class="float-left">
+                <a href="">FCB Tournament Creator 3000</a>
+            </h1>
 
-        <input accept=".json" type="file" name="file"
-               id="file" class="d-none" />
+            <input accept=".json" type="file" name="file"
+                   id="file" class="d-none" />
 
-        <label for="file" class="btn float-right btn-dark ml-3">
-            <i class="fa fa-upload"></i> Charger un tournoi
-        </label>
+            <label for="file" class="btn float-right btn-dark ml-3 mt-2">
+                <i class="fa fa-upload"></i> Charger un tournoi
+            </label>
+
+        </div>
+
+        <h1 class="display-4" id="title"></h1>
 
 		<div id="configuration">
-			<h2>Configuration du tournoi</h2>
             <a href="" id="showSchedule" class="d-none">Voir programme</a>
+			<h2>Configuration du tournoi</h2>
 
 			<form id="configForm">
                 <hr>
@@ -220,16 +227,16 @@
 		</div>
 
         <div id="schedule" class="d-none">
-            <h2>Programme des matchs</h2>
             <a href="" id="showConfig">Voir configuration</a>
+            <h2>Programme des matchs</h2>
 
             <hr>
 
-            <div id="groups" class="clearfix">
-                <h3>Groupes</h3>
+            <h3>Groupes</h3>
+            <div id="groups" class="clearfix row">
                 <!--Group template-->
                 <script id="group-template" type="text/x-handlebars-template">
-                    <div class="float-left mr-4 group">
+                    <div class="col group">
                         <h4>{{ name }}</h4>
                         <ul>
                             {{#each teams}}

@@ -50,7 +50,8 @@ $(function(){
         }
     }
 
-    loadFileFromUrl();
+    if(location.hash)
+        loadFileFromUrl();
 
     $(window).on("hashchange", loadFileFromUrl);
 

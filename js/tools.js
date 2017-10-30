@@ -81,8 +81,7 @@ function loadJson(j){
     initArrays(j.config, ["pauses","fields","categories"]);
 
     // fill form
-    $("#name").val(j.name);
-    document.title = j.name;
+    $("#name").val(j.name).trigger("input");
     $("#start").val(j.config.start);
     $("#matchDuration").val(j.config.matchDuration);
     j.config.pauses.forEach(p => addPause(p));
