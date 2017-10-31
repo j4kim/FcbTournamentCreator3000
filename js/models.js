@@ -260,7 +260,7 @@ class Schedule{
         let pauses = Time.convertPauses(config.pauses);
         let fields = config.fields;
         let slots = [];
-        let matchId = 0;
+        let matchId = 1;
 
         // loop over time and matches to put them in time slots
         let currentTime = start;

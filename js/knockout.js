@@ -45,6 +45,12 @@ function addKnockoutMatch(data){
     $("#knockout-schedule-table tbody").append(matchTemplate(data));
 }
 
+function getPlaceHolderName(child) {
+    if(child.children === undefined)
+        return child.label;
+    return "Vainqueur match "+child.id;
+}
+
 function addKnockoutSlot(slot){
     if(slot.pause){
         addKnockoutMatch(slot);
@@ -57,6 +63,10 @@ function addKnockoutSlot(slot){
         slot.matches[0].numMatches = slot.matches.length;
         slot.matches.forEach(match => {
             match.time = slot.time;
+            match.class = "text-muted";
+            match.teamA = {name: getPlaceHolderName(match.children[0])};
+            match.teamB = {name: getPlaceHolderName(match.children[1])};
+            match.disabled = "disabled";
             addKnockoutMatch(match);
         })
     }
@@ -73,6 +83,7 @@ function prescheduleKnockout() {
     let pauses = Time.convertPauses(CONFIG.pauses);
     let lastSlice = SCHEDULE.qualif.slice(-1)[0];
     let lastMatchStart = new Time(lastSlice.time);
+    let lastMatchId = lastSlice.matches.slice(-1)[0].id;
     let knockoutStart = lastMatchStart.addOrPause(pauseBetween, pauses);
     let duration = new Time(CONFIG.matchDuration);
 
@@ -114,39 +125,45 @@ function prescheduleKnockout() {
         tree.depth = depth;
         prescheduledKnockout.trees[index] = tree;
 
-        addTree(tree, category);
+        //addTree(tree, category);
     });
 
     let phases = prescheduledKnockout.phases;
     let slots = [];
     let currentTime = knockoutStart;
+    let matchId = lastMatchId+1;
     for(let i = phases.length-1; i >= 0; i--){
         slots.push(labels[i+1]);
         let matches = phases[i].slice(0);
+        function addMatch(slot, field){
+            let match = matches.shift();
+            match.field = field;
+            match.id = matchId++;
+            slot.matches.push(match);
+
+        }
         while(matches.length){
             let slot = {time:currentTime.toString(), matches:[]};
-            // finale solo
+            // final solo (one time slot by final)
             if(i === 0){
-                let match = matches.shift();
-                match.field = CONFIG.fields[0];
-                slot.matches.push(match);
+                addMatch(slot,CONFIG.fields[0]);
             }else {
                 for (let field of CONFIG.fields) {
                     if (matches.length === 0)
                         break;
-                    let match = matches.shift();
-                    match.field = field;
-                    slot.matches.push(match);
+                    addMatch(slot,field);
                 }
             }
             slots.push(slot);
             currentTime = currentTime.addOrPause(duration, pauses, slots);
         }
     }
+
     fillKnockoutSchedule(slots);
 
-    console.log(prescheduledKnockout);
-
+    CONFIG.categories.forEach((category, index) => {
+        addTree(prescheduledKnockout.trees[index], category);
+    });
 
 }
 
@@ -159,6 +176,9 @@ function addCell(table, node){
         .text(node.label);
     if(node.label === undefined)
         td.addClass("seed");
+    // nodes that have ids are matches
+    if(node.id !== undefined)
+        td.prepend("match " + node.id + ": ");
     table.prepend(td);
 }
 

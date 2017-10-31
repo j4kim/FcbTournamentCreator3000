@@ -245,6 +245,7 @@
                     <thead>
                         <tr>
                             <th>Heure</th>
+                            <th>#</th>
                             <th>Terrain</th>
                             <th>Équipe 1</th>
                             <th>Équipe 2</th>
@@ -267,14 +268,19 @@
                                     {{#if first}}
                                         <td rowspan="{{ numMatches }}">{{ time }}</td>
                                     {{/if}}
+                                    <td class="text-muted">{{ id }}</td>
                                     <td>{{ field }}</td>
-                                    <td>{{ teamA.name }}</td>
-                                    <td>{{ teamB.name }}</td>
+                                    <td class="{{ class }}">{{ teamA.name }}</td>
+                                    <td class="{{ class }}">{{ teamB.name }}</td>
                                     <td class="score">
                                         <input type="number" class="scoreA" value="{{ scoreA }}"
-                                               data-team-index="{{ teamA.index }}" min="0"> :
+                                               data-team-index="{{ teamA.index }}" min="0"
+                                               {{ disabled }}
+                                        > :
                                         <input type="number" class="scoreB" value="{{ scoreB}}"
-                                               data-team-index="{{ teamB.index }}" min="0">
+                                               data-team-index="{{ teamB.index }}" min="0"
+                                               {{ disabled }}
+                                        >
                                     </td>
                                 </tr>
                             {{/if}}
@@ -340,6 +346,7 @@
                         <thead>
                         <tr>
                             <th>Heure</th>
+                            <th>#</th>
                             <th>Terrain</th>
                             <th>Équipe 1</th>
                             <th>Équipe 2</th>
