@@ -130,7 +130,7 @@ function prescheduleKnockout() {
 
     let phases = prescheduledKnockout.phases;
     let slots = [];
-    let currentTime = knockoutStart;
+    let currentTime = knockoutStart.addOrPause(duration, pauses, {});
     let matchId = lastMatchId+1;
     for(let i = phases.length-1; i >= 0; i--){
         slots.push(labels[i+1]);
