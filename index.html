@@ -272,17 +272,13 @@
                                     {{/if}}
                                     <td class="text-muted">{{ id }}</td>
                                     <td>{{ field }}</td>
-                                    <td class="{{ class }}">{{ teamA.name }}</td>
-                                    <td class="{{ class }}">{{ teamB.name }}</td>
+                                    <td class="{{ teamA.class }}">{{ teamA.name }}</td>
+                                    <td class="{{ teamB.class }}">{{ teamB.name }}</td>
                                     <td class="score">
                                         <input type="number" class="scoreA" value="{{ scoreA }}"
-                                               data-team-index="{{ teamA.index }}" min="0"
-                                               {{ disabled }}
-                                        > :
+                                               data-team-index="{{ teamA.index }}" min="0"> :
                                         <input type="number" class="scoreB" value="{{ scoreB}}"
-                                               data-team-index="{{ teamB.index }}" min="0"
-                                               {{ disabled }}
-                                        >
+                                               data-team-index="{{ teamB.index }}" min="0">
                                     </td>
                                 </tr>
                             {{/if}}
@@ -343,8 +339,7 @@
 
             <div id="knockout">
                 <h3>Phase Finale</h3>
-                <div id="knockout-schedule">
-                    <table id="knockout-schedule-table" class="table table-sm">
+                    <table id="knockout-schedule" class="table table-sm">
                         <thead>
                         <tr>
                             <th>Heure</th>
@@ -359,10 +354,9 @@
 
                         </tbody>
                     </table>
-                </div>
 
                 <div id="knockout-table">
-                    <!--Filled in knockout.js-->
+                    <!--Filled in scheduleknockout.js-->
                 </div>
             </div>
         </div>
@@ -390,6 +384,7 @@
     <script src="js/schedule.js"></script>
     <script src="js/models.js"></script>
     <script src="js/rankings.js"></script>
+    <script src="js/scheduleknockout.js"></script>
     <script src="js/knockout.js"></script>
 
 </body>
