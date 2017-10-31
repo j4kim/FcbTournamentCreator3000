@@ -66,7 +66,7 @@ function updateRanking(){
         addRankingTable({teams:group.rankedTeams, group:group});
     });
 
-    let qualified = getQualified();
+    return getQualified();
 }
 
 function getQualified(){
@@ -80,9 +80,12 @@ function getQualified(){
         let qualifiedByGroup = parseInt(category.knockout.qualified / groups.length);
         let rest = category.knockout.qualified % groups.length;
         for(let i=0; i<qualifiedByGroup; i++){
+            let atThisRank = [];
             groups.forEach(group => {
-                qualified.push(group.rankedTeams[i]);
+                atThisRank.push(group.rankedTeams[i]);
             });
+            atThisRank.sort(Team.compare);
+            qualified = qualified.concat(atThisRank);
         }
         let nextBests = groups.map(group => group.rankedTeams[qualifiedByGroup]);
         nextBests.sort(Team.compare);
