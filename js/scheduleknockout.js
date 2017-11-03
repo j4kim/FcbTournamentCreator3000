@@ -4,12 +4,11 @@ let labels = ["Fini", "Finale", "Demi-finale", "Quart de finale", "8e de finale"
 let prescheduledKnockout = {phases: [], trees: []};
 
 class Node{
-    constructor(level, children, categoryIndex, n){
+    constructor(level, children, categoryIndex){
         this.level = level;
         children.forEach(child => child.parent = this, this);
         this.children = children;
         this.categoryIndex = categoryIndex;
-        this.n = n;
         this.label = labels[level];
     }
 }
@@ -17,16 +16,15 @@ class Node{
 // make parents nodes from children nodes, by opposing them
 // first node vs last, second vs penultimate etc...
 // returns a list of nodes half the size of the entry list
-function oppposeNodes(nodes, level, categoryIndex){
+function opposeNodes(nodes, level, categoryIndex){
     if(nodes.length%2 !== 0)
         throw Error("nodes must be even");
     let parents = [];
     if(prescheduledKnockout.phases[level-1] === undefined)
         prescheduledKnockout.phases[level-1] = [];
-    let n = 0;
     while(nodes.length){
         let children = [nodes.shift(), nodes.pop()];
-        let node = new Node(level, children, categoryIndex, n++);
+        let node = new Node(level, children, categoryIndex);
         prescheduledKnockout.phases[level-1].push(node);
         parents.push(node);
     }
@@ -37,16 +35,18 @@ function createTree(nodes, level, categoryIndex){
     if(level == 0)
         // node is final
         return nodes[0];
-    let parents = oppposeNodes(nodes, level, categoryIndex);
+    let parents = opposeNodes(nodes, level, categoryIndex);
     return createTree(parents, level-1, categoryIndex)
 }
 
 function addKnockoutMatch(data){
-    $("#knockout-schedule tbody").append(matchTemplate(data));
+    let matchElement = $(matchTemplate(data));
+    $("#knockout-schedule tbody").append(matchElement);
+    return matchElement;
 }
 
 function getNameOrPlaceHolder(child) {
-    let teamObj = {class:"text-muted"};
+    let teamObj = {class:"text-muted", childId: child.id};
     if(child.name){
         delete teamObj.class;
         teamObj.name = child.name;
@@ -73,7 +73,7 @@ function addKnockoutSlot(slot){
             match.time = slot.time;
             match.teamA = getNameOrPlaceHolder(match.children[0]);
             match.teamB = getNameOrPlaceHolder(match.children[1]);
-            addKnockoutMatch(match);
+            addKnockoutMatch(match).data("match", match);
         })
     }
 }
@@ -127,7 +127,7 @@ function prescheduleKnockout() {
             let playoffParticipants = rest * 2;
             let playoffTeams = nodes.slice(-playoffParticipants);
             // associate playoff teams into nodes
-            let playoffNodes = oppposeNodes(playoffTeams, level + 1, index);
+            let playoffNodes = opposeNodes(playoffTeams, level + 1, index);
 
             // remove the playoff teams and replace them by the nodes
             nodes.splice(seats - rest, rest * 2, ...playoffNodes);
@@ -135,6 +135,7 @@ function prescheduleKnockout() {
 
         let tree = createTree(nodes, level, index);
         tree.depth = depth;
+        completeTree(tree, depth, 0);
         prescheduledKnockout.trees[index] = tree;
 
         //addTree(tree, category);
@@ -186,8 +187,8 @@ function addCell(table, node){
         .text(node.name);
     if(node.name === undefined)
         td.text(node.label).addClass("text-muted");
-    if(node.label == undefined)
-        td.addClass("seed")
+    if(node.label === undefined)
+        td.addClass("seed");
     // nodes that have ids are matches
     if(node.id !== undefined)
         td.prepend("match " + node.id + ": ");
@@ -197,7 +198,6 @@ function addCell(table, node){
 // make the tree a complete tree till the last level
 function completeTree(node, depth, level){
     node.colspan = Math.pow(2, depth-level);
-    node.level = level;
     if(level === depth)
         return;
     if(node.children === undefined)
@@ -210,7 +210,6 @@ function addTree(tree, category){
     let table = $("<table class='table table-sm table-bordered'></table>");
     $("#knockout-table").append(table);
     $("<h4>"+category.name+"</h4>").insertBefore(table);
-    completeTree(tree, tree.depth, 0);
     // Breadth-first traversing to add <td>s in order
     let heap = [tree];
     while(heap.length){
