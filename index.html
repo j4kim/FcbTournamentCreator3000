@@ -187,7 +187,7 @@
                                 </div>
                                 <div class="form-group col">
                                     <label>Durée de la finale</label>
-                                    <input type="time" class="form-control finalDuration" value="{{ knockout.finalDuration }}" min="00:05">
+                                    <input type="time" class="form-control finalDuration" value="{{ knockout.finalDuration }}" min="00:05" disabled>
                                 </div>
                             </div>
 
@@ -268,7 +268,7 @@
                                     data-match-id="{{ id }}"
                                 >
                                     {{#if first}}
-                                        <td rowspan="{{ numMatches }}">{{ time }}</td>
+                                        <td rowspan="{{ numMatches }}" class="time">{{ time }}</td>
                                     {{/if}}
                                     <td class="text-muted">{{ id }}</td>
                                     <td>{{ field }}</td>

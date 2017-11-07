@@ -93,7 +93,8 @@ function getQualified(){
         qualified.forEach(team => {
             markQualified(team)
         });
-        qualifiedByCategories.push({teams:qualified, category:category.name});
+        // qualifiedByCategories.push({teams:qualified, category:category.name});
+        qualifiedByCategories[index] = qualified;
     });
     return qualifiedByCategories;
 }

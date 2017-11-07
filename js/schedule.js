@@ -64,6 +64,13 @@ function loadSchedule(newSchedule){
     prescheduleKnockout();
 
     showSchedule();
+
+    if(SCHEDULE.knockout){
+        fillKnockoutSchedule(SCHEDULE.knockout);
+        knockoutUi(true);
+    }else{
+        knockoutUi(false)
+    }
 }
 
 $(function () {

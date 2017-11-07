@@ -1,53 +1,64 @@
 
-$("#goKnockout").click(e => {
-    // disable butotn
-    $(e.target).prop("disabled", true);
+function knockoutUi(yes=true){
+    // disable button
+    $("#goKnockout").prop("disabled", yes);
     // disable qualif score inputs
-    $("#qualifTable input").prop("disabled", true);
-    $("#knockout-schedule input").prop("disabled", false);
-
-    let qualifiedByGroups = getQualified();
-
-    qualifiedByGroups.forEach((group, groupIndex) => {
-        group.teams.forEach((team, index) => {
-            qualifiedTeamNodes[groupIndex][index].name = team.name;
-        })
-    });
-    fillKnockoutSchedule();
-    drawTrees();
-
-});
-
-function findTeamClass(parent, matchId){
-    if(parent.teamA.childId === matchId)
-        return "teamA";
-    else if(parent.teamB.childId === matchId)
-        return "teamB";
-    throw new Error("invalid match id : " + matchId, parent)
+    $("#qualifTable input").prop("disabled", yes);
+    // enable knockout score inputs
+    $("#knockout-schedule input").prop("disabled", !yes);
 }
 
-function setWinner(matchNode, winner){
-    let parent = matchNode.parent;
-    if(parent === undefined){
-        // matchNode is a final
-        return;
+$("#goKnockout").click(e => {
+    knockoutUi();
+
+    let qualifiedByCategory = getQualified();
+
+    function replaceTeamName(child, catIndex){
+        if(child.qualifiedIndex === undefined)
+            return;
+        child.name = qualifiedByCategory[catIndex][child.qualifiedIndex].name;
+        delete child.qualifiedIndex;
     }
 
-    let tr = $("[data-match-id="+ parent.id +"]");
-    let teamClass = findTeamClass(parent, matchNode.id);
-    let td = tr.find("."+teamClass);
-    td.text(winner.name).removeClass("text-muted");
-    parent[teamClass] = {name: winner.name, childId:matchNode.id};
-}
+    // insert qualified teams in the knockout schedule
+    knockoutSlots.forEach((_, index) => {
+        let slot = knockoutSlots[index];
+        let catIndex = slot.categoryIndex;
+        replaceTeamName(slot.childA, catIndex);
+        replaceTeamName(slot.childB, catIndex);
+    });
+
+    SCHEDULE.knockout = knockoutSlots.slice(0);
+
+    fillKnockoutSchedule(SCHEDULE.knockout);
+});
 
 function playMatch(matchElem){
     let scoreA = matchElem.find(".scoreA").val();
     let scoreB = matchElem.find(".scoreB").val();
 
-    if(scoreA === "" || scoreB === "" || scoreA === scoreB)
+    let matchId = matchElem.data("match-id");
+    let match = SCHEDULE.knockout.find(slot => slot.id === matchId);
+    match.scoreA = scoreA;
+    match.scoreB = scoreB;
+
+    let parent = SCHEDULE.knockout.find(slot => slot.id === match.parentId);
+    if(parent === undefined)
+    // the match played is a final
         return;
+
+    let childInParent = [parent.childA, parent.childB].find(child => child.matchId === matchId);
+
+    if(scoreA === "" || scoreB === "" || scoreA === scoreB){
+        delete childInParent.name;
+    }else{
+        let winner = scoreA > scoreB ? match.childA : match.childB;
+        childInParent.name = winner.name;
+    }
+
+    fillKnockoutSchedule(SCHEDULE.knockout);
 }
 
-$("#knockout-schedule").on("change", ".score > input", e => {
+$("#knockout-schedule").on("focusout", ".score > input", e => {
     playMatch($(e.target).closest(".match"));
 });

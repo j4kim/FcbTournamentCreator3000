@@ -39,8 +39,7 @@ $(function() {
                 rounds:1
             },
             knockout: {
-                qualified: 4,
-                finalDuration: "00:30"
+                qualified: 4
             },teams:[]
         });
         $(".categoryName").focus();
