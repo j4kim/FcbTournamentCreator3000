@@ -8,7 +8,6 @@ class MatchNode{
 
     constructor(level, children, categoryIndex){
         this.level = level;
-        // this.children = children;
         this.id = MATCH_ID++;
         children.forEach(child => child.parentId = this.id, this);
         this.childA = MatchNode.getChildObject(children[0]);
@@ -20,10 +19,8 @@ class MatchNode{
         let obj = {};
         if(child instanceof MatchNode)
             obj.matchId = child.id;
-        else{
-            // obj.placeholder = "team#"+child.qualifiedIndex;
+        else
             obj.qualifiedIndex = child.qualifiedIndex;
-        }
         return obj;
     }
 
