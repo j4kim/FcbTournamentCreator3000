@@ -190,27 +190,19 @@ function prescheduleKnockout() {
 
         let tree = createTree(nodes, level, index);
         tree.depth = depth;
-        // completeTree(tree, depth, 0);
-        prescheduledKnockout.trees[index] = tree;
-
     });
 
     let phases = prescheduledKnockout.phases;
     let currentTime = knockoutStart.addOrPause(duration, pauses, {});
-    // let matchId = lastMatchId+1;
     for(let i = phases.length-1; i >= 0; i--){
-        // slots.push(labels[i+1]);
         let matches = phases[i].slice(0);
         function addMatch(field, time){
             let match = matches.shift();
             match.field = field;
             match.time = time.toString();
-            // match.id = matchId++;
-            // slot.matches.push(match);
             knockoutSlots.push(match);
         }
         while(matches.length){
-            // let slot = {time:currentTime.toString(), matches:[]};
             // final solo (one time slot by final)
             if(i === 0){
                 addMatch(CONFIG.fields[0], currentTime);
@@ -221,70 +213,107 @@ function prescheduleKnockout() {
                     addMatch(field, currentTime);
                 }
             }
-            // slots.push(slot);
             currentTime = currentTime.addOrPause(duration, pauses, knockoutSlots);
         }
     }
 
-    fillKnockoutSchedule(knockoutSlots);
 
     $("#knockout-schedule input").prop("disabled", true);
 
-    // drawTrees();
+    fillKnockoutSchedule(knockoutSlots);
+    drawTrees(knockoutSlots);
+}
+
+
+function createCell(node, depth, categoryIndex){
+    if(node.level === undefined) throw Error("weshh couz")
+    let level = node.level-1;
+    let colspan = Math.pow(2, depth - level);
+    let cell = $("<td></td>")
+        .attr("colspan", colspan)
+        .addClass("level" + level)
+        .data("node", node);
+    if(node.seed){
+        cell.addClass("seed");
+    }else if(node.name !== undefined){
+        cell.text(node.name);
+    }else{
+        if(node.id !== undefined){
+            cell.text("Match "+node.id +" : "+labels[node.level]).addClass("text-muted");
+        }else if(node.qualifiedIndex !== undefined){
+            cell.text(getTeamPlaceholder(categoryIndex, node.qualifiedIndex)).addClass("text-muted")
+        }
+    }
+    return cell;
+}
+
+function getChild(node, slots, childStr, depth){
+    let child = node[childStr];
+    // if child does not exist, create it if node is a seed-team or return nothing
+    if(child === undefined){
+        if(depth === node.level)
+            return {level: node.level+1, seed: true};
+        return;
+    }
+    // if child is a match, return it
+    if(child.matchId !== undefined){
+        return slots.find(slot => slot.id === child.matchId);
+    }
+    // if child is a team, add level and return it
+    if(child.name || child.qualifiedIndex !== undefined)
+        return $.extend(child, {level: node.level+1});
+}
+
+function getChildren(node, slots, depth){
+    let children = [];
+    ["childA","childB"].forEach(childStr => {
+        let child = getChild(node, slots, childStr, depth);
+        if(child)
+            children.push(child);
+    });
+    return children;
+}
+
+function createCells(final, slots, categoryIndex){
+    // Breadth-first traversing to add <td>s in order
+    let heap = [final];
+    let depth = final.depth;
+    let cells = [];
+    while(heap.length){
+        let node = $.extend({},heap.shift());
+        cells.push(createCell(node, depth, categoryIndex));
+        heap = heap.concat(getChildren(node, slots, depth));
+    }
+    return cells;
+}
+
+function drawTree(cells, table){
+    let tds = [];
+    let level = 0;
+    // regroup <td>s into <tr>s
+    do{
+        tds = cells.filter(td => td.hasClass("level" + level));
+        let row = $("<tr></tr>").append(tds);
+        table.prepend(row);
+        level++;
+    }while(tds.length);
 
 }
 
-// function addCell(table, node){
-//     let td = $("<td></td>")
-//         .attr("colspan", node.colspan)
-//         .addClass("level"+node.level)
-//         .data("node", node)
-//         .text(node.name);
-//     if(node.name === undefined)
-//         td.text(node.label).addClass("text-muted");
-//     if(node.seed)
-//         td.addClass("seed");
-//     // nodes that have ids are matches
-//     if(node.id !== undefined)
-//         td.prepend("match " + node.id + ": ");
-//     table.prepend(td);
-// }
-//
-// // make the tree a complete tree till the last level
-// function completeTree(node, depth, level){
-//     node.colspan = Math.pow(2, depth-level);
-//     if(level === depth)
-//         return;
-//     if(node.children === undefined)
-//         node.children = [{seed:true},{seed:true}];
-//     for(let child of node.children)
-//         completeTree(child, depth, level+1);
-// }
-//
-// function addTree(tree, category){
-//     let table = $("<table class='table table-sm table-bordered'></table>");
-//     $("#knockout-table").append(table);
-//     $("<h4>"+category.name+"</h4>").insertBefore(table);
-//     // Breadth-first traversing to add <td>s in order
-//     let heap = [tree];
-//     while(heap.length){
-//         let node = heap.shift();
-//         addCell(table, node);
-//         if(node.children)
-//             heap = heap.concat(node.children)
-//     }
-//     // regroup td into tr by their level class
-//     let depth = tree.depth;
-//     do{
-//         let cells = table.find("td.level"+depth);
-//         let row = $("<tr></tr>").append(cells);
-//         table.append(row);
-//     }while(depth--)
-// }
-//
-// function drawTrees(){
-//     $("#knockout-table").empty();
-//     CONFIG.categories.forEach((category, index) => {
-//         addTree(prescheduledKnockout.trees[index], category);
-//     });
-// }
+function drawTrees(knockoutSlots){
+    console.log("drawin trees from slots", knockoutSlots);
+    $("#knockout-table").empty();
+    CONFIG.categories.forEach((category, index) => {
+        let table = $("<table class='table table-sm table-bordered'></table>");
+        $("#knockout-table").append(table);
+        $("<h4>"+category.name+"</h4>").insertBefore(table);
+
+        // get the matches of this category
+        let categorySlots = knockoutSlots.filter(slot => slot.categoryIndex===index);
+        // get the root/final of the tree
+        let final = categorySlots.find(slot => slot.level===1);
+
+        let cells = createCells(final, categorySlots, index);
+        drawTree(cells, table);
+    });
+}

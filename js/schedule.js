@@ -67,6 +67,7 @@ function loadSchedule(newSchedule){
 
     if(SCHEDULE.knockout){
         fillKnockoutSchedule(SCHEDULE.knockout);
+        drawTrees(SCHEDULE.knockout);
         knockoutUi(true);
     }else{
         knockoutUi(false)

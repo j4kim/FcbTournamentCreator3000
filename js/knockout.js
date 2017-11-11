@@ -31,6 +31,7 @@ $("#goKnockout").click(e => {
     SCHEDULE.knockout = knockoutSlots.slice(0);
 
     fillKnockoutSchedule(SCHEDULE.knockout);
+    drawTrees(SCHEDULE.knockout);
 });
 
 function playMatch(matchElem){
@@ -42,21 +43,20 @@ function playMatch(matchElem){
     match.scoreA = scoreA;
     match.scoreB = scoreB;
 
-    let parent = SCHEDULE.knockout.find(slot => slot.id === match.parentId);
-    if(parent === undefined)
-    // the match played is a final
+    if(scoreA === "" || scoreB === "" || scoreA === scoreB)
         return;
 
-    let childInParent = [parent.childA, parent.childB].find(child => child.matchId === matchId);
+    let winner = scoreA > scoreB ? match.childA : match.childB;
+    match.name = winner.name;
 
-    if(scoreA === "" || scoreB === "" || scoreA === scoreB){
-        delete childInParent.name;
-    }else{
-        let winner = scoreA > scoreB ? match.childA : match.childB;
+    let parent = SCHEDULE.knockout.find(slot => slot.id === match.parentId);
+    if(parent !== undefined){
+        let childInParent = [parent.childA, parent.childB].find(child => child.matchId === matchId);
         childInParent.name = winner.name;
     }
 
     fillKnockoutSchedule(SCHEDULE.knockout);
+    drawTrees(SCHEDULE.knockout);
 }
 
 $("#knockout-schedule").on("focusout", ".score > input", e => {
