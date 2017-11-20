@@ -93,6 +93,7 @@ class Match{
             teamA: this.teamA,
             teamB: this.teamB,
             field: this.field,
+            time: this.time,
             scoreA: this.scoreA,
             scoreB: this.scoreB,
             group: {index: this.group.index}
@@ -265,7 +266,6 @@ class Schedule{
         // loop over time and matches to put them in time slots
         let currentTime = start;
         while(matches.length){
-            let slot = {time:currentTime.toString(), matches:[]};
             let teams = [];
             for(let field of fields){
                 if(matches.length === 0) break;
@@ -275,11 +275,11 @@ class Schedule{
                     break;
                 teams.push(match.teamA, match.teamB);
                 match.field = field;
+                match.time = currentTime.toString();
                 match.id = matchId++;
-                slot.matches.push(match);
+                slots.push(match);
                 matches.shift();
             }
-            slots.push(slot);
             currentTime = currentTime.addOrPause(duration, pauses, slots);
         }
         return slots;

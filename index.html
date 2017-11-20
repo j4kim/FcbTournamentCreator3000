@@ -267,9 +267,7 @@
                                     data-group-index="{{ group.index }}"
                                     data-match-id="{{ id }}"
                                 >
-                                    {{#if first}}
-                                        <td rowspan="{{ numMatches }}" class="time">{{ time }}</td>
-                                    {{/if}}
+                                    <td class="time">{{ time }}</td>
                                     <td class="text-muted">{{ id }}</td>
                                     <td>{{ field }}</td>
                                     <td class="{{ teamA.class }} team teamA">{{ teamA.name }}</td>

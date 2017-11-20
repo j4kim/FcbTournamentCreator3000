@@ -2,21 +2,8 @@
 let matchTemplate = getTemplate("match");
 let groupTemplate = getTemplate("group");
 
-function addMatch(data){
-    $("#qualifTable tbody").append(matchTemplate(data));
-}
-
 function addSlot(slot){
-    if(slot.pause){
-        addMatch(slot);
-    }else{
-        slot.matches[0].first = true;
-        slot.matches[0].numMatches = slot.matches.length;
-        slot.matches.forEach(match => {
-            match.time = slot.time;
-            addMatch(match);
-        })
-    }
+    $("#qualifTable tbody").append(matchTemplate(slot));
 }
 
 function showConfig(){
@@ -41,7 +28,8 @@ function fillGroups(groups){
 function fillSchedule(qualif){
     qualif.forEach(slot => {
         addSlot(slot);
-    })
+    });
+    mergeTimeSlots($("#qualifTable"));
 }
 
 let SCHEDULE;

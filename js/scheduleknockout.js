@@ -106,23 +106,6 @@ function getTeamPlaceholder(categoryIndex, rank){
     return rankStr + " catégorie " + CONFIG.categories[categoryIndex].name;
 }
 
-
-function mergeTimeSlots(table){
-    let lastTime = "";
-    let rowspan = 1;
-    let first;
-    table.find("td.time").each((index,elem) => {
-        if($(elem).text() === lastTime){
-            first.attr("rowspan", ++rowspan);
-            $(elem).remove();
-        }else{
-            lastTime = $(elem).text();
-            first = $(elem);
-            rowspan = 1;
-        }
-    })
-}
-
 function fillKnockoutSchedule(knockoutSlots){
     $("#knockout-schedule .slot").remove();
     let level = -1;
@@ -145,11 +128,12 @@ let knockoutSlots = [];
 function prescheduleKnockout() {
     let pauseBetween = new Time(CONFIG.pauseBetween);
     let pauses = Time.convertPauses(CONFIG.pauses);
-    let lastSlice = SCHEDULE.qualif.slice(-1)[0];
-    let lastMatchStart = new Time(lastSlice.time);
-    let lastMatchId = lastSlice.matches.slice(-1)[0].id;
-    MATCH_ID = lastMatchId+1;
-    let knockoutStart = lastMatchStart.addOrPause(pauseBetween, pauses);
+    let lastSlot = SCHEDULE.qualif.slice(-1)[0];
+    let lastSlotStart = new Time(lastSlot.time);
+    // if the last slot is a pause, get the penultimate slot
+    let lastMatch = lastSlot.pause ? SCHEDULE.qualif.slice(-2)[0] : lastSlot;
+    MATCH_ID = lastMatch.id + 1;
+    let knockoutStart = lastSlotStart.addOrPause(pauseBetween, pauses);
     let duration = new Time(CONFIG.matchDuration);
 
     // reinit

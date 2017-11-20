@@ -28,14 +28,7 @@ function updateRanking(){
 
         // find match from id
         let matchId = $(elem).data("match-id");
-        let match;
-        for(let slot of SCHEDULE.qualif){
-            let tmp = slot.matches.find(match => match.id === matchId);
-            if(tmp){
-                match = tmp;
-                break;
-            }
-        }
+        let match = SCHEDULE.qualif.find(match => match.id === matchId);
 
         if(A.val() === "" || B.val() === ""){
             delete match.scoreA;

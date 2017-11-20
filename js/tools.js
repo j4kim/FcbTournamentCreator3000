@@ -90,3 +90,18 @@ class Time{
 function isPowerOfTwo(n){
     return n && (n & (n - 1)) === 0;
 }
+
+
+function mergeTimeSlots(table){
+    let lastTime = "", rowspan = 1, first;
+    table.find("td.time").each((index,elem) => {
+        if($(elem).text() === lastTime){
+            first.attr("rowspan", ++rowspan);
+            $(elem).remove();
+        }else{
+            lastTime = $(elem).text();
+            first = $(elem);
+            rowspan = 1;
+        }
+    })
+}
