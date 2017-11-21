@@ -46,10 +46,10 @@ class Time{
     toString(){
         let h = parseInt(this.minutes/60);
         let m = this.minutes%60;
-        let date = new Date(0, 0, 0, h, m, 0, 0);
-
-        let options = {hour: "numeric", minute: "numeric"};
-        return new Intl.DateTimeFormat("fr-Fr", options).format(date);
+        function pad(n){
+            return (''+n).padStart(2,'0');
+        }
+        return pad(h)+':'+pad(m);
     }
 
     add(t2){
