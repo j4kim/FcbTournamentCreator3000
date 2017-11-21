@@ -14,6 +14,7 @@ function updateRanking(){
             newTeam.name = team.name;
             newTeam.index = team.index;
             newTeam.groupIndex = team.groupIndex;
+            newTeam.matchIds = team.matchIds;
             newTeam.reinit();
             return newTeam;
         })
@@ -56,6 +57,11 @@ function updateRanking(){
         // clone teams array
         group.rankedTeams = group.teams.slice(0);
         group.rankedTeams.sort(Team.compare);
+        // TODO : store indexes and not a copy of the teams
+        // group.rankedTeamsIndex
+        // rankedTeams.forEach(team => {
+        //
+        // })
         addRankingTable({teams:group.rankedTeams, group:group});
     });
 

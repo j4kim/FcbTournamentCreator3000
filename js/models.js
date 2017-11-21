@@ -3,6 +3,7 @@
 class Team{
     constructor(name){
         this.name = name;
+        this.matchIds = [];
         this.played = this.waiting = 0;
     }
 
@@ -44,7 +45,9 @@ class Team{
         return {
             name: this.name,
             index: this.index,
-            groupIndex: this.groupIndex};
+            groupIndex: this.groupIndex,
+            matchIds: this.matchIds
+        };
     }
 
     static compare(t1, t2){
@@ -94,9 +97,11 @@ class Match{
             teamB: this.teamB,
             field: this.field,
             time: this.time,
+            timeUnit: this.timeUnit,
             scoreA: this.scoreA,
             scoreB: this.scoreB,
-            group: {index: this.group.index}
+            group: {index: this.group.index},
+            teamWait: this.teamWait
         };
     }
 }
@@ -176,7 +181,8 @@ class Group{
             name: this.name,
             teams: this.teams,
             index: this.index,
-            categoryIndex: this.categoryIndex
+            categoryIndex: this.categoryIndex,
+            waitAverage: this.waitAverage
         };
     }
 }
@@ -236,6 +242,7 @@ class Schedule{
         let qualifMatches = this.distributeMatches(groupSchedules, numMatches);
         console.log(qualifMatches);
         this.qualif = this.makeTimeSlots(qualifMatches, config);
+        this.equilibrate(this.qualif);
     }
 
     distributeMatches(matchGroups, numMatches){
@@ -265,6 +272,7 @@ class Schedule{
 
         // loop over time and matches to put them in time slots
         let currentTime = start;
+        let timeUnit = 1;
         while(matches.length){
             let teams = [];
             for(let field of fields){
@@ -276,12 +284,57 @@ class Schedule{
                 teams.push(match.teamA, match.teamB);
                 match.field = field;
                 match.time = currentTime.toString();
+                match.timeUnit = timeUnit;
                 match.id = matchId++;
+                [match.teamA, match.teamB].forEach(t => {
+                    let group = this.groups
+                        .find(group => group.index === t.groupIndex);
+                    let team = group.teams.find(team => team.index === t.index)
+                    team.matchIds.push(match.id);
+                });
                 slots.push(match);
                 matches.shift();
             }
+            timeUnit++;
             currentTime = currentTime.addOrPause(duration, pauses, slots);
         }
+
         return slots;
+    }
+
+    equilibrate(slots){
+        this.groups.forEach(group => {
+            let teamWaitUnisAverages = [];
+            group.teams.forEach(team => {
+                let last, teamWaitUnits=[];
+                team.matchIds.forEach(matchId => {
+                    let match = this.qualif.find(match => match.id === matchId);
+                    if(last !== undefined){
+                        let waitUnits = match.timeUnit - last;
+                        teamWaitUnits.push(waitUnits);
+                        if(match.teamWait === undefined) match.teamWait = [];
+                        match.teamWait.push(waitUnits)
+                    }
+                    last = match.timeUnit;
+                });
+                console.log(team.name, average(teamWaitUnits));
+                teamWaitUnisAverages.push(average(teamWaitUnits));
+            });
+            console.log(">>", group.name, average(teamWaitUnisAverages));
+            group.waitAverage = Math.round(average(teamWaitUnisAverages));
+        });
+        this.qualif.forEach(slot => {
+            if(slot.pause || slot.teamWait === undefined) return;
+            slot.matchClasses = "";
+            let group = this.groups[slot.group.index];
+            slot.teamWait.forEach(waitUnits => {
+                // todo: ajouter la taille du retard
+                if(waitUnits > group.waitAverage+1){
+                    slot.matchClasses += "late ";
+                }else if(waitUnits < group.waitAverage-1){
+                    slot.matchClasses += "advance ";
+                }
+            })
+        })
     }
 }
