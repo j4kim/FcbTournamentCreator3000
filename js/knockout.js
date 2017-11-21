@@ -23,6 +23,7 @@ $("#goKnockout").click(e => {
     // insert qualified teams in the knockout schedule
     knockoutSlots.forEach((_, index) => {
         let slot = knockoutSlots[index];
+        if (slot.pause) return;
         let catIndex = slot.categoryIndex;
         replaceTeamName(slot.childA, catIndex);
         replaceTeamName(slot.childB, catIndex);
@@ -49,7 +50,7 @@ function playMatch(matchElem){
     let winner = scoreA > scoreB ? match.childA : match.childB;
     match.name = winner.name;
 
-    let parent = SCHEDULE.knockout.find(slot => slot.id === match.parentId);
+    let parent = SCHEDULE.knockout.find(slot => slot.id && slot.id === match.parentId);
     if(parent !== undefined){
         let childInParent = [parent.childA, parent.childB].find(child => child.matchId === matchId);
         childInParent.name = winner.name;

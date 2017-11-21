@@ -82,11 +82,13 @@ function getTeamObj(child, slot){
 }
 
 function getMatchElement(slot){
-    let obj = $.extend({first:true}, slot);
-    obj.teamA = getTeamObj(slot.childA, slot);
-    obj.teamB = getTeamObj(slot.childB, slot);
+    let obj = $.extend({}, slot);
+    if(slot.pause === undefined){
+        obj.teamA = getTeamObj(slot.childA, slot);
+        obj.teamB = getTeamObj(slot.childB, slot);
+    }
     let matchElement = $(matchTemplate(obj));
-    matchElement.data("match-id",obj.id);
+    matchElement.data("match-id", obj.id);
     return matchElement;
 }
 
