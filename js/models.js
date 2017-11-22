@@ -101,7 +101,8 @@ class Match{
             scoreA: this.scoreA,
             scoreB: this.scoreB,
             group: {index: this.group.index},
-            teamWait: this.teamWait
+            teamWait: this.teamWait,
+            matchClasses: this.matchClasses
         };
     }
 }
@@ -286,12 +287,6 @@ class Schedule{
                 match.time = currentTime.toString();
                 match.timeUnit = timeUnit;
                 match.id = matchId++;
-                [match.teamA, match.teamB].forEach(t => {
-                    let group = this.groups
-                        .find(group => group.index === t.groupIndex);
-                    let team = group.teams.find(team => team.index === t.index)
-                    team.matchIds.push(match.id);
-                });
                 slots.push(match);
                 matches.shift();
             }
@@ -304,12 +299,18 @@ class Schedule{
 
     equilibrate(slots){
         // for each team, iterate over its matches and compute the wait gaps between them
-        this.groups.forEach(group => {
+        this.groups.forEach((group, groupIndex) => {
             let teamWaitUnisAverages = [];
-            group.teams.forEach(team => {
+            group.teams.forEach((team, teamIndex) => {
+                let teamMatches = slots
+                    .filter(slot => slot.pause === undefined)
+                    .filter(match => {
+                        // test if team is one of this match teams
+                        return ["teamA","teamB"].some(team =>
+                            match[team].index===teamIndex && match[team].groupIndex===groupIndex);
+                });
                 let last, teamWaitUnits=[];
-                team.matchIds.forEach(matchId => {
-                    let match = this.qualif.find(match => match.id === matchId);
+                teamMatches.forEach(match => {
                     if(last !== undefined){
                         let waitUnits = match.timeUnit - last;
                         teamWaitUnits.push(waitUnits);
@@ -321,9 +322,10 @@ class Schedule{
                 console.log(team.name, average(teamWaitUnits));
                 teamWaitUnisAverages.push(average(teamWaitUnits));
             });
-            console.log(">>", group.name, average(teamWaitUnisAverages));
             group.waitAverage = Math.round(average(teamWaitUnisAverages));
+            console.log(">>", group.name, average(teamWaitUnisAverages), "->", group.waitAverage);
         });
+
 
         // mark late or advance on each match
         let criticalLate = 0;
@@ -347,7 +349,8 @@ class Schedule{
                     criticalAdvance = diff > criticalAdvance ? diff : criticalAdvance;
                 }
             });
-            slot.matchClasses += " diff"+slot.diff;
+            if(Math.abs(slot.diff) > 0)
+                slot.matchClasses += " diff"+slot.diff;
             diffMin = slot.diff < diffMin ? slot.diff : diffMin;
             diffMax = slot.diff > diffMax ? slot.diff : diffMax;
         });
@@ -356,5 +359,6 @@ class Schedule{
         this.diffMin = diffMin;
         this.diffMax = diffMax;
         console.log("diff", diffMin, diffMax)
+
     }
 }
