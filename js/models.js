@@ -303,6 +303,7 @@ class Schedule{
     }
 
     equilibrate(slots){
+        // for each team, iterate over its matches and compute the wait gaps between them
         this.groups.forEach(group => {
             let teamWaitUnisAverages = [];
             group.teams.forEach(team => {
@@ -312,8 +313,8 @@ class Schedule{
                     if(last !== undefined){
                         let waitUnits = match.timeUnit - last;
                         teamWaitUnits.push(waitUnits);
-                        if(match.teamWait === undefined) match.teamWait = [];
-                        match.teamWait.push(waitUnits)
+                        if(match.waitGaps === undefined) match.waitGaps = [];
+                        match.waitGaps.push(waitUnits)
                     }
                     last = match.timeUnit;
                 });
@@ -323,18 +324,37 @@ class Schedule{
             console.log(">>", group.name, average(teamWaitUnisAverages));
             group.waitAverage = Math.round(average(teamWaitUnisAverages));
         });
+
+        // mark late or advance on each match
+        let criticalLate = 0;
+        let criticalAdvance = 0;
+        let diffMin = 0, diffMax = 0;
         this.qualif.forEach(slot => {
-            if(slot.pause || slot.teamWait === undefined) return;
+            if(slot.pause || slot.waitGaps === undefined) return;
             slot.matchClasses = "";
+            slot.diff = 0;
             let group = this.groups[slot.group.index];
-            slot.teamWait.forEach(waitUnits => {
-                // todo: ajouter la taille du retard
-                if(waitUnits > group.waitAverage+1){
-                    slot.matchClasses += "late ";
-                }else if(waitUnits < group.waitAverage-1){
-                    slot.matchClasses += "advance ";
+            slot.waitGaps.forEach(waitUnits => {
+                let diff = group.waitAverage - waitUnits;
+                slot.diff += diff;
+                if(diff === 0){
+                    slot.matchClasses += " ontime";
+                }else if(diff < 0){
+                    slot.matchClasses += " late"+(-diff);
+                    criticalLate = diff < criticalLate ? diff : criticalLate;
+                }else if(diff > 0){
+                    slot.matchClasses += " advance"+diff;
+                    criticalAdvance = diff > criticalAdvance ? diff : criticalAdvance;
                 }
-            })
-        })
+            });
+            slot.matchClasses += " diff"+slot.diff;
+            diffMin = slot.diff < diffMin ? slot.diff : diffMin;
+            diffMax = slot.diff > diffMax ? slot.diff : diffMax;
+        });
+        this.criticalLate = -criticalLate;
+        this.criticalAdvance = criticalAdvance;
+        this.diffMin = diffMin;
+        this.diffMax = diffMax;
+        console.log("diff", diffMin, diffMax)
     }
 }
