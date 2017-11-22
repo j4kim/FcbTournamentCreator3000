@@ -243,7 +243,7 @@ class Schedule{
         let qualifMatches = this.distributeMatches(groupSchedules, numMatches);
         console.log(qualifMatches);
         this.qualif = this.makeTimeSlots(qualifMatches, config);
-        this.equilibrate(this.qualif);
+        this.homogenize(this.qualif);
     }
 
     distributeMatches(matchGroups, numMatches){
@@ -297,7 +297,26 @@ class Schedule{
         return slots;
     }
 
-    equilibrate(slots){
+    homogenize(slots){
+        this.computeWaitAverage(slots);
+        let oldReport = this.controlTimingBalance(slots);
+        return;
+        //todo: grandSwapping: copy slots and swap the most critically misplaced matches
+        //todo: better: compare 2 timing balance report
+        for(let i = 1; i <= 1; i++){
+            console.log("Experience number", i);
+            let newSlots = this.grandSwapping(slots, oldReport);
+            let newReport = this.controlTimingBalance(newSlots);
+            if(! better(newReport, oldReport))
+                break;
+            console.log("cool", oldReport, newReport);
+            oldReport = newReport;
+            slots = newSlots;
+        }
+        this.qualif = slots;
+    }
+
+    computeWaitAverage(slots){
         // for each team, iterate over its matches and compute the wait gaps between them
         this.groups.forEach((group, groupIndex) => {
             let teamWaitUnisAverages = [];
@@ -308,7 +327,7 @@ class Schedule{
                         // test if team is one of this match teams
                         return ["teamA","teamB"].some(team =>
                             match[team].index===teamIndex && match[team].groupIndex===groupIndex);
-                });
+                    });
                 let last, teamWaitUnits=[];
                 teamMatches.forEach(match => {
                     if(last !== undefined){
@@ -325,40 +344,43 @@ class Schedule{
             group.waitAverage = Math.round(average(teamWaitUnisAverages));
             console.log(">>", group.name, average(teamWaitUnisAverages), "->", group.waitAverage);
         });
+    }
 
-
+    controlTimingBalance(slots){
         // mark late or advance on each match
         let criticalLate = 0;
         let criticalAdvance = 0;
-        let diffMin = 0, diffMax = 0;
-        this.qualif.forEach(slot => {
+        let diffMin = 0, diffMax = 0, absuloteDiffs = [];
+        slots.forEach(slot => {
             if(slot.pause || slot.waitGaps === undefined) return;
             slot.matchClasses = "";
             slot.diff = 0;
             let group = this.groups[slot.group.index];
-            slot.waitGaps.forEach(waitUnits => {
-                let diff = group.waitAverage - waitUnits;
-                slot.diff += diff;
-                if(diff === 0){
+            slot.waitGaps.forEach(waitGap => {
+                let waitDiff = group.waitAverage - waitGap;
+                slot.diff += waitDiff;
+                if(waitDiff === 0){
                     slot.matchClasses += " ontime";
-                }else if(diff < 0){
-                    slot.matchClasses += " late"+(-diff);
-                    criticalLate = diff < criticalLate ? diff : criticalLate;
-                }else if(diff > 0){
-                    slot.matchClasses += " advance"+diff;
-                    criticalAdvance = diff > criticalAdvance ? diff : criticalAdvance;
+                }else if(waitDiff < 0){
+                    slot.matchClasses += " late"+(-waitDiff);
+                    criticalLate = waitDiff < criticalLate ? waitDiff : criticalLate;
+                }else if(waitDiff > 0){
+                    slot.matchClasses += " advance"+waitDiff;
+                    criticalAdvance = waitDiff > criticalAdvance ? waitDiff : criticalAdvance;
                 }
             });
             if(Math.abs(slot.diff) > 0)
                 slot.matchClasses += " diff"+slot.diff;
             diffMin = slot.diff < diffMin ? slot.diff : diffMin;
             diffMax = slot.diff > diffMax ? slot.diff : diffMax;
+            absuloteDiffs.push(Math.abs(slot.diff));
         });
         this.criticalLate = -criticalLate;
         this.criticalAdvance = criticalAdvance;
         this.diffMin = diffMin;
         this.diffMax = diffMax;
-        console.log("diff", diffMin, diffMax)
-
+        let diffAverage = average(absuloteDiffs);
+        console.log("diff", diffMin, diffMax, diffAverage);
+        return [diffMin, diffMax, diffAverage];
     }
 }
