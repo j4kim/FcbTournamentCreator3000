@@ -309,30 +309,43 @@ class Schedule{
 
     /**
      * copy slots and swap the most critically misplaced matches
+     * @param oldSlots: match list
+     * @param report: a 4 values array [diffMin, diffMax, diffMinCount, diffMaxCount, diffAverage]
+     * @returns {Array|*} the new slots containing the swapped matches
      */
     grandSwapping(oldSlots, report){
         let slots = oldSlots.map(slot => $.extend({}, slot));
-        let [diffMin, diffMax] = report;
-        // let criticallyAdvanced = slots.filter(slot => slot.diff === diffMax);
-        let criticallyLate = slots.filter(slot => slot.diff === diffMin);
+        let [diffMin, diffMax, diffMinCount, diffMaxCount, diffAverage] = report;
 
-        criticallyLate.forEach(lateSlot => {
+        let direction = 1;
+        if(diffMin < -diffMax || (diffMin === diffMax && diffMinCount > diffMaxCount)){
+            direction = -1;
+        }
+        let criticalDiff = direction > 0 ? diffMax : diffMin;
+        let criticals = slots.filter(slot => slot.diff === criticalDiff);
+
+        console.log("swapping all",criticalDiff)
+
+        criticals.forEach(criticalSlot => {
             let candidates = [];
             let level = 1;
             do{
-                candidates = slots.filter(slot =>
-                    // slot.diff >= level+1 && slot.timeUnit === lateSlot.timeUnit-level
-                    slot.diff >= level && slot.timeUnit === lateSlot.timeUnit-level
-                );
+                candidates = slots.filter(slot =>{
+                    if(direction > 0){
+                        return slot.diff <= level && slot.timeUnit === criticalSlot.timeUnit + level;
+                    }else{
+                        return slot.diff >= level && slot.timeUnit === criticalSlot.timeUnit - level;
+                    }
+                });
                 level++;
             }while(candidates.length === 0 && level < 3);
 
             if(candidates.length === 0) // tant pis
                 return;
 
-            let chosen = candidates.sort((a,b) => b.diff - a.diff)[0];
+            let chosen = candidates.sort((a,b) => direction*(a.diff - b.diff))[0];
 
-            this.swap(lateSlot, chosen, slots)
+            this.swap(criticalSlot, chosen, slots)
         });
 
         return slots;
@@ -388,7 +401,7 @@ class Schedule{
         // mark late or advance on each match
         let criticalLate = 0;
         let criticalAdvance = 0;
-        let diffMin = 0, diffMax = 0, absuloteDiffs = [];
+        let diffMin = 0, diffMax = 0, diffs = [];
         slots.forEach(slot => {
             if(slot.pause || slot.waitGaps === undefined) return;
             slot.matchClasses = "";
@@ -411,14 +424,12 @@ class Schedule{
                 slot.matchClasses += " diff"+slot.diff;
             diffMin = slot.diff < diffMin ? slot.diff : diffMin;
             diffMax = slot.diff > diffMax ? slot.diff : diffMax;
-            absuloteDiffs.push(Math.abs(slot.diff));
+            diffs.push(slot.diff);
         });
-        // this.criticalLate = -criticalLate;
-        // this.criticalAdvance = criticalAdvance;
-        // this.diffMin = diffMin;
-        // this.diffMax = diffMax;
-        let diffAverage = average(absuloteDiffs);
-        console.log("diff", diffMin, diffMax, diffAverage);
-        return [diffMin, diffMax, diffAverage];
+        let diffAverage = average(diffs.map(diff => Math.abs(diff)));
+        let diffMinCount = diffs.filter(diff => diff === diffMin).length;
+        let diffMaxCount = diffs.filter(diff => diff === diffMax).length;
+        console.log("diff", diffMin, diffMax, diffMinCount, diffMaxCount, diffAverage);
+        return [diffMin, diffMax, diffMinCount, diffMaxCount, diffAverage];
     }
 }
