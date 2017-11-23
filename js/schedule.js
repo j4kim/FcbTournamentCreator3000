@@ -36,16 +36,21 @@ function fillSchedule(qualif){
 let SCHEDULE;
 
 function generateSchedule(){
-    CONFIG = getConfig();
-    let best = new Schedule(CONFIG);
-    for(let i=1; i<10; i++){
-        let schedule = new Schedule(CONFIG);
-        if(schedule.score < best.score){
-            best = schedule;
+    $(".fa-spinner").removeClass("d-none");
+    // a small timeout is required to show the spinner
+    setTimeout(() => {
+        CONFIG = getConfig();
+        let best = new Schedule(CONFIG);
+        for(let i=1; i<10; i++){
+            let schedule = new Schedule(CONFIG);
+            if(schedule.score < best.score){
+                best = schedule;
+            }
         }
-    }
-    SCHEDULE = best;
-    loadSchedule(SCHEDULE);
+        SCHEDULE = best;
+        loadSchedule(SCHEDULE);
+        $(".fa-spinner").addClass("d-none");
+    }, 10);
 }
 
 function loadSchedule(newSchedule){
@@ -68,11 +73,6 @@ function loadSchedule(newSchedule){
     }else{
         knockoutUi(false)
     }
-}
-
-function homogenize(){
-    SCHEDULE.qualif = SCHEDULE.homogenize(SCHEDULE.qualif);
-    fillSchedule(SCHEDULE.qualif);
 }
 
 $(function () {
