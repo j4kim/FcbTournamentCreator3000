@@ -332,6 +332,7 @@ class Schedule{
             slots = newSlots;
         }
         console.log("best", bestReport);
+        this.score = bestReport[6];
         return bestSlots;
     }
 

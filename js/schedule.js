@@ -37,7 +37,14 @@ let SCHEDULE;
 
 function generateSchedule(){
     CONFIG = getConfig();
-    SCHEDULE = new Schedule(CONFIG);
+    let best = new Schedule(CONFIG);
+    for(let i=1; i<10; i++){
+        let schedule = new Schedule(CONFIG);
+        if(schedule.score < best.score){
+            best = schedule;
+        }
+    }
+    SCHEDULE = best;
     loadSchedule(SCHEDULE);
 }
 
