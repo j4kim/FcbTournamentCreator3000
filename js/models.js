@@ -243,9 +243,9 @@ class Schedule{
         let qualifMatches = this.distributeMatches(groupSchedules, numMatches);
         console.log(qualifMatches);
         this.qualif = this.makeTimeSlots(qualifMatches, config);
-        // this.homogenize(this.qualif);
-        this.computeWaitAverage(this.qualif);
-        let oldReport = this.controlTimingBalance(this.qualif);
+        this.qualif = this.homogenize(this.qualif);
+        // this.computeWaitAverage(this.qualif);
+        // let oldReport = this.controlTimingBalance(this.qualif);
     }
 
     distributeMatches(matchGroups, numMatches){
@@ -300,22 +300,50 @@ class Schedule{
     }
 
     homogenize(slots){
+        // report: [diffMin, diffMax, diffMinCount, diffMaxCount, criticalLate, criticalAdvance, diffAverage]
+        function better(a, b){
+            // let [maxA, maxB] = [Math.max(-a[4], a[5]), Math.max(-b[4], b[5])];
+            // if(maxA === maxB){
+                return a[6] < b[6];
+            // }
+            // return maxA < maxB;
+        }
+
+        this.computeWaitAverage(slots);
         let oldReport = this.controlTimingBalance(slots);
-        let newSlots = this.grandSwapping(slots, oldReport);
-        this.computeWaitAverage(newSlots);
-        let newReport = this.controlTimingBalance(newSlots);
-        return newSlots;
+        let bestReport = oldReport;
+        let newSlots;
+        let bestSlots = slots;
+
+        let failures = 0;
+        for(let i=0; i<1000; i++){
+            console.log("experience #"+i);
+            newSlots = this.grandSwapping(slots, oldReport);
+            this.computeWaitAverage(newSlots);
+            let newReport = this.controlTimingBalance(newSlots);
+            if(better(newReport, bestReport)){
+                bestSlots = newSlots;
+                bestReport = newReport;
+                failures = 0;
+            }else{
+                if(++failures > 20) break;
+            }
+            oldReport = newReport;
+            slots = newSlots;
+        }
+        console.log("best", bestReport);
+        return bestSlots;
     }
 
     /**
      * copy slots and swap the most critically misplaced matches
      * @param oldSlots: match list
-     * @param report: a 4 values array [diffMin, diffMax, diffMinCount, diffMaxCount, diffAverage]
+     * @param report: a 4 values array [diffMin, diffMax, diffMinCount, diffMaxCount...]
      * @returns {Array|*} the new slots containing the swapped matches
      */
     grandSwapping(oldSlots, report){
         let slots = oldSlots.map(slot => $.extend({}, slot));
-        let [diffMin, diffMax, diffMinCount, diffMaxCount, diffAverage] = report;
+        let [diffMin, diffMax, diffMinCount, diffMaxCount] = report;
 
         let direction = 1;
         if(diffMin < -diffMax || (diffMin === diffMax && diffMinCount > diffMaxCount)){
@@ -324,7 +352,7 @@ class Schedule{
         let criticalDiff = direction > 0 ? diffMax : diffMin;
         let criticals = slots.filter(slot => slot.diff === criticalDiff);
 
-        console.log("swapping all",criticalDiff)
+        console.log("swapping matches with diff", criticalDiff)
 
         criticals.forEach(criticalSlot => {
             let candidates = [];
@@ -338,7 +366,7 @@ class Schedule{
                     }
                 });
                 level++;
-            }while(candidates.length === 0 && level < 3);
+            }while(candidates.length === 0 && level < 4);
 
             if(candidates.length === 0) // tant pis
                 return;
@@ -352,6 +380,7 @@ class Schedule{
     }
 
     swap(slotA, slotB, slots){
+        // todo: s'assurer qu'on peut faire ce swap
         console.log("SWAPPING", slotA.id, slotB.id);
         // return the match data of a slot, what defines a match is teams and group
         function getData(slot){
@@ -429,7 +458,7 @@ class Schedule{
         let diffAverage = average(diffs.map(diff => Math.abs(diff)));
         let diffMinCount = diffs.filter(diff => diff === diffMin).length;
         let diffMaxCount = diffs.filter(diff => diff === diffMax).length;
-        console.log("diff", diffMin, diffMax, diffMinCount, diffMaxCount, diffAverage);
-        return [diffMin, diffMax, diffMinCount, diffMaxCount, diffAverage];
+        console.log("diff", diffMin, diffMax, "count", diffMinCount, diffMaxCount, "critical", criticalLate, criticalAdvance, "diff average", diffAverage);
+        return [diffMin, diffMax, diffMinCount, diffMaxCount, criticalLate, criticalAdvance, diffAverage];
     }
 }
