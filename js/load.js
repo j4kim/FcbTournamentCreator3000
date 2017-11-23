@@ -71,7 +71,12 @@ function loadJson(j){
     CONFIG = j.config;
 
     if(j.schedule){
-        loadSchedule(j.schedule);
+        // cast generic object to class instance
+        let schedule = Object.create(Schedule.prototype);
+        schedule.groups = j.schedule.groups;
+        schedule.qualif = j.schedule.qualif;
+        schedule.computeWaitAverage(schedule.qualif);
+        loadSchedule(schedule);
     }
 }
 

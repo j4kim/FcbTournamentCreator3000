@@ -25,23 +25,12 @@ function fillGroups(groups){
     })
 }
 
-function showLate(){
-    // $(".late"+(SCHEDULE.criticalLate-1)).css("color","red");
-    // $(".late"+(SCHEDULE.criticalLate)).css({color:"red","font-weight":"bolder"});
-    $(".diff"+(SCHEDULE.diffMin)).css("background","#f77");
-    $(".diff"+(SCHEDULE.diffMin+1)).css("background","#fdd");
-    // $(".advance"+SCHEDULE.criticalAdvance).css("background","#7f7");
-    // $(".advance"+(SCHEDULE.criticalAdvance-1)).css("background","#dfd");
-    $(".diff"+SCHEDULE.diffMax).css("background","#7f7");
-    $(".diff"+(SCHEDULE.diffMax-1)).css("background","#dfd");
-}
-
 function fillSchedule(qualif){
+    $("#qualifTable tbody").empty();
     qualif.forEach(slot => {
         addSlot(slot);
     });
     mergeTimeSlots($("#qualifTable"));
-    showLate();
 }
 
 let SCHEDULE;
@@ -72,6 +61,11 @@ function loadSchedule(newSchedule){
     }else{
         knockoutUi(false)
     }
+}
+
+function homogenize(){
+    SCHEDULE.qualif = SCHEDULE.homogenize(SCHEDULE.qualif);
+    fillSchedule(SCHEDULE.qualif);
 }
 
 $(function () {
