@@ -55,7 +55,6 @@ function generateSchedule(){
 
 function loadSchedule(newSchedule){
     SCHEDULE = newSchedule;
-    console.log("Loaded schedule", SCHEDULE);
     // empty schedule
     $(".group, .match, .pauseSlot").remove();
 

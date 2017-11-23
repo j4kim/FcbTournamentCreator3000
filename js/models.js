@@ -114,8 +114,6 @@ class Group{
         this.teams = teams;
         this.name = name;
         this.categoryIndex = category.index;
-        // this.id = groupId++;
-        console.log("New Group", name, teams);
 
         let matches = this.makeMatchList(teams);
         let firstRound = this.makeFirstRound(matches);
@@ -134,8 +132,6 @@ class Group{
             delete team.waiting;
             delete team.played;
         });
-
-        console.log("schedule", this.schedule);
     }
 
     wait(){
@@ -241,11 +237,9 @@ class Schedule{
             })
         }
         let qualifMatches = this.distributeMatches(groupSchedules, numMatches);
-        console.log(qualifMatches);
+
         this.qualif = this.makeTimeSlots(qualifMatches, config);
         this.qualif = this.homogenize(this.qualif);
-        // this.computeWaitAverage(this.qualif);
-        // let oldReport = this.controlTimingBalance(this.qualif);
     }
 
     distributeMatches(matchGroups, numMatches){
@@ -317,7 +311,6 @@ class Schedule{
 
         let failures = 0;
         for(let i=0; i<1000; i++){
-            console.log("experience #"+i);
             newSlots = this.grandSwapping(slots, oldReport);
             this.computeWaitAverage(newSlots);
             let newReport = this.controlTimingBalance(newSlots);
@@ -331,7 +324,6 @@ class Schedule{
             oldReport = newReport;
             slots = newSlots;
         }
-        console.log("best", bestReport);
         this.score = bestReport[6];
         return bestSlots;
     }
@@ -352,8 +344,6 @@ class Schedule{
         }
         let criticalDiff = direction > 0 ? diffMax : diffMin;
         let criticals = slots.filter(slot => slot.diff === criticalDiff);
-
-        console.log("swapping matches with diff", criticalDiff)
 
         criticals.forEach(criticalSlot => {
             let candidates = [];
@@ -382,7 +372,6 @@ class Schedule{
 
     swap(slotA, slotB, slots){
         // todo: s'assurer qu'on peut faire ce swap
-        console.log("SWAPPING", slotA.id, slotB.id);
         // return the match data of a slot, what defines a match is teams and group
         function getData(slot){
             return {teamA: slot.teamA, teamB:slot.teamB, group:slot.group }
@@ -396,6 +385,7 @@ class Schedule{
     }
 
     computeWaitAverage(slots){
+        if(slots === undefined) slots = this.qualif;
         // reinit wait gaps
         slots.forEach(slot => slot.waitGaps = undefined);
         // for each team, iterate over its matches and compute the wait gaps between them
@@ -419,39 +409,31 @@ class Schedule{
                     }
                     last = match.timeUnit;
                 });
-                // console.log(team.name, average(teamWaitUnits));
                 teamWaitUnisAverages.push(average(teamWaitUnits));
             });
             group.waitAverage = Math.round(average(teamWaitUnisAverages));
-            // console.log(">>", group.name, average(teamWaitUnisAverages), "->", group.waitAverage);
         });
     }
 
     controlTimingBalance(slots){
+        if(slots === undefined) slots = this.qualif;
         // mark late or advance on each match
         let criticalLate = 0;
         let criticalAdvance = 0;
         let diffMin = 0, diffMax = 0, diffs = [];
         slots.forEach(slot => {
             if(slot.pause || slot.waitGaps === undefined) return;
-            slot.matchClasses = "";
             slot.diff = 0;
             let group = this.groups[slot.group.index];
             slot.waitGaps.forEach(waitGap => {
                 let waitDiff = group.waitAverage - waitGap;
                 slot.diff += waitDiff;
-                if(waitDiff === 0){
-                    slot.matchClasses += " ontime";
-                }else if(waitDiff < 0){
-                    slot.matchClasses += " late"+(-waitDiff);
+                if(waitDiff < 0){
                     criticalLate = waitDiff < criticalLate ? waitDiff : criticalLate;
                 }else if(waitDiff > 0){
-                    slot.matchClasses += " advance"+waitDiff;
                     criticalAdvance = waitDiff > criticalAdvance ? waitDiff : criticalAdvance;
                 }
             });
-            if(Math.abs(slot.diff) > 0)
-                slot.matchClasses += " diff"+slot.diff;
             diffMin = slot.diff < diffMin ? slot.diff : diffMin;
             diffMax = slot.diff > diffMax ? slot.diff : diffMax;
             diffs.push(slot.diff);
@@ -459,7 +441,6 @@ class Schedule{
         let diffAverage = average(diffs.map(diff => Math.abs(diff)));
         let diffMinCount = diffs.filter(diff => diff === diffMin).length;
         let diffMaxCount = diffs.filter(diff => diff === diffMax).length;
-        console.log("diff", diffMin, diffMax, "count", diffMinCount, diffMaxCount, "critical", criticalLate, criticalAdvance, "diff average", diffAverage);
         return [diffMin, diffMax, diffMinCount, diffMaxCount, criticalLate, criticalAdvance, diffAverage];
     }
 }

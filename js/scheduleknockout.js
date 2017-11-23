@@ -284,7 +284,6 @@ function drawTree(cells, table){
 }
 
 function drawTrees(knockoutSlots){
-    console.log("drawin trees from slots", knockoutSlots);
     $("#knockout-table").empty();
     CONFIG.categories.forEach((category, index) => {
         let table = $("<table class='table table-sm table-bordered'></table>");
