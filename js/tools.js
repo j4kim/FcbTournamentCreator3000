@@ -110,3 +110,20 @@ function average(array){
     let sum = array.reduce((a,b) => a + b);
     return sum/array.length;
 }
+
+function showDiffs(){
+    $(`<style id="diffStyles">
+        .diff-5{background:#f00}
+        .diff-4{background:#f66}
+        .diff-3{background:#faa}
+        .diff-2{background:#fdd}
+
+        .diff5{background:#0f0}
+        .diff4{background:#6f6}
+        .diff3{background:#afa}
+        .diff2{background:#dfd}
+    </style>`).appendTo("head");
+}
+function hideDiffs(){
+    $("#diffStyles").remove();
+}
