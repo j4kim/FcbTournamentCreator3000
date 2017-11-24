@@ -319,7 +319,7 @@ class Schedule{
                 bestReport = newReport;
                 failures = 0;
             }else{
-                if(++failures > 20) break;
+                if(++failures > 10) break;
             }
             oldReport = newReport;
             slots = newSlots;

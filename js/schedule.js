@@ -57,20 +57,25 @@ function betterReport(a, b){
 }
 
 function generateSchedule(){
+    let start = Date.now();
     $(".fa-spinner").removeClass("d-none");
     // a small timeout is required to show the spinner
     setTimeout(() => {
         CONFIG = getConfig();
         let best = new Schedule(CONFIG);
-        for(let i=1; i<10; i++){
+        let experiences = +$("#experiences").val();
+        for(let i=1; i<experiences; i++){
             let schedule = new Schedule(CONFIG);
             if(betterReport(schedule.score, best.score)){
                 best = schedule;
+                console.log(i, "new best score:", schedule.score);
             }
         }
+        console.log("score report", best.score);
         SCHEDULE = best;
         loadSchedule(SCHEDULE);
         $(".fa-spinner").addClass("d-none");
+        console.log(Date.now() - start);
     }, 10);
 }
 
