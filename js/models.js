@@ -294,15 +294,6 @@ class Schedule{
     }
 
     homogenize(slots){
-        // report: [diffMin, diffMax, diffMinCount, diffMaxCount, criticalLate, criticalAdvance, diffAverage]
-        function better(a, b){
-            // let [maxA, maxB] = [Math.max(-a[4], a[5]), Math.max(-b[4], b[5])];
-            // if(maxA === maxB){
-                return a[6] < b[6];
-            // }
-            // return maxA < maxB;
-        }
-
         this.computeWaitAverage(slots);
         let oldReport = this.controlTimingBalance(slots);
         let bestReport = oldReport;
@@ -314,7 +305,7 @@ class Schedule{
             newSlots = this.grandSwapping(slots, oldReport);
             this.computeWaitAverage(newSlots);
             let newReport = this.controlTimingBalance(newSlots);
-            if(better(newReport, bestReport)){
+            if(betterReport(newReport, bestReport)){
                 bestSlots = newSlots;
                 bestReport = newReport;
                 failures = 0;
@@ -324,7 +315,7 @@ class Schedule{
             oldReport = newReport;
             slots = newSlots;
         }
-        this.score = bestReport[6];
+        this.score = bestReport;
         return bestSlots;
     }
 
@@ -423,17 +414,24 @@ class Schedule{
         let diffMin = 0, diffMax = 0, diffs = [];
         slots.forEach(slot => {
             if(slot.pause || slot.waitGaps === undefined) return;
+            slot.matchClasses = "";
             slot.diff = 0;
             let group = this.groups[slot.group.index];
             slot.waitGaps.forEach(waitGap => {
                 let waitDiff = group.waitAverage - waitGap;
                 slot.diff += waitDiff;
-                if(waitDiff < 0){
+                if(waitDiff === 0){
+                    slot.matchClasses += " ontime";
+                }else if(waitDiff < 0){
+                    slot.matchClasses += " late"+(-waitDiff);
                     criticalLate = waitDiff < criticalLate ? waitDiff : criticalLate;
                 }else if(waitDiff > 0){
+                    slot.matchClasses += " advance"+waitDiff;
                     criticalAdvance = waitDiff > criticalAdvance ? waitDiff : criticalAdvance;
                 }
             });
+            if(Math.abs(slot.diff) > 0)
+                slot.matchClasses += " diff"+slot.diff;
             diffMin = slot.diff < diffMin ? slot.diff : diffMin;
             diffMax = slot.diff > diffMax ? slot.diff : diffMax;
             diffs.push(slot.diff);

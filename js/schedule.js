@@ -35,6 +35,16 @@ function fillSchedule(qualif){
 
 let SCHEDULE;
 
+
+// report: [diffMin, diffMax, diffMinCount, diffMaxCount, criticalLate, criticalAdvance, diffAverage]
+function betterReport(a, b){
+    let [maxA, maxB] = [Math.max(-a[0], a[1]), Math.max(-b[0], b[1])];
+    if(maxA === maxB){
+        return a[6] < b[6];
+    }
+    return maxA < maxB;
+}
+
 function generateSchedule(){
     $(".fa-spinner").removeClass("d-none");
     // a small timeout is required to show the spinner
@@ -43,7 +53,7 @@ function generateSchedule(){
         let best = new Schedule(CONFIG);
         for(let i=1; i<10; i++){
             let schedule = new Schedule(CONFIG);
-            if(schedule.score < best.score){
+            if(betterReport(schedule.score, best.score)){
                 best = schedule;
             }
         }
