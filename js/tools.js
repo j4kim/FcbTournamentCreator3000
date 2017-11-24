@@ -127,3 +127,8 @@ function showDiffs(){
 function hideDiffs(){
     $("#diffStyles").remove();
 }
+
+// https://stackoverflow.com/questions/4467539/javascript-modulo-gives-a-negative-result-for-negative-numbers
+function mod(n, m) {
+    return ((n % m) + m) % m;
+}

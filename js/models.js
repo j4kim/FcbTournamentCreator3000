@@ -243,14 +243,23 @@ class Schedule{
     }
 
     distributeMatches(matchGroups, numMatches){
+        // 1, -2, 3, -4...
+        function next(n){
+            n = -n; // change sign
+            return n>0 ? n+1 : n-1; // add -1 or 1
+        }
+
+        // shuffle(matchGroups);
         let schedule = new Array(numMatches);
         matchGroups.forEach(matchGroup => {
             let ratio = numMatches / matchGroup.length;
             matchGroup.forEach((match, index) => {
-                let newIndex = parseInt(index * ratio);
-                // find the first empty slot after this index
+                let newIndex = ((index+1)*ratio + index*ratio)/2;
+                newIndex = parseInt(newIndex);
+                let direction = shuffle([-1,1])[0];
                 while(schedule[newIndex] !== undefined){
-                    newIndex = (newIndex+1)%numMatches;
+                    newIndex = mod((newIndex+direction), numMatches);
+                    direction = next(direction);
                 }
                 schedule[newIndex] = match;
             })
