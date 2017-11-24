@@ -50,7 +50,7 @@ function betterReport(a, b){
     let [maxA, maxB] = [Math.max(-a[0], a[1]), Math.max(-b[0], b[1])];
     if(maxA !== maxB)
         return maxA < maxB;
-    let [countA, countB] = [Math.max(-a[2], a[3]), Math.max(-b[2], b[3])];
+    let [countA, countB] = [Math.max(a[2], a[3]), Math.max(b[2], b[3])];
     if(countA !== countB)
         return countA < countB;
     return a[6] < b[6];
