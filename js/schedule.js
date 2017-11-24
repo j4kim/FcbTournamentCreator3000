@@ -35,14 +35,25 @@ function fillSchedule(qualif){
 
 let SCHEDULE;
 
-
+//          0        1        2             3             4             5                6
 // report: [diffMin, diffMax, diffMinCount, diffMaxCount, criticalLate, criticalAdvance, diffAverage]
+// the diff of a match is the sum of its 2 team advances over their last match
+// if a match is "late", its diff is negative.
+// 0,1 : diffMin and diffMax are the extreme diffs
+// 2,3 : the number of matches that have these extreme diffs (the number of critically misplaced matches)
+// 4,5 : the worst late/advance of a team on a match
+// 6 : The absolute average of every match diff
 function betterReport(a, b){
+    let [criticA, criticB] = [Math.max(-a[4], a[5]), Math.max(-b[4], b[5])];
+    if(criticA !== criticB)
+        return criticA < criticB;
     let [maxA, maxB] = [Math.max(-a[0], a[1]), Math.max(-b[0], b[1])];
-    if(maxA === maxB){
-        return a[6] < b[6];
-    }
-    return maxA < maxB;
+    if(maxA !== maxB)
+        return maxA < maxB;
+    let [countA, countB] = [Math.max(-a[2], a[3]), Math.max(-b[2], b[3])];
+    if(countA !== countB)
+        return countA < countB;
+    return a[6] < b[6];
 }
 
 function generateSchedule(){
