@@ -75,6 +75,7 @@ function loadJson(j){
         let schedule = Object.create(Schedule.prototype);
         schedule.groups = j.schedule.groups;
         schedule.qualif = j.schedule.qualif;
+        schedule.knockout = j.schedule.knockout;
         schedule.computeWaitAverage(schedule.qualif);
         loadSchedule(schedule);
     }
