@@ -40,3 +40,13 @@ td input[type=number] {
 /*.diff4{background:#6f6}*/
 /*.diff3{background:#afa}*/
 /*.diff2{background:#dfd}*/
+
+#rankings.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#rankings.flex .ranking-table{
+    margin: 20px 60px;
+    flex-grow: .4;
+}

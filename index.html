@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -299,11 +299,11 @@
 
             <hr>
 
+            <h3>Classements</h3>
             <div id="rankings">
-                <h3>Classements</h3>
-                <small class="form-text text-muted">
+<!--                 <small class="form-text text-muted">
                     Les équipes en vert sont qualifiées pour la phase finale.
-                </small>
+                </small> -->
                 <!--Ranking table template-->
                 <script id="ranking-table-template" type="text/x-handlebars-template">
                     <div class="ranking-table g{{ group.index }}">
@@ -348,7 +348,7 @@
             <hr>
 
             <div id="knockout">
-                <h3>Phase Finale</h3>
+                <h3>Matchs de classement</h3>
                     <table id="knockout-schedule" class="table table-sm">
                         <thead>
                         <tr>
@@ -364,10 +364,6 @@
 
                         </tbody>
                     </table>
-
-                <div id="knockout-table">
-                    <!--Filled in scheduleknockout.js-->
-                </div>
             </div>
         </div>
 
@@ -394,8 +390,10 @@
     <script src="js/schedule.js"></script>
     <script src="js/models.js"></script>
     <script src="js/rankings.js"></script>
-    <script src="js/scheduleknockout.js"></script>
-    <script src="js/knockout.js"></script>
+    <!-- <script src="js/scheduleknockout.js"></script> -->
+    <!-- <script src="js/knockout.js"></script> -->
+    <script src="js/rankingfinals.js"></script>
+    <script src="js/display.js"></script>
 
 </body>
 </html>
