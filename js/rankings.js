@@ -65,44 +65,44 @@ function updateRanking(){
         addRankingTable({teams:group.rankedTeams, group:group});
     });
 
-    return getQualified();
+    // return getQualified();
 }
 
-function getQualified(){
-    let qualifiedByCategories = [];
-    CONFIG.categories.forEach((category, index) => {
-        let qualified = [];
-        // retrieve groups of this category
-        let groups = SCHEDULE.groups.filter(group => {
-            return group.categoryIndex === index;
-        });
-        let qualifiedByGroup = parseInt(category.knockout.qualified / groups.length);
-        let rest = category.knockout.qualified % groups.length;
-        for(let i=0; i<qualifiedByGroup; i++){
-            let atThisRank = [];
-            groups.forEach(group => {
-                atThisRank.push(group.rankedTeams[i]);
-            });
-            atThisRank.sort(Team.compare);
-            qualified = qualified.concat(atThisRank);
-        }
-        let nextBests = groups.map(group => group.rankedTeams[qualifiedByGroup]);
-        nextBests.sort(Team.compare);
-        qualified = qualified.concat(nextBests.slice(0, rest));
-        qualified.forEach(team => {
-            markQualified(team)
-        });
-        // qualifiedByCategories.push({teams:qualified, category:category.name});
-        qualifiedByCategories[index] = qualified;
-    });
-    return qualifiedByCategories;
-}
+// function getQualified(){
+//     let qualifiedByCategories = [];
+//     CONFIG.categories.forEach((category, index) => {
+//         let qualified = [];
+//         // retrieve groups of this category
+//         let groups = SCHEDULE.groups.filter(group => {
+//             return group.categoryIndex === index;
+//         });
+//         let qualifiedByGroup = parseInt(category.knockout.qualified / groups.length);
+//         let rest = category.knockout.qualified % groups.length;
+//         for(let i=0; i<qualifiedByGroup; i++){
+//             let atThisRank = [];
+//             groups.forEach(group => {
+//                 atThisRank.push(group.rankedTeams[i]);
+//             });
+//             atThisRank.sort(Team.compare);
+//             qualified = qualified.concat(atThisRank);
+//         }
+//         let nextBests = groups.map(group => group.rankedTeams[qualifiedByGroup]);
+//         nextBests.sort(Team.compare);
+//         qualified = qualified.concat(nextBests.slice(0, rest));
+//         qualified.forEach(team => {
+//             markQualified(team)
+//         });
+//         // qualifiedByCategories.push({teams:qualified, category:category.name});
+//         qualifiedByCategories[index] = qualified;
+//     });
+//     return qualifiedByCategories;
+// }
 
-function markQualified(team){
-    let g = team.groupIndex;
-    let t = team.index;
-    $(".g"+g+" .t"+t).addClass("table-success");
-}
+// function markQualified(team){
+//     let g = team.groupIndex;
+//     let t = team.index;
+//     $(".g"+g+" .t"+t).addClass("table-success");
+// }
 
 function randomScores(){
     $("#qualifTable td input").each((index, elem) => {

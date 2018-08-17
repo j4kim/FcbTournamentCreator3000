@@ -177,7 +177,21 @@
                         <hr>
                         <!--<h4>Phase finale</h4>-->
 
-                        <div class="form-group row">
+                        <div class="form-group row category-config-final-type">
+                            <label class="col-md-3 col-form-label">Type de finale</label>
+                            <div class="form-row col">
+                                <div class="form-group col">
+                                    <select>
+                                        <option selected>Aucune</option>
+                                        <option value="ranking">Matchs de classement</option>
+                                        <option value="knockout">Élimination directe</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row category-config-final-knockout">
+
                             <label class="col-md-3 col-form-label">Phase finale</label>
 
                             <div class="form-row col">
@@ -190,7 +204,6 @@
                                     <input type="time" class="form-control finalDuration" value="{{ knockout.finalDuration }}" min="00:05" disabled>
                                 </div>
                             </div>
-
                             <div class="form-check col-sm-9 offset-sm-3">
                                 <label class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input" value="{{ knockout.thirdPlace }}" disabled>
