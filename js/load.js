@@ -81,6 +81,29 @@ function loadJson(j){
     }
 }
 
+
+// Load file from the server
+
+function loadFileFromUrl(){
+    // Make the hash string a query string
+    let params = location.hash.replace(/#/, "?");
+    // parse the query string and get the 'file' parameter
+    let file = new URLSearchParams(params).get("file");
+    // if there is one, download the file and fill the form
+    if(file){
+        if(file === "new") return;
+        $.get("get.php" + params).done(data => {
+            loadJson(JSON.parse(data));
+        }).fail(error => {
+            alert(error.responseText);
+            window.location.hash = "";
+            loadJson();
+        });
+    }else{
+        loadJson();
+    }
+}
+
 $(function(){
 
     // Read tounament data from file input
@@ -110,27 +133,6 @@ $(function(){
         // we click the element, not the jQuery selection
     });
 
-    // Load file from the server
-
-    function loadFileFromUrl(){
-        // Make the hash string a query string
-        let params = location.hash.replace(/#/, "?");
-        // parse the query string and get the 'file' parameter
-        let file = new URLSearchParams(params).get("file");
-        // if there is one, download the file and fill the form
-        if(file){
-            if(file === "new") return;
-            $.get("get.php" + params).done(data => {
-                loadJson(JSON.parse(data));
-            }).fail(error => {
-                alert(error.responseText);
-                window.location.hash = "";
-                loadJson();
-            });
-        }else{
-            loadJson();
-        }
-    }
 
     if(location.hash)
         loadFileFromUrl();
