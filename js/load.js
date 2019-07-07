@@ -35,6 +35,7 @@ function getConfig(){
 function getJson(){
     let j = {};
     j.name = $("#name").val();
+    j.code = $("#code").val();
     j.config = getConfig();
     if(SCHEDULE){
         j.schedule = SCHEDULE;
@@ -145,6 +146,7 @@ $(function(){
         $.post("save.php", {
             tournament:JSON.stringify(getJson())
         }).done(filename => {
+            alert("👍")
             window.location = "#file=" + filename;
         }).fail(error => {
             alert(error.responseText);
