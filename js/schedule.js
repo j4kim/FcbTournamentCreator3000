@@ -87,11 +87,17 @@ function loadSchedule(newSchedule){
     fillGroups(SCHEDULE.groups);
     fillSchedule(SCHEDULE.qualif);
     updateRanking();
-    // prescheduleKnockout();
-    prescheduleRankingFinals();
+    prescheduleKnockout();
 
     showSchedule();
-    
+
+    if(SCHEDULE.knockout){
+        fillKnockoutSchedule(SCHEDULE.knockout);
+        drawTrees(SCHEDULE.knockout);
+        knockoutUi(true);
+    }else{
+        knockoutUi(false)
+    }
 }
 
 $(function () {
@@ -99,7 +105,7 @@ $(function () {
     $("#showConfig").click(showConfig);
 
     $("#generateSchedule").click(generateSchedule);
-    
+
     $("#qualif").on("change", ".score > input", e => {
         updateRanking();
     });
