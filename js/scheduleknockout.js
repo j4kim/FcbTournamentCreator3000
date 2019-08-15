@@ -144,6 +144,9 @@ function prescheduleKnockout() {
 
     CONFIG.categories.forEach((category, index) => {
         let qualified = category.knockout.qualified;
+        if(qualified < 2){
+            return;
+        }
 
         let nodes = [];
         for (let i = 0; i < qualified; i++) {
@@ -286,6 +289,10 @@ function drawTree(cells, table){
 function drawTrees(knockoutSlots){
     $("#knockout-table").empty();
     CONFIG.categories.forEach((category, index) => {
+        if(category.knockout.qualified < 2){
+            return;
+        }
+
         let table = $("<table class='table table-sm table-bordered'></table>");
         $("#knockout-table").append(table);
         $("<h4>"+category.name+"</h4>").insertBefore(table);
