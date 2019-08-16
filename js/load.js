@@ -35,6 +35,7 @@ function getConfig(){
 function getJson(){
     let j = {};
     j.name = $("#name").val();
+    j.code = $("#code").val();
     j.config = getConfig();
     if(SCHEDULE){
         j.schedule = SCHEDULE;
@@ -81,6 +82,29 @@ function loadJson(j){
     }
 }
 
+
+// Load file from the server
+
+function loadFileFromUrl(){
+    // Make the hash string a query string
+    let params = location.hash.replace(/#/, "?");
+    // parse the query string and get the 'file' parameter
+    let file = new URLSearchParams(params).get("file");
+    // if there is one, download the file and fill the form
+    if(file){
+        if(file === "new") return;
+        $.get("get.php" + params).done(data => {
+            loadJson(JSON.parse(data));
+        }).fail(error => {
+            alert(error.responseText);
+            window.location.hash = "";
+            loadJson();
+        });
+    }else{
+        loadJson();
+    }
+}
+
 $(function(){
 
     // Read tounament data from file input
@@ -110,27 +134,6 @@ $(function(){
         // we click the element, not the jQuery selection
     });
 
-    // Load file from the server
-
-    function loadFileFromUrl(){
-        // Make the hash string a query string
-        let params = location.hash.replace(/#/, "?");
-        // parse the query string and get the 'file' parameter
-        let file = new URLSearchParams(params).get("file");
-        // if there is one, download the file and fill the form
-        if(file){
-            if(file === "new") return;
-            $.get("get.php" + params).done(data => {
-                loadJson(JSON.parse(data));
-            }).fail(error => {
-                alert(error.responseText);
-                window.location.hash = "";
-                loadJson();
-            });
-        }else{
-            loadJson();
-        }
-    }
 
     if(location.hash)
         loadFileFromUrl();
@@ -143,6 +146,7 @@ $(function(){
         $.post("save.php", {
             tournament:JSON.stringify(getJson())
         }).done(filename => {
+            alert("👍")
             window.location = "#file=" + filename;
         }).fail(error => {
             alert(error.responseText);
@@ -154,4 +158,11 @@ $(function(){
         $("#save").prop("disabled", true).append("(serveur inaccessible)")
     });
 
+});
+
+$(window).keypress(function(event) {
+    if (!(event.which == 115 && event.ctrlKey) && !(event.which == 19)) return true;
+    $("#save").click();
+    event.preventDefault();
+    return false;
 });
