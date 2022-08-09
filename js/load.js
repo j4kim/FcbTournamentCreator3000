@@ -41,6 +41,7 @@ function getJson(){
     }else{
         j.config = getConfig();
     }
+    j.finalDisplay = $("#knockout input[type=checkbox]:checked").map((i, cb) => cb.name).toArray()
     return j;
 }
 
@@ -77,6 +78,13 @@ function loadJson(j){
         schedule.knockout = j.schedule.knockout;
         schedule.computeWaitAverage(schedule.qualif);
         loadSchedule(schedule);
+    }
+
+    if (j.finalDisplay && j.finalDisplay.length) {
+        j.finalDisplay.forEach(name => {
+            $("#" + name).prop("checked", true)
+            $("body").addClass(name)
+        })
     }
 }
 
@@ -154,6 +162,19 @@ $(function(){
         $("#save").prop("disabled", true).append("(serveur inaccessible)")
     });
 
+    // update iframe
+    setInterval(function(){
+        var src = $("iframe").attr("src")
+        var srcItems = src.split("=")
+        var count = +srcItems.pop()
+        srcItems.push(count+1)
+        var newSrc = srcItems.join("=")
+        $("iframe").attr("src", newSrc)
+    }, 60000)
+
+    $("#knockout input[type=checkbox]").change(function() {
+        $("body").toggleClass(this.id, $(this).prop('checked'))
+    })
 });
 
 // listen to ctrl+s
