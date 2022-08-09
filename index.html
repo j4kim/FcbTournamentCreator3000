@@ -27,8 +27,8 @@
 
 </head>
 <body data-file="Tournoi des Brenets 2022.json">
-	<div class="container">
-        <div class="clearfix">
+    <div class="container">
+        <div class="clearfix admin-only">
             <h1 class="float-left">
                 <a href="">FCB Tournament Creator 3000</a>
             </h1>
@@ -42,9 +42,9 @@
 
         </div>
 
-        <h1 class="display-4" id="title"></h1>
+        <h1 class="display-4 py-4" id="title"></h1>
 
-		<div id="configuration">
+		<div id="configuration" class="admin-only">
             <a href="" id="showSchedule" class="d-none">Voir programme</a>
 			<h2>Configuration du tournoi</h2>
 
@@ -231,8 +231,7 @@
 		</div>
 
         <div id="schedule" class="d-none">
-            <a href="" id="showConfig">Voir configuration</a>
-            <h2>Programme des matchs</h2>
+            <a href="" id="showConfig" class="admin-only">Voir configuration</a>
 
             <hr>
 
@@ -254,7 +253,7 @@
             <hr>
 
             <div id="qualif">
-                <h3>Qualifications</h3>
+                <h3>Programme des matches</h3>
                 <table id="qualifTable" class="table table-sm">
                     <thead>
                         <tr>
@@ -341,13 +340,13 @@
 
             <hr>
 
-            <button type="button" id="goKnockout" class="btn btn-primary btn-block">
+            <button type="button" id="goKnockout" class="btn btn-primary btn-block admin-only">
                 <i class="fa fa-check"></i> Passer à la phase finale
             </button>
 
-            <hr>
-
             <div id="knockout">
+
+                <hr>
                 <h3>Phase Finale</h3>
                     <table id="knockout-schedule" class="table table-sm">
                         <thead>
@@ -371,21 +370,23 @@
             </div>
         </div>
 
-        <hr>
+        <div class="admin-only">
 
-        <a id="hiddenDownloadLink" class="d-none">Télécharger</a>
+            <hr>
 
-        <button type="button" id="download" class="btn btn-dark btn-block">
-            <i class="fa fa-download"></i> Télécharger le fichier du tournoi
-        </button>
+            <a id="hiddenDownloadLink" class="d-none">Télécharger</a>
 
-        <button type="button" id="save" class="btn btn-dark btn-block">
-            <i class="fa fa-cloud-upload"></i> Sauvegarder le tournoi en ligne
-        </button>
+            <button type="button" id="download" class="btn btn-dark btn-block">
+                <i class="fa fa-download"></i> Télécharger le fichier du tournoi
+            </button>
 
-        <input type="text" id="code" placeholder="code" />
+            <button type="button" id="save" class="btn btn-dark btn-block">
+                <i class="fa fa-cloud-upload"></i> Sauvegarder le tournoi en ligne
+            </button>
 
-		<hr>
+            <input type="text" id="code" placeholder="code" />
+
+        </div>
 
 	</div>
 

@@ -90,12 +90,17 @@ function loadConfig(){
         loadJson(JSON.parse(data));
     }).fail(error => {
         alert(error.responseText);
-        window.location.hash = "";
         loadJson();
     });
 }
 
 $(function(){
+
+    loadConfig();
+
+    if (window.location.hash === "#yolo") {
+        $("body").addClass("admin")
+    }
 
     // Read tounament data from file input
 
@@ -123,9 +128,6 @@ $(function(){
         // this [0] is necessary because the onclick event is not registered,
         // we click the element, not the jQuery selection
     });
-
-
-    loadConfig();
 
     // Store data on the server
 
