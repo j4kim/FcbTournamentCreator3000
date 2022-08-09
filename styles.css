@@ -12,6 +12,28 @@ body.admin input[type=number] {
     pointer-events: all;
 }
 
+ body.ranking-mode hr
+,body.ranking-mode #title
+,body.ranking-mode #configuration
+,body.ranking-mode #schedule > *:not(#rankings)
+{
+    display: none;
+}
+
+body.ranking-mode .container {
+    max-width: none;
+}
+body.ranking-mode #rankings {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+}
+body.ranking-mode #rankings .ranking-table {
+    margin: 20px 60px;
+    flex-grow: .4;
+}
 
 td input[type=number] {
     width: 35px;
@@ -54,13 +76,3 @@ td input[type=number] {
 /*.diff4{background:#6f6}*/
 /*.diff3{background:#afa}*/
 /*.diff2{background:#dfd}*/
-
-#rankings.flex{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-#rankings.flex .ranking-table{
-    margin: 20px 60px;
-    flex-grow: .4;
-}

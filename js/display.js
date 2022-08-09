@@ -5,9 +5,7 @@ var reloadInterval;
 function displayRanking(seconds){
     if(!seconds) seconds = 60;
     displayRankingMode = !displayRankingMode;
-    $("#rankings").toggleClass("flex").siblings().toggle()
-    $("#rankings").parent().siblings().toggle();
-    container.toggleClass("container");
+    $("body").toggleClass("ranking-mode", displayRankingMode)
     if(displayRankingMode){
         reloadInterval = setInterval(function(){
             console.log("reload");
