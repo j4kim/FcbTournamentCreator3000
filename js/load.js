@@ -35,7 +35,6 @@ function getConfig(){
 function getJson(){
     let j = {};
     j.name = $("#name").val();
-    j.config = getConfig();
     if(SCHEDULE){
         j.schedule = SCHEDULE;
         j.config = CONFIG;
