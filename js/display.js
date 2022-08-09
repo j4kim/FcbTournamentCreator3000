@@ -11,7 +11,7 @@ function displayRanking(seconds){
     if(displayRankingMode){
         reloadInterval = setInterval(function(){
             console.log("reload");
-            loadFileFromUrl();
+            loadConfig();
         },seconds*1000)
     }else{
         clearInterval(reloadInterval)
