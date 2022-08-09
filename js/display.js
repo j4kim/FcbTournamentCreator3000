@@ -3,7 +3,7 @@ var displayRankingMode = false;
 var reloadInterval;
 
 function displayRanking(seconds){
-    if(!seconds) seconds = 60;
+    if(!seconds) seconds = 10;
     displayRankingMode = !displayRankingMode;
     $("body").toggleClass("ranking-mode", displayRankingMode)
     if(displayRankingMode){
