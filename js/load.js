@@ -102,6 +102,7 @@ $(function(){
 
     if (hashedPassword === hashedHash) {
         $("body").addClass("admin")
+        window.location.hash = "#admin"
     }
 
     if (window.location.hash === "#ranking") {
