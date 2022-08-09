@@ -157,9 +157,12 @@ $(function(){
 });
 
 // listen to ctrl+s
-$(window).keypress(function(event) {
-    if (!(event.which == 115 && event.ctrlKey) && !(event.which == 19)) return true;
-    $("#save").click();
-    event.preventDefault();
-    return false;
+$(window).keydown(function(e) {
+    if (e.ctrlKey && e.key === 's') {
+        e.preventDefault();
+        $("#save").click();
+        var titleContent = $("title").text()
+        $("title").text("👍")
+        setTimeout(() => { $("title").text(titleContent) }, 1000)
+    }
 });
