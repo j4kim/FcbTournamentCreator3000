@@ -141,8 +141,9 @@ $(function(){
         $.post("save.php", {
             tournament:JSON.stringify(getJson())
         }).done(filename => {
-            alert("👍")
-            window.location = "#file=" + filename;
+            var btnContent = $("#save").html()
+            $("#save").html("👍")
+            setTimeout(() => { $("#save").html(btnContent) }, 1000)
         }).fail(error => {
             alert(error.responseText);
         });
