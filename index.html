@@ -260,8 +260,8 @@
                     <thead>
                         <tr>
                             <th>Heure</th>
-                            <th>#</th>
-                            <th>Terrain</th>
+                            <th class="id-col">#</th>
+                            <th class="field-col">Terrain</th>
                             <th>Équipe 1</th>
                             <th>Équipe 2</th>
                             <th>Score</th>
@@ -281,8 +281,8 @@
                                     data-match-id="{{ id }}"
                                 >
                                     <td class="time">{{ time }}</td>
-                                    <td class="text-muted">{{ id }}</td>
-                                    <td>{{ field }}</td>
+                                    <td class="text-muted id-col">{{ id }}</td>
+                                    <td class="field-col">{{ field }}</td>
                                     <td class="{{ teamA.class }} team teamA">{{ teamA.name }}</td>
                                     <td class="{{ teamB.class }} team teamB">{{ teamB.name }}</td>
                                     <td class="score">

@@ -76,3 +76,12 @@ td input[type=number] {
 /*.diff4{background:#6f6}*/
 /*.diff3{background:#afa}*/
 /*.diff2{background:#dfd}*/
+
+@media screen and (max-width: 600px) {
+    table .id-col {
+        display: none;
+    }
+    table th.field-col {
+        font-size: 0
+    }
+}
