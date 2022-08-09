@@ -349,7 +349,16 @@
             <div id="knockout">
 
                 <hr>
-                <h3>Phase Finale</h3>
+                <h3 style="display:inline" class="mr-4">Phase Finale</h3>
+
+                <span class="admin-only">
+                    <input type="checkbox" name="show-knockout-tables" id="show-knockout-tables" class="mr-1">
+                    <label for="show-knockout-tables">Show knockout tables</label>
+                    <input type="checkbox" name="show-iframe" id="show-iframe" class="ml-4 mr-1">
+                    <label for="show-iframe">Show iframe</label>
+                </span>
+
+                <div class="knockout-tables">
                     <table id="knockout-schedule" class="table table-sm">
                         <thead>
                         <tr>
@@ -362,12 +371,13 @@
                         </tr>
                         </thead>
                         <tbody>
-
+    
                         </tbody>
                     </table>
-
-                <div id="knockout-table">
-                    <!--Filled in scheduleknockout.js-->
+    
+                    <div id="knockout-table">
+                        <!--Filled in scheduleknockout.js-->
+                    </div>
                 </div>
 
                 <iframe class="my-4" style="width:100%; height: 800px; max-height: 60vh; border: 1px solid #0001" src="https://viewer.diagrams.net/?highlight=0000ff&nav=1&title=Tournoi%20des%20Brenets%202022#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1P8wnG-QVUjWQh5pttAL3OJ3Vd5QXoTYC%26export%3Ddownload&count=0" frameborder="0" scrolling="no" allowfullscreen></iframe>

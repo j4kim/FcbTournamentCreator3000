@@ -42,6 +42,7 @@ function getJson(){
     }else{
         j.config = getConfig();
     }
+    j.finalDisplay = $("#knockout input[type=checkbox]:checked").map((i, cb) => cb.name).toArray()
     return j;
 }
 
@@ -78,6 +79,13 @@ function loadJson(j){
         schedule.knockout = j.schedule.knockout;
         schedule.computeWaitAverage(schedule.qualif);
         loadSchedule(schedule);
+    }
+
+    if (j.finalDisplay && j.finalDisplay.length) {
+        j.finalDisplay.forEach(name => {
+            $("#" + name).prop("checked", true)
+            $("body").addClass(name)
+        })
     }
 }
 
@@ -164,6 +172,9 @@ $(function(){
         $("iframe").attr("src", newSrc)
     }, 60000)
 
+    $("#knockout input[type=checkbox]").change(function() {
+        $("body").toggleClass(this.id, $(this).prop('checked'))
+    })
 });
 
 // listen to ctrl+s
