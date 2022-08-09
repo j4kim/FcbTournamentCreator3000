@@ -1,0 +1,6595 @@
+{
+  "name": "Tournoi des Brenets 2022",
+  "code": "",
+  "config": {
+    "pauses": [],
+    "categories": [
+      {
+        "name": "Sportifs",
+        "teams": [
+          "Ta belle barbe bien lyss",
+          "Les bleus",
+          "FC Beaugenoux",
+          "Fc glandu",
+          "Boys N the Hood",
+          "Le Bois de Quat'sous",
+          "Zumba cafew",
+          "Saucegod FC",
+          "Kelsoss'",
+          "Les petits pédestres",
+          "Mac & Kète",
+          "FC Binouse",
+          "Les Lapins",
+          "Masterkush united",
+          "les retardataires",
+          "Inconnus célèbres",
+          "Les anonymous",
+          "Préparation aqueuse",
+          "Les Alpagas",
+          "Le 6 de légendes",
+          "Fais tourner"
+        ],
+        "qualif": {
+          "groups": 3,
+          "rounds": 1
+        },
+        "knockout": {
+          "qualified": 4,
+          "finalDuration": ""
+        }
+      },
+      {
+        "name": "Vétérans",
+        "teams": [
+          "FKG Dentaire",
+          "Les Olives",
+          "Touche pas à mon pote",
+          "Les bras cassés",
+          "Tcheu c't'outil !",
+          "City park"
+        ],
+        "qualif": {
+          "groups": 1,
+          "rounds": 1
+        },
+        "knockout": {
+          "qualified": 0,
+          "finalDuration": ""
+        }
+      },
+      {
+        "name": "Juniors",
+        "teams": [
+          "Ticino F",
+          "Villers",
+          "FCB I",
+          "FCB II"
+        ],
+        "qualif": {
+          "groups": 1,
+          "rounds": 2
+        },
+        "knockout": {
+          "qualified": 0,
+          "finalDuration": ""
+        }
+      }
+    ],
+    "start": "09:00",
+    "matchDuration": "00:15",
+    "pauseBetween": "00:00",
+    "fields": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  "schedule": {
+    "groups": [
+      {
+        "name": "Sportifs 1",
+        "teams": [
+          {
+            "name": "Boys N the Hood",
+            "index": 0,
+            "groupIndex": 0,
+            "matchIds": []
+          },
+          {
+            "name": "les retardataires",
+            "index": 1,
+            "groupIndex": 0,
+            "matchIds": []
+          },
+          {
+            "name": "Saucegod FC",
+            "index": 2,
+            "groupIndex": 0,
+            "matchIds": []
+          },
+          {
+            "name": "Ta belle barbe bien lyss",
+            "index": 3,
+            "groupIndex": 0,
+            "matchIds": []
+          },
+          {
+            "name": "Fc glandu",
+            "index": 4,
+            "groupIndex": 0,
+            "matchIds": []
+          },
+          {
+            "name": "Mac & Kète",
+            "index": 5,
+            "groupIndex": 0,
+            "matchIds": []
+          },
+          {
+            "name": "Les Lapins",
+            "index": 6,
+            "groupIndex": 0,
+            "matchIds": []
+          }
+        ],
+        "index": 0,
+        "categoryIndex": 0,
+        "waitAverage": 5
+      },
+      {
+        "name": "Sportifs 2",
+        "teams": [
+          {
+            "name": "FC Beaugenoux",
+            "index": 0,
+            "groupIndex": 1,
+            "matchIds": []
+          },
+          {
+            "name": "Les petits pédestres",
+            "index": 1,
+            "groupIndex": 1,
+            "matchIds": []
+          },
+          {
+            "name": "Zumba cafew",
+            "index": 2,
+            "groupIndex": 1,
+            "matchIds": []
+          },
+          {
+            "name": "Inconnus célèbres",
+            "index": 3,
+            "groupIndex": 1,
+            "matchIds": []
+          },
+          {
+            "name": "Masterkush united",
+            "index": 4,
+            "groupIndex": 1,
+            "matchIds": []
+          },
+          {
+            "name": "Le 6 de légendes",
+            "index": 5,
+            "groupIndex": 1,
+            "matchIds": []
+          },
+          {
+            "name": "FC Binouse",
+            "index": 6,
+            "groupIndex": 1,
+            "matchIds": []
+          }
+        ],
+        "index": 1,
+        "categoryIndex": 0,
+        "waitAverage": 6
+      },
+      {
+        "name": "Sportifs 3",
+        "teams": [
+          {
+            "name": "Préparation aqueuse",
+            "index": 0,
+            "groupIndex": 2,
+            "matchIds": []
+          },
+          {
+            "name": "Les Alpagas",
+            "index": 1,
+            "groupIndex": 2,
+            "matchIds": []
+          },
+          {
+            "name": "Les anonymous",
+            "index": 2,
+            "groupIndex": 2,
+            "matchIds": []
+          },
+          {
+            "name": "Les bleus",
+            "index": 3,
+            "groupIndex": 2,
+            "matchIds": []
+          },
+          {
+            "name": "Le Bois de Quat'sous",
+            "index": 4,
+            "groupIndex": 2,
+            "matchIds": []
+          },
+          {
+            "name": "Kelsoss'",
+            "index": 5,
+            "groupIndex": 2,
+            "matchIds": []
+          },
+          {
+            "name": "Fais tourner",
+            "index": 6,
+            "groupIndex": 2,
+            "matchIds": []
+          }
+        ],
+        "index": 2,
+        "categoryIndex": 0,
+        "waitAverage": 5
+      },
+      {
+        "name": "Vétérans 1",
+        "teams": [
+          {
+            "name": "Les bras cassés",
+            "index": 0,
+            "groupIndex": 3,
+            "matchIds": []
+          },
+          {
+            "name": "Les Olives",
+            "index": 1,
+            "groupIndex": 3,
+            "matchIds": []
+          },
+          {
+            "name": "City park",
+            "index": 2,
+            "groupIndex": 3,
+            "matchIds": []
+          },
+          {
+            "name": "Touche pas à mon pote",
+            "index": 3,
+            "groupIndex": 3,
+            "matchIds": []
+          },
+          {
+            "name": "FKG Dentaire",
+            "index": 4,
+            "groupIndex": 3,
+            "matchIds": []
+          },
+          {
+            "name": "Tcheu c't'outil !",
+            "index": 5,
+            "groupIndex": 3,
+            "matchIds": []
+          }
+        ],
+        "index": 3,
+        "categoryIndex": 1,
+        "waitAverage": 7
+      },
+      {
+        "name": "Juniors 1",
+        "teams": [
+          {
+            "name": "FCB II",
+            "index": 0,
+            "groupIndex": 4,
+            "matchIds": []
+          },
+          {
+            "name": "Ticino F",
+            "index": 1,
+            "groupIndex": 4,
+            "matchIds": []
+          },
+          {
+            "name": "FCB I",
+            "index": 2,
+            "groupIndex": 4,
+            "matchIds": []
+          },
+          {
+            "name": "Villers",
+            "index": 3,
+            "groupIndex": 4,
+            "matchIds": []
+          }
+        ],
+        "index": 4,
+        "categoryIndex": 2,
+        "waitAverage": 5
+      }
+    ],
+    "qualif": [
+      {
+        "teamA": {
+          "name": "Villers",
+          "index": 3,
+          "groupIndex": 4,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "FCB II",
+          "index": 0,
+          "groupIndex": 4,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Juniors 1",
+          "teams": [
+            {
+              "name": "FCB II",
+              "index": 0,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "Ticino F",
+              "index": 1,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "FCB I",
+              "index": 2,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "Villers",
+              "index": 3,
+              "groupIndex": 4,
+              "matchIds": []
+            }
+          ],
+          "index": 4,
+          "categoryIndex": 2,
+          "waitAverage": 5
+        },
+        "field": "A",
+        "time": "09:00",
+        "timeUnit": 1,
+        "id": 1
+      },
+      {
+        "teamA": {
+          "name": "Zumba cafew",
+          "index": 2,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Les petits pédestres",
+          "index": 1,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 2",
+          "teams": [
+            {
+              "name": "FC Beaugenoux",
+              "index": 0,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Les petits pédestres",
+              "index": 1,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Zumba cafew",
+              "index": 2,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Inconnus célèbres",
+              "index": 3,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Masterkush united",
+              "index": 4,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Le 6 de légendes",
+              "index": 5,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "FC Binouse",
+              "index": 6,
+              "groupIndex": 1,
+              "matchIds": []
+            }
+          ],
+          "index": 1,
+          "categoryIndex": 0,
+          "waitAverage": 6
+        },
+        "field": "B",
+        "time": "09:00",
+        "timeUnit": 1,
+        "id": 2
+      },
+      {
+        "teamA": {
+          "name": "Saucegod FC",
+          "index": 2,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Mac & Kète",
+          "index": 5,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 1",
+          "teams": [
+            {
+              "name": "Boys N the Hood",
+              "index": 0,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "les retardataires",
+              "index": 1,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Saucegod FC",
+              "index": 2,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Ta belle barbe bien lyss",
+              "index": 3,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Fc glandu",
+              "index": 4,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Mac & Kète",
+              "index": 5,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Les Lapins",
+              "index": 6,
+              "groupIndex": 0,
+              "matchIds": []
+            }
+          ],
+          "index": 0,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "C",
+        "time": "09:00",
+        "timeUnit": 1,
+        "id": 3
+      },
+      {
+        "teamA": {
+          "name": "Préparation aqueuse",
+          "index": 0,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Les bleus",
+          "index": 3,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 3",
+          "teams": [
+            {
+              "name": "Préparation aqueuse",
+              "index": 0,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les Alpagas",
+              "index": 1,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les anonymous",
+              "index": 2,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les bleus",
+              "index": 3,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Le Bois de Quat'sous",
+              "index": 4,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Kelsoss'",
+              "index": 5,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Fais tourner",
+              "index": 6,
+              "groupIndex": 2,
+              "matchIds": []
+            }
+          ],
+          "index": 2,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "A",
+        "time": "09:15",
+        "timeUnit": 2,
+        "id": 4
+      },
+      {
+        "teamA": {
+          "name": "Les bras cassés",
+          "index": 0,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Tcheu c't'outil !",
+          "index": 5,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Vétérans 1",
+          "teams": [
+            {
+              "name": "Les bras cassés",
+              "index": 0,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Les Olives",
+              "index": 1,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "City park",
+              "index": 2,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Touche pas à mon pote",
+              "index": 3,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "FKG Dentaire",
+              "index": 4,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Tcheu c't'outil !",
+              "index": 5,
+              "groupIndex": 3,
+              "matchIds": []
+            }
+          ],
+          "index": 3,
+          "categoryIndex": 1,
+          "waitAverage": 7
+        },
+        "field": "B",
+        "time": "09:15",
+        "timeUnit": 2,
+        "id": 5
+      },
+      {
+        "teamA": {
+          "name": "Le 6 de légendes",
+          "index": 5,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "FC Binouse",
+          "index": 6,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 2",
+          "teams": [
+            {
+              "name": "FC Beaugenoux",
+              "index": 0,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Les petits pédestres",
+              "index": 1,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Zumba cafew",
+              "index": 2,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Inconnus célèbres",
+              "index": 3,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Masterkush united",
+              "index": 4,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Le 6 de légendes",
+              "index": 5,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "FC Binouse",
+              "index": 6,
+              "groupIndex": 1,
+              "matchIds": []
+            }
+          ],
+          "index": 1,
+          "categoryIndex": 0,
+          "waitAverage": 6
+        },
+        "field": "C",
+        "time": "09:15",
+        "timeUnit": 2,
+        "id": 6
+      },
+      {
+        "teamA": {
+          "name": "Ta belle barbe bien lyss",
+          "index": 3,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "les retardataires",
+          "index": 1,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 1",
+          "teams": [
+            {
+              "name": "Boys N the Hood",
+              "index": 0,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "les retardataires",
+              "index": 1,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Saucegod FC",
+              "index": 2,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Ta belle barbe bien lyss",
+              "index": 3,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Fc glandu",
+              "index": 4,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Mac & Kète",
+              "index": 5,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Les Lapins",
+              "index": 6,
+              "groupIndex": 0,
+              "matchIds": []
+            }
+          ],
+          "index": 0,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "A",
+        "time": "09:30",
+        "timeUnit": 3,
+        "id": 7
+      },
+      {
+        "teamA": {
+          "name": "Les Alpagas",
+          "index": 1,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Kelsoss'",
+          "index": 5,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 3",
+          "teams": [
+            {
+              "name": "Préparation aqueuse",
+              "index": 0,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les Alpagas",
+              "index": 1,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les anonymous",
+              "index": 2,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les bleus",
+              "index": 3,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Le Bois de Quat'sous",
+              "index": 4,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Kelsoss'",
+              "index": 5,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Fais tourner",
+              "index": 6,
+              "groupIndex": 2,
+              "matchIds": []
+            }
+          ],
+          "index": 2,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "B",
+        "time": "09:30",
+        "timeUnit": 3,
+        "id": 8
+      },
+      {
+        "teamA": {
+          "name": "Les Olives",
+          "index": 1,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Touche pas à mon pote",
+          "index": 3,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Vétérans 1",
+          "teams": [
+            {
+              "name": "Les bras cassés",
+              "index": 0,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Les Olives",
+              "index": 1,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "City park",
+              "index": 2,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Touche pas à mon pote",
+              "index": 3,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "FKG Dentaire",
+              "index": 4,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Tcheu c't'outil !",
+              "index": 5,
+              "groupIndex": 3,
+              "matchIds": []
+            }
+          ],
+          "index": 3,
+          "categoryIndex": 1,
+          "waitAverage": 7
+        },
+        "field": "C",
+        "time": "09:30",
+        "timeUnit": 3,
+        "id": 9
+      },
+      {
+        "teamA": {
+          "name": "Fais tourner",
+          "index": 6,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Le Bois de Quat'sous",
+          "index": 4,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 3",
+          "teams": [
+            {
+              "name": "Préparation aqueuse",
+              "index": 0,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les Alpagas",
+              "index": 1,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les anonymous",
+              "index": 2,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les bleus",
+              "index": 3,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Le Bois de Quat'sous",
+              "index": 4,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Kelsoss'",
+              "index": 5,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Fais tourner",
+              "index": 6,
+              "groupIndex": 2,
+              "matchIds": []
+            }
+          ],
+          "index": 2,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "A",
+        "time": "09:45",
+        "timeUnit": 4,
+        "id": 10
+      },
+      {
+        "teamA": {
+          "name": "Fc glandu",
+          "index": 4,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Les Lapins",
+          "index": 6,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 1",
+          "teams": [
+            {
+              "name": "Boys N the Hood",
+              "index": 0,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "les retardataires",
+              "index": 1,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Saucegod FC",
+              "index": 2,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Ta belle barbe bien lyss",
+              "index": 3,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Fc glandu",
+              "index": 4,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Mac & Kète",
+              "index": 5,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Les Lapins",
+              "index": 6,
+              "groupIndex": 0,
+              "matchIds": []
+            }
+          ],
+          "index": 0,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "B",
+        "time": "09:45",
+        "timeUnit": 4,
+        "id": 11
+      },
+      {
+        "teamA": {
+          "name": "Masterkush united",
+          "index": 4,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "FC Beaugenoux",
+          "index": 0,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 2",
+          "teams": [
+            {
+              "name": "FC Beaugenoux",
+              "index": 0,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Les petits pédestres",
+              "index": 1,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Zumba cafew",
+              "index": 2,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Inconnus célèbres",
+              "index": 3,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Masterkush united",
+              "index": 4,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Le 6 de légendes",
+              "index": 5,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "FC Binouse",
+              "index": 6,
+              "groupIndex": 1,
+              "matchIds": []
+            }
+          ],
+          "index": 1,
+          "categoryIndex": 0,
+          "waitAverage": 6
+        },
+        "field": "C",
+        "time": "09:45",
+        "timeUnit": 4,
+        "id": 12
+      },
+      {
+        "teamA": {
+          "name": "Ticino F",
+          "index": 1,
+          "groupIndex": 4,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "FCB I",
+          "index": 2,
+          "groupIndex": 4,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Juniors 1",
+          "teams": [
+            {
+              "name": "FCB II",
+              "index": 0,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "Ticino F",
+              "index": 1,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "FCB I",
+              "index": 2,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "Villers",
+              "index": 3,
+              "groupIndex": 4,
+              "matchIds": []
+            }
+          ],
+          "index": 4,
+          "categoryIndex": 2,
+          "waitAverage": 5
+        },
+        "field": "A",
+        "time": "10:00",
+        "timeUnit": 5,
+        "id": 13
+      },
+      {
+        "teamA": {
+          "name": "Les petits pédestres",
+          "index": 1,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Inconnus célèbres",
+          "index": 3,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 2",
+          "teams": [
+            {
+              "name": "FC Beaugenoux",
+              "index": 0,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Les petits pédestres",
+              "index": 1,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Zumba cafew",
+              "index": 2,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Inconnus célèbres",
+              "index": 3,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Masterkush united",
+              "index": 4,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Le 6 de légendes",
+              "index": 5,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "FC Binouse",
+              "index": 6,
+              "groupIndex": 1,
+              "matchIds": []
+            }
+          ],
+          "index": 1,
+          "categoryIndex": 0,
+          "waitAverage": 6
+        },
+        "field": "A",
+        "time": "10:15",
+        "timeUnit": 6,
+        "id": 14,
+        "waitGaps": [
+          5
+        ],
+        "matchClasses": " advance1 diff1",
+        "diff": 1
+      },
+      {
+        "teamA": {
+          "name": "Les bleus",
+          "index": 3,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Les anonymous",
+          "index": 2,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 3",
+          "teams": [
+            {
+              "name": "Préparation aqueuse",
+              "index": 0,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les Alpagas",
+              "index": 1,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les anonymous",
+              "index": 2,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les bleus",
+              "index": 3,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Le Bois de Quat'sous",
+              "index": 4,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Kelsoss'",
+              "index": 5,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Fais tourner",
+              "index": 6,
+              "groupIndex": 2,
+              "matchIds": []
+            }
+          ],
+          "index": 2,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "B",
+        "time": "10:15",
+        "timeUnit": 6,
+        "id": 15,
+        "waitGaps": [
+          4
+        ],
+        "matchClasses": " advance1 diff1",
+        "diff": 1
+      },
+      {
+        "teamA": {
+          "name": "Mac & Kète",
+          "index": 5,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Boys N the Hood",
+          "index": 0,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 1",
+          "teams": [
+            {
+              "name": "Boys N the Hood",
+              "index": 0,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "les retardataires",
+              "index": 1,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Saucegod FC",
+              "index": 2,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Ta belle barbe bien lyss",
+              "index": 3,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Fc glandu",
+              "index": 4,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Mac & Kète",
+              "index": 5,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Les Lapins",
+              "index": 6,
+              "groupIndex": 0,
+              "matchIds": []
+            }
+          ],
+          "index": 0,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "C",
+        "time": "10:15",
+        "timeUnit": 6,
+        "id": 16,
+        "waitGaps": [
+          5
+        ],
+        "matchClasses": " ontime",
+        "diff": 0
+      },
+      {
+        "teamA": {
+          "name": "les retardataires",
+          "index": 1,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Saucegod FC",
+          "index": 2,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 1",
+          "teams": [
+            {
+              "name": "Boys N the Hood",
+              "index": 0,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "les retardataires",
+              "index": 1,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Saucegod FC",
+              "index": 2,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Ta belle barbe bien lyss",
+              "index": 3,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Fc glandu",
+              "index": 4,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Mac & Kète",
+              "index": 5,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Les Lapins",
+              "index": 6,
+              "groupIndex": 0,
+              "matchIds": []
+            }
+          ],
+          "index": 0,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "A",
+        "time": "10:30",
+        "timeUnit": 7,
+        "id": 17,
+        "waitGaps": [
+          4,
+          6
+        ],
+        "matchClasses": " advance1 late1",
+        "diff": 0
+      },
+      {
+        "teamA": {
+          "name": "FKG Dentaire",
+          "index": 4,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "City park",
+          "index": 2,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Vétérans 1",
+          "teams": [
+            {
+              "name": "Les bras cassés",
+              "index": 0,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Les Olives",
+              "index": 1,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "City park",
+              "index": 2,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Touche pas à mon pote",
+              "index": 3,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "FKG Dentaire",
+              "index": 4,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Tcheu c't'outil !",
+              "index": 5,
+              "groupIndex": 3,
+              "matchIds": []
+            }
+          ],
+          "index": 3,
+          "categoryIndex": 1,
+          "waitAverage": 7
+        },
+        "field": "B",
+        "time": "10:30",
+        "timeUnit": 7,
+        "id": 18
+      },
+      {
+        "teamA": {
+          "name": "FC Binouse",
+          "index": 6,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Zumba cafew",
+          "index": 2,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 2",
+          "teams": [
+            {
+              "name": "FC Beaugenoux",
+              "index": 0,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Les petits pédestres",
+              "index": 1,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Zumba cafew",
+              "index": 2,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Inconnus célèbres",
+              "index": 3,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Masterkush united",
+              "index": 4,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Le 6 de légendes",
+              "index": 5,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "FC Binouse",
+              "index": 6,
+              "groupIndex": 1,
+              "matchIds": []
+            }
+          ],
+          "index": 1,
+          "categoryIndex": 0,
+          "waitAverage": 6
+        },
+        "field": "C",
+        "time": "10:30",
+        "timeUnit": 7,
+        "id": 19,
+        "waitGaps": [
+          6,
+          5
+        ],
+        "matchClasses": " ontime advance1 diff1",
+        "diff": 1
+      },
+      {
+        "teamA": {
+          "name": "FCB II",
+          "index": 0,
+          "groupIndex": 4,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Ticino F",
+          "index": 1,
+          "groupIndex": 4,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Juniors 1",
+          "teams": [
+            {
+              "name": "FCB II",
+              "index": 0,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "Ticino F",
+              "index": 1,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "FCB I",
+              "index": 2,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "Villers",
+              "index": 3,
+              "groupIndex": 4,
+              "matchIds": []
+            }
+          ],
+          "index": 4,
+          "categoryIndex": 2,
+          "waitAverage": 5
+        },
+        "field": "A",
+        "time": "10:45",
+        "timeUnit": 8,
+        "id": 20,
+        "waitGaps": [
+          7,
+          3
+        ],
+        "matchClasses": " late2 advance2",
+        "diff": 0
+      },
+      {
+        "teamA": {
+          "name": "Préparation aqueuse",
+          "index": 0,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Kelsoss'",
+          "index": 5,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 3",
+          "teams": [
+            {
+              "name": "Préparation aqueuse",
+              "index": 0,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les Alpagas",
+              "index": 1,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les anonymous",
+              "index": 2,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les bleus",
+              "index": 3,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Le Bois de Quat'sous",
+              "index": 4,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Kelsoss'",
+              "index": 5,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Fais tourner",
+              "index": 6,
+              "groupIndex": 2,
+              "matchIds": []
+            }
+          ],
+          "index": 2,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "B",
+        "time": "10:45",
+        "timeUnit": 8,
+        "id": 21,
+        "waitGaps": [
+          6,
+          5
+        ],
+        "matchClasses": " late1 ontime diff-1",
+        "diff": -1
+      },
+      {
+        "teamA": {
+          "name": "Villers",
+          "index": 3,
+          "groupIndex": 4,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "FCB I",
+          "index": 2,
+          "groupIndex": 4,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Juniors 1",
+          "teams": [
+            {
+              "name": "FCB II",
+              "index": 0,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "Ticino F",
+              "index": 1,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "FCB I",
+              "index": 2,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "Villers",
+              "index": 3,
+              "groupIndex": 4,
+              "matchIds": []
+            }
+          ],
+          "index": 4,
+          "categoryIndex": 2,
+          "waitAverage": 5
+        },
+        "field": "C",
+        "time": "10:45",
+        "timeUnit": 8,
+        "id": 22,
+        "waitGaps": [
+          3,
+          7
+        ],
+        "matchClasses": " advance2 late2",
+        "diff": 0
+      },
+      {
+        "teamA": {
+          "name": "Le 6 de légendes",
+          "index": 5,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Masterkush united",
+          "index": 4,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 2",
+          "teams": [
+            {
+              "name": "FC Beaugenoux",
+              "index": 0,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Les petits pédestres",
+              "index": 1,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Zumba cafew",
+              "index": 2,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Inconnus célèbres",
+              "index": 3,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Masterkush united",
+              "index": 4,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Le 6 de légendes",
+              "index": 5,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "FC Binouse",
+              "index": 6,
+              "groupIndex": 1,
+              "matchIds": []
+            }
+          ],
+          "index": 1,
+          "categoryIndex": 0,
+          "waitAverage": 6
+        },
+        "field": "A",
+        "time": "11:00",
+        "timeUnit": 9,
+        "id": 23,
+        "waitGaps": [
+          5,
+          7
+        ],
+        "matchClasses": " advance1 late1",
+        "diff": 0
+      },
+      {
+        "teamA": {
+          "name": "Les Lapins",
+          "index": 6,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Ta belle barbe bien lyss",
+          "index": 3,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 1",
+          "teams": [
+            {
+              "name": "Boys N the Hood",
+              "index": 0,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "les retardataires",
+              "index": 1,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Saucegod FC",
+              "index": 2,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Ta belle barbe bien lyss",
+              "index": 3,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Fc glandu",
+              "index": 4,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Mac & Kète",
+              "index": 5,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Les Lapins",
+              "index": 6,
+              "groupIndex": 0,
+              "matchIds": []
+            }
+          ],
+          "index": 0,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "B",
+        "time": "11:00",
+        "timeUnit": 9,
+        "id": 24,
+        "waitGaps": [
+          6,
+          5
+        ],
+        "matchClasses": " late1 ontime diff-1",
+        "diff": -1
+      },
+      {
+        "teamA": {
+          "name": "Fais tourner",
+          "index": 6,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Les Alpagas",
+          "index": 1,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 3",
+          "teams": [
+            {
+              "name": "Préparation aqueuse",
+              "index": 0,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les Alpagas",
+              "index": 1,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les anonymous",
+              "index": 2,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les bleus",
+              "index": 3,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Le Bois de Quat'sous",
+              "index": 4,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Kelsoss'",
+              "index": 5,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Fais tourner",
+              "index": 6,
+              "groupIndex": 2,
+              "matchIds": []
+            }
+          ],
+          "index": 2,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "C",
+        "time": "11:00",
+        "timeUnit": 9,
+        "id": 25,
+        "waitGaps": [
+          6,
+          5
+        ],
+        "matchClasses": " late1 ontime diff-1",
+        "diff": -1
+      },
+      {
+        "teamA": {
+          "name": "Les Olives",
+          "index": 1,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Tcheu c't'outil !",
+          "index": 5,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Vétérans 1",
+          "teams": [
+            {
+              "name": "Les bras cassés",
+              "index": 0,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Les Olives",
+              "index": 1,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "City park",
+              "index": 2,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Touche pas à mon pote",
+              "index": 3,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "FKG Dentaire",
+              "index": 4,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Tcheu c't'outil !",
+              "index": 5,
+              "groupIndex": 3,
+              "matchIds": []
+            }
+          ],
+          "index": 3,
+          "categoryIndex": 1,
+          "waitAverage": 7
+        },
+        "field": "A",
+        "time": "11:15",
+        "timeUnit": 10,
+        "id": 26,
+        "waitGaps": [
+          7,
+          8
+        ],
+        "matchClasses": " ontime late1 diff-1",
+        "diff": -1
+      },
+      {
+        "teamA": {
+          "name": "Touche pas à mon pote",
+          "index": 3,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Les bras cassés",
+          "index": 0,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Vétérans 1",
+          "teams": [
+            {
+              "name": "Les bras cassés",
+              "index": 0,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Les Olives",
+              "index": 1,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "City park",
+              "index": 2,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Touche pas à mon pote",
+              "index": 3,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "FKG Dentaire",
+              "index": 4,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Tcheu c't'outil !",
+              "index": 5,
+              "groupIndex": 3,
+              "matchIds": []
+            }
+          ],
+          "index": 3,
+          "categoryIndex": 1,
+          "waitAverage": 7
+        },
+        "field": "B",
+        "time": "11:15",
+        "timeUnit": 10,
+        "id": 27,
+        "waitGaps": [
+          8,
+          7
+        ],
+        "matchClasses": " late1 ontime diff-1",
+        "diff": -1
+      },
+      {
+        "teamA": {
+          "name": "Fc glandu",
+          "index": 4,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Boys N the Hood",
+          "index": 0,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 1",
+          "teams": [
+            {
+              "name": "Boys N the Hood",
+              "index": 0,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "les retardataires",
+              "index": 1,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Saucegod FC",
+              "index": 2,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Ta belle barbe bien lyss",
+              "index": 3,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Fc glandu",
+              "index": 4,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Mac & Kète",
+              "index": 5,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Les Lapins",
+              "index": 6,
+              "groupIndex": 0,
+              "matchIds": []
+            }
+          ],
+          "index": 0,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "C",
+        "time": "11:15",
+        "timeUnit": 10,
+        "id": 28,
+        "waitGaps": [
+          4,
+          6
+        ],
+        "matchClasses": " advance1 late1",
+        "diff": 0
+      },
+      {
+        "teamA": {
+          "name": "Le Bois de Quat'sous",
+          "index": 4,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Les anonymous",
+          "index": 2,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 3",
+          "teams": [
+            {
+              "name": "Préparation aqueuse",
+              "index": 0,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les Alpagas",
+              "index": 1,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les anonymous",
+              "index": 2,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les bleus",
+              "index": 3,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Le Bois de Quat'sous",
+              "index": 4,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Kelsoss'",
+              "index": 5,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Fais tourner",
+              "index": 6,
+              "groupIndex": 2,
+              "matchIds": []
+            }
+          ],
+          "index": 2,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "A",
+        "time": "11:30",
+        "timeUnit": 11,
+        "id": 29,
+        "waitGaps": [
+          5,
+          7
+        ],
+        "matchClasses": " ontime late2 diff-2",
+        "diff": -2
+      },
+      {
+        "teamA": {
+          "name": "Inconnus célèbres",
+          "index": 3,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "FC Beaugenoux",
+          "index": 0,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 2",
+          "teams": [
+            {
+              "name": "FC Beaugenoux",
+              "index": 0,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Les petits pédestres",
+              "index": 1,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Zumba cafew",
+              "index": 2,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Inconnus célèbres",
+              "index": 3,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Masterkush united",
+              "index": 4,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Le 6 de légendes",
+              "index": 5,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "FC Binouse",
+              "index": 6,
+              "groupIndex": 1,
+              "matchIds": []
+            }
+          ],
+          "index": 1,
+          "categoryIndex": 0,
+          "waitAverage": 6
+        },
+        "field": "B",
+        "time": "11:30",
+        "timeUnit": 11,
+        "id": 30,
+        "waitGaps": [
+          7,
+          5
+        ],
+        "matchClasses": " late1 advance1",
+        "diff": 0
+      },
+      {
+        "teamA": {
+          "name": "FC Binouse",
+          "index": 6,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Les petits pédestres",
+          "index": 1,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 2",
+          "teams": [
+            {
+              "name": "FC Beaugenoux",
+              "index": 0,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Les petits pédestres",
+              "index": 1,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Zumba cafew",
+              "index": 2,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Inconnus célèbres",
+              "index": 3,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Masterkush united",
+              "index": 4,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Le 6 de légendes",
+              "index": 5,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "FC Binouse",
+              "index": 6,
+              "groupIndex": 1,
+              "matchIds": []
+            }
+          ],
+          "index": 1,
+          "categoryIndex": 0,
+          "waitAverage": 6
+        },
+        "field": "A",
+        "time": "11:45",
+        "timeUnit": 12,
+        "id": 31,
+        "waitGaps": [
+          6,
+          5
+        ],
+        "matchClasses": " ontime advance1 diff1",
+        "diff": 1
+      },
+      {
+        "teamA": {
+          "name": "Kelsoss'",
+          "index": 5,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Les bleus",
+          "index": 3,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 3",
+          "teams": [
+            {
+              "name": "Préparation aqueuse",
+              "index": 0,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les Alpagas",
+              "index": 1,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les anonymous",
+              "index": 2,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les bleus",
+              "index": 3,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Le Bois de Quat'sous",
+              "index": 4,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Kelsoss'",
+              "index": 5,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Fais tourner",
+              "index": 6,
+              "groupIndex": 2,
+              "matchIds": []
+            }
+          ],
+          "index": 2,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "B",
+        "time": "11:45",
+        "timeUnit": 12,
+        "id": 32,
+        "waitGaps": [
+          6,
+          4
+        ],
+        "matchClasses": " late1 advance1",
+        "diff": 0
+      },
+      {
+        "teamA": {
+          "name": "les retardataires",
+          "index": 1,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Mac & Kète",
+          "index": 5,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 1",
+          "teams": [
+            {
+              "name": "Boys N the Hood",
+              "index": 0,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "les retardataires",
+              "index": 1,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Saucegod FC",
+              "index": 2,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Ta belle barbe bien lyss",
+              "index": 3,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Fc glandu",
+              "index": 4,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Mac & Kète",
+              "index": 5,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Les Lapins",
+              "index": 6,
+              "groupIndex": 0,
+              "matchIds": []
+            }
+          ],
+          "index": 0,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "C",
+        "time": "11:45",
+        "timeUnit": 12,
+        "id": 33,
+        "waitGaps": [
+          5,
+          6
+        ],
+        "matchClasses": " ontime late1 diff-1",
+        "diff": -1
+      },
+      {
+        "teamA": {
+          "name": "Villers",
+          "index": 3,
+          "groupIndex": 4,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Ticino F",
+          "index": 1,
+          "groupIndex": 4,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Juniors 1",
+          "teams": [
+            {
+              "name": "FCB II",
+              "index": 0,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "Ticino F",
+              "index": 1,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "FCB I",
+              "index": 2,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "Villers",
+              "index": 3,
+              "groupIndex": 4,
+              "matchIds": []
+            }
+          ],
+          "index": 4,
+          "categoryIndex": 2,
+          "waitAverage": 5
+        },
+        "field": "A",
+        "time": "12:00",
+        "timeUnit": 13,
+        "id": 34,
+        "waitGaps": [
+          5,
+          5
+        ],
+        "matchClasses": " ontime ontime",
+        "diff": 0
+      },
+      {
+        "teamA": {
+          "name": "Saucegod FC",
+          "index": 2,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Ta belle barbe bien lyss",
+          "index": 3,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 1",
+          "teams": [
+            {
+              "name": "Boys N the Hood",
+              "index": 0,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "les retardataires",
+              "index": 1,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Saucegod FC",
+              "index": 2,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Ta belle barbe bien lyss",
+              "index": 3,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Fc glandu",
+              "index": 4,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Mac & Kète",
+              "index": 5,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Les Lapins",
+              "index": 6,
+              "groupIndex": 0,
+              "matchIds": []
+            }
+          ],
+          "index": 0,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "B",
+        "time": "12:00",
+        "timeUnit": 13,
+        "id": 35,
+        "waitGaps": [
+          6,
+          4
+        ],
+        "matchClasses": " late1 advance1",
+        "diff": 0
+      },
+      {
+        "teamA": {
+          "name": "FCB II",
+          "index": 0,
+          "groupIndex": 4,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "FCB I",
+          "index": 2,
+          "groupIndex": 4,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Juniors 1",
+          "teams": [
+            {
+              "name": "FCB II",
+              "index": 0,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "Ticino F",
+              "index": 1,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "FCB I",
+              "index": 2,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "Villers",
+              "index": 3,
+              "groupIndex": 4,
+              "matchIds": []
+            }
+          ],
+          "index": 4,
+          "categoryIndex": 2,
+          "waitAverage": 5
+        },
+        "field": "C",
+        "time": "12:00",
+        "timeUnit": 13,
+        "id": 36,
+        "waitGaps": [
+          5,
+          5
+        ],
+        "matchClasses": " ontime ontime",
+        "diff": 0
+      },
+      {
+        "teamA": {
+          "name": "Le 6 de légendes",
+          "index": 5,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Zumba cafew",
+          "index": 2,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 2",
+          "teams": [
+            {
+              "name": "FC Beaugenoux",
+              "index": 0,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Les petits pédestres",
+              "index": 1,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Zumba cafew",
+              "index": 2,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Inconnus célèbres",
+              "index": 3,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Masterkush united",
+              "index": 4,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Le 6 de légendes",
+              "index": 5,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "FC Binouse",
+              "index": 6,
+              "groupIndex": 1,
+              "matchIds": []
+            }
+          ],
+          "index": 1,
+          "categoryIndex": 0,
+          "waitAverage": 6
+        },
+        "field": "A",
+        "time": "12:15",
+        "timeUnit": 14,
+        "id": 37,
+        "waitGaps": [
+          7,
+          5
+        ],
+        "matchClasses": " late1 advance1",
+        "diff": 0
+      },
+      {
+        "teamA": {
+          "name": "Préparation aqueuse",
+          "index": 0,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Les Alpagas",
+          "index": 1,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 3",
+          "teams": [
+            {
+              "name": "Préparation aqueuse",
+              "index": 0,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les Alpagas",
+              "index": 1,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les anonymous",
+              "index": 2,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les bleus",
+              "index": 3,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Le Bois de Quat'sous",
+              "index": 4,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Kelsoss'",
+              "index": 5,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Fais tourner",
+              "index": 6,
+              "groupIndex": 2,
+              "matchIds": []
+            }
+          ],
+          "index": 2,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "B",
+        "time": "12:15",
+        "timeUnit": 14,
+        "id": 38,
+        "waitGaps": [
+          6,
+          5
+        ],
+        "matchClasses": " late1 ontime diff-1",
+        "diff": -1
+      },
+      {
+        "teamA": {
+          "name": "Boys N the Hood",
+          "index": 0,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Les Lapins",
+          "index": 6,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 1",
+          "teams": [
+            {
+              "name": "Boys N the Hood",
+              "index": 0,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "les retardataires",
+              "index": 1,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Saucegod FC",
+              "index": 2,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Ta belle barbe bien lyss",
+              "index": 3,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Fc glandu",
+              "index": 4,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Mac & Kète",
+              "index": 5,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Les Lapins",
+              "index": 6,
+              "groupIndex": 0,
+              "matchIds": []
+            }
+          ],
+          "index": 0,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "C",
+        "time": "12:15",
+        "timeUnit": 14,
+        "id": 39,
+        "waitGaps": [
+          4,
+          5
+        ],
+        "matchClasses": " advance1 ontime diff1",
+        "diff": 1
+      },
+      {
+        "teamA": {
+          "name": "Les bras cassés",
+          "index": 0,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "City park",
+          "index": 2,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Vétérans 1",
+          "teams": [
+            {
+              "name": "Les bras cassés",
+              "index": 0,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Les Olives",
+              "index": 1,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "City park",
+              "index": 2,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Touche pas à mon pote",
+              "index": 3,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "FKG Dentaire",
+              "index": 4,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Tcheu c't'outil !",
+              "index": 5,
+              "groupIndex": 3,
+              "matchIds": []
+            }
+          ],
+          "index": 3,
+          "categoryIndex": 1,
+          "waitAverage": 7
+        },
+        "field": "A",
+        "time": "12:30",
+        "timeUnit": 15,
+        "id": 40,
+        "waitGaps": [
+          5,
+          8
+        ],
+        "matchClasses": " advance2 late1 diff1",
+        "diff": 1
+      },
+      {
+        "teamA": {
+          "name": "Touche pas à mon pote",
+          "index": 3,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "FKG Dentaire",
+          "index": 4,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Vétérans 1",
+          "teams": [
+            {
+              "name": "Les bras cassés",
+              "index": 0,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Les Olives",
+              "index": 1,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "City park",
+              "index": 2,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Touche pas à mon pote",
+              "index": 3,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "FKG Dentaire",
+              "index": 4,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Tcheu c't'outil !",
+              "index": 5,
+              "groupIndex": 3,
+              "matchIds": []
+            }
+          ],
+          "index": 3,
+          "categoryIndex": 1,
+          "waitAverage": 7
+        },
+        "field": "B",
+        "time": "12:30",
+        "timeUnit": 15,
+        "id": 41,
+        "waitGaps": [
+          5,
+          8
+        ],
+        "matchClasses": " advance2 late1 diff1",
+        "diff": 1
+      },
+      {
+        "teamA": {
+          "name": "Fais tourner",
+          "index": 6,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Les anonymous",
+          "index": 2,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 3",
+          "teams": [
+            {
+              "name": "Préparation aqueuse",
+              "index": 0,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les Alpagas",
+              "index": 1,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les anonymous",
+              "index": 2,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les bleus",
+              "index": 3,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Le Bois de Quat'sous",
+              "index": 4,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Kelsoss'",
+              "index": 5,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Fais tourner",
+              "index": 6,
+              "groupIndex": 2,
+              "matchIds": []
+            }
+          ],
+          "index": 2,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "C",
+        "time": "12:30",
+        "timeUnit": 15,
+        "id": 42,
+        "waitGaps": [
+          4,
+          6
+        ],
+        "matchClasses": " advance1 late1",
+        "diff": 0
+      },
+      {
+        "teamA": {
+          "name": "Inconnus célèbres",
+          "index": 3,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Masterkush united",
+          "index": 4,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 2",
+          "teams": [
+            {
+              "name": "FC Beaugenoux",
+              "index": 0,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Les petits pédestres",
+              "index": 1,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Zumba cafew",
+              "index": 2,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Inconnus célèbres",
+              "index": 3,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Masterkush united",
+              "index": 4,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Le 6 de légendes",
+              "index": 5,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "FC Binouse",
+              "index": 6,
+              "groupIndex": 1,
+              "matchIds": []
+            }
+          ],
+          "index": 1,
+          "categoryIndex": 0,
+          "waitAverage": 6
+        },
+        "field": "A",
+        "time": "12:45",
+        "timeUnit": 16,
+        "id": 43,
+        "waitGaps": [
+          5,
+          7
+        ],
+        "matchClasses": " advance1 late1",
+        "diff": 0
+      },
+      {
+        "group": {
+          "name": "Sportifs 2",
+          "teams": [
+            {
+              "name": "FC Beaugenoux",
+              "index": 0,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Les petits pédestres",
+              "index": 1,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Zumba cafew",
+              "index": 2,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Inconnus célèbres",
+              "index": 3,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Masterkush united",
+              "index": 4,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Le 6 de légendes",
+              "index": 5,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "FC Binouse",
+              "index": 6,
+              "groupIndex": 1,
+              "matchIds": []
+            }
+          ],
+          "index": 1,
+          "categoryIndex": 0,
+          "waitAverage": 6
+        },
+        "teamB": {
+          "name": "Les petits pédestres",
+          "index": 1,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "teamA": {
+          "name": "FC Beaugenoux",
+          "index": 0,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "field": "A",
+        "time": "13:00",
+        "timeUnit": 17,
+        "id": 44,
+        "waitGaps": [
+          6,
+          5
+        ],
+        "matchClasses": " ontime advance1 diff1",
+        "diff": 1
+      },
+      {
+        "teamA": {
+          "name": "Les bleus",
+          "index": 3,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Le Bois de Quat'sous",
+          "index": 4,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 3",
+          "teams": [
+            {
+              "name": "Préparation aqueuse",
+              "index": 0,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les Alpagas",
+              "index": 1,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les anonymous",
+              "index": 2,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les bleus",
+              "index": 3,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Le Bois de Quat'sous",
+              "index": 4,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Kelsoss'",
+              "index": 5,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Fais tourner",
+              "index": 6,
+              "groupIndex": 2,
+              "matchIds": []
+            }
+          ],
+          "index": 2,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "B",
+        "time": "13:00",
+        "timeUnit": 17,
+        "id": 45,
+        "waitGaps": [
+          5,
+          6
+        ],
+        "matchClasses": " ontime late1 diff-1",
+        "diff": -1
+      },
+      {
+        "teamA": {
+          "name": "Mac & Kète",
+          "index": 5,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Fc glandu",
+          "index": 4,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 1",
+          "teams": [
+            {
+              "name": "Boys N the Hood",
+              "index": 0,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "les retardataires",
+              "index": 1,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Saucegod FC",
+              "index": 2,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Ta belle barbe bien lyss",
+              "index": 3,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Fc glandu",
+              "index": 4,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Mac & Kète",
+              "index": 5,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Les Lapins",
+              "index": 6,
+              "groupIndex": 0,
+              "matchIds": []
+            }
+          ],
+          "index": 0,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "C",
+        "time": "13:00",
+        "timeUnit": 17,
+        "id": 46,
+        "waitGaps": [
+          7,
+          5
+        ],
+        "matchClasses": " late2 ontime diff-2",
+        "diff": -2
+      },
+      {
+        "teamA": {
+          "name": "FCB II",
+          "index": 0,
+          "groupIndex": 4,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Villers",
+          "index": 3,
+          "groupIndex": 4,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Juniors 1",
+          "teams": [
+            {
+              "name": "FCB II",
+              "index": 0,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "Ticino F",
+              "index": 1,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "FCB I",
+              "index": 2,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "Villers",
+              "index": 3,
+              "groupIndex": 4,
+              "matchIds": []
+            }
+          ],
+          "index": 4,
+          "categoryIndex": 2,
+          "waitAverage": 5
+        },
+        "field": "A",
+        "time": "13:15",
+        "timeUnit": 18,
+        "id": 47,
+        "waitGaps": [
+          5,
+          5
+        ],
+        "matchClasses": " ontime ontime",
+        "diff": 0
+      },
+      {
+        "teamA": {
+          "name": "FCB I",
+          "index": 2,
+          "groupIndex": 4,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Ticino F",
+          "index": 1,
+          "groupIndex": 4,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Juniors 1",
+          "teams": [
+            {
+              "name": "FCB II",
+              "index": 0,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "Ticino F",
+              "index": 1,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "FCB I",
+              "index": 2,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "Villers",
+              "index": 3,
+              "groupIndex": 4,
+              "matchIds": []
+            }
+          ],
+          "index": 4,
+          "categoryIndex": 2,
+          "waitAverage": 5
+        },
+        "field": "B",
+        "time": "13:15",
+        "timeUnit": 18,
+        "id": 48,
+        "waitGaps": [
+          5,
+          5
+        ],
+        "matchClasses": " ontime ontime",
+        "diff": 0
+      },
+      {
+        "teamA": {
+          "name": "Fais tourner",
+          "index": 6,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Kelsoss'",
+          "index": 5,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 3",
+          "teams": [
+            {
+              "name": "Préparation aqueuse",
+              "index": 0,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les Alpagas",
+              "index": 1,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les anonymous",
+              "index": 2,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les bleus",
+              "index": 3,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Le Bois de Quat'sous",
+              "index": 4,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Kelsoss'",
+              "index": 5,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Fais tourner",
+              "index": 6,
+              "groupIndex": 2,
+              "matchIds": []
+            }
+          ],
+          "index": 2,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "C",
+        "time": "13:15",
+        "timeUnit": 18,
+        "id": 49,
+        "waitGaps": [
+          6,
+          3
+        ],
+        "matchClasses": " late1 advance2 diff1",
+        "diff": 1
+      },
+      {
+        "teamA": {
+          "name": "Les Lapins",
+          "index": 6,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "les retardataires",
+          "index": 1,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 1",
+          "teams": [
+            {
+              "name": "Boys N the Hood",
+              "index": 0,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "les retardataires",
+              "index": 1,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Saucegod FC",
+              "index": 2,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Ta belle barbe bien lyss",
+              "index": 3,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Fc glandu",
+              "index": 4,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Mac & Kète",
+              "index": 5,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Les Lapins",
+              "index": 6,
+              "groupIndex": 0,
+              "matchIds": []
+            }
+          ],
+          "index": 0,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "A",
+        "time": "13:30",
+        "timeUnit": 19,
+        "id": 50,
+        "waitGaps": [
+          7,
+          5
+        ],
+        "matchClasses": " late2 ontime diff-2",
+        "diff": -2
+      },
+      {
+        "teamA": {
+          "name": "Boys N the Hood",
+          "index": 0,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Saucegod FC",
+          "index": 2,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 1",
+          "teams": [
+            {
+              "name": "Boys N the Hood",
+              "index": 0,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "les retardataires",
+              "index": 1,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Saucegod FC",
+              "index": 2,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Ta belle barbe bien lyss",
+              "index": 3,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Fc glandu",
+              "index": 4,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Mac & Kète",
+              "index": 5,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Les Lapins",
+              "index": 6,
+              "groupIndex": 0,
+              "matchIds": []
+            }
+          ],
+          "index": 0,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "B",
+        "time": "13:30",
+        "timeUnit": 19,
+        "id": 51,
+        "waitGaps": [
+          5,
+          6
+        ],
+        "matchClasses": " ontime late1 diff-1",
+        "diff": -1
+      },
+      {
+        "teamA": {
+          "name": "FKG Dentaire",
+          "index": 4,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Les Olives",
+          "index": 1,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Vétérans 1",
+          "teams": [
+            {
+              "name": "Les bras cassés",
+              "index": 0,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Les Olives",
+              "index": 1,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "City park",
+              "index": 2,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Touche pas à mon pote",
+              "index": 3,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "FKG Dentaire",
+              "index": 4,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Tcheu c't'outil !",
+              "index": 5,
+              "groupIndex": 3,
+              "matchIds": []
+            }
+          ],
+          "index": 3,
+          "categoryIndex": 1,
+          "waitAverage": 7
+        },
+        "field": "C",
+        "time": "13:30",
+        "timeUnit": 19,
+        "id": 52,
+        "waitGaps": [
+          9,
+          4
+        ],
+        "matchClasses": " late2 advance3 diff1",
+        "diff": 1
+      },
+      {
+        "teamA": {
+          "name": "Masterkush united",
+          "index": 4,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "FC Binouse",
+          "index": 6,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 2",
+          "teams": [
+            {
+              "name": "FC Beaugenoux",
+              "index": 0,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Les petits pédestres",
+              "index": 1,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Zumba cafew",
+              "index": 2,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Inconnus célèbres",
+              "index": 3,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Masterkush united",
+              "index": 4,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Le 6 de légendes",
+              "index": 5,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "FC Binouse",
+              "index": 6,
+              "groupIndex": 1,
+              "matchIds": []
+            }
+          ],
+          "index": 1,
+          "categoryIndex": 0,
+          "waitAverage": 6
+        },
+        "field": "A",
+        "time": "13:45",
+        "timeUnit": 20,
+        "id": 53,
+        "waitGaps": [
+          4,
+          8
+        ],
+        "matchClasses": " advance2 late2",
+        "diff": 0
+      },
+      {
+        "teamA": {
+          "name": "Tcheu c't'outil !",
+          "index": 5,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "City park",
+          "index": 2,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Vétérans 1",
+          "teams": [
+            {
+              "name": "Les bras cassés",
+              "index": 0,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Les Olives",
+              "index": 1,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "City park",
+              "index": 2,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Touche pas à mon pote",
+              "index": 3,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "FKG Dentaire",
+              "index": 4,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Tcheu c't'outil !",
+              "index": 5,
+              "groupIndex": 3,
+              "matchIds": []
+            }
+          ],
+          "index": 3,
+          "categoryIndex": 1,
+          "waitAverage": 7
+        },
+        "field": "B",
+        "time": "13:45",
+        "timeUnit": 20,
+        "id": 54,
+        "waitGaps": [
+          5,
+          10
+        ],
+        "matchClasses": " advance2 late3 diff-1",
+        "diff": -1
+      },
+      {
+        "teamA": {
+          "name": "Les anonymous",
+          "index": 2,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Préparation aqueuse",
+          "index": 0,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 3",
+          "teams": [
+            {
+              "name": "Préparation aqueuse",
+              "index": 0,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les Alpagas",
+              "index": 1,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les anonymous",
+              "index": 2,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les bleus",
+              "index": 3,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Le Bois de Quat'sous",
+              "index": 4,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Kelsoss'",
+              "index": 5,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Fais tourner",
+              "index": 6,
+              "groupIndex": 2,
+              "matchIds": []
+            }
+          ],
+          "index": 2,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "C",
+        "time": "13:45",
+        "timeUnit": 20,
+        "id": 55,
+        "waitGaps": [
+          6,
+          5
+        ],
+        "matchClasses": " late1 ontime diff-1",
+        "diff": -1
+      },
+      {
+        "teamA": {
+          "name": "Zumba cafew",
+          "index": 2,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Inconnus célèbres",
+          "index": 3,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 2",
+          "teams": [
+            {
+              "name": "FC Beaugenoux",
+              "index": 0,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Les petits pédestres",
+              "index": 1,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Zumba cafew",
+              "index": 2,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Inconnus célèbres",
+              "index": 3,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Masterkush united",
+              "index": 4,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Le 6 de légendes",
+              "index": 5,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "FC Binouse",
+              "index": 6,
+              "groupIndex": 1,
+              "matchIds": []
+            }
+          ],
+          "index": 1,
+          "categoryIndex": 0,
+          "waitAverage": 6
+        },
+        "field": "A",
+        "time": "14:00",
+        "timeUnit": 21,
+        "id": 56,
+        "waitGaps": [
+          7,
+          5
+        ],
+        "matchClasses": " late1 advance1",
+        "diff": 0
+      },
+      {
+        "teamA": {
+          "name": "Le Bois de Quat'sous",
+          "index": 4,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Les Alpagas",
+          "index": 1,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 3",
+          "teams": [
+            {
+              "name": "Préparation aqueuse",
+              "index": 0,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les Alpagas",
+              "index": 1,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les anonymous",
+              "index": 2,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les bleus",
+              "index": 3,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Le Bois de Quat'sous",
+              "index": 4,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Kelsoss'",
+              "index": 5,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Fais tourner",
+              "index": 6,
+              "groupIndex": 2,
+              "matchIds": []
+            }
+          ],
+          "index": 2,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "B",
+        "time": "14:00",
+        "timeUnit": 21,
+        "id": 57,
+        "waitGaps": [
+          7,
+          4
+        ],
+        "matchClasses": " late2 advance1 diff-1",
+        "diff": -1
+      },
+      {
+        "teamA": {
+          "name": "Ta belle barbe bien lyss",
+          "index": 3,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Fc glandu",
+          "index": 4,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 1",
+          "teams": [
+            {
+              "name": "Boys N the Hood",
+              "index": 0,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "les retardataires",
+              "index": 1,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Saucegod FC",
+              "index": 2,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Ta belle barbe bien lyss",
+              "index": 3,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Fc glandu",
+              "index": 4,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Mac & Kète",
+              "index": 5,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Les Lapins",
+              "index": 6,
+              "groupIndex": 0,
+              "matchIds": []
+            }
+          ],
+          "index": 0,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "C",
+        "time": "14:00",
+        "timeUnit": 21,
+        "id": 58,
+        "waitGaps": [
+          8,
+          4
+        ],
+        "matchClasses": " late3 advance1 diff-2",
+        "diff": -2
+      },
+      {
+        "teamA": {
+          "name": "FC Beaugenoux",
+          "index": 0,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Le 6 de légendes",
+          "index": 5,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 2",
+          "teams": [
+            {
+              "name": "FC Beaugenoux",
+              "index": 0,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Les petits pédestres",
+              "index": 1,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Zumba cafew",
+              "index": 2,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Inconnus célèbres",
+              "index": 3,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Masterkush united",
+              "index": 4,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Le 6 de légendes",
+              "index": 5,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "FC Binouse",
+              "index": 6,
+              "groupIndex": 1,
+              "matchIds": []
+            }
+          ],
+          "index": 1,
+          "categoryIndex": 0,
+          "waitAverage": 6
+        },
+        "field": "A",
+        "time": "14:15",
+        "timeUnit": 22,
+        "id": 59,
+        "waitGaps": [
+          5,
+          8
+        ],
+        "matchClasses": " advance1 late2 diff-1",
+        "diff": -1
+      },
+      {
+        "group": {
+          "name": "Sportifs 3",
+          "teams": [
+            {
+              "name": "Préparation aqueuse",
+              "index": 0,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les Alpagas",
+              "index": 1,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les anonymous",
+              "index": 2,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les bleus",
+              "index": 3,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Le Bois de Quat'sous",
+              "index": 4,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Kelsoss'",
+              "index": 5,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Fais tourner",
+              "index": 6,
+              "groupIndex": 2,
+              "matchIds": []
+            }
+          ],
+          "index": 2,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "teamB": {
+          "name": "Les bleus",
+          "index": 3,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "teamA": {
+          "name": "Fais tourner",
+          "index": 6,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "field": "B",
+        "time": "14:15",
+        "timeUnit": 22,
+        "id": 60,
+        "waitGaps": [
+          5,
+          4
+        ],
+        "matchClasses": " ontime advance1 diff1",
+        "diff": 1
+      },
+      {
+        "group": {
+          "name": "Juniors 1",
+          "teams": [
+            {
+              "name": "FCB II",
+              "index": 0,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "Ticino F",
+              "index": 1,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "FCB I",
+              "index": 2,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "Villers",
+              "index": 3,
+              "groupIndex": 4,
+              "matchIds": []
+            }
+          ],
+          "index": 4,
+          "categoryIndex": 2,
+          "waitAverage": 5
+        },
+        "teamB": {
+          "name": "FCB II",
+          "index": 0,
+          "groupIndex": 4,
+          "matchIds": []
+        },
+        "teamA": {
+          "name": "Ticino F",
+          "index": 1,
+          "groupIndex": 4,
+          "matchIds": []
+        },
+        "field": "A",
+        "time": "14:30",
+        "timeUnit": 23,
+        "id": 61,
+        "waitGaps": [
+          5,
+          5
+        ],
+        "matchClasses": " ontime ontime",
+        "diff": 0
+      },
+      {
+        "teamA": {
+          "name": "FCB I",
+          "index": 2,
+          "groupIndex": 4,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Villers",
+          "index": 3,
+          "groupIndex": 4,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Juniors 1",
+          "teams": [
+            {
+              "name": "FCB II",
+              "index": 0,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "Ticino F",
+              "index": 1,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "FCB I",
+              "index": 2,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "Villers",
+              "index": 3,
+              "groupIndex": 4,
+              "matchIds": []
+            }
+          ],
+          "index": 4,
+          "categoryIndex": 2,
+          "waitAverage": 5
+        },
+        "field": "B",
+        "time": "14:30",
+        "timeUnit": 23,
+        "id": 62,
+        "waitGaps": [
+          5,
+          5
+        ],
+        "matchClasses": " ontime ontime",
+        "diff": 0
+      },
+      {
+        "teamA": {
+          "name": "Mac & Kète",
+          "index": 5,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Les Lapins",
+          "index": 6,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 1",
+          "teams": [
+            {
+              "name": "Boys N the Hood",
+              "index": 0,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "les retardataires",
+              "index": 1,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Saucegod FC",
+              "index": 2,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Ta belle barbe bien lyss",
+              "index": 3,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Fc glandu",
+              "index": 4,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Mac & Kète",
+              "index": 5,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Les Lapins",
+              "index": 6,
+              "groupIndex": 0,
+              "matchIds": []
+            }
+          ],
+          "index": 0,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "C",
+        "time": "14:30",
+        "timeUnit": 23,
+        "id": 63,
+        "waitGaps": [
+          6,
+          4
+        ],
+        "matchClasses": " late1 advance1",
+        "diff": 0
+      },
+      {
+        "teamA": {
+          "name": "Les Olives",
+          "index": 1,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Les bras cassés",
+          "index": 0,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Vétérans 1",
+          "teams": [
+            {
+              "name": "Les bras cassés",
+              "index": 0,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Les Olives",
+              "index": 1,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "City park",
+              "index": 2,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Touche pas à mon pote",
+              "index": 3,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "FKG Dentaire",
+              "index": 4,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Tcheu c't'outil !",
+              "index": 5,
+              "groupIndex": 3,
+              "matchIds": []
+            }
+          ],
+          "index": 3,
+          "categoryIndex": 1,
+          "waitAverage": 7
+        },
+        "field": "A",
+        "time": "14:45",
+        "timeUnit": 24,
+        "id": 64,
+        "waitGaps": [
+          9,
+          5
+        ],
+        "matchClasses": " late2 advance2",
+        "diff": 0
+      },
+      {
+        "teamA": {
+          "name": "Touche pas à mon pote",
+          "index": 3,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Tcheu c't'outil !",
+          "index": 5,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Vétérans 1",
+          "teams": [
+            {
+              "name": "Les bras cassés",
+              "index": 0,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Les Olives",
+              "index": 1,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "City park",
+              "index": 2,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Touche pas à mon pote",
+              "index": 3,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "FKG Dentaire",
+              "index": 4,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Tcheu c't'outil !",
+              "index": 5,
+              "groupIndex": 3,
+              "matchIds": []
+            }
+          ],
+          "index": 3,
+          "categoryIndex": 1,
+          "waitAverage": 7
+        },
+        "field": "B",
+        "time": "14:45",
+        "timeUnit": 24,
+        "id": 65,
+        "waitGaps": [
+          9,
+          4
+        ],
+        "matchClasses": " late2 advance3 diff1",
+        "diff": 1
+      },
+      {
+        "teamA": {
+          "name": "Kelsoss'",
+          "index": 5,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Les anonymous",
+          "index": 2,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 3",
+          "teams": [
+            {
+              "name": "Préparation aqueuse",
+              "index": 0,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les Alpagas",
+              "index": 1,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les anonymous",
+              "index": 2,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les bleus",
+              "index": 3,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Le Bois de Quat'sous",
+              "index": 4,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Kelsoss'",
+              "index": 5,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Fais tourner",
+              "index": 6,
+              "groupIndex": 2,
+              "matchIds": []
+            }
+          ],
+          "index": 2,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "C",
+        "time": "14:45",
+        "timeUnit": 24,
+        "id": 66,
+        "waitGaps": [
+          4,
+          6
+        ],
+        "matchClasses": " advance1 late1",
+        "diff": 0
+      },
+      {
+        "teamA": {
+          "name": "Boys N the Hood",
+          "index": 0,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "les retardataires",
+          "index": 1,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 1",
+          "teams": [
+            {
+              "name": "Boys N the Hood",
+              "index": 0,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "les retardataires",
+              "index": 1,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Saucegod FC",
+              "index": 2,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Ta belle barbe bien lyss",
+              "index": 3,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Fc glandu",
+              "index": 4,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Mac & Kète",
+              "index": 5,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Les Lapins",
+              "index": 6,
+              "groupIndex": 0,
+              "matchIds": []
+            }
+          ],
+          "index": 0,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "A",
+        "time": "15:00",
+        "timeUnit": 25,
+        "id": 67,
+        "waitGaps": [
+          6,
+          6
+        ],
+        "matchClasses": " late1 late1 diff-2",
+        "diff": -2
+      },
+      {
+        "teamA": {
+          "name": "Le Bois de Quat'sous",
+          "index": 4,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Préparation aqueuse",
+          "index": 0,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 3",
+          "teams": [
+            {
+              "name": "Préparation aqueuse",
+              "index": 0,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les Alpagas",
+              "index": 1,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les anonymous",
+              "index": 2,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les bleus",
+              "index": 3,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Le Bois de Quat'sous",
+              "index": 4,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Kelsoss'",
+              "index": 5,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Fais tourner",
+              "index": 6,
+              "groupIndex": 2,
+              "matchIds": []
+            }
+          ],
+          "index": 2,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "B",
+        "time": "15:00",
+        "timeUnit": 25,
+        "id": 68,
+        "waitGaps": [
+          5,
+          4
+        ],
+        "matchClasses": " ontime advance1 diff1",
+        "diff": 1
+      },
+      {
+        "teamA": {
+          "name": "Masterkush united",
+          "index": 4,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Les petits pédestres",
+          "index": 1,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 2",
+          "teams": [
+            {
+              "name": "FC Beaugenoux",
+              "index": 0,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Les petits pédestres",
+              "index": 1,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Zumba cafew",
+              "index": 2,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Inconnus célèbres",
+              "index": 3,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Masterkush united",
+              "index": 4,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Le 6 de légendes",
+              "index": 5,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "FC Binouse",
+              "index": 6,
+              "groupIndex": 1,
+              "matchIds": []
+            }
+          ],
+          "index": 1,
+          "categoryIndex": 0,
+          "waitAverage": 6
+        },
+        "field": "C",
+        "time": "15:00",
+        "timeUnit": 25,
+        "id": 69,
+        "waitGaps": [
+          8,
+          5
+        ],
+        "matchClasses": " late2 advance1 diff-1",
+        "diff": -1
+      },
+      {
+        "teamA": {
+          "name": "FC Binouse",
+          "index": 6,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Inconnus célèbres",
+          "index": 3,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 2",
+          "teams": [
+            {
+              "name": "FC Beaugenoux",
+              "index": 0,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Les petits pédestres",
+              "index": 1,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Zumba cafew",
+              "index": 2,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Inconnus célèbres",
+              "index": 3,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Masterkush united",
+              "index": 4,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Le 6 de légendes",
+              "index": 5,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "FC Binouse",
+              "index": 6,
+              "groupIndex": 1,
+              "matchIds": []
+            }
+          ],
+          "index": 1,
+          "categoryIndex": 0,
+          "waitAverage": 6
+        },
+        "field": "A",
+        "time": "15:15",
+        "timeUnit": 26,
+        "id": 70,
+        "waitGaps": [
+          5,
+          6
+        ],
+        "matchClasses": " advance1 ontime diff1",
+        "diff": 1
+      },
+      {
+        "teamA": {
+          "name": "Saucegod FC",
+          "index": 2,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Fc glandu",
+          "index": 4,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 1",
+          "teams": [
+            {
+              "name": "Boys N the Hood",
+              "index": 0,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "les retardataires",
+              "index": 1,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Saucegod FC",
+              "index": 2,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Ta belle barbe bien lyss",
+              "index": 3,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Fc glandu",
+              "index": 4,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Mac & Kète",
+              "index": 5,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Les Lapins",
+              "index": 6,
+              "groupIndex": 0,
+              "matchIds": []
+            }
+          ],
+          "index": 0,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "B",
+        "time": "15:15",
+        "timeUnit": 26,
+        "id": 71,
+        "waitGaps": [
+          7,
+          5
+        ],
+        "matchClasses": " late2 ontime diff-2",
+        "diff": -2
+      },
+      {
+        "teamA": {
+          "name": "Les bleus",
+          "index": 3,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Les Alpagas",
+          "index": 1,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 3",
+          "teams": [
+            {
+              "name": "Préparation aqueuse",
+              "index": 0,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les Alpagas",
+              "index": 1,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les anonymous",
+              "index": 2,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les bleus",
+              "index": 3,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Le Bois de Quat'sous",
+              "index": 4,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Kelsoss'",
+              "index": 5,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Fais tourner",
+              "index": 6,
+              "groupIndex": 2,
+              "matchIds": []
+            }
+          ],
+          "index": 2,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "C",
+        "time": "15:15",
+        "timeUnit": 26,
+        "id": 72,
+        "waitGaps": [
+          5,
+          4
+        ],
+        "matchClasses": " ontime advance1 diff1",
+        "diff": 1
+      },
+      {
+        "group": {
+          "name": "Sportifs 1",
+          "teams": [
+            {
+              "name": "Boys N the Hood",
+              "index": 0,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "les retardataires",
+              "index": 1,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Saucegod FC",
+              "index": 2,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Ta belle barbe bien lyss",
+              "index": 3,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Fc glandu",
+              "index": 4,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Mac & Kète",
+              "index": 5,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Les Lapins",
+              "index": 6,
+              "groupIndex": 0,
+              "matchIds": []
+            }
+          ],
+          "index": 0,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "teamB": {
+          "name": "Mac & Kète",
+          "index": 5,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "teamA": {
+          "name": "Ta belle barbe bien lyss",
+          "index": 3,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "field": "A",
+        "time": "15:30",
+        "timeUnit": 27,
+        "id": 73,
+        "waitGaps": [
+          6,
+          4
+        ],
+        "matchClasses": " late1 advance1",
+        "diff": 0
+      },
+      {
+        "group": {
+          "name": "Sportifs 2",
+          "teams": [
+            {
+              "name": "FC Beaugenoux",
+              "index": 0,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Les petits pédestres",
+              "index": 1,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Zumba cafew",
+              "index": 2,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Inconnus célèbres",
+              "index": 3,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Masterkush united",
+              "index": 4,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Le 6 de légendes",
+              "index": 5,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "FC Binouse",
+              "index": 6,
+              "groupIndex": 1,
+              "matchIds": []
+            }
+          ],
+          "index": 1,
+          "categoryIndex": 0,
+          "waitAverage": 6
+        },
+        "teamB": {
+          "name": "FC Beaugenoux",
+          "index": 0,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "teamA": {
+          "name": "Zumba cafew",
+          "index": 2,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "field": "A",
+        "time": "15:45",
+        "timeUnit": 28,
+        "id": 74,
+        "waitGaps": [
+          6,
+          7
+        ],
+        "matchClasses": " ontime late1 diff-1",
+        "diff": -1
+      },
+      {
+        "teamA": {
+          "name": "Les bras cassés",
+          "index": 0,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "FKG Dentaire",
+          "index": 4,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Vétérans 1",
+          "teams": [
+            {
+              "name": "Les bras cassés",
+              "index": 0,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Les Olives",
+              "index": 1,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "City park",
+              "index": 2,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Touche pas à mon pote",
+              "index": 3,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "FKG Dentaire",
+              "index": 4,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Tcheu c't'outil !",
+              "index": 5,
+              "groupIndex": 3,
+              "matchIds": []
+            }
+          ],
+          "index": 3,
+          "categoryIndex": 1,
+          "waitAverage": 7
+        },
+        "field": "B",
+        "time": "15:45",
+        "timeUnit": 28,
+        "id": 75,
+        "waitGaps": [
+          4,
+          9
+        ],
+        "matchClasses": " advance3 late2 diff1",
+        "diff": 1
+      },
+      {
+        "teamA": {
+          "name": "Ticino F",
+          "index": 1,
+          "groupIndex": 4,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Villers",
+          "index": 3,
+          "groupIndex": 4,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Juniors 1",
+          "teams": [
+            {
+              "name": "FCB II",
+              "index": 0,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "Ticino F",
+              "index": 1,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "FCB I",
+              "index": 2,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "Villers",
+              "index": 3,
+              "groupIndex": 4,
+              "matchIds": []
+            }
+          ],
+          "index": 4,
+          "categoryIndex": 2,
+          "waitAverage": 5
+        },
+        "field": "C",
+        "time": "15:45",
+        "timeUnit": 28,
+        "id": 76,
+        "waitGaps": [
+          5,
+          5
+        ],
+        "matchClasses": " ontime ontime",
+        "diff": 0
+      },
+      {
+        "teamA": {
+          "name": "City park",
+          "index": 2,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Les Olives",
+          "index": 1,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Vétérans 1",
+          "teams": [
+            {
+              "name": "Les bras cassés",
+              "index": 0,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Les Olives",
+              "index": 1,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "City park",
+              "index": 2,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Touche pas à mon pote",
+              "index": 3,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "FKG Dentaire",
+              "index": 4,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Tcheu c't'outil !",
+              "index": 5,
+              "groupIndex": 3,
+              "matchIds": []
+            }
+          ],
+          "index": 3,
+          "categoryIndex": 1,
+          "waitAverage": 7
+        },
+        "field": "A",
+        "time": "16:00",
+        "timeUnit": 29,
+        "id": 77,
+        "waitGaps": [
+          5,
+          9
+        ],
+        "matchClasses": " advance2 late2",
+        "diff": 0
+      },
+      {
+        "teamA": {
+          "name": "FCB I",
+          "index": 2,
+          "groupIndex": 4,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "FCB II",
+          "index": 0,
+          "groupIndex": 4,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Juniors 1",
+          "teams": [
+            {
+              "name": "FCB II",
+              "index": 0,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "Ticino F",
+              "index": 1,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "FCB I",
+              "index": 2,
+              "groupIndex": 4,
+              "matchIds": []
+            },
+            {
+              "name": "Villers",
+              "index": 3,
+              "groupIndex": 4,
+              "matchIds": []
+            }
+          ],
+          "index": 4,
+          "categoryIndex": 2,
+          "waitAverage": 5
+        },
+        "field": "B",
+        "time": "16:00",
+        "timeUnit": 29,
+        "id": 78,
+        "waitGaps": [
+          6,
+          6
+        ],
+        "matchClasses": " late1 late1 diff-2",
+        "diff": -2
+      },
+      {
+        "teamA": {
+          "name": "Fais tourner",
+          "index": 6,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Préparation aqueuse",
+          "index": 0,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 3",
+          "teams": [
+            {
+              "name": "Préparation aqueuse",
+              "index": 0,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les Alpagas",
+              "index": 1,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les anonymous",
+              "index": 2,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les bleus",
+              "index": 3,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Le Bois de Quat'sous",
+              "index": 4,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Kelsoss'",
+              "index": 5,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Fais tourner",
+              "index": 6,
+              "groupIndex": 2,
+              "matchIds": []
+            }
+          ],
+          "index": 2,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "C",
+        "time": "16:00",
+        "timeUnit": 29,
+        "id": 79,
+        "waitGaps": [
+          4,
+          7
+        ],
+        "matchClasses": " advance1 late2 diff-1",
+        "diff": -1
+      },
+      {
+        "teamA": {
+          "name": "Kelsoss'",
+          "index": 5,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Le Bois de Quat'sous",
+          "index": 4,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 3",
+          "teams": [
+            {
+              "name": "Préparation aqueuse",
+              "index": 0,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les Alpagas",
+              "index": 1,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les anonymous",
+              "index": 2,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les bleus",
+              "index": 3,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Le Bois de Quat'sous",
+              "index": 4,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Kelsoss'",
+              "index": 5,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Fais tourner",
+              "index": 6,
+              "groupIndex": 2,
+              "matchIds": []
+            }
+          ],
+          "index": 2,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "A",
+        "time": "16:15",
+        "timeUnit": 30,
+        "id": 80,
+        "waitGaps": [
+          5,
+          6
+        ],
+        "matchClasses": " ontime late1 diff-1",
+        "diff": -1
+      },
+      {
+        "teamA": {
+          "name": "Les petits pédestres",
+          "index": 1,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Le 6 de légendes",
+          "index": 5,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 2",
+          "teams": [
+            {
+              "name": "FC Beaugenoux",
+              "index": 0,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Les petits pédestres",
+              "index": 1,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Zumba cafew",
+              "index": 2,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Inconnus célèbres",
+              "index": 3,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Masterkush united",
+              "index": 4,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Le 6 de légendes",
+              "index": 5,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "FC Binouse",
+              "index": 6,
+              "groupIndex": 1,
+              "matchIds": []
+            }
+          ],
+          "index": 1,
+          "categoryIndex": 0,
+          "waitAverage": 6
+        },
+        "field": "B",
+        "time": "16:15",
+        "timeUnit": 30,
+        "id": 81,
+        "waitGaps": [
+          5,
+          8
+        ],
+        "matchClasses": " advance1 late2 diff-1",
+        "diff": -1
+      },
+      {
+        "teamA": {
+          "name": "Saucegod FC",
+          "index": 2,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Les Lapins",
+          "index": 6,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 1",
+          "teams": [
+            {
+              "name": "Boys N the Hood",
+              "index": 0,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "les retardataires",
+              "index": 1,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Saucegod FC",
+              "index": 2,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Ta belle barbe bien lyss",
+              "index": 3,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Fc glandu",
+              "index": 4,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Mac & Kète",
+              "index": 5,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Les Lapins",
+              "index": 6,
+              "groupIndex": 0,
+              "matchIds": []
+            }
+          ],
+          "index": 0,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "C",
+        "time": "16:15",
+        "timeUnit": 30,
+        "id": 82,
+        "waitGaps": [
+          4,
+          7
+        ],
+        "matchClasses": " advance1 late2 diff-1",
+        "diff": -1
+      },
+      {
+        "teamA": {
+          "name": "Ta belle barbe bien lyss",
+          "index": 3,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Boys N the Hood",
+          "index": 0,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 1",
+          "teams": [
+            {
+              "name": "Boys N the Hood",
+              "index": 0,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "les retardataires",
+              "index": 1,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Saucegod FC",
+              "index": 2,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Ta belle barbe bien lyss",
+              "index": 3,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Fc glandu",
+              "index": 4,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Mac & Kète",
+              "index": 5,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Les Lapins",
+              "index": 6,
+              "groupIndex": 0,
+              "matchIds": []
+            }
+          ],
+          "index": 0,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "A",
+        "time": "16:30",
+        "timeUnit": 31,
+        "id": 83,
+        "waitGaps": [
+          6,
+          4
+        ],
+        "matchClasses": " late1 advance1",
+        "diff": 0
+      },
+      {
+        "teamA": {
+          "name": "Fc glandu",
+          "index": 4,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "les retardataires",
+          "index": 1,
+          "groupIndex": 0,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 1",
+          "teams": [
+            {
+              "name": "Boys N the Hood",
+              "index": 0,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "les retardataires",
+              "index": 1,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Saucegod FC",
+              "index": 2,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Ta belle barbe bien lyss",
+              "index": 3,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Fc glandu",
+              "index": 4,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Mac & Kète",
+              "index": 5,
+              "groupIndex": 0,
+              "matchIds": []
+            },
+            {
+              "name": "Les Lapins",
+              "index": 6,
+              "groupIndex": 0,
+              "matchIds": []
+            }
+          ],
+          "index": 0,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "B",
+        "time": "16:30",
+        "timeUnit": 31,
+        "id": 84,
+        "waitGaps": [
+          6,
+          5
+        ],
+        "matchClasses": " late1 ontime diff-1",
+        "diff": -1
+      },
+      {
+        "teamA": {
+          "name": "Les anonymous",
+          "index": 2,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Les Alpagas",
+          "index": 1,
+          "groupIndex": 2,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 3",
+          "teams": [
+            {
+              "name": "Préparation aqueuse",
+              "index": 0,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les Alpagas",
+              "index": 1,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les anonymous",
+              "index": 2,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Les bleus",
+              "index": 3,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Le Bois de Quat'sous",
+              "index": 4,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Kelsoss'",
+              "index": 5,
+              "groupIndex": 2,
+              "matchIds": []
+            },
+            {
+              "name": "Fais tourner",
+              "index": 6,
+              "groupIndex": 2,
+              "matchIds": []
+            }
+          ],
+          "index": 2,
+          "categoryIndex": 0,
+          "waitAverage": 5
+        },
+        "field": "C",
+        "time": "16:30",
+        "timeUnit": 31,
+        "id": 85,
+        "waitGaps": [
+          5,
+          7
+        ],
+        "matchClasses": " ontime late2 diff-2",
+        "diff": -2
+      },
+      {
+        "group": {
+          "name": "Vétérans 1",
+          "teams": [
+            {
+              "name": "Les bras cassés",
+              "index": 0,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Les Olives",
+              "index": 1,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "City park",
+              "index": 2,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Touche pas à mon pote",
+              "index": 3,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "FKG Dentaire",
+              "index": 4,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Tcheu c't'outil !",
+              "index": 5,
+              "groupIndex": 3,
+              "matchIds": []
+            }
+          ],
+          "index": 3,
+          "categoryIndex": 1,
+          "waitAverage": 7
+        },
+        "teamB": {
+          "name": "Tcheu c't'outil !",
+          "index": 5,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "teamA": {
+          "name": "FKG Dentaire",
+          "index": 4,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "field": "A",
+        "time": "16:45",
+        "timeUnit": 32,
+        "id": 86,
+        "waitGaps": [
+          4,
+          8
+        ],
+        "matchClasses": " advance3 late1 diff2",
+        "diff": 2
+      },
+      {
+        "teamA": {
+          "name": "FC Beaugenoux",
+          "index": 0,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "FC Binouse",
+          "index": 6,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 2",
+          "teams": [
+            {
+              "name": "FC Beaugenoux",
+              "index": 0,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Les petits pédestres",
+              "index": 1,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Zumba cafew",
+              "index": 2,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Inconnus célèbres",
+              "index": 3,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Masterkush united",
+              "index": 4,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Le 6 de légendes",
+              "index": 5,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "FC Binouse",
+              "index": 6,
+              "groupIndex": 1,
+              "matchIds": []
+            }
+          ],
+          "index": 1,
+          "categoryIndex": 0,
+          "waitAverage": 6
+        },
+        "field": "B",
+        "time": "16:45",
+        "timeUnit": 32,
+        "id": 87,
+        "waitGaps": [
+          4,
+          6
+        ],
+        "matchClasses": " advance2 ontime diff2",
+        "diff": 2
+      },
+      {
+        "teamA": {
+          "name": "Masterkush united",
+          "index": 4,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Zumba cafew",
+          "index": 2,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 2",
+          "teams": [
+            {
+              "name": "FC Beaugenoux",
+              "index": 0,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Les petits pédestres",
+              "index": 1,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Zumba cafew",
+              "index": 2,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Inconnus célèbres",
+              "index": 3,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Masterkush united",
+              "index": 4,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Le 6 de légendes",
+              "index": 5,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "FC Binouse",
+              "index": 6,
+              "groupIndex": 1,
+              "matchIds": []
+            }
+          ],
+          "index": 1,
+          "categoryIndex": 0,
+          "waitAverage": 6
+        },
+        "field": "C",
+        "time": "16:45",
+        "timeUnit": 32,
+        "id": 88,
+        "waitGaps": [
+          4,
+          7
+        ],
+        "matchClasses": " advance2 late1 diff1",
+        "diff": 1
+      },
+      {
+        "teamA": {
+          "name": "Le 6 de légendes",
+          "index": 5,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "Inconnus célèbres",
+          "index": 3,
+          "groupIndex": 1,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Sportifs 2",
+          "teams": [
+            {
+              "name": "FC Beaugenoux",
+              "index": 0,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Les petits pédestres",
+              "index": 1,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Zumba cafew",
+              "index": 2,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Inconnus célèbres",
+              "index": 3,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Masterkush united",
+              "index": 4,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "Le 6 de légendes",
+              "index": 5,
+              "groupIndex": 1,
+              "matchIds": []
+            },
+            {
+              "name": "FC Binouse",
+              "index": 6,
+              "groupIndex": 1,
+              "matchIds": []
+            }
+          ],
+          "index": 1,
+          "categoryIndex": 0,
+          "waitAverage": 6
+        },
+        "field": "A",
+        "time": "17:00",
+        "timeUnit": 33,
+        "id": 89,
+        "waitGaps": [
+          7,
+          3
+        ],
+        "matchClasses": " late1 advance3 diff2",
+        "diff": 2
+      },
+      {
+        "teamA": {
+          "name": "Touche pas à mon pote",
+          "index": 3,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "teamB": {
+          "name": "City park",
+          "index": 2,
+          "groupIndex": 3,
+          "matchIds": []
+        },
+        "group": {
+          "name": "Vétérans 1",
+          "teams": [
+            {
+              "name": "Les bras cassés",
+              "index": 0,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Les Olives",
+              "index": 1,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "City park",
+              "index": 2,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Touche pas à mon pote",
+              "index": 3,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "FKG Dentaire",
+              "index": 4,
+              "groupIndex": 3,
+              "matchIds": []
+            },
+            {
+              "name": "Tcheu c't'outil !",
+              "index": 5,
+              "groupIndex": 3,
+              "matchIds": []
+            }
+          ],
+          "index": 3,
+          "categoryIndex": 1,
+          "waitAverage": 7
+        },
+        "field": "B",
+        "time": "17:00",
+        "timeUnit": 33,
+        "id": 90,
+        "waitGaps": [
+          4,
+          9
+        ],
+        "matchClasses": " advance3 late2 diff1",
+        "diff": 1
+      }
+    ],
+    "score": [
+      -2,
+      2,
+      8,
+      3,
+      -3,
+      3,
+      0.7894736842105263
+    ]
+  }
+}
