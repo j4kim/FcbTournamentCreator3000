@@ -105,6 +105,10 @@ $(function(){
         $("body").addClass("admin")
     }
 
+    if (window.location.hash === "#ranking") {
+        displayRanking();
+    }
+
     // Read tounament data from file input
 
     $("#file").change(e => {
