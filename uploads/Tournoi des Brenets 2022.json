@@ -1129,9 +1129,9 @@
           "categoryIndex": 0,
           "waitAverage": 5
         },
-        "field": "A",
-        "time": "10:15",
-        "timeUnit": 6,
+        "field": "B",
+        "time": "10:00",
+        "timeUnit": 5,
         "id": 14,
         "waitGaps": [
           4
@@ -3220,9 +3220,9 @@
           "groupIndex": 4,
           "matchIds": []
         },
-        "field": "A",
-        "time": "13:00",
-        "timeUnit": 17,
+        "field": "B",
+        "time": "12:45",
+        "timeUnit": 16,
         "id": 44,
         "waitGaps": [
           4,
@@ -5344,9 +5344,9 @@
           "groupIndex": 4,
           "matchIds": []
         },
-        "field": "A",
-        "time": "15:45",
-        "timeUnit": 28,
+        "field": "B",
+        "time": "15:30",
+        "timeUnit": 27,
         "id": 74,
         "waitGaps": [
           5,
