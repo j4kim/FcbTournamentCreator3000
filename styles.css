@@ -100,13 +100,10 @@ td input[type=number] {
         padding-right: 8px;
         padding-left: 8px;
     }
-    .desktop-only {
-        display: none;
+    thead.mobile-only {
+        display: table-header-group !important;
     }
-}
-
-@media screen and (min-width: 601px) {
-    .mobile-only {
+    thead.desktop-only {
         display: none;
     }
 }
