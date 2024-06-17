@@ -78,16 +78,11 @@ td input[type=number] {
     background-color: #eee;
 }
 
-
-/*.diff-5{background:#f00}*/
-/*.diff-4{background:#f66}*/
-/*.diff-3{background:#faa}*/
-/*.diff-2{background:#fdd}*/
-
-/*.diff5{background:#0f0}*/
-/*.diff4{background:#6f6}*/
-/*.diff3{background:#afa}*/
-/*.diff2{background:#dfd}*/
+td.score {
+    display: flex;
+    align-items: baseline;
+    gap: 2px;
+}
 
 @media screen and (max-width: 600px) {
     table .id-col {
