@@ -327,7 +327,7 @@
                     <div class="ranking-table g{{ group.index }}">
                         <h4>{{ group.name }}</h4>
                         <table class="table table-sm">
-                            <thead>
+                            <thead class="desktop-only">
                             <tr class="table-light">
                                 <th>Équipe</th>
                                 <th>Joués</th>
@@ -336,6 +336,17 @@
                                 <th>Perdus</th>
                                 <th>Diff</th>
                                 <th>Points</th>
+                            </tr>
+                            </thead>
+                            <thead class="mobile-only">
+                            <tr class="table-light">
+                                <th>Équipe</th>
+                                <th>J</th>
+                                <th>G</th>
+                                <th>N</th>
+                                <th>P</th>
+                                <th>D</th>
+                                <th>Pts</th>
                             </tr>
                             </thead>
                             <tbody>
