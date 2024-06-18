@@ -170,7 +170,7 @@ $(function(){
         srcItems.push(count+1)
         var newSrc = srcItems.join("=")
         $("iframe").attr("src", newSrc)
-    }, 60000)
+    }, 2 * 60 * 1000)
 
     $("#knockout input[type=checkbox]").change(function() {
         $("body").toggleClass(this.id, $(this).prop('checked'))
