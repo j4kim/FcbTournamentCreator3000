@@ -97,6 +97,8 @@ function loadConfig(){
         if (getCookie("is_editor") == "1") {
             $("body").addClass("editor")
             $("#qualifTable input").prop("disabled", false);
+        } else {
+            setTimeout(loadConfig, 60 * 1000)
         }
     }).fail(error => {
         alert(error.responseText);
