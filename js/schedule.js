@@ -109,4 +109,7 @@ $(function () {
     $("#qualif").on("change", ".score > input", e => {
         updateRanking();
     });
+
+    const debouncedSave = debounce(() => $("#save").click());
+    $("#qualif").on("change", ".score > input", e => debouncedSave())
 });
