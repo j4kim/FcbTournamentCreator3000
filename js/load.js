@@ -151,7 +151,12 @@ $(function(){
         }).done(filename => {
             var btnContent = $("#save").html()
             $("#save").html("👍")
-            setTimeout(() => { $("#save").html(btnContent) }, 1000)
+            var titleContent = $("title").text()
+            $("title").text("👍")
+            setTimeout(() => {
+                $("#save").html(btnContent)
+                $("title").text(titleContent) 
+            }, 1000)
         }).fail(error => {
             alert(error.responseText);
         });
@@ -175,15 +180,26 @@ $(function(){
     $("#knockout input[type=checkbox]").change(function() {
         $("body").toggleClass(this.id, $(this).prop('checked'))
     })
+
+    if (getCookie("is_editor") == "1") {
+        $("body").addClass("editor")
+    }
 });
 
-// listen to ctrl+s
+// listen to keyboard
 $(window).keydown(function(e) {
     if (e.ctrlKey && e.key === 's') {
         e.preventDefault();
         $("#save").click();
-        var titleContent = $("title").text()
-        $("title").text("👍")
-        setTimeout(() => { $("title").text(titleContent) }, 1000)
+    }
+
+    if (e.ctrlKey && e.key === 'e') {
+        const pwd = prompt("Mot de passe éditeur")
+        $.post("set-editor-mode.php", { pwd }).done(() => {
+            $("body").addClass("editor")
+        }).fail(error => {
+            alert(error.responseText);
+            $("body").removeClass("editor")
+        });
     }
 });

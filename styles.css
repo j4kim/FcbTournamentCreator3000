@@ -8,7 +8,8 @@ body.admin .admin-only {
 input[type=number] {
     pointer-events: none;
 }
-body.admin input[type=number] {
+body.admin input[type=number],
+body.editor input[type=number] {
     pointer-events: all;
 }
 
