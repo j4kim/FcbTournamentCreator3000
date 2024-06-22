@@ -161,7 +161,7 @@ $(function(){
                 $("title").text(document.getElementById("title").innerHTML) 
             }, 1000)
         }).fail(error => {
-            alert(error.responseText);
+            alert(error.responseText ?? "Error while saving");
         });
     });
 
