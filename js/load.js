@@ -155,11 +155,10 @@ $(function(){
         }).done(filename => {
             var btnContent = $("#save").html()
             $("#save").html("👍")
-            var titleContent = $("title").text()
             $("title").text("👍")
             setTimeout(() => {
                 $("#save").html(btnContent)
-                $("title").text(titleContent) 
+                $("title").text(document.getElementById("title").innerHTML) 
             }, 1000)
         }).fail(error => {
             alert(error.responseText);
