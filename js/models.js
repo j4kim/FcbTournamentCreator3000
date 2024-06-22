@@ -17,12 +17,13 @@ class Team{
     }
 
     reinit(){
-        this.played = this.difference = this.won = this.drawn = this.lost = 0;
+        this.played = this.difference = this.totalGoalsFor = this.won = this.drawn = this.lost = 0;
     }
 
     playMatch(goalsFor, goalsAgainst){
         this.played++;
         this.difference += (goalsFor - goalsAgainst);
+        this.totalGoalsFor += goalsFor
         if(goalsFor < goalsAgainst)
             this.lost++;
         else if(goalsFor === goalsAgainst)
@@ -52,9 +53,12 @@ class Team{
 
     static compare(t1, t2){
         let pointDifference = t2.points - t1.points;
-        if(pointDifference === 0)
-            return t2.difference - t1.difference;
-        return pointDifference;
+        if (pointDifference !== 0) return pointDifference
+
+        let diffDiff = t2.difference - t1.difference
+        if (diffDiff !== 0) return diffDiff
+
+        return t2.totalGoalsFor - t1.totalGoalsFor
     }
 }
 
