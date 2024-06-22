@@ -15,3 +15,17 @@ function displayRanking(seconds){
         clearInterval(reloadInterval)
     }
 }
+
+$(function(){
+    $("#groups").on("click", "li", function(){
+        if ($(this).hasClass("marked")) {
+            $(".marked").removeClass("marked");
+            return;
+        }
+        $(".marked").removeClass("marked");
+        let mark = $(this).attr("data-mark");
+        if (mark) {
+            $(`[data-mark=${mark}]`).addClass("marked")
+        }
+    })
+})

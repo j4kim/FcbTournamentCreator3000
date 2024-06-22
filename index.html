@@ -262,12 +262,17 @@
                         <h4>{{ name }}</h4>
                         <ul>
                             {{#each teams}}
-                            <li>{{ this.name }}</li>
+                            <li data-mark="{{../index}}-{{this.index}}">{{ this.name }}</li>
                             {{/each}}
                         </ul>
                     </div>
                 </script>
             </div>
+            <div>
+                <small>
+                    <i>Cliquez sur le nom d'une équipe pour mettre ses matchs en évidence dans le programme.</i>
+                </small>
+                </div>
 
             <hr>
 
@@ -300,8 +305,8 @@
                                     <td class="time">{{ time }}</td>
                                     <td class="text-muted id-col">{{ id }}</td>
                                     <td class="field-col">{{ field }}</td>
-                                    <td class="{{ teamA.class }} team teamA">{{ teamA.name }}</td>
-                                    <td class="{{ teamB.class }} team teamB">{{ teamB.name }}</td>
+                                    <td class="{{ teamA.class }} team teamA" data-mark="{{group.index}}-{{teamA.index}}">{{ teamA.name }}</td>
+                                    <td class="{{ teamB.class }} team teamB" data-mark="{{group.index}}-{{teamB.index}}">{{ teamB.name }}</td>
                                     <td class="score">
                                         <input type="number" class="scoreA" value="{{ scoreA }}" disabled="disabled"
                                                data-team-index="{{ teamA.index }}" min="0"> :
@@ -352,7 +357,7 @@
                             <tbody>
                             {{#each teams}}
                             <tr class="t{{ this.index }}">
-                                <td>{{ this.name }}</td>
+                                <td data-mark="{{../group.index}}-{{this.index}}">{{ this.name }}</td>
                                 <td>{{ this.played }}</td>
                                 <td>{{ this.won }}</td>
                                 <td>{{ this.drawn }}</td>

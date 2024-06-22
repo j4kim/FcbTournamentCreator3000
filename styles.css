@@ -85,6 +85,10 @@ td.score {
     gap: 2px;
 }
 
+.marked {
+    background-color: yellow !important;
+}
+
 @media screen and (max-width: 600px) {
     table .id-col {
         display: none;
