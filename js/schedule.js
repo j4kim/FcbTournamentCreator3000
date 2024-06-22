@@ -110,6 +110,6 @@ $(function () {
         updateRanking();
     });
 
-    const debouncedSave = debounce(() => $("#save").click());
+    const debouncedSave = debounce(() => $("#save").click(), 1000);
     $("#qualif").on("change", ".score > input", e => debouncedSave())
 });
