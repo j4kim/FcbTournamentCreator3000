@@ -94,6 +94,10 @@ function loadConfig(){
     let file = document.body.dataset.file;
     $.get("get.php?file=" + file).done(data => {
         loadJson(JSON.parse(data));
+        if (getCookie("is_editor") == "1") {
+            $("body").addClass("editor")
+            $("#qualifTable input").prop("disabled", false);
+        }
     }).fail(error => {
         alert(error.responseText);
         loadJson();
@@ -180,10 +184,6 @@ $(function(){
     $("#knockout input[type=checkbox]").change(function() {
         $("body").toggleClass(this.id, $(this).prop('checked'))
     })
-
-    if (getCookie("is_editor") == "1") {
-        $("body").addClass("editor")
-    }
 });
 
 // listen to keyboard
@@ -197,9 +197,11 @@ $(window).keydown(function(e) {
         const pwd = prompt("Mot de passe éditeur")
         $.post("set-editor-mode.php", { pwd }).done(() => {
             $("body").addClass("editor")
+            $("#qualifTable input").prop("disabled", false);
         }).fail(error => {
             alert(error.responseText);
             $("body").removeClass("editor")
+            $("#qualifTable input").prop("disabled", true);
         });
     }
 });
