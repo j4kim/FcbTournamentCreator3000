@@ -1,6 +1,10 @@
 <?php
 
-if (@$_COOKIE["is_editor"] != '1') {
+session_start();
+
+$role = $_SESSION['role'] ?? '';
+
+if (in_array($role, ['editor', 'admin'])) {
     echo "Not editor";
     http_response_code(403); // forbidden
     exit;
