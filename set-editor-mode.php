@@ -2,16 +2,18 @@
 
 session_start();
 
-$pwd = [
+$hashes = [
     'editor' => file_get_contents("pwd.editor"),
     'admin' => file_get_contents("pwd.admin"),
 ];
 
+$pwd = $_POST["pwd"];
+
 $role = "";
 
-if ($pwd['admin'] === hash('sha256', $_POST["pwd"])) {
+if (password_verify($pwd, $hashes['admin'])) {
     $role = 'admin';
-} else if ($pwd['editor'] === hash('sha256', $_POST["pwd"])) {
+} else if (password_verify($pwd, $hashes['editor'])) {
     $role = 'editor';
 } else {
     echo "Mauvais mot de passe";

@@ -3,8 +3,8 @@
 ## Create passwords for megarobust security
 
 ```
-php -r 'echo hash("sha256", "sandwich");' > pwd.editor
-php -r 'echo hash("sha256", "fromage");' > pwd.admin
+php -r 'echo password_hash("sandwich", PASSWORD_DEFAULT);' > pwd.editor
+php -r 'echo password_hash("fromage", PASSWORD_DEFAULT);' > pwd.admin
 ```
 
 ## Run locally
