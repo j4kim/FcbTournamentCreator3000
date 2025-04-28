@@ -171,11 +171,12 @@ $(function(){
     // update iframe
     setInterval(function(){
         var src = $("iframe").attr("src")
-        var srcItems = src.split("=")
-        var count = +srcItems.pop()
-        srcItems.push(count+1)
-        var newSrc = srcItems.join("=")
-        $("iframe").attr("src", newSrc)
+        var index = src.search(/&ts=\d+$/)
+        if (index > 0) {
+            src = src.substring(0, index)
+        }
+        src += "&ts=" + Date.now()
+        $("iframe").attr("src", src)
     }, 2 * 60 * 1000)
 
     $("#knockout input[type=checkbox]").change(function() {

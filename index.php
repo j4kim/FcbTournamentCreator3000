@@ -408,7 +408,7 @@ $file = $_GET['file'];
                     </div>
                 </div>
 
-                <iframe class="my-4" style="width:100%; height: 800px; max-height: 60vh; border: 1px solid #0001" src="https://viewer.diagrams.net/?highlight=0000ff&nav=1&title=Phase%20finale%20-%20Tournoi%20des%20Brenets%202024.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oV9mbI3GO5aJVk9COaiRXpCZy69IxwTf%26export%3Ddownload&count=0" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                <iframe class="my-4" style="width:100%; height: 800px; max-height: 60vh; border: 1px solid #0001" src="https://viewer.diagrams.net/?highlight=0000ff&nav=1&title=Phase%20finale%20-%20Tournoi%20des%20Brenets%202024.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oV9mbI3GO5aJVk9COaiRXpCZy69IxwTf%26export%3Ddownload" frameborder="0" scrolling="no" allowfullscreen></iframe>
                 <div>
                     <a href="https://viewer.diagrams.net/?highlight=0000ff&nav=1&title=Phase%20finale%20-%20Tournoi%20des%20Brenets%202024.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oV9mbI3GO5aJVk9COaiRXpCZy69IxwTf%26export%3Ddownload" target="_blank">Ouvrir le diagramme</a>
                 </div>
