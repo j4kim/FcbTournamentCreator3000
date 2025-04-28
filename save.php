@@ -1,5 +1,11 @@
 <?php
 
+if (@$_COOKIE["is_editor"] != '1') {
+    echo "Not editor";
+    http_response_code(403); // forbidden
+    exit;
+}
+
 $tournament = json_decode($_POST["tournament"]);
 
 if($tournament){

@@ -2,7 +2,8 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
 	<title>FCB Tournament Creator 3000</title>
 
     <link rel="icon" href="favicon.ico" />
@@ -13,7 +14,7 @@
     <!--Bootstrap-->
     <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
     <!--App-->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?2024">
 
     <!--JS-->
     <!--jQuery-->
@@ -28,7 +29,7 @@
     <script src="lib/sjcl.js"></script>
 
 </head>
-<body data-file="Tournoi des Brenets 2022.json">
+<body data-file="Tournoi des Brenets 2024.json">
     <div class="container py-4">
         <div class="clearfix admin-only">
             <h1 class="float-left">
@@ -240,18 +241,15 @@
                 <p>
                     <ul>
                         <li>
-                            <strong>Sportifs:</strong> 3 poules de 7 équipes. Les 2 premiers de chaque groupe et les 2 meilleurs troisièmes sont qualifiés pour les quarts de finale.
+                            Catégorie <strong>Sportifs</strong> : 3 poules de 7 équipes. Les 2 premières équipes de chaque groupe et les 2 meilleures troisièmes sont qualifiées pour les quarts de finale.
                         </li>
                         <li>
-                            <strong>Vétérans:</strong> Un mini-championnat à 6 équipes. Les 2 premiers jouent une finale.
-                        </li>
-                        <li>
-                            <strong>Juniors:</strong> Un mini-championnat aller-retour à 4 équipes.
+                            Catégorie <strong>Féminines et Vétérans</strong> : Un mini-championnat à 6 équipes. Les 2 premières jouent une finale.
                         </li>
                     </ul>
                 </p>
                 <p>
-                    <a href="./Règlement 2022.pdf">Règlement</a>
+                    <a href="./Règlement Tournoi 2024.pdf">Règlement</a>
                 </p>
             </div>
 
@@ -265,17 +263,22 @@
                         <h4>{{ name }}</h4>
                         <ul>
                             {{#each teams}}
-                            <li>{{ this.name }}</li>
+                            <li data-mark="{{../index}}-{{this.index}}">{{ this.name }}</li>
                             {{/each}}
                         </ul>
                     </div>
                 </script>
             </div>
+            <div>
+                <small>
+                    <i>Cliquez sur le nom d'une équipe pour mettre ses matchs en évidence dans le programme.</i>
+                </small>
+                </div>
 
             <hr>
 
             <div id="qualif">
-                <h3>Programme des matches</h3>
+                <h3>Programme des matchs</h3>
                 <table id="qualifTable" class="table table-sm">
                     <thead>
                         <tr>
@@ -303,12 +306,12 @@
                                     <td class="time">{{ time }}</td>
                                     <td class="text-muted id-col">{{ id }}</td>
                                     <td class="field-col">{{ field }}</td>
-                                    <td class="{{ teamA.class }} team teamA">{{ teamA.name }}</td>
-                                    <td class="{{ teamB.class }} team teamB">{{ teamB.name }}</td>
+                                    <td class="{{ teamA.class }} team teamA" data-mark="{{group.index}}-{{teamA.index}}">{{ teamA.name }}</td>
+                                    <td class="{{ teamB.class }} team teamB" data-mark="{{group.index}}-{{teamB.index}}">{{ teamB.name }}</td>
                                     <td class="score">
-                                        <input type="number" class="scoreA" value="{{ scoreA }}"
+                                        <input type="number" class="scoreA" value="{{ scoreA }}" disabled="disabled"
                                                data-team-index="{{ teamA.index }}" min="0"> :
-                                        <input type="number" class="scoreB" value="{{ scoreB}}"
+                                        <input type="number" class="scoreB yolo" value="{{ scoreB}}" disabled="disabled"
                                                data-team-index="{{ teamB.index }}" min="0">
                                     </td>
                                 </tr>
@@ -330,7 +333,7 @@
                     <div class="ranking-table g{{ group.index }}">
                         <h4>{{ group.name }}</h4>
                         <table class="table table-sm">
-                            <thead>
+                            <thead class="desktop-only">
                             <tr class="table-light">
                                 <th>Équipe</th>
                                 <th>Joués</th>
@@ -341,10 +344,21 @@
                                 <th>Points</th>
                             </tr>
                             </thead>
+                            <thead class="mobile-only d-none">
+                            <tr class="table-light">
+                                <th>Équipe</th>
+                                <th>J</th>
+                                <th>G</th>
+                                <th>N</th>
+                                <th>P</th>
+                                <th>±</th>
+                                <th>Pts</th>
+                            </tr>
+                            </thead>
                             <tbody>
                             {{#each teams}}
                             <tr class="t{{ this.index }}">
-                                <td>{{ this.name }}</td>
+                                <td data-mark="{{../group.index}}-{{this.index}}">{{ this.name }}</td>
                                 <td>{{ this.played }}</td>
                                 <td>{{ this.won }}</td>
                                 <td>{{ this.drawn }}</td>
@@ -400,7 +414,10 @@
                     </div>
                 </div>
 
-                <iframe class="my-4" style="width:100%; height: 800px; max-height: 60vh; border: 1px solid #0001" src="https://viewer.diagrams.net/?highlight=0000ff&nav=1&title=Tournoi%20des%20Brenets%202022#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1P8wnG-QVUjWQh5pttAL3OJ3Vd5QXoTYC%26export%3Ddownload&count=0" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                <iframe class="my-4" style="width:100%; height: 800px; max-height: 60vh; border: 1px solid #0001" src="https://viewer.diagrams.net/?highlight=0000ff&nav=1&title=Phase%20finale%20-%20Tournoi%20des%20Brenets%202024.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oV9mbI3GO5aJVk9COaiRXpCZy69IxwTf%26export%3Ddownload&count=0" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                <div>
+                    <a href="https://viewer.diagrams.net/?highlight=0000ff&nav=1&title=Phase%20finale%20-%20Tournoi%20des%20Brenets%202024.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oV9mbI3GO5aJVk9COaiRXpCZy69IxwTf%26export%3Ddownload" target="_blank">Ouvrir le diagramme</a>
+                </div>
             </div>
         </div>
 
@@ -424,15 +441,15 @@
 	</div>
 
     <!-- Application -->
-    <script src="js/tools.js"></script>
-    <script src="js/load.js"></script>
-    <script src="js/config.js"></script>
-    <script src="js/schedule.js"></script>
-    <script src="js/models.js"></script>
-    <script src="js/rankings.js"></script>
-    <script src="js/scheduleknockout.js"></script>
-    <script src="js/knockout.js"></script>
-    <script src="js/display.js"></script>
+    <script src="js/tools.js?2024"></script>
+    <script src="js/load.js?2024"></script>
+    <script src="js/config.js?2024"></script>
+    <script src="js/schedule.js?2024"></script>
+    <script src="js/models.js?2024"></script>
+    <script src="js/rankings.js?2024"></script>
+    <script src="js/scheduleknockout.js?2024"></script>
+    <script src="js/knockout.js?2024"></script>
+    <script src="js/display.js?20240623"></script>
 
 </body>
 </html>

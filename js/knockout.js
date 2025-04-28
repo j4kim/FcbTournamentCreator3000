@@ -3,7 +3,7 @@ function knockoutUi(yes=true){
     // disable button
     $("#goKnockout").prop("disabled", yes);
     // disable qualif score inputs
-    $("#qualifTable input").prop("disabled", yes);
+    // $("#qualifTable input").prop("disabled", yes);
     // enable knockout score inputs
     $("#knockout-schedule input").prop("disabled", !yes);
 }
