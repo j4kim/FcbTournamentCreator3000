@@ -243,21 +243,8 @@ $file = $_GET['file'];
         <div id="schedule" class="d-none">
             <a href="" id="showConfig" class="admin-only">Voir configuration</a>
 
-            <div>
-                <h3>Déroulement</h3>
-                <p>
-                    <ul>
-                        <li>
-                            Catégorie <strong>Sportifs</strong> : 3 poules de 7 équipes. Les 2 premières équipes de chaque groupe et les 2 meilleures troisièmes sont qualifiées pour les quarts de finale.
-                        </li>
-                        <li>
-                            Catégorie <strong>Féminines et Vétérans</strong> : Un mini-championnat à 6 équipes. Les 2 premières jouent une finale.
-                        </li>
-                    </ul>
-                </p>
-                <p>
-                    <a href="./Règlement Tournoi 2024.pdf">Règlement</a>
-                </p>
+            <div id="summary">
+                <?php include("summary.html") ?>
             </div>
 
             <hr>
