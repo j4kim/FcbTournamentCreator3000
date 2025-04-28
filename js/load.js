@@ -148,8 +148,9 @@ $(function(){
     // Store data on the server
 
     $("#save").click(e => {
+        var config = getJson()
         $.post("save.php", {
-            tournament:JSON.stringify(getJson())
+            tournament: JSON.stringify(config)
         }).done(filename => {
             var btnContent = $("#save").html()
             $("#save").html("👍")
@@ -158,6 +159,8 @@ $(function(){
                 $("#save").html(btnContent)
                 $("title").text(document.getElementById("title").innerHTML) 
             }, 1000)
+            var url = location.origin + location.pathname + '?file=' + config.name + '.json'
+            history.pushState({}, null, url);
         }).fail(error => {
             alert(error.responseText ?? "Error while saving");
         });
