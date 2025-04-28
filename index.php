@@ -1,4 +1,11 @@
-﻿<!DOCTYPE html>
+﻿<?php
+session_start();
+
+$role = $_SESSION['role'];
+
+$file = $_GET['file'];
+?>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -29,7 +36,7 @@
     <script src="lib/sjcl.js"></script>
 
 </head>
-<body>
+<body class="<?= $role ?>" data-file="<?= $file ?>">
     <div class="container py-4">
         <div class="clearfix admin-only">
             <h1 class="float-left">
