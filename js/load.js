@@ -92,6 +92,10 @@ function loadJson(j){
 // Load file from the server
 function loadConfig(){
     let file = document.body.dataset.file;
+    if (!file) {
+        $("body").addClass("admin")
+        return
+    };
     $.get("get.php?file=" + file).done(data => {
         loadJson(data.config);
         if (data.role) {
