@@ -4,7 +4,7 @@ session_start();
 
 $role = $_SESSION['role'] ?? '';
 
-if (in_array($role, ['editor', 'admin'])) {
+if (!in_array($role, ['editor', 'admin'])) {
     echo "Not editor";
     http_response_code(403); // forbidden
     exit;
