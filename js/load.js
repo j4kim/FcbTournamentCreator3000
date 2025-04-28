@@ -93,9 +93,9 @@ function loadJson(j){
 function loadConfig(){
     let file = document.body.dataset.file;
     $.get("get.php?file=" + file).done(data => {
-        loadJson(JSON.parse(data));
-        if (getCookie("is_editor") == "1") {
-            $("body").addClass("editor")
+        loadJson(data.config);
+        if (data.role) {
+            $("body").addClass(data.role)
             $("#qualifTable input").prop("disabled", false);
         } else {
             setTimeout(loadConfig, 60 * 1000)
@@ -193,7 +193,7 @@ $(window).keydown(function(e) {
             $("#qualifTable input").prop("disabled", false);
         }).fail(error => {
             alert(error.responseText);
-            $("body").removeClass("editor")
+            $("body").removeClass("editor", "admin")
             $("#qualifTable input").prop("disabled", true);
         });
     }

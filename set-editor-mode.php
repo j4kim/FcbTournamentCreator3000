@@ -1,22 +1,23 @@
 <?php
 
+session_start();
+
 $pwd = [
     'editor' => file_get_contents("pwd.editor"),
     'admin' => file_get_contents("pwd.admin"),
 ];
 
+$role = "";
+
 if ($pwd['admin'] === hash('sha256', $_POST["pwd"])) {
-    setcookie("is_admin", "1", time()+60*60*24*1);
-    setcookie("is_editor", "1", time()+60*60*24*5);
-    header("Content-Type: application/json");
-    echo '["admin", "editor"]';
+    $role = 'admin';
 } else if ($pwd['editor'] === hash('sha256', $_POST["pwd"])) {
-    setcookie("is_editor", "1", time()+60*60*24*5);
-    header("Content-Type: application/json");
-    echo '["editor"]';
+    $role = 'editor';
 } else {
-    setcookie("is_editor", "", time()-3600);
-    setcookie("is_admin", "", time()-3600);
     echo "Mauvais mot de passe";
     http_response_code(403);
 }
+
+$_SESSION['role'] = $role;
+
+echo $role;
