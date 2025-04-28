@@ -110,14 +110,6 @@ $(function(){
 
     loadConfig();
 
-    var hashedPassword = '1452356869,-2050265340,1170848017,-506201785,1798355684,-86977671,-1690616483,2013335794'
-    var hashedHash = sjcl.hash.sha256.hash(window.location.hash).join()
-
-    if (hashedPassword === hashedHash) {
-        $("body").addClass("admin")
-        window.location.hash = "#admin"
-    }
-
     if (window.location.hash === "#ranking") {
         displayRanking();
     }
@@ -196,8 +188,8 @@ $(window).keydown(function(e) {
 
     if (e.ctrlKey && e.key === 'e') {
         const pwd = prompt("Mot de passe éditeur")
-        $.post("set-editor-mode.php", { pwd }).done(() => {
-            $("body").addClass("editor")
+        $.post("set-editor-mode.php", { pwd }).done((data) => {
+            $("body").addClass(data)
             $("#qualifTable input").prop("disabled", false);
         }).fail(error => {
             alert(error.responseText);
