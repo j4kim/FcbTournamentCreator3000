@@ -160,7 +160,7 @@ $(function(){
                 $("title").text(document.getElementById("title").innerHTML) 
             }, 1000)
             var url = location.origin + location.pathname + '?file=' + config.name + '.json'
-            history.pushState({}, null, url);
+            history.replaceState({}, null, url);
         }).fail(error => {
             alert(error.responseText ?? "Error while saving");
         });
