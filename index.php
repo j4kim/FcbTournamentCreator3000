@@ -379,12 +379,21 @@ $file = $_GET['file'];
                 <hr>
                 <h3 style="display:inline" class="mr-4">Phase Finale</h3>
 
-                <span class="admin-only">
-                    <input type="checkbox" name="show-knockout-tables" id="show-knockout-tables" class="mr-1">
-                    <label for="show-knockout-tables">Show knockout tables</label>
-                    <input type="checkbox" name="show-iframe" id="show-iframe" class="ml-4 mr-1">
-                    <label for="show-iframe">Show iframe</label>
-                </span>
+                <div class="admin-only">
+                    <div>
+                        <input type="checkbox" name="show-knockout-tables" id="show-knockout-tables" class="mr-1">
+                        <label for="show-knockout-tables">Show knockout tables</label>
+                        <input type="checkbox" name="show-iframe" id="show-iframe" class="ml-4 mr-1">
+                        <label for="show-iframe">Show iframe</label>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="iframeUrl" class="col-md-3 col-form-label">iframe URL</label>
+                        <div class="col">
+                            <input type="text" class="form-control" id="iframeUrl">
+                        </div>
+                    </div>
+                </div>
 
                 <div class="knockout-tables">
                     <table id="knockout-schedule" class="table table-sm">
