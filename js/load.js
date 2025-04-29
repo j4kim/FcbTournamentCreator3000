@@ -109,7 +109,9 @@ function loadJson(j){
 function loadConfig(){
     let file = document.body.dataset.file;
     if (!file) {
-        $("body").addClass("admin")
+        if (!$("body").hasClass("admin")) {
+            $("#title").append("Il n'y a rien ici 😔");
+        }
         return
     };
     $.get("get.php?file=" + file).done(data => {
