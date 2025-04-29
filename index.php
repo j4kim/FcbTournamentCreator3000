@@ -249,7 +249,7 @@ $file = $_GET['file'];
 
             <div class="prologue"></div>
 
-            <textarea rows="4" class="form-control admin-only prologue"></textarea>
+            <div class="admin-only editor prologue"></div>
 
             <hr>
 

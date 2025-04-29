@@ -43,11 +43,14 @@ function getJson(){
     }
     j.finalDisplay = $("#knockout input[type=checkbox]:checked").map((i, cb) => cb.name).toArray()
     j.iframeUrl = $("#iframeUrl").val();
-    j.prologue = $("textarea.prologue").val()
+    if (quill) {
+        j.prologue = quill.getSemanticHTML().replaceAll(/((?:&nbsp;)*)&nbsp;/g, '$1 ')
+    }
     return j;
 }
 
 let CONFIG;
+let quill;
 
 function loadJson(j){
     // empty form
@@ -114,6 +117,10 @@ function loadConfig(){
         if (data.role) {
             $("body").addClass(data.role)
             $("#qualifTable input").prop("disabled", false);
+            if (data.role === "admin") {
+                quill = new Quill(".prologue.editor", { theme: 'snow' })
+                $(".prologue:not(.editor)").hide()
+            }
         } else {
             setTimeout(loadConfig, 60 * 1000)
         }
