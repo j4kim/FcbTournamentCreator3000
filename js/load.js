@@ -86,6 +86,12 @@ function loadJson(j){
             $("body").addClass(name)
         })
     }
+
+    if (j.iframeUrl) {
+        var $iframe = $("iframe")
+        $iframe.attr("src", j.iframeUrl)
+        $iframe.next().find("a").attr("href", j.iframeUrl)
+    }
 }
 
 
