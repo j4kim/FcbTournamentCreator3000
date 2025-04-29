@@ -422,7 +422,7 @@ $file = $_GET['file'];
                 </div>
 
                 <iframe class="my-4" style="width:100%; height: 800px; max-height: 60vh; border: 1px solid #0001" src="" frameborder="0" scrolling="no" allowfullscreen></iframe>
-                <div>
+                <div class="iframe-link">
                     <a href="" target="_blank">Ouvrir le diagramme</a>
                 </div>
             </div>

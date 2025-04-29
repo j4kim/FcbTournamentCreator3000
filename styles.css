@@ -39,11 +39,11 @@ body.ranking-mode #rankings .ranking-table {
     overflow: auto;
 }
 
-.knockout-tables, iframe {
+.knockout-tables, iframe, .iframe-link {
     display: none;
 }
 body.show-knockout-tables .knockout-tables,
-body.show-iframe iframe {
+body.show-iframe :is(iframe, .iframe-link) {
     display: block;
 }
 
