@@ -23,7 +23,7 @@ $file = @$_GET['file'] ?? '';
     <!-- Quill -->
     <link rel="stylesheet" href="lib/quill.snow.css">
     <!--App-->
-    <link rel="stylesheet" href="styles.css?2024">
+    <link rel="stylesheet" href="styles.css?2025">
 
     <!--JS-->
     <!--jQuery-->
@@ -448,15 +448,15 @@ $file = @$_GET['file'] ?? '';
 	</div>
 
     <!-- Application -->
-    <script src="js/tools.js?2024"></script>
-    <script src="js/load.js?2024"></script>
-    <script src="js/config.js?2024"></script>
-    <script src="js/schedule.js?2024"></script>
-    <script src="js/models.js?2024"></script>
-    <script src="js/rankings.js?2024"></script>
-    <script src="js/scheduleknockout.js?2024"></script>
-    <script src="js/knockout.js?2024"></script>
-    <script src="js/display.js?20240623"></script>
+    <script src="js/tools.js?2025"></script>
+    <script src="js/load.js?2025"></script>
+    <script src="js/config.js?2025"></script>
+    <script src="js/schedule.js?2025"></script>
+    <script src="js/models.js?2025"></script>
+    <script src="js/rankings.js?2025"></script>
+    <script src="js/scheduleknockout.js?2025"></script>
+    <script src="js/knockout.js?2025"></script>
+    <script src="js/display.js?2025"></script>
 
 </body>
 </html>
