@@ -43,6 +43,7 @@ function getJson(){
     }
     j.finalDisplay = $("#knockout input[type=checkbox]:checked").map((i, cb) => cb.name).toArray()
     j.iframeUrl = $("#iframeUrl").val();
+    j.prologue = $("textarea.prologue").val()
     return j;
 }
 
@@ -93,6 +94,10 @@ function loadJson(j){
         $iframe.attr("src", j.iframeUrl)
         $iframe.next().find("a").attr("href", j.iframeUrl)
         $("#iframeUrl").val(j.iframeUrl);
+    }
+
+    if (j.prologue) {
+        $(".prologue").html(j.prologue)
     }
 }
 

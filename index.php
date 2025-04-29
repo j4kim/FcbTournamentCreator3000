@@ -243,9 +243,9 @@ $file = $_GET['file'];
         <div id="schedule" class="d-none">
             <a href="" id="showConfig" class="admin-only">Voir configuration</a>
 
-            <div id="summary">
-                <?php include("summary.html") ?>
-            </div>
+            <div class="prologue"></div>
+
+            <textarea rows="4" class="form-control admin-only prologue"></textarea>
 
             <hr>
 
