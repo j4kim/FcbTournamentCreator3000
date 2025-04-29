@@ -20,6 +20,8 @@ $file = $_GET['file'];
     <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
     <!--Bootstrap-->
     <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+    <!-- Quill -->
+    <link rel="stylesheet" href="lib/quill.snow.css">
     <!--App-->
     <link rel="stylesheet" href="styles.css?2024">
 
@@ -34,6 +36,8 @@ $file = $_GET['file'];
     <script src="lib/shuffle.js"></script>
     <!-- Stanford Javascript Crypto Library -->
     <script src="lib/sjcl.js"></script>
+    <!-- Quill -->
+    <script src="lib/quill.js"></script>
 
 </head>
 <body class="<?= $role ?>" data-file="<?= $file ?>">
