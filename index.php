@@ -1,9 +1,9 @@
 ﻿<?php
 session_start();
 
-$role = $_SESSION['role'];
+$role = @$_SESSION['role'] ?? '';
 
-$file = $_GET['file'];
+$file = @$_GET['file'] ?? '';
 ?>
 <!DOCTYPE html>
 <html>

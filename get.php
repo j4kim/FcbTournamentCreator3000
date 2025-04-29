@@ -10,7 +10,7 @@ if($filename){
         $config = file_get_contents("uploads/$filename");
         echo json_encode([
             'config' => json_decode($config),
-            'role' => $_SESSION['role'],
+            'role' => @$_SESSION['role'] ?? '',
         ]);
     }else{
         echo 'File "'.$filename.'" not found.';
