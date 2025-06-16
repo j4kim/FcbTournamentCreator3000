@@ -322,7 +322,7 @@ $file = @$_GET['file'] ?? '';
             <hr>
 
             <h3>Classements</h3>
-            <small class="form-text text-muted">
+            <small class="form-text text-muted finals-only">
                 Les équipes en vert sont qualifiées pour la phase finale.
             </small>
             <div id="rankings">
@@ -374,14 +374,14 @@ $file = @$_GET['file'] ?? '';
 
             <hr>
 
-            <button type="button" id="goKnockout" class="btn btn-primary btn-block admin-only">
+            <button type="button" id="goKnockout" class="btn btn-primary btn-block admin-only  finals-only">
                 <i class="fa fa-check"></i> Passer à la phase finale
             </button>
 
             <div id="knockout">
 
-                <hr>
-                <h3 style="display:inline" class="mr-4">Phase Finale</h3>
+                <hr class="finals-only">
+                <h3 style="display:inline" class="mr-4 finals-only">Phase Finale</h3>
 
                 <div class="admin-only">
                     <div>
@@ -389,6 +389,8 @@ $file = @$_GET['file'] ?? '';
                         <label for="show-knockout-tables">Show knockout tables</label>
                         <input type="checkbox" name="show-iframe" id="show-iframe" class="ml-4 mr-1">
                         <label for="show-iframe">Show iframe</label>
+                        <input type="checkbox" name="no-finals" id="no-finals" class="ml-4 mr-1">
+                        <label for="no-finals">No finals</label>
                     </div>
 
                     <div class="form-group row">

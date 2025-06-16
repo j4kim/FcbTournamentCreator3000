@@ -5,6 +5,10 @@ body.admin .admin-only {
     display: initial;
 }
 
+body.no-finals .finals-only {
+    display: none !important;
+}
+
 input[type=number] {
     pointer-events: none;
 }
