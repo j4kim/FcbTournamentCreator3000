@@ -93,7 +93,8 @@ td.score {
     max-width: 100%;
 }
 .ql-size-large {
-    font-size: large;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 .ql-size-small {
     font-size: small;
