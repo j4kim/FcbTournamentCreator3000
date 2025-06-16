@@ -23,7 +23,7 @@ $file = @$_GET['file'] ?? '';
     <!-- Quill -->
     <link rel="stylesheet" href="lib/quill.snow.css">
     <!--App-->
-    <link rel="stylesheet" href="styles.css?2025">
+    <link rel="stylesheet" href="styles.css?2025-06">
 
     <!--JS-->
     <!--jQuery-->
