@@ -125,8 +125,10 @@ function loadConfig(){
                     modules: {
                         toolbar: {
                             container: [
+                                [{ 'size': ['small', false, 'large'] }],
                                 ["bold", "italic", "underline", "strike"],
                                 ["blockquote"],
+                                [{ 'list': 'ordered'}, { 'list': 'bullet' }],
                                 ["clean"],
                                 ["image"],
                             ],
