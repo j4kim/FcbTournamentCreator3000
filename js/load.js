@@ -120,7 +120,28 @@ function loadConfig(){
             $("body").addClass(data.role)
             $("#qualifTable input").prop("disabled", false);
             if (data.role === "admin") {
-                quill = new Quill(".prologue.editor", { theme: 'snow' })
+                quill = new Quill(".prologue.editor", {
+                    theme: "snow",
+                    modules: {
+                        toolbar: {
+                            container: [
+                                ["bold", "italic", "underline", "strike"],
+                                ["blockquote"],
+                                ["clean"],
+                                ["image"],
+                            ],
+                            handlers: {
+                                image: function () {
+                                    var range = this.quill.getSelection();
+                                    const url = prompt("Image URL")
+                                    if (url) {
+                                        this.quill.insertEmbed(range.index, "image", url, "user");
+                                    }
+                                },
+                            },
+                        },
+                    },
+                });
                 $(".prologue:not(.editor)").hide()
             }
         } else {
