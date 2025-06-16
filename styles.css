@@ -89,6 +89,16 @@ td.score {
     background-color: yellow !important;
 }
 
+.prologue img {
+    max-width: 100%;
+}
+.ql-size-large {
+    font-size: large;
+}
+.ql-size-small {
+    font-size: small;
+}
+
 @media screen and (max-width: 600px) {
     table .id-col {
         display: none;
@@ -105,5 +115,8 @@ td.score {
     }
     thead.desktop-only {
         display: none;
+    }
+    .display-4 {
+        font-size: 2.5rem !important;
     }
 }
