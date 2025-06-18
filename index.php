@@ -247,7 +247,7 @@ $file = @$_GET['file'] ?? '';
         <div id="schedule" class="d-none">
             <a href="" id="showConfig" class="admin-only">Voir configuration</a>
 
-            <div class="prologue"></div>
+            <div class="prologue rendered"></div>
 
             <div class="admin-only editor prologue"></div>
 

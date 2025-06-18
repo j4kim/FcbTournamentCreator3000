@@ -45,6 +45,8 @@ function getJson(){
     j.iframeUrl = $("#iframeUrl").val();
     if (quill) {
         j.prologue = quill.getSemanticHTML().replaceAll(/((?:&nbsp;)*)&nbsp;/g, '$1 ')
+    } else {
+        j.prologue = $(".prologue.rendered").html()
     }
     return j;
 }
