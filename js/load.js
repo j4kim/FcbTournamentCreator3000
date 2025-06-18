@@ -132,7 +132,7 @@ function loadConfig(){
                                 ["blockquote"],
                                 [{ 'list': 'ordered'}, { 'list': 'bullet' }],
                                 ["clean"],
-                                ["image"],
+                                ["image", "link"],
                             ],
                             handlers: {
                                 image: function () {
