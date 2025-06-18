@@ -450,15 +450,15 @@ $file = @$_GET['file'] ?? '';
 	</div>
 
     <!-- Application -->
-    <script src="js/tools.js?2025"></script>
-    <script src="js/load.js?2025"></script>
-    <script src="js/config.js?2025"></script>
-    <script src="js/schedule.js?2025"></script>
-    <script src="js/models.js?2025"></script>
-    <script src="js/rankings.js?2025"></script>
-    <script src="js/scheduleknockout.js?2025"></script>
-    <script src="js/knockout.js?2025"></script>
-    <script src="js/display.js?2025"></script>
+    <script src="js/tools.js?2025-06"></script>
+    <script src="js/load.js?2025-06"></script>
+    <script src="js/config.js?2025-06"></script>
+    <script src="js/schedule.js?2025-06"></script>
+    <script src="js/models.js?2025-06"></script>
+    <script src="js/rankings.js?2025-06"></script>
+    <script src="js/scheduleknockout.js?2025-06"></script>
+    <script src="js/knockout.js?2025-06"></script>
+    <script src="js/display.js?2025-06"></script>
 
 </body>
 </html>
