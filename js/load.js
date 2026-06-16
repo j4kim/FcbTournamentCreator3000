@@ -42,10 +42,17 @@ function getJson(){
         j.config = getConfig();
     }
     j.finalDisplay = $("#knockout input[type=checkbox]:checked").map((i, cb) => cb.name).toArray()
+    j.iframeUrl = $("#iframeUrl").val();
+    if (quill) {
+        j.prologue = quill.getSemanticHTML().replaceAll(/((?:&nbsp;)*)&nbsp;/g, '$1 ')
+    } else {
+        j.prologue = $(".prologue.rendered").html()
+    }
     return j;
 }
 
 let CONFIG;
+let quill;
 
 function loadJson(j){
     // empty form
@@ -86,17 +93,61 @@ function loadJson(j){
             $("body").addClass(name)
         })
     }
+
+    if (j.iframeUrl) {
+        var $iframe = $("iframe")
+        $iframe.attr("src", j.iframeUrl)
+        $iframe.next().find("a").attr("href", j.iframeUrl)
+        $("#iframeUrl").val(j.iframeUrl);
+    }
+
+    if (j.prologue) {
+        $(".prologue").html(j.prologue)
+    }
 }
 
 
 // Load file from the server
 function loadConfig(){
     let file = document.body.dataset.file;
+    if (!file) {
+        if (!$("body").hasClass("admin")) {
+            $("#title").append("Il n'y a rien ici 😔");
+        }
+        return
+    };
     $.get("get.php?file=" + file).done(data => {
-        loadJson(JSON.parse(data));
-        if (getCookie("is_editor") == "1") {
-            $("body").addClass("editor")
+        loadJson(data.config);
+        if (data.role) {
+            $("body").addClass(data.role)
             $("#qualifTable input").prop("disabled", false);
+            if (data.role === "admin") {
+                quill = new Quill(".prologue.editor", {
+                    theme: "snow",
+                    modules: {
+                        toolbar: {
+                            container: [
+                                [{ 'size': ['small', false, 'large'] }],
+                                ["bold", "italic", "underline", "strike"],
+                                ["blockquote"],
+                                [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+                                ["clean"],
+                                ["image", "link"],
+                            ],
+                            handlers: {
+                                image: function () {
+                                    var range = this.quill.getSelection();
+                                    const url = prompt("Image URL")
+                                    if (url) {
+                                        this.quill.insertEmbed(range.index, "image", url, "user");
+                                    }
+                                },
+                            },
+                        },
+                    },
+                });
+                $(".prologue:not(.editor)").hide()
+            }
         } else {
             setTimeout(loadConfig, 60 * 1000)
         }
@@ -109,14 +160,6 @@ function loadConfig(){
 $(function(){
 
     loadConfig();
-
-    var hashedPassword = '1452356869,-2050265340,1170848017,-506201785,1798355684,-86977671,-1690616483,2013335794'
-    var hashedHash = sjcl.hash.sha256.hash(window.location.hash).join()
-
-    if (hashedPassword === hashedHash) {
-        $("body").addClass("admin")
-        window.location.hash = "#admin"
-    }
 
     if (window.location.hash === "#ranking") {
         displayRanking();
@@ -152,8 +195,9 @@ $(function(){
     // Store data on the server
 
     $("#save").click(e => {
+        var config = getJson()
         $.post("save.php", {
-            tournament:JSON.stringify(getJson())
+            tournament: JSON.stringify(config)
         }).done(filename => {
             var btnContent = $("#save").html()
             $("#save").html("👍")
@@ -162,6 +206,8 @@ $(function(){
                 $("#save").html(btnContent)
                 $("title").text(document.getElementById("title").innerHTML) 
             }, 1000)
+            var url = location.origin + location.pathname + '?file=' + config.name + '.json'
+            history.replaceState({}, null, url);
         }).fail(error => {
             alert(error.responseText ?? "Error while saving");
         });
@@ -175,11 +221,12 @@ $(function(){
     // update iframe
     setInterval(function(){
         var src = $("iframe").attr("src")
-        var srcItems = src.split("=")
-        var count = +srcItems.pop()
-        srcItems.push(count+1)
-        var newSrc = srcItems.join("=")
-        $("iframe").attr("src", newSrc)
+        var index = src.search(/&ts=\d+$/)
+        if (index > 0) {
+            src = src.substring(0, index)
+        }
+        src += "&ts=" + Date.now()
+        $("iframe").attr("src", src)
     }, 2 * 60 * 1000)
 
     $("#knockout input[type=checkbox]").change(function() {
@@ -196,12 +243,12 @@ $(window).keydown(function(e) {
 
     if (e.ctrlKey && e.key === 'e') {
         const pwd = prompt("Mot de passe éditeur")
-        $.post("set-editor-mode.php", { pwd }).done(() => {
-            $("body").addClass("editor")
+        $.post("set-editor-mode.php", { pwd }).done((data) => {
+            $("body").addClass(data)
             $("#qualifTable input").prop("disabled", false);
         }).fail(error => {
             alert(error.responseText);
-            $("body").removeClass("editor")
+            $("body").removeClass("editor", "admin")
             $("#qualifTable input").prop("disabled", true);
         });
     }

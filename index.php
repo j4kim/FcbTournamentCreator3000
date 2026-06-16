@@ -1,4 +1,11 @@
-﻿<!DOCTYPE html>
+﻿<?php
+session_start();
+
+$role = @$_SESSION['role'] ?? '';
+
+$file = @$_GET['file'] ?? '';
+?>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -13,12 +20,14 @@
     <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
     <!--Bootstrap-->
     <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+    <!-- Quill -->
+    <link rel="stylesheet" href="lib/quill.snow.css">
     <!--App-->
-    <link rel="stylesheet" href="styles.css?2024">
+    <link rel="stylesheet" href="styles.css?2025-06">
 
     <!--JS-->
     <!--jQuery-->
-    <script src="lib/jquery-3.2.1.min.js"></script>
+    <script src="lib/jquery-3.7.1.min.js"></script>
     <!--Bootstrap + Popper-->
     <script src="lib/bootstrap/bootstrap.bundle.min.js"></script>
     <!--Handlebars-->
@@ -27,9 +36,11 @@
     <script src="lib/shuffle.js"></script>
     <!-- Stanford Javascript Crypto Library -->
     <script src="lib/sjcl.js"></script>
+    <!-- Quill -->
+    <script src="lib/quill.js"></script>
 
 </head>
-<body data-file="Tournoi des Brenets 2024.json">
+<body class="<?= $role ?>" data-file="<?= $file ?>">
     <div class="container py-4">
         <div class="clearfix admin-only">
             <h1 class="float-left">
@@ -236,22 +247,9 @@
         <div id="schedule" class="d-none">
             <a href="" id="showConfig" class="admin-only">Voir configuration</a>
 
-            <div>
-                <h3>Déroulement</h3>
-                <p>
-                    <ul>
-                        <li>
-                            Catégorie <strong>Sportifs</strong> : 3 poules de 7 équipes. Les 2 premières équipes de chaque groupe et les 2 meilleures troisièmes sont qualifiées pour les quarts de finale.
-                        </li>
-                        <li>
-                            Catégorie <strong>Féminines et Vétérans</strong> : Un mini-championnat à 6 équipes. Les 2 premières jouent une finale.
-                        </li>
-                    </ul>
-                </p>
-                <p>
-                    <a href="./Règlement Tournoi 2024.pdf">Règlement</a>
-                </p>
-            </div>
+            <div class="prologue rendered"></div>
+
+            <div class="admin-only editor prologue"></div>
 
             <hr>
 
@@ -324,7 +322,7 @@
             <hr>
 
             <h3>Classements</h3>
-            <small class="form-text text-muted">
+            <small class="form-text text-muted finals-only">
                 Les équipes en vert sont qualifiées pour la phase finale.
             </small>
             <div id="rankings">
@@ -376,21 +374,32 @@
 
             <hr>
 
-            <button type="button" id="goKnockout" class="btn btn-primary btn-block admin-only">
+            <button type="button" id="goKnockout" class="btn btn-primary btn-block admin-only  finals-only">
                 <i class="fa fa-check"></i> Passer à la phase finale
             </button>
 
             <div id="knockout">
 
-                <hr>
-                <h3 style="display:inline" class="mr-4">Phase Finale</h3>
+                <hr class="finals-only">
+                <h3 style="display:inline" class="mr-4 finals-only">Phase Finale</h3>
 
-                <span class="admin-only">
-                    <input type="checkbox" name="show-knockout-tables" id="show-knockout-tables" class="mr-1">
-                    <label for="show-knockout-tables">Show knockout tables</label>
-                    <input type="checkbox" name="show-iframe" id="show-iframe" class="ml-4 mr-1">
-                    <label for="show-iframe">Show iframe</label>
-                </span>
+                <div class="admin-only">
+                    <div>
+                        <input type="checkbox" name="show-knockout-tables" id="show-knockout-tables" class="mr-1">
+                        <label for="show-knockout-tables">Show knockout tables</label>
+                        <input type="checkbox" name="show-iframe" id="show-iframe" class="ml-4 mr-1">
+                        <label for="show-iframe">Show iframe</label>
+                        <input type="checkbox" name="no-finals" id="no-finals" class="ml-4 mr-1">
+                        <label for="no-finals">No finals</label>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="iframeUrl" class="col-md-3 col-form-label">iframe URL</label>
+                        <div class="col">
+                            <input type="text" class="form-control" id="iframeUrl">
+                        </div>
+                    </div>
+                </div>
 
                 <div class="knockout-tables">
                     <table id="knockout-schedule" class="table table-sm">
@@ -414,9 +423,9 @@
                     </div>
                 </div>
 
-                <iframe class="my-4" style="width:100%; height: 800px; max-height: 60vh; border: 1px solid #0001" src="https://viewer.diagrams.net/?highlight=0000ff&nav=1&title=Phase%20finale%20-%20Tournoi%20des%20Brenets%202024.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oV9mbI3GO5aJVk9COaiRXpCZy69IxwTf%26export%3Ddownload&count=0" frameborder="0" scrolling="no" allowfullscreen></iframe>
-                <div>
-                    <a href="https://viewer.diagrams.net/?highlight=0000ff&nav=1&title=Phase%20finale%20-%20Tournoi%20des%20Brenets%202024.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oV9mbI3GO5aJVk9COaiRXpCZy69IxwTf%26export%3Ddownload" target="_blank">Ouvrir le diagramme</a>
+                <iframe class="my-4" style="width:100%; height: 800px; max-height: 60vh; border: 1px solid #0001" src="" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                <div class="iframe-link">
+                    <a href="" target="_blank">Ouvrir le diagramme</a>
                 </div>
             </div>
         </div>
@@ -441,15 +450,15 @@
 	</div>
 
     <!-- Application -->
-    <script src="js/tools.js?2024"></script>
-    <script src="js/load.js?2024"></script>
-    <script src="js/config.js?2024"></script>
-    <script src="js/schedule.js?2024"></script>
-    <script src="js/models.js?2024"></script>
-    <script src="js/rankings.js?2024"></script>
-    <script src="js/scheduleknockout.js?2024"></script>
-    <script src="js/knockout.js?2024"></script>
-    <script src="js/display.js?20240623"></script>
+    <script src="js/tools.js?2025-06"></script>
+    <script src="js/load.js?2025-06"></script>
+    <script src="js/config.js?2025-06"></script>
+    <script src="js/schedule.js?2025-06"></script>
+    <script src="js/models.js?2025-06"></script>
+    <script src="js/rankings.js?2025-06"></script>
+    <script src="js/scheduleknockout.js?2025-06"></script>
+    <script src="js/knockout.js?2025-06"></script>
+    <script src="js/display.js?2025-06"></script>
 
 </body>
 </html>

@@ -1,11 +1,25 @@
 <?php
 
-$pwd = file_get_contents("hashed-pwd.txt");
+session_start();
 
-if ($pwd === hash('sha256', $_POST["pwd"])) {
-    setcookie("is_editor", "1", time()+60*60*24*365);
+$hashes = [
+    'editor' => file_get_contents("pwd.editor"),
+    'admin' => file_get_contents("pwd.admin"),
+];
+
+$pwd = $_POST["pwd"];
+
+$role = "";
+
+if (password_verify($pwd, $hashes['admin'])) {
+    $role = 'admin';
+} else if (password_verify($pwd, $hashes['editor'])) {
+    $role = 'editor';
 } else {
-    setcookie("is_editor", "", time()-3600);
     echo "Mauvais mot de passe";
     http_response_code(403);
 }
+
+$_SESSION['role'] = $role;
+
+echo $role;
