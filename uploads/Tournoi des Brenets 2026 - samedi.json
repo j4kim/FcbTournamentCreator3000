@@ -1,0 +1,4424 @@
+{
+    "name": "Tournoi des Brenets 2026 - samedi",
+    "schedule": {
+        "groups": [
+            {
+                "name": "Sportifs 1",
+                "teams": [
+                    {
+                        "name": "FC Franckefitch",
+                        "index": 0,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "FC JPEG",
+                        "index": 1,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "FC Betterave",
+                        "index": 2,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Fc Lochi",
+                        "index": 3,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "FKG 1",
+                        "index": 4,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Swissmec",
+                        "index": 5,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Team VF-NE",
+                        "index": 6,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    }
+                ],
+                "index": 0,
+                "categoryIndex": 0,
+                "waitAverage": 5,
+                "rankedTeams": [
+                    {
+                        "name": "FC Franckefitch",
+                        "index": 0,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "FC JPEG",
+                        "index": 1,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "FC Betterave",
+                        "index": 2,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Fc Lochi",
+                        "index": 3,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "FKG 1",
+                        "index": 4,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Swissmec",
+                        "index": 5,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Team VF-NE",
+                        "index": 6,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    }
+                ]
+            },
+            {
+                "name": "Sportifs 2",
+                "teams": [
+                    {
+                        "name": "Le Tremplin",
+                        "index": 0,
+                        "groupIndex": 1,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "FC 4-4-2 grammes",
+                        "index": 1,
+                        "groupIndex": 1,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Bi\u00e8re 0%",
+                        "index": 2,
+                        "groupIndex": 1,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Casino Joa",
+                        "index": 3,
+                        "groupIndex": 1,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                        "index": 4,
+                        "groupIndex": 1,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Petit Park",
+                        "index": 5,
+                        "groupIndex": 1,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "FC Lambont",
+                        "index": 6,
+                        "groupIndex": 1,
+                        "matchIds": []
+                    }
+                ],
+                "index": 1,
+                "categoryIndex": 0,
+                "waitAverage": 5,
+                "rankedTeams": [
+                    {
+                        "name": "Le Tremplin",
+                        "index": 0,
+                        "groupIndex": 1,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "FC 4-4-2 grammes",
+                        "index": 1,
+                        "groupIndex": 1,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Bi\u00e8re 0%",
+                        "index": 2,
+                        "groupIndex": 1,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Casino Joa",
+                        "index": 3,
+                        "groupIndex": 1,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                        "index": 4,
+                        "groupIndex": 1,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Petit Park",
+                        "index": 5,
+                        "groupIndex": 1,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "FC Lambont",
+                        "index": 6,
+                        "groupIndex": 1,
+                        "matchIds": []
+                    }
+                ]
+            },
+            {
+                "name": "Familles 1",
+                "teams": [
+                    {
+                        "name": "Je m'en foot",
+                        "index": 0,
+                        "groupIndex": 2,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Fc VFNeuch",
+                        "index": 1,
+                        "groupIndex": 2,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "La Corv\u00e9e du Sud",
+                        "index": 2,
+                        "groupIndex": 2,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "FKG 2",
+                        "index": 3,
+                        "groupIndex": 2,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Les fous du ballon",
+                        "index": 4,
+                        "groupIndex": 2,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Les fous fous du ballon",
+                        "index": 5,
+                        "groupIndex": 2,
+                        "matchIds": []
+                    }
+                ],
+                "index": 2,
+                "categoryIndex": 1,
+                "waitAverage": 5,
+                "rankedTeams": [
+                    {
+                        "name": "Je m'en foot",
+                        "index": 0,
+                        "groupIndex": 2,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Fc VFNeuch",
+                        "index": 1,
+                        "groupIndex": 2,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "La Corv\u00e9e du Sud",
+                        "index": 2,
+                        "groupIndex": 2,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "FKG 2",
+                        "index": 3,
+                        "groupIndex": 2,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Les fous du ballon",
+                        "index": 4,
+                        "groupIndex": 2,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Les fous fous du ballon",
+                        "index": 5,
+                        "groupIndex": 2,
+                        "matchIds": []
+                    }
+                ]
+            }
+        ],
+        "qualif": [
+            {
+                "teamA": {
+                    "name": "Casino Joa",
+                    "index": 3,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Bi\u00e8re 0%",
+                    "index": 2,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "Le Tremplin",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC 4-4-2 grammes",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Bi\u00e8re 0%",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Casino Joa",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Petit Park",
+                            "index": 5,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Lambont",
+                            "index": 6,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "09:30",
+                "timeUnit": 1,
+                "id": 1
+            },
+            {
+                "teamA": {
+                    "name": "FC Franckefitch",
+                    "index": 0,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FC Betterave",
+                    "index": 2,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "FC Franckefitch",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC JPEG",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Betterave",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc Lochi",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 1",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Swissmec",
+                            "index": 5,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Team VF-NE",
+                            "index": 6,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "09:30",
+                "timeUnit": 1,
+                "id": 2
+            },
+            {
+                "teamA": {
+                    "name": "FKG 2",
+                    "index": 3,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "La Corv\u00e9e du Sud",
+                    "index": 2,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Je m'en foot",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc VFNeuch",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "La Corv\u00e9e du Sud",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 2",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous du ballon",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous fous du ballon",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "09:45",
+                "timeUnit": 2,
+                "id": 3
+            },
+            {
+                "teamA": {
+                    "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                    "index": 4,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Petit Park",
+                    "index": 5,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "Le Tremplin",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC 4-4-2 grammes",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Bi\u00e8re 0%",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Casino Joa",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Petit Park",
+                            "index": 5,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Lambont",
+                            "index": 6,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "09:45",
+                "timeUnit": 2,
+                "id": 4
+            },
+            {
+                "teamA": {
+                    "name": "FC JPEG",
+                    "index": 1,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Fc Lochi",
+                    "index": 3,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "FC Franckefitch",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC JPEG",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Betterave",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc Lochi",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 1",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Swissmec",
+                            "index": 5,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Team VF-NE",
+                            "index": 6,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "10:00",
+                "timeUnit": 3,
+                "id": 5
+            },
+            {
+                "teamA": {
+                    "name": "Le Tremplin",
+                    "index": 0,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FC 4-4-2 grammes",
+                    "index": 1,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "Le Tremplin",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC 4-4-2 grammes",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Bi\u00e8re 0%",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Casino Joa",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Petit Park",
+                            "index": 5,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Lambont",
+                            "index": 6,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "10:00",
+                "timeUnit": 3,
+                "id": 6
+            },
+            {
+                "teamA": {
+                    "name": "FKG 1",
+                    "index": 4,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Team VF-NE",
+                    "index": 6,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "FC Franckefitch",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC JPEG",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Betterave",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc Lochi",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 1",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Swissmec",
+                            "index": 5,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Team VF-NE",
+                            "index": 6,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "10:15",
+                "timeUnit": 4,
+                "id": 7
+            },
+            {
+                "teamA": {
+                    "name": "Les fous du ballon",
+                    "index": 4,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Les fous fous du ballon",
+                    "index": 5,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Je m'en foot",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc VFNeuch",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "La Corv\u00e9e du Sud",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 2",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous du ballon",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous fous du ballon",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "10:15",
+                "timeUnit": 4,
+                "id": 8
+            },
+            {
+                "teamA": {
+                    "name": "Bi\u00e8re 0%",
+                    "index": 2,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FC Lambont",
+                    "index": 6,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "Le Tremplin",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC 4-4-2 grammes",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Bi\u00e8re 0%",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Casino Joa",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Petit Park",
+                            "index": 5,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Lambont",
+                            "index": 6,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "10:30",
+                "timeUnit": 5,
+                "id": 9,
+                "waitGaps": [
+                    4
+                ],
+                "matchClasses": " advance1 diff1",
+                "diff": 1
+            },
+            {
+                "teamA": {
+                    "name": "FC Franckefitch",
+                    "index": 0,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Swissmec",
+                    "index": 5,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "FC Franckefitch",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC JPEG",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Betterave",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc Lochi",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 1",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Swissmec",
+                            "index": 5,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Team VF-NE",
+                            "index": 6,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "10:30",
+                "timeUnit": 5,
+                "id": 10,
+                "waitGaps": [
+                    4
+                ],
+                "matchClasses": " advance1 diff1",
+                "diff": 1
+            },
+            {
+                "teamA": {
+                    "name": "Fc VFNeuch",
+                    "index": 1,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Je m'en foot",
+                    "index": 0,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Je m'en foot",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc VFNeuch",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "La Corv\u00e9e du Sud",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 2",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous du ballon",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous fous du ballon",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "10:45",
+                "timeUnit": 6,
+                "id": 11
+            },
+            {
+                "teamA": {
+                    "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                    "index": 4,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Casino Joa",
+                    "index": 3,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "Le Tremplin",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC 4-4-2 grammes",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Bi\u00e8re 0%",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Casino Joa",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Petit Park",
+                            "index": 5,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Lambont",
+                            "index": 6,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "10:45",
+                "timeUnit": 6,
+                "id": 12,
+                "waitGaps": [
+                    5,
+                    4
+                ],
+                "matchClasses": " ontime advance1 diff1",
+                "diff": 1
+            },
+            {
+                "teamA": {
+                    "name": "FC JPEG",
+                    "index": 1,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FC Betterave",
+                    "index": 2,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "FC Franckefitch",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC JPEG",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Betterave",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc Lochi",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 1",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Swissmec",
+                            "index": 5,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Team VF-NE",
+                            "index": 6,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "11:00",
+                "timeUnit": 7,
+                "id": 13,
+                "waitGaps": [
+                    4,
+                    6
+                ],
+                "matchClasses": " advance1 late1",
+                "diff": 0
+            },
+            {
+                "teamA": {
+                    "name": "Petit Park",
+                    "index": 5,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FC 4-4-2 grammes",
+                    "index": 1,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "Le Tremplin",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC 4-4-2 grammes",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Bi\u00e8re 0%",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Casino Joa",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Petit Park",
+                            "index": 5,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Lambont",
+                            "index": 6,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "11:00",
+                "timeUnit": 7,
+                "id": 14,
+                "waitGaps": [
+                    4,
+                    5
+                ],
+                "matchClasses": " advance1 ontime diff1",
+                "diff": 1
+            },
+            {
+                "teamA": {
+                    "name": "FKG 1",
+                    "index": 4,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Fc Lochi",
+                    "index": 3,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "FC Franckefitch",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC JPEG",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Betterave",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc Lochi",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 1",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Swissmec",
+                            "index": 5,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Team VF-NE",
+                            "index": 6,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "11:15",
+                "timeUnit": 8,
+                "id": 15,
+                "waitGaps": [
+                    5,
+                    4
+                ],
+                "matchClasses": " ontime advance1 diff1",
+                "diff": 1
+            },
+            {
+                "teamA": {
+                    "name": "Les fous du ballon",
+                    "index": 4,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "La Corv\u00e9e du Sud",
+                    "index": 2,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Je m'en foot",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc VFNeuch",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "La Corv\u00e9e du Sud",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 2",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous du ballon",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous fous du ballon",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "11:15",
+                "timeUnit": 8,
+                "id": 16,
+                "waitGaps": [
+                    6,
+                    4
+                ],
+                "matchClasses": " late1 advance1",
+                "diff": 0
+            },
+            {
+                "teamA": {
+                    "name": "FC Lambont",
+                    "index": 6,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Le Tremplin",
+                    "index": 0,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "Le Tremplin",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC 4-4-2 grammes",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Bi\u00e8re 0%",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Casino Joa",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Petit Park",
+                            "index": 5,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Lambont",
+                            "index": 6,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "11:30",
+                "timeUnit": 9,
+                "id": 17,
+                "waitGaps": [
+                    6,
+                    4
+                ],
+                "matchClasses": " late1 advance1",
+                "diff": 0
+            },
+            {
+                "teamA": {
+                    "name": "FKG 2",
+                    "index": 3,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Les fous fous du ballon",
+                    "index": 5,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Je m'en foot",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc VFNeuch",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "La Corv\u00e9e du Sud",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 2",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous du ballon",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous fous du ballon",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "11:30",
+                "timeUnit": 9,
+                "id": 18,
+                "waitGaps": [
+                    7,
+                    5
+                ],
+                "matchClasses": " late2 ontime diff-2",
+                "diff": -2
+            },
+            {
+                "teamA": {
+                    "name": "Team VF-NE",
+                    "index": 6,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Swissmec",
+                    "index": 5,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "FC Franckefitch",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC JPEG",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Betterave",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc Lochi",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 1",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Swissmec",
+                            "index": 5,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Team VF-NE",
+                            "index": 6,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "11:45",
+                "timeUnit": 10,
+                "id": 19,
+                "waitGaps": [
+                    5,
+                    6
+                ],
+                "matchClasses": " ontime late1 diff-1",
+                "diff": -1
+            },
+            {
+                "teamA": {
+                    "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                    "index": 4,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Bi\u00e8re 0%",
+                    "index": 2,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "Le Tremplin",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC 4-4-2 grammes",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Bi\u00e8re 0%",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Casino Joa",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Petit Park",
+                            "index": 5,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Lambont",
+                            "index": 6,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "11:45",
+                "timeUnit": 10,
+                "id": 20,
+                "waitGaps": [
+                    5,
+                    4
+                ],
+                "matchClasses": " ontime advance1 diff1",
+                "diff": 1
+            },
+            {
+                "teamA": {
+                    "name": "FC Franckefitch",
+                    "index": 0,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FC JPEG",
+                    "index": 1,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "FC Franckefitch",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC JPEG",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Betterave",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc Lochi",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 1",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Swissmec",
+                            "index": 5,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Team VF-NE",
+                            "index": 6,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "12:00",
+                "timeUnit": 11,
+                "id": 21,
+                "waitGaps": [
+                    6,
+                    4
+                ],
+                "matchClasses": " late1 advance1",
+                "diff": 0
+            },
+            {
+                "teamA": {
+                    "name": "Petit Park",
+                    "index": 5,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Casino Joa",
+                    "index": 3,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "Le Tremplin",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC 4-4-2 grammes",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Bi\u00e8re 0%",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Casino Joa",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Petit Park",
+                            "index": 5,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Lambont",
+                            "index": 6,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "12:00",
+                "timeUnit": 11,
+                "id": 22,
+                "waitGaps": [
+                    5,
+                    4
+                ],
+                "matchClasses": " ontime advance1 diff1",
+                "diff": 1
+            },
+            {
+                "teamA": {
+                    "name": "La Corv\u00e9e du Sud",
+                    "index": 2,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Je m'en foot",
+                    "index": 0,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Je m'en foot",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc VFNeuch",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "La Corv\u00e9e du Sud",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 2",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous du ballon",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous fous du ballon",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "12:15",
+                "timeUnit": 12,
+                "id": 23,
+                "waitGaps": [
+                    6,
+                    4
+                ],
+                "matchClasses": " late1 advance1",
+                "diff": 0
+            },
+            {
+                "teamA": {
+                    "name": "Fc Lochi",
+                    "index": 3,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FC Betterave",
+                    "index": 2,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "FC Franckefitch",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC JPEG",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Betterave",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc Lochi",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 1",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Swissmec",
+                            "index": 5,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Team VF-NE",
+                            "index": 6,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "12:15",
+                "timeUnit": 12,
+                "id": 24,
+                "waitGaps": [
+                    5,
+                    4
+                ],
+                "matchClasses": " ontime advance1 diff1",
+                "diff": 1
+            },
+            {
+                "teamA": {
+                    "name": "Les fous du ballon",
+                    "index": 4,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Fc VFNeuch",
+                    "index": 1,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Je m'en foot",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc VFNeuch",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "La Corv\u00e9e du Sud",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 2",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous du ballon",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous fous du ballon",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "12:30",
+                "timeUnit": 13,
+                "id": 25,
+                "waitGaps": [
+                    7,
+                    5
+                ],
+                "matchClasses": " late2 ontime diff-2",
+                "diff": -2
+            },
+            {
+                "teamA": {
+                    "name": "FC Lambont",
+                    "index": 6,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FC 4-4-2 grammes",
+                    "index": 1,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "Le Tremplin",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC 4-4-2 grammes",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Bi\u00e8re 0%",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Casino Joa",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Petit Park",
+                            "index": 5,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Lambont",
+                            "index": 6,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "12:30",
+                "timeUnit": 13,
+                "id": 26,
+                "waitGaps": [
+                    6,
+                    4
+                ],
+                "matchClasses": " late1 advance1",
+                "diff": 0
+            },
+            {
+                "time": "12:45",
+                "pause": true,
+                "matches": []
+            },
+            {
+                "teamA": {
+                    "name": "FKG 1",
+                    "index": 4,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Swissmec",
+                    "index": 5,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "FC Franckefitch",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC JPEG",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Betterave",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc Lochi",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 1",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Swissmec",
+                            "index": 5,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Team VF-NE",
+                            "index": 6,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "13:30",
+                "timeUnit": 14,
+                "id": 27,
+                "waitGaps": [
+                    6,
+                    4
+                ],
+                "matchClasses": " late1 advance1",
+                "diff": 0
+            },
+            {
+                "teamA": {
+                    "name": "Bi\u00e8re 0%",
+                    "index": 2,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Le Tremplin",
+                    "index": 0,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "Le Tremplin",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC 4-4-2 grammes",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Bi\u00e8re 0%",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Casino Joa",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Petit Park",
+                            "index": 5,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Lambont",
+                            "index": 6,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "13:30",
+                "timeUnit": 14,
+                "id": 28,
+                "waitGaps": [
+                    5,
+                    4
+                ],
+                "matchClasses": " ontime advance1 diff1",
+                "diff": 1
+            },
+            {
+                "teamA": {
+                    "name": "FC Franckefitch",
+                    "index": 0,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Team VF-NE",
+                    "index": 6,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "FC Franckefitch",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC JPEG",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Betterave",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc Lochi",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 1",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Swissmec",
+                            "index": 5,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Team VF-NE",
+                            "index": 6,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "13:45",
+                "timeUnit": 15,
+                "id": 29,
+                "waitGaps": [
+                    4,
+                    5
+                ],
+                "matchClasses": " advance1 ontime diff1",
+                "diff": 1
+            },
+            {
+                "teamA": {
+                    "name": "FKG 2",
+                    "index": 3,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Je m'en foot",
+                    "index": 0,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Je m'en foot",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc VFNeuch",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "La Corv\u00e9e du Sud",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 2",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous du ballon",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous fous du ballon",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "13:45",
+                "timeUnit": 15,
+                "id": 30,
+                "waitGaps": [
+                    3,
+                    6
+                ],
+                "matchClasses": " advance2 late1 diff1",
+                "diff": 1
+            },
+            {
+                "teamA": {
+                    "name": "Les fous fous du ballon",
+                    "index": 5,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Fc VFNeuch",
+                    "index": 1,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Je m'en foot",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc VFNeuch",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "La Corv\u00e9e du Sud",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 2",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous du ballon",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous fous du ballon",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "14:00",
+                "timeUnit": 16,
+                "id": 31,
+                "waitGaps": [
+                    3,
+                    7
+                ],
+                "matchClasses": " advance2 late2",
+                "diff": 0
+            },
+            {
+                "teamA": {
+                    "name": "FC 4-4-2 grammes",
+                    "index": 1,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                    "index": 4,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "Le Tremplin",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC 4-4-2 grammes",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Bi\u00e8re 0%",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Casino Joa",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Petit Park",
+                            "index": 5,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Lambont",
+                            "index": 6,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "14:00",
+                "timeUnit": 16,
+                "id": 32,
+                "waitGaps": [
+                    3,
+                    6
+                ],
+                "matchClasses": " advance2 late1 diff1",
+                "diff": 1
+            },
+            {
+                "teamA": {
+                    "name": "FC JPEG",
+                    "index": 1,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FKG 1",
+                    "index": 4,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "FC Franckefitch",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC JPEG",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Betterave",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc Lochi",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 1",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Swissmec",
+                            "index": 5,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Team VF-NE",
+                            "index": 6,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "14:15",
+                "timeUnit": 17,
+                "id": 33,
+                "waitGaps": [
+                    6,
+                    3
+                ],
+                "matchClasses": " late1 advance2 diff1",
+                "diff": 1
+            },
+            {
+                "teamA": {
+                    "name": "Casino Joa",
+                    "index": 3,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FC Lambont",
+                    "index": 6,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "Le Tremplin",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC 4-4-2 grammes",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Bi\u00e8re 0%",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Casino Joa",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Petit Park",
+                            "index": 5,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Lambont",
+                            "index": 6,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "14:15",
+                "timeUnit": 17,
+                "id": 34,
+                "waitGaps": [
+                    6,
+                    4
+                ],
+                "matchClasses": " late1 advance1",
+                "diff": 0
+            },
+            {
+                "teamA": {
+                    "name": "FC Betterave",
+                    "index": 2,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Swissmec",
+                    "index": 5,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "FC Franckefitch",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC JPEG",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Betterave",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc Lochi",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 1",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Swissmec",
+                            "index": 5,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Team VF-NE",
+                            "index": 6,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "14:30",
+                "timeUnit": 18,
+                "id": 35,
+                "waitGaps": [
+                    6,
+                    4
+                ],
+                "matchClasses": " late1 advance1",
+                "diff": 0
+            },
+            {
+                "teamA": {
+                    "name": "Le Tremplin",
+                    "index": 0,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Petit Park",
+                    "index": 5,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "Le Tremplin",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC 4-4-2 grammes",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Bi\u00e8re 0%",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Casino Joa",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Petit Park",
+                            "index": 5,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Lambont",
+                            "index": 6,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "14:30",
+                "timeUnit": 18,
+                "id": 36,
+                "waitGaps": [
+                    4,
+                    7
+                ],
+                "matchClasses": " advance1 late2 diff-1",
+                "diff": -1
+            },
+            {
+                "teamA": {
+                    "name": "Fc Lochi",
+                    "index": 3,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Team VF-NE",
+                    "index": 6,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "FC Franckefitch",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC JPEG",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Betterave",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc Lochi",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 1",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Swissmec",
+                            "index": 5,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Team VF-NE",
+                            "index": 6,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "14:45",
+                "timeUnit": 19,
+                "id": 37,
+                "waitGaps": [
+                    7,
+                    4
+                ],
+                "matchClasses": " late2 advance1 diff-1",
+                "diff": -1
+            },
+            {
+                "teamA": {
+                    "name": "La Corv\u00e9e du Sud",
+                    "index": 2,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Les fous fous du ballon",
+                    "index": 5,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Je m'en foot",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc VFNeuch",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "La Corv\u00e9e du Sud",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 2",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous du ballon",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous fous du ballon",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "14:45",
+                "timeUnit": 19,
+                "id": 38,
+                "waitGaps": [
+                    7,
+                    3
+                ],
+                "matchClasses": " late2 advance2",
+                "diff": 0
+            },
+            {
+                "teamA": {
+                    "name": "Les fous du ballon",
+                    "index": 4,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FKG 2",
+                    "index": 3,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Je m'en foot",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc VFNeuch",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "La Corv\u00e9e du Sud",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 2",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous du ballon",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous fous du ballon",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "15:00",
+                "timeUnit": 20,
+                "id": 39,
+                "waitGaps": [
+                    5,
+                    7
+                ],
+                "matchClasses": " ontime late2 diff-2",
+                "diff": -2
+            },
+            {
+                "teamA": {
+                    "name": "FC 4-4-2 grammes",
+                    "index": 1,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Bi\u00e8re 0%",
+                    "index": 2,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "Le Tremplin",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC 4-4-2 grammes",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Bi\u00e8re 0%",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Casino Joa",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Petit Park",
+                            "index": 5,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Lambont",
+                            "index": 6,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "15:00",
+                "timeUnit": 20,
+                "id": 40,
+                "waitGaps": [
+                    4,
+                    6
+                ],
+                "matchClasses": " advance1 late1",
+                "diff": 0
+            },
+            {
+                "teamA": {
+                    "name": "FKG 1",
+                    "index": 4,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FC Franckefitch",
+                    "index": 0,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "FC Franckefitch",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC JPEG",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Betterave",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc Lochi",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 1",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Swissmec",
+                            "index": 5,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Team VF-NE",
+                            "index": 6,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "15:15",
+                "timeUnit": 21,
+                "id": 41,
+                "waitGaps": [
+                    6,
+                    4
+                ],
+                "matchClasses": " late1 advance1",
+                "diff": 0
+            },
+            {
+                "teamA": {
+                    "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                    "index": 4,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FC Lambont",
+                    "index": 6,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "Le Tremplin",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC 4-4-2 grammes",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Bi\u00e8re 0%",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Casino Joa",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Petit Park",
+                            "index": 5,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Lambont",
+                            "index": 6,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "15:15",
+                "timeUnit": 21,
+                "id": 42,
+                "waitGaps": [
+                    5,
+                    4
+                ],
+                "matchClasses": " ontime advance1 diff1",
+                "diff": 1
+            },
+            {
+                "teamA": {
+                    "name": "FC JPEG",
+                    "index": 1,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Swissmec",
+                    "index": 5,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "FC Franckefitch",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC JPEG",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Betterave",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc Lochi",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 1",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Swissmec",
+                            "index": 5,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Team VF-NE",
+                            "index": 6,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "15:30",
+                "timeUnit": 22,
+                "id": 43,
+                "waitGaps": [
+                    5,
+                    4
+                ],
+                "matchClasses": " ontime advance1 diff1",
+                "diff": 1
+            },
+            {
+                "teamA": {
+                    "name": "Les fous fous du ballon",
+                    "index": 5,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Je m'en foot",
+                    "index": 0,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Je m'en foot",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc VFNeuch",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "La Corv\u00e9e du Sud",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 2",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous du ballon",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous fous du ballon",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "15:30",
+                "timeUnit": 22,
+                "id": 44,
+                "waitGaps": [
+                    7,
+                    3
+                ],
+                "matchClasses": " late2 advance2",
+                "diff": 0
+            },
+            {
+                "teamA": {
+                    "name": "Casino Joa",
+                    "index": 3,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Le Tremplin",
+                    "index": 0,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "Le Tremplin",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC 4-4-2 grammes",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Bi\u00e8re 0%",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Casino Joa",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Petit Park",
+                            "index": 5,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Lambont",
+                            "index": 6,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "15:45",
+                "timeUnit": 23,
+                "id": 45,
+                "waitGaps": [
+                    5,
+                    6
+                ],
+                "matchClasses": " ontime late1 diff-1",
+                "diff": -1
+            },
+            {
+                "teamA": {
+                    "name": "Fc VFNeuch",
+                    "index": 1,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "La Corv\u00e9e du Sud",
+                    "index": 2,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Je m'en foot",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc VFNeuch",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "La Corv\u00e9e du Sud",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 2",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous du ballon",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous fous du ballon",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "15:45",
+                "timeUnit": 23,
+                "id": 46,
+                "waitGaps": [
+                    7,
+                    4
+                ],
+                "matchClasses": " late2 advance1 diff-1",
+                "diff": -1
+            },
+            {
+                "teamA": {
+                    "name": "Team VF-NE",
+                    "index": 6,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FC Betterave",
+                    "index": 2,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "FC Franckefitch",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC JPEG",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Betterave",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc Lochi",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 1",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Swissmec",
+                            "index": 5,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Team VF-NE",
+                            "index": 6,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "16:00",
+                "timeUnit": 24,
+                "id": 47,
+                "waitGaps": [
+                    6,
+                    5
+                ],
+                "matchClasses": " late1 ontime diff-1",
+                "diff": -1
+            },
+            {
+                "teamA": {
+                    "name": "Petit Park",
+                    "index": 5,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Bi\u00e8re 0%",
+                    "index": 2,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "Le Tremplin",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC 4-4-2 grammes",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Bi\u00e8re 0%",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Casino Joa",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Petit Park",
+                            "index": 5,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Lambont",
+                            "index": 6,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "16:00",
+                "timeUnit": 24,
+                "id": 48,
+                "waitGaps": [
+                    4,
+                    6
+                ],
+                "matchClasses": " advance1 late1",
+                "diff": 0
+            },
+            {
+                "teamA": {
+                    "name": "Fc Lochi",
+                    "index": 3,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FC Franckefitch",
+                    "index": 0,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "FC Franckefitch",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC JPEG",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Betterave",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc Lochi",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 1",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Swissmec",
+                            "index": 5,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Team VF-NE",
+                            "index": 6,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "16:15",
+                "timeUnit": 25,
+                "id": 49,
+                "waitGaps": [
+                    4,
+                    6
+                ],
+                "matchClasses": " advance1 late1",
+                "diff": 0
+            },
+            {
+                "teamA": {
+                    "name": "Je m'en foot",
+                    "index": 0,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Les fous du ballon",
+                    "index": 4,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Je m'en foot",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc VFNeuch",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "La Corv\u00e9e du Sud",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 2",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous du ballon",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous fous du ballon",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "16:15",
+                "timeUnit": 25,
+                "id": 50,
+                "waitGaps": [
+                    3,
+                    5
+                ],
+                "matchClasses": " advance2 ontime diff2",
+                "diff": 2
+            },
+            {
+                "teamA": {
+                    "name": "Casino Joa",
+                    "index": 3,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FC 4-4-2 grammes",
+                    "index": 1,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "Le Tremplin",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC 4-4-2 grammes",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Bi\u00e8re 0%",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Casino Joa",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Petit Park",
+                            "index": 5,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Lambont",
+                            "index": 6,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "16:30",
+                "timeUnit": 26,
+                "id": 51,
+                "waitGaps": [
+                    6,
+                    3
+                ],
+                "matchClasses": " late1 advance2 diff1",
+                "diff": 1
+            },
+            {
+                "teamA": {
+                    "name": "FKG 2",
+                    "index": 3,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Fc VFNeuch",
+                    "index": 1,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Je m'en foot",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc VFNeuch",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "La Corv\u00e9e du Sud",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 2",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous du ballon",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les fous fous du ballon",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "16:30",
+                "timeUnit": 26,
+                "id": 52,
+                "waitGaps": [
+                    3,
+                    6
+                ],
+                "matchClasses": " advance2 late1 diff1",
+                "diff": 1
+            },
+            {
+                "teamA": {
+                    "name": "FC Betterave",
+                    "index": 2,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FKG 1",
+                    "index": 4,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "FC Franckefitch",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC JPEG",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Betterave",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc Lochi",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 1",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Swissmec",
+                            "index": 5,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Team VF-NE",
+                            "index": 6,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "16:45",
+                "timeUnit": 27,
+                "id": 53,
+                "waitGaps": [
+                    3,
+                    6
+                ],
+                "matchClasses": " advance2 late1 diff1",
+                "diff": 1
+            },
+            {
+                "teamA": {
+                    "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                    "index": 4,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Le Tremplin",
+                    "index": 0,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "Le Tremplin",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC 4-4-2 grammes",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Bi\u00e8re 0%",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Casino Joa",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Petit Park",
+                            "index": 5,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Lambont",
+                            "index": 6,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "16:45",
+                "timeUnit": 27,
+                "id": 54,
+                "waitGaps": [
+                    4,
+                    6
+                ],
+                "matchClasses": " advance1 late1",
+                "diff": 0
+            },
+            {
+                "teamA": {
+                    "name": "FC JPEG",
+                    "index": 1,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Team VF-NE",
+                    "index": 6,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "FC Franckefitch",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC JPEG",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Betterave",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc Lochi",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 1",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Swissmec",
+                            "index": 5,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Team VF-NE",
+                            "index": 6,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "17:00",
+                "timeUnit": 28,
+                "id": 55,
+                "waitGaps": [
+                    6,
+                    4
+                ],
+                "matchClasses": " late1 advance1",
+                "diff": 0
+            },
+            {
+                "teamA": {
+                    "name": "FC Lambont",
+                    "index": 6,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Petit Park",
+                    "index": 5,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "Le Tremplin",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC 4-4-2 grammes",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Bi\u00e8re 0%",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Casino Joa",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "G\u00e9n\u00e9ration Foir\u00e9",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Petit Park",
+                            "index": 5,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Lambont",
+                            "index": 6,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "17:00",
+                "timeUnit": 28,
+                "id": 56,
+                "waitGaps": [
+                    4,
+                    7
+                ],
+                "matchClasses": " advance1 late2 diff-1",
+                "diff": -1
+            },
+            {
+                "teamA": {
+                    "name": "Swissmec",
+                    "index": 5,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Fc Lochi",
+                    "index": 3,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "FC Franckefitch",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC JPEG",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Betterave",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc Lochi",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FKG 1",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Swissmec",
+                            "index": 5,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Team VF-NE",
+                            "index": 6,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "17:15",
+                "timeUnit": 29,
+                "id": 57,
+                "waitGaps": [
+                    4,
+                    7
+                ],
+                "matchClasses": " advance1 late2 diff-1",
+                "diff": -1
+            }
+        ]
+    },
+    "config": {
+        "pauses": [
+            {
+                "start": "12:45",
+                "duration": "00:45"
+            }
+        ],
+        "categories": [
+            {
+                "name": "Sportifs",
+                "teams": [
+                    "Swissmec",
+                    "FC Lambont",
+                    "FKG 1",
+                    "Fc Lochi",
+                    "FC 4-4-2 grammes",
+                    "Petit Park",
+                    "Team VF-NE",
+                    "FC Franckefitch",
+                    "Casino Joa",
+                    "Bi\u00e8re 0%",
+                    "Le Tremplin",
+                    "FC JPEG",
+                    "G\u00e9n\u00e9ration Foir\u00e9",
+                    "FC Betterave"
+                ],
+                "qualif": {
+                    "groups": 2,
+                    "rounds": 1
+                },
+                "knockout": {
+                    "qualified": 8,
+                    "finalDuration": ""
+                }
+            },
+            {
+                "name": "Familles",
+                "teams": [
+                    "FKG 2",
+                    "Je m'en foot",
+                    "Fc VFNeuch",
+                    "La Corv\u00e9e du Sud",
+                    "Les fous du ballon",
+                    "Les fous fous du ballon"
+                ],
+                "qualif": {
+                    "groups": 1,
+                    "rounds": 1
+                },
+                "knockout": {
+                    "qualified": 4,
+                    "finalDuration": ""
+                }
+            }
+        ],
+        "start": "09:30",
+        "matchDuration": "00:15",
+        "pauseBetween": "00:15",
+        "fields": [
+            "A",
+            "B"
+        ]
+    },
+    "finalDisplay": [
+        "show-iframe"
+    ],
+    "iframeUrl": "https:\/\/viewer.diagrams.net\/?lightbox=1&highlight=0000ff&nav=1&title=Phase%20finale%20tournoi%202026%20-%20samedi.drawio&dark=auto#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D14kBChDCPGhh5RMUw45vrXuAwhaDOhFue%26export%3Ddownload",
+    "prologue": "<p><span class=\"ql-size-large\">D\u00e9roulement<\/span><\/p><ul><li>Sportifs:<ul><li>2 groupes de 7 \u00e9quipes<\/li><li>Phase de poules de 09:30 \u00e0 17:30<\/li><li>Les 4 premiers de chaque groupes sont qualifi\u00e9s pour une phase finale<\/li><li>Quarts de finale \u00e0 partir de 17:45<\/li><li>Demi-finales \u00e0 18:30<\/li><li>Finale \u00e0 19:00<\/li><\/ul><\/li><li>Familles:<ul><li>1 groupe de 6 \u00e9quipes<\/li><li>Phase de poules de de 09:30 \u00e0 17:00<\/li><li>Les 4 premiers sont qualifi\u00e9s pour la phase finale<\/li><li>Demi-finales \u00e0 17:30<\/li><li>Finale \u00e0 18:45<\/li><\/ul><\/li><li>Remise des prix \u00e0 20:00<\/li><\/ul><p><a href=\"R\u00e8glement Tournoi 2026.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">R\u00e8glement<\/a><\/p>"
+}
