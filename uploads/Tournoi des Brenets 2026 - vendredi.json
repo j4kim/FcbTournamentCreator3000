@@ -1,0 +1,539 @@
+{
+    "name": "Tournoi des Brenets 2026 - vendredi",
+    "schedule": {
+        "groups": [
+            {
+                "name": "V\u00e9t\u00e9rans 1",
+                "teams": [
+                    {
+                        "name": "SCV Villers-le-Lac V\u00e9t\u00e9rans",
+                        "index": 0,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "VDR v\u00e9t\u00e9",
+                        "index": 1,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Les CR sieste",
+                        "index": 2,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Arthur et ses alcooliques",
+                        "index": 3,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "FC Le Parc",
+                        "index": 4,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Tournoi des Brevets",
+                        "index": 5,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    }
+                ],
+                "index": 0,
+                "categoryIndex": 0,
+                "waitAverage": 2,
+                "rankedTeams": [
+                    {
+                        "name": "SCV Villers-le-Lac V\u00e9t\u00e9rans",
+                        "index": 0,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "VDR v\u00e9t\u00e9",
+                        "index": 1,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Les CR sieste",
+                        "index": 2,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Arthur et ses alcooliques",
+                        "index": 3,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "FC Le Parc",
+                        "index": 4,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Tournoi des Brevets",
+                        "index": 5,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    }
+                ]
+            }
+        ],
+        "qualif": [
+            {
+                "id": 1,
+                "teamA": {
+                    "name": "FC Le Parc",
+                    "index": 4,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "SCV Villers-le-Lac V\u00e9t\u00e9rans",
+                    "index": 0,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "A",
+                "time": "18:30",
+                "timeUnit": 1,
+                "group": {
+                    "index": 0
+                }
+            },
+            {
+                "id": 2,
+                "teamA": {
+                    "name": "Tournoi des Brevets",
+                    "index": 5,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "VDR v\u00e9t\u00e9",
+                    "index": 1,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "B",
+                "time": "18:30",
+                "timeUnit": 1,
+                "group": {
+                    "index": 0
+                }
+            },
+            {
+                "id": 3,
+                "teamA": {
+                    "name": "Les CR sieste",
+                    "index": 2,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Arthur et ses alcooliques",
+                    "index": 3,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "A",
+                "time": "18:45",
+                "timeUnit": 2,
+                "group": {
+                    "index": 0
+                }
+            },
+            {
+                "id": 4,
+                "teamA": {
+                    "name": "FC Le Parc",
+                    "index": 4,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Tournoi des Brevets",
+                    "index": 5,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "B",
+                "time": "18:45",
+                "timeUnit": 2,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " advance1 advance1 diff2",
+                "waitGaps": [
+                    1,
+                    1
+                ]
+            },
+            {
+                "time": "19:00",
+                "pause": true,
+                "matches": []
+            },
+            {
+                "id": 5,
+                "teamA": {
+                    "name": "SCV Villers-le-Lac V\u00e9t\u00e9rans",
+                    "index": 0,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "VDR v\u00e9t\u00e9",
+                    "index": 1,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "A",
+                "time": "19:15",
+                "timeUnit": 3,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " ontime ontime",
+                "waitGaps": [
+                    2,
+                    2
+                ]
+            },
+            {
+                "id": 6,
+                "teamA": {
+                    "name": "FC Le Parc",
+                    "index": 4,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Arthur et ses alcooliques",
+                    "index": 3,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "B",
+                "time": "19:15",
+                "timeUnit": 3,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " advance1 advance1 diff2",
+                "waitGaps": [
+                    1,
+                    1
+                ]
+            },
+            {
+                "id": 7,
+                "teamA": {
+                    "name": "Les CR sieste",
+                    "index": 2,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Tournoi des Brevets",
+                    "index": 5,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "A",
+                "time": "19:30",
+                "timeUnit": 4,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " ontime ontime",
+                "waitGaps": [
+                    2,
+                    2
+                ]
+            },
+            {
+                "id": 8,
+                "teamA": {
+                    "name": "Arthur et ses alcooliques",
+                    "index": 3,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "SCV Villers-le-Lac V\u00e9t\u00e9rans",
+                    "index": 0,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "B",
+                "time": "19:30",
+                "timeUnit": 4,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " advance1 advance1 diff2",
+                "waitGaps": [
+                    1,
+                    1
+                ]
+            },
+            {
+                "time": "19:45",
+                "pause": true,
+                "matches": []
+            },
+            {
+                "id": 9,
+                "teamA": {
+                    "name": "VDR v\u00e9t\u00e9",
+                    "index": 1,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Les CR sieste",
+                    "index": 2,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "A",
+                "time": "20:00",
+                "timeUnit": 5,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " ontime advance1 diff1",
+                "waitGaps": [
+                    2,
+                    1
+                ]
+            },
+            {
+                "id": 10,
+                "teamA": {
+                    "name": "VDR v\u00e9t\u00e9",
+                    "index": 1,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FC Le Parc",
+                    "index": 4,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "A",
+                "time": "20:15",
+                "timeUnit": 6,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " advance1 late1",
+                "waitGaps": [
+                    1,
+                    3
+                ]
+            },
+            {
+                "id": 11,
+                "teamA": {
+                    "name": "SCV Villers-le-Lac V\u00e9t\u00e9rans",
+                    "index": 0,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Tournoi des Brevets",
+                    "index": 5,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "B",
+                "time": "20:15",
+                "timeUnit": 6,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " ontime ontime",
+                "waitGaps": [
+                    2,
+                    2
+                ]
+            },
+            {
+                "time": "20:30",
+                "pause": true,
+                "matches": []
+            },
+            {
+                "id": 12,
+                "teamA": {
+                    "name": "VDR v\u00e9t\u00e9",
+                    "index": 1,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Arthur et ses alcooliques",
+                    "index": 3,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "A",
+                "time": "20:45",
+                "timeUnit": 7,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " advance1 late1",
+                "waitGaps": [
+                    1,
+                    3
+                ]
+            },
+            {
+                "id": 13,
+                "teamA": {
+                    "name": "Les CR sieste",
+                    "index": 2,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FC Le Parc",
+                    "index": 4,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "B",
+                "time": "20:45",
+                "timeUnit": 7,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " ontime advance1 diff1",
+                "waitGaps": [
+                    2,
+                    1
+                ]
+            },
+            {
+                "id": 14,
+                "teamA": {
+                    "name": "Tournoi des Brevets",
+                    "index": 5,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Arthur et ses alcooliques",
+                    "index": 3,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "A",
+                "time": "21:00",
+                "timeUnit": 8,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " advance1 ontime diff1",
+                "waitGaps": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "id": 15,
+                "teamA": {
+                    "name": "Les CR sieste",
+                    "index": 2,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "SCV Villers-le-Lac V\u00e9t\u00e9rans",
+                    "index": 0,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "B",
+                "time": "21:00",
+                "timeUnit": 8,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " ontime advance1 diff1",
+                "waitGaps": [
+                    2,
+                    1
+                ]
+            },
+            {
+                "time": "21:15",
+                "pause": true,
+                "matches": []
+            }
+        ]
+    },
+    "config": {
+        "pauses": [
+            {
+                "start": "19:00",
+                "duration": "00:15"
+            },
+            {
+                "start": "19:45",
+                "duration": "00:15"
+            },
+            {
+                "start": "20:30",
+                "duration": "00:15"
+            },
+            {
+                "start": "21:15",
+                "duration": "00:15"
+            }
+        ],
+        "categories": [
+            {
+                "name": "V\u00e9t\u00e9rans",
+                "teams": [
+                    "VDR v\u00e9t\u00e9",
+                    "FC Le Parc",
+                    "Tournoi des Brevets",
+                    "SCV Villers-le-Lac V\u00e9t\u00e9rans",
+                    "Arthur et ses alcooliques",
+                    "Les CR sieste"
+                ],
+                "qualif": {
+                    "groups": 1,
+                    "rounds": 1
+                },
+                "knockout": {
+                    "qualified": 4,
+                    "finalDuration": ""
+                }
+            }
+        ],
+        "start": "18:30",
+        "matchDuration": "00:15",
+        "pauseBetween": "00:15",
+        "fields": [
+            "A",
+            "B"
+        ]
+    },
+    "finalDisplay": [
+        "show-iframe"
+    ],
+    "iframeUrl": "https:\/\/viewer.diagrams.net\/?lightbox=1&highlight=0000ff&nav=1&title=Phase%20finale%20tournoi%202026%20-%20vendredi.drawio&dark=auto#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1Uj6ubkzoAVSkfWizsirmuJge4YIsR6iL%26export%3Ddownload#%7B%22pageId%22%3A%22xirUlowdGwwMl9eYAi6D%22%7D",
+    "prologue": "<p><span class=\"ql-size-large\">D\u00e9roulement<\/span><\/p><ul><li>Phase de groupe de 18:30 \u00e0 21:15<\/li><li>Les 4 meilleures \u00e9quipes sont qualifi\u00e9es pour la phase finale<\/li><li>Demi-finales \u00e0 21:30<\/li><li>Finale \u00e0 22:00<\/li><li>Remise des prix \u00e0 22:30<\/li><\/ul><p><a href=\"R\u00e8glement Tournoi 2026.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">R\u00e8glement<\/a><\/p>"
+}
