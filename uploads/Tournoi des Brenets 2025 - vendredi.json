@@ -1,0 +1,740 @@
+{
+    "name": "Tournoi des Brenets 2025 - vendredi",
+    "schedule": {
+        "groups": [
+            {
+                "name": "V\u00e9t\u00e9rans 1",
+                "teams": [
+                    {
+                        "name": "Les nouveaux vieux",
+                        "index": 0,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Chaux-de-Fonds Complet",
+                        "index": 1,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "SC Villers-le-Lac V\u00e9t\u00e9rans",
+                        "index": 2,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "FC Les Brenets B",
+                        "index": 3,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "R\u00e9al des Brenets",
+                        "index": 4,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "FC Les Brenets A",
+                        "index": 5,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "FC Fairplay",
+                        "index": 6,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    }
+                ],
+                "index": 0,
+                "categoryIndex": 0,
+                "waitAverage": 2,
+                "rankedTeams": [
+                    {
+                        "name": "Les nouveaux vieux",
+                        "index": 0,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Chaux-de-Fonds Complet",
+                        "index": 1,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "SC Villers-le-Lac V\u00e9t\u00e9rans",
+                        "index": 2,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "FC Fairplay",
+                        "index": 6,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "FC Les Brenets B",
+                        "index": 3,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "FC Les Brenets A",
+                        "index": 5,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "R\u00e9al des Brenets",
+                        "index": 4,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    }
+                ]
+            }
+        ],
+        "qualif": [
+            {
+                "id": 1,
+                "teamA": {
+                    "name": "R\u00e9al des Brenets",
+                    "index": 4,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "SC Villers-le-Lac V\u00e9t\u00e9rans",
+                    "index": 2,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "A",
+                "time": "18:30",
+                "timeUnit": 1,
+                "group": {
+                    "index": 0
+                },
+                "scoreA": 0,
+                "scoreB": 3
+            },
+            {
+                "id": 2,
+                "teamA": {
+                    "name": "FC Les Brenets A",
+                    "index": 5,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Chaux-de-Fonds Complet",
+                    "index": 1,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "B",
+                "time": "18:30",
+                "timeUnit": 1,
+                "group": {
+                    "index": 0
+                },
+                "scoreA": 0,
+                "scoreB": 3
+            },
+            {
+                "id": 3,
+                "teamA": {
+                    "name": "FC Fairplay",
+                    "index": 6,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Les nouveaux vieux",
+                    "index": 0,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "A",
+                "time": "18:45",
+                "timeUnit": 2,
+                "group": {
+                    "index": 0
+                },
+                "scoreA": 0,
+                "scoreB": 2
+            },
+            {
+                "id": 4,
+                "teamA": {
+                    "name": "FC Les Brenets B",
+                    "index": 3,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "SC Villers-le-Lac V\u00e9t\u00e9rans",
+                    "index": 2,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "B",
+                "time": "18:45",
+                "timeUnit": 2,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " advance1 diff1",
+                "waitGaps": [
+                    1
+                ],
+                "scoreA": 0,
+                "scoreB": 1
+            },
+            {
+                "id": 5,
+                "teamA": {
+                    "name": "R\u00e9al des Brenets",
+                    "index": 4,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FC Les Brenets A",
+                    "index": 5,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "A",
+                "time": "19:00",
+                "timeUnit": 3,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " ontime ontime",
+                "waitGaps": [
+                    2,
+                    2
+                ],
+                "scoreA": 1,
+                "scoreB": 1
+            },
+            {
+                "id": 6,
+                "teamA": {
+                    "name": "FC Fairplay",
+                    "index": 6,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Chaux-de-Fonds Complet",
+                    "index": 1,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "B",
+                "time": "19:00",
+                "timeUnit": 3,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " ontime advance1 diff1",
+                "waitGaps": [
+                    2,
+                    1
+                ],
+                "scoreA": 0,
+                "scoreB": 6
+            },
+            {
+                "id": 7,
+                "teamA": {
+                    "name": "FC Les Brenets B",
+                    "index": 3,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Les nouveaux vieux",
+                    "index": 0,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "A",
+                "time": "19:15",
+                "timeUnit": 4,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " ontime ontime",
+                "waitGaps": [
+                    2,
+                    2
+                ],
+                "scoreA": 1,
+                "scoreB": 3
+            },
+            {
+                "id": 8,
+                "teamA": {
+                    "name": "FC Les Brenets A",
+                    "index": 5,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "SC Villers-le-Lac V\u00e9t\u00e9rans",
+                    "index": 2,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "B",
+                "time": "19:15",
+                "timeUnit": 4,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " ontime advance1 diff1",
+                "waitGaps": [
+                    2,
+                    1
+                ],
+                "scoreA": 1,
+                "scoreB": 2
+            },
+            {
+                "time": "19:30",
+                "pause": true,
+                "matches": []
+            },
+            {
+                "id": 9,
+                "teamA": {
+                    "name": "R\u00e9al des Brenets",
+                    "index": 4,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Chaux-de-Fonds Complet",
+                    "index": 1,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "A",
+                "time": "19:45",
+                "timeUnit": 5,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " ontime ontime",
+                "waitGaps": [
+                    2,
+                    2
+                ],
+                "scoreA": 0,
+                "scoreB": 4
+            },
+            {
+                "id": 10,
+                "teamA": {
+                    "name": "FC Fairplay",
+                    "index": 6,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FC Les Brenets B",
+                    "index": 3,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "B",
+                "time": "19:45",
+                "timeUnit": 5,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " advance1 ontime diff1",
+                "waitGaps": [
+                    1,
+                    2
+                ],
+                "scoreA": 3,
+                "scoreB": 0
+            },
+            {
+                "id": 11,
+                "teamA": {
+                    "name": "SC Villers-le-Lac V\u00e9t\u00e9rans",
+                    "index": 2,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Les nouveaux vieux",
+                    "index": 0,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "A",
+                "time": "20:00",
+                "timeUnit": 6,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " ontime ontime",
+                "waitGaps": [
+                    2,
+                    2
+                ],
+                "scoreA": 0,
+                "scoreB": 1
+            },
+            {
+                "id": 12,
+                "teamA": {
+                    "name": "FC Fairplay",
+                    "index": 6,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FC Les Brenets A",
+                    "index": 5,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "B",
+                "time": "20:00",
+                "timeUnit": 6,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " ontime advance1 diff1",
+                "waitGaps": [
+                    2,
+                    1
+                ],
+                "scoreA": 1,
+                "scoreB": 1
+            },
+            {
+                "id": 13,
+                "teamA": {
+                    "name": "R\u00e9al des Brenets",
+                    "index": 4,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FC Les Brenets B",
+                    "index": 3,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "A",
+                "time": "20:15",
+                "timeUnit": 7,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " ontime ontime",
+                "waitGaps": [
+                    2,
+                    2
+                ],
+                "scoreA": 1,
+                "scoreB": 1
+            },
+            {
+                "id": 14,
+                "teamA": {
+                    "name": "Les nouveaux vieux",
+                    "index": 0,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Chaux-de-Fonds Complet",
+                    "index": 1,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "B",
+                "time": "20:15",
+                "timeUnit": 7,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " advance1 ontime diff1",
+                "waitGaps": [
+                    1,
+                    2
+                ],
+                "scoreA": 3,
+                "scoreB": 1
+            },
+            {
+                "time": "20:30",
+                "pause": true,
+                "matches": []
+            },
+            {
+                "id": 15,
+                "teamA": {
+                    "name": "SC Villers-le-Lac V\u00e9t\u00e9rans",
+                    "index": 2,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FC Fairplay",
+                    "index": 6,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "A",
+                "time": "20:45",
+                "timeUnit": 8,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " ontime ontime",
+                "waitGaps": [
+                    2,
+                    2
+                ],
+                "scoreA": 2,
+                "scoreB": 1
+            },
+            {
+                "id": 16,
+                "teamA": {
+                    "name": "FC Les Brenets A",
+                    "index": 5,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FC Les Brenets B",
+                    "index": 3,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "B",
+                "time": "20:45",
+                "timeUnit": 8,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " advance1 ontime diff1",
+                "waitGaps": [
+                    1,
+                    2
+                ],
+                "scoreA": 3,
+                "scoreB": 4
+            },
+            {
+                "id": 17,
+                "teamA": {
+                    "name": "R\u00e9al des Brenets",
+                    "index": 4,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Les nouveaux vieux",
+                    "index": 0,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "A",
+                "time": "21:00",
+                "timeUnit": 9,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " ontime ontime",
+                "waitGaps": [
+                    2,
+                    2
+                ],
+                "scoreA": 1,
+                "scoreB": 2
+            },
+            {
+                "id": 18,
+                "teamA": {
+                    "name": "SC Villers-le-Lac V\u00e9t\u00e9rans",
+                    "index": 2,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Chaux-de-Fonds Complet",
+                    "index": 1,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "B",
+                "time": "21:00",
+                "timeUnit": 9,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " ontime advance1 diff1",
+                "waitGaps": [
+                    2,
+                    1
+                ],
+                "scoreA": 0,
+                "scoreB": 4
+            },
+            {
+                "id": 19,
+                "teamA": {
+                    "name": "FC Fairplay",
+                    "index": 6,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "R\u00e9al des Brenets",
+                    "index": 4,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "A",
+                "time": "21:15",
+                "timeUnit": 10,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " advance1 ontime diff1",
+                "waitGaps": [
+                    1,
+                    2
+                ],
+                "scoreA": 2,
+                "scoreB": 1
+            },
+            {
+                "id": 20,
+                "teamA": {
+                    "name": "FC Les Brenets A",
+                    "index": 5,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Les nouveaux vieux",
+                    "index": 0,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "B",
+                "time": "21:15",
+                "timeUnit": 10,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " advance1 ontime diff1",
+                "waitGaps": [
+                    1,
+                    2
+                ],
+                "scoreA": 0,
+                "scoreB": 1
+            },
+            {
+                "id": 21,
+                "teamA": {
+                    "name": "FC Les Brenets B",
+                    "index": 3,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Chaux-de-Fonds Complet",
+                    "index": 1,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "field": "A",
+                "time": "21:30",
+                "timeUnit": 11,
+                "group": {
+                    "index": 0
+                },
+                "matchClasses": " ontime late1 diff-1",
+                "waitGaps": [
+                    2,
+                    3
+                ],
+                "scoreA": 0,
+                "scoreB": 3
+            },
+            {
+                "time": "21:45",
+                "pause": true,
+                "matches": []
+            }
+        ]
+    },
+    "config": {
+        "pauses": [
+            {
+                "start": "19:30",
+                "duration": "00:15"
+            },
+            {
+                "start": "20:30",
+                "duration": "00:15"
+            },
+            {
+                "start": "21:45",
+                "duration": "00:15"
+            }
+        ],
+        "categories": [
+            {
+                "name": "V\u00e9t\u00e9rans",
+                "teams": [
+                    "Chaux-de-Fonds Complet",
+                    "Les nouveaux vieux",
+                    "FC Les Brenets A",
+                    "FC Les Brenets B",
+                    "FC Fairplay",
+                    "SC Villers-le-Lac V\u00e9t\u00e9rans",
+                    "R\u00e9al des Brenets"
+                ],
+                "qualif": {
+                    "groups": 1,
+                    "rounds": 1
+                },
+                "knockout": {
+                    "qualified": 4,
+                    "finalDuration": ""
+                }
+            }
+        ],
+        "start": "18:30",
+        "matchDuration": "00:15",
+        "pauseBetween": "00:15",
+        "fields": [
+            "A",
+            "B"
+        ]
+    },
+    "finalDisplay": [
+        "show-iframe"
+    ],
+    "iframeUrl": "https:\/\/viewer.diagrams.net\/?lightbox=1&highlight=0000ff&nav=1&title=Phase%20finale%20tournoi%2020%20juin%202025%20v1.drawio&dark=auto#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D17KMsaZtxdbtePHEJ0zKOFwO2QT6ZUkER%26export%3Ddownload",
+    "prologue": "<p><span class=\"ql-size-large\">D\u00e9roulement<\/span><\/p><ul><li>Phase de groupe de 18:30 \u00e0 21:45<\/li><li>Les 4 meilleures \u00e9quipes sont qualifi\u00e9es pour la phase finale<\/li><li>Demi-finales \u00e0 22:00<\/li><li>Finale \u00e0 22:30<\/li><\/ul><p><a href=\"R\u00e8glement Tournoi 2025.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">R\u00e8glement<\/a><\/p><p><em class=\"ql-size-small\">Le programme des matchs est sponsoris\u00e9 par:<\/em><\/p><p><img src=\"images\/Axa.png\"><\/p>"
+}

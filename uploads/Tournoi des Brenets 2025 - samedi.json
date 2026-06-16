@@ -1,0 +1,3144 @@
+{
+    "name": "Tournoi des Brenets 2025 - samedi",
+    "schedule": {
+        "groups": [
+            {
+                "name": "Sportifs 1",
+                "teams": [
+                    {
+                        "name": "Samba de Ipanema",
+                        "index": 0,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Les bolosses",
+                        "index": 1,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "FC Efs\u00e9",
+                        "index": 2,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "ALMACE",
+                        "index": 3,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Fc ZeZa",
+                        "index": 4,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    }
+                ],
+                "index": 0,
+                "categoryIndex": 0,
+                "waitAverage": 5,
+                "rankedTeams": [
+                    {
+                        "name": "Fc ZeZa",
+                        "index": 4,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Samba de Ipanema",
+                        "index": 0,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Les bolosses",
+                        "index": 1,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "ALMACE",
+                        "index": 3,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "FC Efs\u00e9",
+                        "index": 2,
+                        "groupIndex": 0,
+                        "matchIds": []
+                    }
+                ]
+            },
+            {
+                "name": "Sportifs 2",
+                "teams": [
+                    {
+                        "name": "FC Foufi\u00f1io",
+                        "index": 0,
+                        "groupIndex": 1,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Shakesbeer",
+                        "index": 1,
+                        "groupIndex": 1,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "GALAXY UNITED",
+                        "index": 2,
+                        "groupIndex": 1,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "La Fine Equipe",
+                        "index": 3,
+                        "groupIndex": 1,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Fortunato Club",
+                        "index": 4,
+                        "groupIndex": 1,
+                        "matchIds": []
+                    }
+                ],
+                "index": 1,
+                "categoryIndex": 0,
+                "waitAverage": 5,
+                "rankedTeams": [
+                    {
+                        "name": "Shakesbeer",
+                        "index": 1,
+                        "groupIndex": 1,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Fortunato Club",
+                        "index": 4,
+                        "groupIndex": 1,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "La Fine Equipe",
+                        "index": 3,
+                        "groupIndex": 1,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "GALAXY UNITED",
+                        "index": 2,
+                        "groupIndex": 1,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "FC Foufi\u00f1io",
+                        "index": 0,
+                        "groupIndex": 1,
+                        "matchIds": []
+                    }
+                ]
+            },
+            {
+                "name": "Familles 1",
+                "teams": [
+                    {
+                        "name": "Les Fous du Ballon",
+                        "index": 0,
+                        "groupIndex": 2,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Les Daltons",
+                        "index": 1,
+                        "groupIndex": 2,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "FC Spazzacamino",
+                        "index": 2,
+                        "groupIndex": 2,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Les m\u00e9daill\u00e9s du dimanche",
+                        "index": 3,
+                        "groupIndex": 2,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Mini \/ Maxi Tici",
+                        "index": 4,
+                        "groupIndex": 2,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Ohana",
+                        "index": 5,
+                        "groupIndex": 2,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "i cugini",
+                        "index": 6,
+                        "groupIndex": 2,
+                        "matchIds": []
+                    }
+                ],
+                "index": 2,
+                "categoryIndex": 1,
+                "waitAverage": 3,
+                "rankedTeams": [
+                    {
+                        "name": "Les Daltons",
+                        "index": 1,
+                        "groupIndex": 2,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Mini \/ Maxi Tici",
+                        "index": 4,
+                        "groupIndex": 2,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "FC Spazzacamino",
+                        "index": 2,
+                        "groupIndex": 2,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Les Fous du Ballon",
+                        "index": 0,
+                        "groupIndex": 2,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Ohana",
+                        "index": 5,
+                        "groupIndex": 2,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "Les m\u00e9daill\u00e9s du dimanche",
+                        "index": 3,
+                        "groupIndex": 2,
+                        "matchIds": []
+                    },
+                    {
+                        "name": "i cugini",
+                        "index": 6,
+                        "groupIndex": 2,
+                        "matchIds": []
+                    }
+                ]
+            }
+        ],
+        "qualif": [
+            {
+                "teamA": {
+                    "name": "Les Fous du Ballon",
+                    "index": 0,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Mini \/ Maxi Tici",
+                    "index": 4,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Les Fous du Ballon",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les Daltons",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Spazzacamino",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les m\u00e9daill\u00e9s du dimanche",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Mini \/ Maxi Tici",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Ohana",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "i cugini",
+                            "index": 6,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 3
+                },
+                "field": "A",
+                "time": "10:30",
+                "timeUnit": 1,
+                "id": 1,
+                "scoreA": 0,
+                "scoreB": 1
+            },
+            {
+                "teamA": {
+                    "name": "La Fine Equipe",
+                    "index": 3,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Shakesbeer",
+                    "index": 1,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "FC Foufi\u00f1io",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Shakesbeer",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "GALAXY UNITED",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "La Fine Equipe",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fortunato Club",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "10:30",
+                "timeUnit": 1,
+                "id": 2,
+                "scoreA": 0,
+                "scoreB": 6
+            },
+            {
+                "teamA": {
+                    "name": "FC Efs\u00e9",
+                    "index": 2,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Samba de Ipanema",
+                    "index": 0,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "Samba de Ipanema",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les bolosses",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Efs\u00e9",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "ALMACE",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc ZeZa",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "10:45",
+                "timeUnit": 2,
+                "id": 3,
+                "scoreA": 2,
+                "scoreB": 5
+            },
+            {
+                "teamA": {
+                    "name": "Ohana",
+                    "index": 5,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Les m\u00e9daill\u00e9s du dimanche",
+                    "index": 3,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Les Fous du Ballon",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les Daltons",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Spazzacamino",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les m\u00e9daill\u00e9s du dimanche",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Mini \/ Maxi Tici",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Ohana",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "i cugini",
+                            "index": 6,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 3
+                },
+                "field": "B",
+                "time": "10:45",
+                "timeUnit": 2,
+                "id": 4,
+                "scoreA": 2,
+                "scoreB": 0
+            },
+            {
+                "teamA": {
+                    "name": "FC Spazzacamino",
+                    "index": 2,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Les Daltons",
+                    "index": 1,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Les Fous du Ballon",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les Daltons",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Spazzacamino",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les m\u00e9daill\u00e9s du dimanche",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Mini \/ Maxi Tici",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Ohana",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "i cugini",
+                            "index": 6,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 3
+                },
+                "field": "A",
+                "time": "11:00",
+                "timeUnit": 3,
+                "id": 5,
+                "scoreA": 1,
+                "scoreB": 4
+            },
+            {
+                "teamA": {
+                    "name": "i cugini",
+                    "index": 6,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Les Fous du Ballon",
+                    "index": 0,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Les Fous du Ballon",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les Daltons",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Spazzacamino",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les m\u00e9daill\u00e9s du dimanche",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Mini \/ Maxi Tici",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Ohana",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "i cugini",
+                            "index": 6,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 3
+                },
+                "field": "B",
+                "time": "11:00",
+                "timeUnit": 3,
+                "id": 6,
+                "waitGaps": [
+                    2
+                ],
+                "matchClasses": " advance1 diff1",
+                "diff": 1,
+                "scoreA": 1,
+                "scoreB": 3
+            },
+            {
+                "teamA": {
+                    "name": "ALMACE",
+                    "index": 3,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Fc ZeZa",
+                    "index": 4,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "Samba de Ipanema",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les bolosses",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Efs\u00e9",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "ALMACE",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc ZeZa",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "11:15",
+                "timeUnit": 4,
+                "id": 7,
+                "scoreA": 0,
+                "scoreB": 3
+            },
+            {
+                "teamA": {
+                    "name": "Fortunato Club",
+                    "index": 4,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "GALAXY UNITED",
+                    "index": 2,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "FC Foufi\u00f1io",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Shakesbeer",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "GALAXY UNITED",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "La Fine Equipe",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fortunato Club",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "11:15",
+                "timeUnit": 4,
+                "id": 8,
+                "scoreA": 5,
+                "scoreB": 2
+            },
+            {
+                "teamA": {
+                    "name": "Mini \/ Maxi Tici",
+                    "index": 4,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Ohana",
+                    "index": 5,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Les Fous du Ballon",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les Daltons",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Spazzacamino",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les m\u00e9daill\u00e9s du dimanche",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Mini \/ Maxi Tici",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Ohana",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "i cugini",
+                            "index": 6,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 3
+                },
+                "field": "A",
+                "time": "11:30",
+                "timeUnit": 5,
+                "id": 9,
+                "waitGaps": [
+                    4,
+                    3
+                ],
+                "matchClasses": " late1 ontime diff-1",
+                "diff": -1,
+                "scoreA": 1,
+                "scoreB": 0
+            },
+            {
+                "teamA": {
+                    "name": "FC Spazzacamino",
+                    "index": 2,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Les m\u00e9daill\u00e9s du dimanche",
+                    "index": 3,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Les Fous du Ballon",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les Daltons",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Spazzacamino",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les m\u00e9daill\u00e9s du dimanche",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Mini \/ Maxi Tici",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Ohana",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "i cugini",
+                            "index": 6,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 3
+                },
+                "field": "B",
+                "time": "11:30",
+                "timeUnit": 5,
+                "id": 10,
+                "waitGaps": [
+                    2,
+                    3
+                ],
+                "matchClasses": " advance1 ontime diff1",
+                "diff": 1,
+                "scoreA": 4,
+                "scoreB": 0
+            },
+            {
+                "teamA": {
+                    "name": "Les Daltons",
+                    "index": 1,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "i cugini",
+                    "index": 6,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Les Fous du Ballon",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les Daltons",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Spazzacamino",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les m\u00e9daill\u00e9s du dimanche",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Mini \/ Maxi Tici",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Ohana",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "i cugini",
+                            "index": 6,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 3
+                },
+                "field": "A",
+                "time": "11:45",
+                "timeUnit": 6,
+                "id": 11,
+                "waitGaps": [
+                    3,
+                    3
+                ],
+                "matchClasses": " ontime ontime",
+                "diff": 0,
+                "scoreA": 4,
+                "scoreB": 0
+            },
+            {
+                "teamA": {
+                    "name": "La Fine Equipe",
+                    "index": 3,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FC Foufi\u00f1io",
+                    "index": 0,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "FC Foufi\u00f1io",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Shakesbeer",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "GALAXY UNITED",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "La Fine Equipe",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fortunato Club",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "11:45",
+                "timeUnit": 6,
+                "id": 12,
+                "waitGaps": [
+                    5
+                ],
+                "matchClasses": " ontime",
+                "diff": 0,
+                "scoreA": 2,
+                "scoreB": 0
+            },
+            {
+                "teamA": {
+                    "name": "Les bolosses",
+                    "index": 1,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FC Efs\u00e9",
+                    "index": 2,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "Samba de Ipanema",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les bolosses",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Efs\u00e9",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "ALMACE",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc ZeZa",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "12:00",
+                "timeUnit": 7,
+                "id": 13,
+                "waitGaps": [
+                    5
+                ],
+                "matchClasses": " ontime",
+                "diff": 0,
+                "scoreA": 1,
+                "scoreB": 1
+            },
+            {
+                "teamA": {
+                    "name": "Les Fous du Ballon",
+                    "index": 0,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Ohana",
+                    "index": 5,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Les Fous du Ballon",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les Daltons",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Spazzacamino",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les m\u00e9daill\u00e9s du dimanche",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Mini \/ Maxi Tici",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Ohana",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "i cugini",
+                            "index": 6,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 3
+                },
+                "field": "B",
+                "time": "12:00",
+                "timeUnit": 7,
+                "id": 14,
+                "waitGaps": [
+                    4,
+                    2
+                ],
+                "matchClasses": " late1 advance1",
+                "diff": 0,
+                "scoreA": 3,
+                "scoreB": 3
+            },
+            {
+                "teamA": {
+                    "name": "Samba de Ipanema",
+                    "index": 0,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "ALMACE",
+                    "index": 3,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "Samba de Ipanema",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les bolosses",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Efs\u00e9",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "ALMACE",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc ZeZa",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "12:15",
+                "timeUnit": 8,
+                "id": 15,
+                "waitGaps": [
+                    6,
+                    4
+                ],
+                "matchClasses": " late1 advance1",
+                "diff": 0,
+                "scoreA": 1,
+                "scoreB": 4
+            },
+            {
+                "teamA": {
+                    "name": "Fortunato Club",
+                    "index": 4,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Shakesbeer",
+                    "index": 1,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "FC Foufi\u00f1io",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Shakesbeer",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "GALAXY UNITED",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "La Fine Equipe",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fortunato Club",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "12:15",
+                "timeUnit": 8,
+                "id": 16,
+                "waitGaps": [
+                    7,
+                    4
+                ],
+                "matchClasses": " late2 advance1 diff-1",
+                "diff": -1,
+                "scoreA": 1,
+                "scoreB": 2
+            },
+            {
+                "teamA": {
+                    "name": "Mini \/ Maxi Tici",
+                    "index": 4,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Les m\u00e9daill\u00e9s du dimanche",
+                    "index": 3,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Les Fous du Ballon",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les Daltons",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Spazzacamino",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les m\u00e9daill\u00e9s du dimanche",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Mini \/ Maxi Tici",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Ohana",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "i cugini",
+                            "index": 6,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 3
+                },
+                "field": "A",
+                "time": "12:30",
+                "timeUnit": 9,
+                "id": 17,
+                "waitGaps": [
+                    4,
+                    4
+                ],
+                "matchClasses": " late1 late1 diff-2",
+                "diff": -2,
+                "scoreA": 4,
+                "scoreB": 2
+            },
+            {
+                "teamA": {
+                    "name": "FC Spazzacamino",
+                    "index": 2,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "i cugini",
+                    "index": 6,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Les Fous du Ballon",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les Daltons",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Spazzacamino",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les m\u00e9daill\u00e9s du dimanche",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Mini \/ Maxi Tici",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Ohana",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "i cugini",
+                            "index": 6,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 3
+                },
+                "field": "B",
+                "time": "12:30",
+                "timeUnit": 9,
+                "id": 18,
+                "waitGaps": [
+                    4,
+                    3
+                ],
+                "matchClasses": " late1 ontime diff-1",
+                "diff": -1,
+                "scoreA": 3,
+                "scoreB": 2
+            },
+            {
+                "teamA": {
+                    "name": "Les Daltons",
+                    "index": 1,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Les Fous du Ballon",
+                    "index": 0,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Les Fous du Ballon",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les Daltons",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Spazzacamino",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les m\u00e9daill\u00e9s du dimanche",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Mini \/ Maxi Tici",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Ohana",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "i cugini",
+                            "index": 6,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 3
+                },
+                "field": "A",
+                "time": "12:45",
+                "timeUnit": 10,
+                "id": 19,
+                "waitGaps": [
+                    3,
+                    4
+                ],
+                "matchClasses": " ontime late1 diff-1",
+                "diff": -1,
+                "scoreA": 1,
+                "scoreB": 1
+            },
+            {
+                "teamA": {
+                    "name": "GALAXY UNITED",
+                    "index": 2,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FC Foufi\u00f1io",
+                    "index": 0,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "FC Foufi\u00f1io",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Shakesbeer",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "GALAXY UNITED",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "La Fine Equipe",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fortunato Club",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "12:45",
+                "timeUnit": 10,
+                "id": 20,
+                "waitGaps": [
+                    4,
+                    6
+                ],
+                "matchClasses": " advance1 late1",
+                "diff": 0,
+                "scoreA": 4,
+                "scoreB": 0
+            },
+            {
+                "time": "13:00",
+                "pause": true,
+                "matches": []
+            },
+            {
+                "teamA": {
+                    "name": "Fc ZeZa",
+                    "index": 4,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Les bolosses",
+                    "index": 1,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "Samba de Ipanema",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les bolosses",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Efs\u00e9",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "ALMACE",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc ZeZa",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "14:00",
+                "timeUnit": 11,
+                "id": 21,
+                "waitGaps": [
+                    4,
+                    7
+                ],
+                "matchClasses": " advance1 late2 diff-1",
+                "diff": -1,
+                "scoreA": 2,
+                "scoreB": 1
+            },
+            {
+                "teamA": {
+                    "name": "FC Spazzacamino",
+                    "index": 2,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Ohana",
+                    "index": 5,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Les Fous du Ballon",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les Daltons",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Spazzacamino",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les m\u00e9daill\u00e9s du dimanche",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Mini \/ Maxi Tici",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Ohana",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "i cugini",
+                            "index": 6,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 3
+                },
+                "field": "B",
+                "time": "14:00",
+                "timeUnit": 11,
+                "id": 22,
+                "waitGaps": [
+                    2,
+                    4
+                ],
+                "matchClasses": " advance1 late1",
+                "diff": 0,
+                "scoreA": 4,
+                "scoreB": 0
+            },
+            {
+                "teamA": {
+                    "name": "i cugini",
+                    "index": 6,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Mini \/ Maxi Tici",
+                    "index": 4,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Les Fous du Ballon",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les Daltons",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Spazzacamino",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les m\u00e9daill\u00e9s du dimanche",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Mini \/ Maxi Tici",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Ohana",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "i cugini",
+                            "index": 6,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 3
+                },
+                "field": "A",
+                "time": "14:15",
+                "timeUnit": 12,
+                "id": 23,
+                "waitGaps": [
+                    3,
+                    3
+                ],
+                "matchClasses": " ontime ontime",
+                "diff": 0,
+                "scoreA": 1,
+                "scoreB": 6
+            },
+            {
+                "teamA": {
+                    "name": "La Fine Equipe",
+                    "index": 3,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Fortunato Club",
+                    "index": 4,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "FC Foufi\u00f1io",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Shakesbeer",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "GALAXY UNITED",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "La Fine Equipe",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fortunato Club",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "14:15",
+                "timeUnit": 12,
+                "id": 24,
+                "waitGaps": [
+                    6,
+                    4
+                ],
+                "matchClasses": " late1 advance1",
+                "diff": 0,
+                "scoreA": 0,
+                "scoreB": 1
+            },
+            {
+                "teamA": {
+                    "name": "ALMACE",
+                    "index": 3,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FC Efs\u00e9",
+                    "index": 2,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "Samba de Ipanema",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les bolosses",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Efs\u00e9",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "ALMACE",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc ZeZa",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "14:30",
+                "timeUnit": 13,
+                "id": 25,
+                "waitGaps": [
+                    6,
+                    5
+                ],
+                "matchClasses": " late1 ontime diff-1",
+                "diff": -1,
+                "scoreA": 1,
+                "scoreB": 1
+            },
+            {
+                "teamA": {
+                    "name": "Les m\u00e9daill\u00e9s du dimanche",
+                    "index": 3,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Les Daltons",
+                    "index": 1,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Les Fous du Ballon",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les Daltons",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Spazzacamino",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les m\u00e9daill\u00e9s du dimanche",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Mini \/ Maxi Tici",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Ohana",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "i cugini",
+                            "index": 6,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 3
+                },
+                "field": "B",
+                "time": "14:30",
+                "timeUnit": 13,
+                "id": 26,
+                "waitGaps": [
+                    3,
+                    4
+                ],
+                "matchClasses": " ontime late1 diff-1",
+                "diff": -1,
+                "scoreA": 1,
+                "scoreB": 3
+            },
+            {
+                "teamA": {
+                    "name": "FC Spazzacamino",
+                    "index": 2,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Les Fous du Ballon",
+                    "index": 0,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Les Fous du Ballon",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les Daltons",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Spazzacamino",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les m\u00e9daill\u00e9s du dimanche",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Mini \/ Maxi Tici",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Ohana",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "i cugini",
+                            "index": 6,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 3
+                },
+                "field": "A",
+                "time": "14:45",
+                "timeUnit": 14,
+                "id": 27,
+                "waitGaps": [
+                    4,
+                    3
+                ],
+                "matchClasses": " late1 ontime diff-1",
+                "diff": -1,
+                "scoreA": 3,
+                "scoreB": 2
+            },
+            {
+                "teamA": {
+                    "name": "Shakesbeer",
+                    "index": 1,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "GALAXY UNITED",
+                    "index": 2,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "FC Foufi\u00f1io",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Shakesbeer",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "GALAXY UNITED",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "La Fine Equipe",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fortunato Club",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "14:45",
+                "timeUnit": 14,
+                "id": 28,
+                "waitGaps": [
+                    6,
+                    4
+                ],
+                "matchClasses": " late1 advance1",
+                "diff": 0,
+                "scoreA": 0,
+                "scoreB": 0
+            },
+            {
+                "teamA": {
+                    "name": "Fc ZeZa",
+                    "index": 4,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Samba de Ipanema",
+                    "index": 0,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "Samba de Ipanema",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les bolosses",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Efs\u00e9",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "ALMACE",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc ZeZa",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "15:00",
+                "timeUnit": 15,
+                "id": 29,
+                "waitGaps": [
+                    7,
+                    4
+                ],
+                "matchClasses": " late2 advance1 diff-1",
+                "diff": -1,
+                "scoreA": 0,
+                "scoreB": 0
+            },
+            {
+                "teamA": {
+                    "name": "i cugini",
+                    "index": 6,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Ohana",
+                    "index": 5,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Les Fous du Ballon",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les Daltons",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Spazzacamino",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les m\u00e9daill\u00e9s du dimanche",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Mini \/ Maxi Tici",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Ohana",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "i cugini",
+                            "index": 6,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 3
+                },
+                "field": "B",
+                "time": "15:00",
+                "timeUnit": 15,
+                "id": 30,
+                "waitGaps": [
+                    4,
+                    3
+                ],
+                "matchClasses": " late1 ontime diff-1",
+                "diff": -1,
+                "scoreA": 2,
+                "scoreB": 1
+            },
+            {
+                "teamA": {
+                    "name": "Mini \/ Maxi Tici",
+                    "index": 4,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Les Daltons",
+                    "index": 1,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Les Fous du Ballon",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les Daltons",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Spazzacamino",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les m\u00e9daill\u00e9s du dimanche",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Mini \/ Maxi Tici",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Ohana",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "i cugini",
+                            "index": 6,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 3
+                },
+                "field": "A",
+                "time": "15:15",
+                "timeUnit": 16,
+                "id": 31,
+                "waitGaps": [
+                    3,
+                    4
+                ],
+                "matchClasses": " ontime late1 diff-1",
+                "diff": -1,
+                "scoreA": 2,
+                "scoreB": 3
+            },
+            {
+                "teamA": {
+                    "name": "FC Foufi\u00f1io",
+                    "index": 0,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Fortunato Club",
+                    "index": 4,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "FC Foufi\u00f1io",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Shakesbeer",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "GALAXY UNITED",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "La Fine Equipe",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fortunato Club",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "15:15",
+                "timeUnit": 16,
+                "id": 32,
+                "waitGaps": [
+                    6,
+                    4
+                ],
+                "matchClasses": " late1 advance1",
+                "diff": 0,
+                "scoreA": 1,
+                "scoreB": 5
+            },
+            {
+                "teamA": {
+                    "name": "Les bolosses",
+                    "index": 1,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "ALMACE",
+                    "index": 3,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "Samba de Ipanema",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les bolosses",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Efs\u00e9",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "ALMACE",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc ZeZa",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "15:30",
+                "timeUnit": 17,
+                "id": 33,
+                "waitGaps": [
+                    6,
+                    4
+                ],
+                "matchClasses": " late1 advance1",
+                "diff": 0,
+                "scoreA": 4,
+                "scoreB": 2
+            },
+            {
+                "teamA": {
+                    "name": "Les m\u00e9daill\u00e9s du dimanche",
+                    "index": 3,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Les Fous du Ballon",
+                    "index": 0,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Les Fous du Ballon",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les Daltons",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Spazzacamino",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les m\u00e9daill\u00e9s du dimanche",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Mini \/ Maxi Tici",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Ohana",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "i cugini",
+                            "index": 6,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 3
+                },
+                "field": "B",
+                "time": "15:30",
+                "timeUnit": 17,
+                "id": 34,
+                "waitGaps": [
+                    3,
+                    4
+                ],
+                "matchClasses": " ontime late1 diff-1",
+                "diff": -1,
+                "scoreA": 2,
+                "scoreB": 3
+            },
+            {
+                "teamA": {
+                    "name": "FC Spazzacamino",
+                    "index": 2,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Mini \/ Maxi Tici",
+                    "index": 4,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Les Fous du Ballon",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les Daltons",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Spazzacamino",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les m\u00e9daill\u00e9s du dimanche",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Mini \/ Maxi Tici",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Ohana",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "i cugini",
+                            "index": 6,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 3
+                },
+                "field": "A",
+                "time": "15:45",
+                "timeUnit": 18,
+                "id": 35,
+                "waitGaps": [
+                    4,
+                    2
+                ],
+                "matchClasses": " late1 advance1",
+                "diff": 0,
+                "scoreA": 4,
+                "scoreB": 5
+            },
+            {
+                "teamA": {
+                    "name": "La Fine Equipe",
+                    "index": 3,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "GALAXY UNITED",
+                    "index": 2,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "FC Foufi\u00f1io",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Shakesbeer",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "GALAXY UNITED",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "La Fine Equipe",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fortunato Club",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "15:45",
+                "timeUnit": 18,
+                "id": 36,
+                "waitGaps": [
+                    4,
+                    6
+                ],
+                "matchClasses": " advance1 late1",
+                "diff": 0,
+                "scoreA": 3,
+                "scoreB": 1
+            },
+            {
+                "teamA": {
+                    "name": "Les Daltons",
+                    "index": 1,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Ohana",
+                    "index": 5,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Les Fous du Ballon",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les Daltons",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Spazzacamino",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les m\u00e9daill\u00e9s du dimanche",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Mini \/ Maxi Tici",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Ohana",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "i cugini",
+                            "index": 6,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 3
+                },
+                "field": "A",
+                "time": "16:00",
+                "timeUnit": 19,
+                "id": 37,
+                "waitGaps": [
+                    3,
+                    4
+                ],
+                "matchClasses": " ontime late1 diff-1",
+                "diff": -1,
+                "scoreA": 1,
+                "scoreB": 0
+            },
+            {
+                "teamA": {
+                    "name": "i cugini",
+                    "index": 6,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Les m\u00e9daill\u00e9s du dimanche",
+                    "index": 3,
+                    "groupIndex": 2,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Familles 1",
+                    "teams": [
+                        {
+                            "name": "Les Fous du Ballon",
+                            "index": 0,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les Daltons",
+                            "index": 1,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Spazzacamino",
+                            "index": 2,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les m\u00e9daill\u00e9s du dimanche",
+                            "index": 3,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Mini \/ Maxi Tici",
+                            "index": 4,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Ohana",
+                            "index": 5,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "i cugini",
+                            "index": 6,
+                            "groupIndex": 2,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 2,
+                    "categoryIndex": 1,
+                    "waitAverage": 3
+                },
+                "field": "B",
+                "time": "16:00",
+                "timeUnit": 19,
+                "id": 38,
+                "waitGaps": [
+                    2,
+                    4
+                ],
+                "matchClasses": " advance1 late1",
+                "diff": 0,
+                "scoreA": 3,
+                "scoreB": 4
+            },
+            {
+                "teamA": {
+                    "name": "FC Foufi\u00f1io",
+                    "index": 0,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Shakesbeer",
+                    "index": 1,
+                    "groupIndex": 1,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 2",
+                    "teams": [
+                        {
+                            "name": "FC Foufi\u00f1io",
+                            "index": 0,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Shakesbeer",
+                            "index": 1,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "GALAXY UNITED",
+                            "index": 2,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "La Fine Equipe",
+                            "index": 3,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fortunato Club",
+                            "index": 4,
+                            "groupIndex": 1,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 1,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "16:15",
+                "timeUnit": 20,
+                "id": 39,
+                "waitGaps": [
+                    4,
+                    6
+                ],
+                "matchClasses": " advance1 late1",
+                "diff": 0,
+                "scoreA": 1,
+                "scoreB": 2
+            },
+            {
+                "teamA": {
+                    "name": "Fc ZeZa",
+                    "index": 4,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "FC Efs\u00e9",
+                    "index": 2,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "Samba de Ipanema",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les bolosses",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Efs\u00e9",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "ALMACE",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc ZeZa",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "B",
+                "time": "16:15",
+                "timeUnit": 20,
+                "id": 40,
+                "waitGaps": [
+                    7,
+                    5
+                ],
+                "matchClasses": " late2 ontime diff-2",
+                "diff": -2,
+                "scoreA": 2,
+                "scoreB": 2
+            },
+            {
+                "teamA": {
+                    "name": "Les bolosses",
+                    "index": 1,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "teamB": {
+                    "name": "Samba de Ipanema",
+                    "index": 0,
+                    "groupIndex": 0,
+                    "matchIds": []
+                },
+                "group": {
+                    "name": "Sportifs 1",
+                    "teams": [
+                        {
+                            "name": "Samba de Ipanema",
+                            "index": 0,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Les bolosses",
+                            "index": 1,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "FC Efs\u00e9",
+                            "index": 2,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "ALMACE",
+                            "index": 3,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        },
+                        {
+                            "name": "Fc ZeZa",
+                            "index": 4,
+                            "groupIndex": 0,
+                            "matchIds": []
+                        }
+                    ],
+                    "index": 0,
+                    "categoryIndex": 0,
+                    "waitAverage": 5
+                },
+                "field": "A",
+                "time": "16:30",
+                "timeUnit": 21,
+                "id": 41,
+                "waitGaps": [
+                    6,
+                    4
+                ],
+                "matchClasses": " late1 advance1",
+                "diff": 0,
+                "scoreA": 0,
+                "scoreB": 1
+            }
+        ]
+    },
+    "config": {
+        "pauses": [
+            {
+                "start": "13:00",
+                "duration": "01:00"
+            }
+        ],
+        "categories": [
+            {
+                "name": "Sportifs",
+                "teams": [
+                    "Fortunato Club",
+                    "GALAXY UNITED",
+                    "Samba de Ipanema",
+                    "Shakesbeer",
+                    "FC Foufi\u00f1io",
+                    "ALMACE",
+                    "Fc ZeZa",
+                    "FC Efs\u00e9",
+                    "La Fine Equipe",
+                    "Les bolosses"
+                ],
+                "qualif": {
+                    "groups": 2,
+                    "rounds": 1
+                },
+                "knockout": {
+                    "qualified": 8,
+                    "finalDuration": ""
+                }
+            },
+            {
+                "name": "Familles",
+                "teams": [
+                    "Les Daltons",
+                    "Mini \/ Maxi Tici",
+                    "Les Fous du Ballon",
+                    "i cugini",
+                    "Ohana",
+                    "Les m\u00e9daill\u00e9s du dimanche",
+                    "FC Spazzacamino"
+                ],
+                "qualif": {
+                    "groups": 1,
+                    "rounds": 1
+                },
+                "knockout": {
+                    "qualified": 0,
+                    "finalDuration": ""
+                }
+            }
+        ],
+        "start": "10:30",
+        "matchDuration": "00:15",
+        "pauseBetween": "00:15",
+        "fields": [
+            "A",
+            "B"
+        ]
+    },
+    "finalDisplay": [
+        "show-iframe"
+    ],
+    "iframeUrl": "https:\/\/viewer.diagrams.net\/?lightbox=1&highlight=0000ff&nav=1&title=Phase%20finale%20tournoi%2021%20juin%202025%20v2.drawio&dark=auto#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D156uMpvT4QAJvsv-dNZOqF_6-5s1eCLkh%26export%3Ddownload",
+    "prologue": "<p><span class=\"ql-size-large\">D\u00e9roulement<\/span><\/p><ul><li>Sportifs:<ul><li>2 groupes de 5 \u00e9quipes<\/li><li>Matchs de poules de 10:30 \u00e0 16:45<\/li><li>Les 5\u00e8me jouent un match de classement \u00e0 17:00<\/li><li>Les 4 premiers de chaque groupes sont qualifi\u00e9s pour une phase finale<\/li><li>Quarts de finale \u00e0 partir de 17:15<\/li><li>Demi-finales \u00e0 18:00<\/li><li>Finale \u00e0 18:30<\/li><\/ul><\/li><li>Familles:<ul><li>Championnat \u00e0 7 \u00e9quipes de 10:30 \u00e0 16:30<\/li><\/ul><\/li><\/ul><p><a href=\"R\u00e8glement Tournoi 2025.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">R\u00e8glement<\/a><\/p><p><em class=\"ql-size-small\">Le programme des matchs est sponsoris\u00e9 par:<\/em><\/p><p><img src=\"images\/Axa.png\"><\/p>"
+}
