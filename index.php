@@ -319,13 +319,13 @@ $file = @$_GET['file'] ?? '';
                 </table>
             </div>
 
-            <hr>
+            <hr class="noprint">
 
-            <h3>Classements</h3>
-            <small class="form-text text-muted finals-only">
+            <h3 class="noprint">Classements</h3>
+            <small class="form-text text-muted finals-only noprint">
                 Les équipes en vert sont qualifiées pour la phase finale.
             </small>
-            <div id="rankings">
+            <div id="rankings" class="noprint">
                 <!--Ranking table template-->
                 <script id="ranking-table-template" type="text/x-handlebars-template">
                     <div class="ranking-table g{{ group.index }}">
@@ -424,7 +424,7 @@ $file = @$_GET['file'] ?? '';
                 </div>
 
                 <iframe class="my-4" style="width:100%; height: 800px; max-height: 60vh; border: 1px solid #0001" src="" frameborder="0" scrolling="no" allowfullscreen></iframe>
-                <div class="iframe-link">
+                <div class="iframe-link noprint">
                     <a href="" target="_blank">Ouvrir le diagramme</a>
                 </div>
             </div>

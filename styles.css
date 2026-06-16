@@ -125,3 +125,13 @@ td.score {
         font-size: 2.5rem !important;
     }
 }
+
+@media print {
+    .noprint {
+        display: none !important;
+    }
+    .container {
+        padding: 0 !important;
+        max-width: 100% !important;
+    }
+}
